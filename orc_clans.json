@@ -1737,5 +1737,15 @@
             "flavor": "Souped up and well-oiled, their weapons perform much better than any others.",
             "cost": 1
         }
-    }
+    },
+    "buyLinks": [
+        {
+            "name": "Games Workshop",
+            "link": "https://www.games-workshop.com/en-US/Warhammer-40-000?N=2562756967+854227620&Nr"
+        },
+        {
+            "name": "Gear Guts' Mek Shop",
+            "link": "https://geargutsmekshop.com/"
+        }
+    ]
 }
