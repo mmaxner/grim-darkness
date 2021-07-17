@@ -4582,14 +4582,14 @@
       "description": "Use this strategy when one of your units is targeted by an attack. Roll a die for each hit, on a 3 or less that hit is prevented.",
       "cost": 1
     },
-    "tank_hunters": {
-      "name": "Tank Hunters",
+    "tank_hunter_rounds": {
+      "name": "Tank Hunter Rounds",
       "subfactions": [
         "siege_focus"
       ],
       "phase": "activation",
-      "flavor": "Instead of specialised anti-tank units, every marine is armed with potent explosives to use against enemy vehicles.",
-      "description": "Use this strategy when one of your _Infantry_ units targets an enemy _Vehicle_ unit with a Shooting attack. Choose a weapon name. Each successful hit of 1 or 2 with that weapon gets +3 AP.",
+      "flavor": "Instead of specialised units, every marine is armed with potent explosive ammunition to use against heavily armored foes.",
+      "description": "Use this strategy when one of your _Infantry_ units Shoots. All hits with _Marine Rifles_ gain +1 AP. If the enemy unit is a _Vehicle_ all hits with _Marine Rifles_ gain +2 AP instead.",
       "cost": 1
     },
     "grim_slaughter": {
@@ -4686,6 +4686,30 @@
       ],
       "name": "Inferno",
       "description": "Target enemy unit within 12\" takes 3 hits with AP 3.",
+      "charge": 6
+    },
+    "rust": {
+      "subfactions": [
+        "siege_focus"
+      ],
+      "name": "Curse of Rust",
+      "description": "Target enemy unit within 12\" has -1 Save until the end of the turn. If the unit is a _Vehicle_ it has -3 Save instead.",
+      "charge": 5
+    },
+    "iron_skin": {
+      "subfactions": [
+        "siege_focus"
+      ],
+      "name": "Iron Skin",
+      "description": "Target friendly unit within 12\" has +1 Save until the end of the turn.",
+      "charge": 6
+    },
+    "barrage": {
+      "subfactions": [
+        "siege_focus"
+      ],
+      "name": "Psychic Barrage",
+      "description": "Target enemy unit within 18\" take 5 hits with AP 1.",
       "charge": 6
     }
   }
