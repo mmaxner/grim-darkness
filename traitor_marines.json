@@ -1,125 +1,125 @@
 {
-  "id": "traitor_marines",
-  "name": "Traitor Marines",
-  "author": "Caliallie#6369",
-  "hidden_subfactions": {
-    "assault_focus": {
-      "name": "Assault",
-      "id": "assault_focus",
-      "color": "#18abcc"
+  "id" : "traitor_marines",
+  "name" : "Traitor Marines",
+  "author" : "Caliallie#6369",
+  "hidden_subfactions" : {
+    "assault_focus" : {
+      "name" : "Assault",
+      "id" : "assault_focus",
+      "color" : "#18abcc"
     },
-    "siege_focus": {
-      "name": "Siege",
-      "id": "siege_focus",
-      "color": "#18abcc"
+    "siege_focus" : {
+      "name" : "Siege",
+      "id" : "siege_focus",
+      "color" : "#18abcc"
     },
-    "mobility_focus": {
-      "name": "Mobility",
-      "id": "mobility_focus",
-      "color": "#18abcc"
+    "mobility_focus" : {
+      "name" : "Mobility",
+      "id" : "mobility_focus",
+      "color" : "#18abcc"
     },
-    "terror_focus": {
-      "name": "Terror",
-      "id": "terror_focus",
-      "color": "#18abcc"
+    "terror_focus" : {
+      "name" : "Terror",
+      "id" : "terror_focus",
+      "color" : "#18abcc"
     },
-    "morale_focus": {
-      "name": "Morale",
-      "id": "morale_focus",
-      "color": "#18abcc"
+    "morale_focus" : {
+      "name" : "Morale",
+      "id" : "morale_focus",
+      "color" : "#18abcc"
     }
   },
-  "units": {
-    "lord_on_infernal_stalker": {
-      "name": "Traitor Lord on Infernal Stalker",
-      "description": "An infernal creation that crawls on the ground, stalking its prey.",
-      "rules": [
+  "units" : {
+    "lord_on_infernal_stalker" : {
+      "name" : "Traitor Lord on Infernal Stalker",
+      "description" : "An infernal creation that crawls on the ground, stalking its prey.",
+      "rules" : [
         "fear",
         "walker",
         "vulnerable_rear",
         "damage_table_vehicle"
       ],
-      "subfactions": [
+      "subfactions" : [
         "none"
       ],
-      "category": "command",
-      "keywords": [
+      "category" : "command",
+      "keywords" : [
         "Vehicle"
       ],
-      "models": [
+      "models" : [
         {
-          "name": "Infernal Stalker",
-          "movement": 10,
-          "courage": 7,
-          "shoot": 7,
-          "fight": 7,
-          "defense": 11,
-          "reflexes": 6,
-          "weapons": [
+          "name" : "Infernal Stalker",
+          "movement" : 10,
+          "courage" : 7,
+          "shoot" : 7,
+          "fight" : 7,
+          "defense" : 11,
+          "reflexes" : 6,
+          "weapons" : [
             "bane_flamethrower",
             "maul_cutter",
             {
-              "id": "claws",
-              "count": 5
+              "id" : "claws",
+              "count" : 5
             },
             {
-              "id": "chainsaw_glaive",
-              "count": 4
+              "id" : "chainsaw_glaive",
+              "count" : 4
             }
           ],
-          "options": [
+          "options" : [
             {
-              "replaceWeapon": "bane_flamethrower",
-              "withWeapon": [
+              "replaceWeapon" : "bane_flamethrower",
+              "withWeapon" : [
                 "autocannon"
               ]
             },
             {
-              "replaceWeapon": "maul_cutter",
-              "withWeapon": [
+              "replaceWeapon" : "maul_cutter",
+              "withWeapon" : [
                 "virus_injector"
               ]
             }
           ],
-          "rules": [],
-          "min": 1,
-          "max": 1
+          "rules" : [],
+          "min" : 1,
+          "max" : 1
         }
       ]
     },
-    "traitor_lord": {
-      "name": "Traitor Lord",
-      "description": "A lord of the dark gods.",
-      "subfactions": [
+    "traitor_lord" : {
+      "name" : "Traitor Lord",
+      "description" : "A lord of the dark gods.",
+      "subfactions" : [
         "none",
         "pestilence_focus"
       ],
-      "category": "command",
-      "models": [
+      "category" : "command",
+      "models" : [
         {
-          "name": "Traitor Lord",
-          "movement": 6,
-          "courage": 7,
-          "shoot": 7,
-          "fight": 7,
-          "defense": 8,
-          "reflexes": 6,
-          "weapons": [
+          "name" : "Traitor Lord",
+          "movement" : 6,
+          "courage" : 7,
+          "shoot" : 7,
+          "fight" : 7,
+          "defense" : 8,
+          "reflexes" : 6,
+          "weapons" : [
             {
-              "id": "marine_rifle"
+              "id" : "marine_rifle"
             },
             "at_grenade",
             {
-              "id": "chainsword",
-              "count": 4
+              "id" : "chainsword",
+              "count" : 4
             }
           ],
-          "options": [
+          "options" : [
             {
-              "replaceWeapon": [
+              "replaceWeapon" : [
                 "marine_rifle"
               ],
-              "withWeapon": [
+              "withWeapon" : [
                 "twin_marine_rifle",
                 "combi_plasma",
                 "combi_flamer",
@@ -127,198 +127,198 @@
               ]
             },
             {
-              "replaceWeapon": [
+              "replaceWeapon" : [
                 "marine_rifle",
                 {
-                  "id": "chainsword",
-                  "count": 4
+                  "id" : "chainsword",
+                  "count" : 4
                 }
               ],
-              "withWeapon": [
+              "withWeapon" : [
                 [
                   "marine_pistol",
                   {
-                    "id": "chainsword",
-                    "count": 5
+                    "id" : "chainsword",
+                    "count" : 5
                   }
                 ],
                 {
-                  "id": "energy_claws",
-                  "count": 6
+                  "id" : "energy_claws",
+                  "count" : 6
                 }
               ]
             },
             {
-              "replaceWeapon": "marine_pistol",
-              "withWeapon": [
+              "replaceWeapon" : "marine_pistol",
+              "withWeapon" : [
                 "plasma_pistol"
               ]
             },
             {
-              "replaceWeapon": {
-                "id": "chainsword",
-                "count": 4
+              "replaceWeapon" : {
+                "id" : "chainsword",
+                "count" : 4
               },
-              "withWeapon": [
+              "withWeapon" : [
                 {
-                  "id": "energy_mace",
-                  "count": 4
+                  "id" : "energy_mace",
+                  "count" : 4
                 },
                 {
-                  "id": "energy_axe",
-                  "count": 4
+                  "id" : "energy_axe",
+                  "count" : 4
                 },
                 {
-                  "id": "energy_sword",
-                  "count": 4
+                  "id" : "energy_sword",
+                  "count" : 4
                 },
                 {
-                  "id": "chainfist",
-                  "count": 4
+                  "id" : "chainfist",
+                  "count" : 4
                 },
                 {
-                  "id": "chainaxe",
-                  "count": 4
+                  "id" : "chainaxe",
+                  "count" : 4
                 },
                 {
-                  "id": "energy_fist",
-                  "count": 4
+                  "id" : "energy_fist",
+                  "count" : 4
                 },
                 {
-                  "id": "energy_hammer",
-                  "count": 4
+                  "id" : "energy_hammer",
+                  "count" : 4
                 },
                 {
-                  "id": "energy_claws",
-                  "count": 5
+                  "id" : "energy_claws",
+                  "count" : 5
                 }
               ]
             },
             {
-              "addRule": [
+              "addRule" : [
                 "jetpack",
                 "destroyer_armor"
               ],
-              "limit": 1
+              "limit" : 1
             },
             {
-              "replaceRule": {
-                "id": "rifle_tactics",
-                "x": 2
+              "replaceRule" : {
+                "id" : "rifle_tactics",
+                "x" : 2
               },
-              "withRule": {
-                "id": "melee_tactics",
-                "x": 2
+              "withRule" : {
+                "id" : "melee_tactics",
+                "x" : 2
               }
             }
           ],
-          "rules": [
+          "rules" : [
             {
-              "id": "leader_x",
-              "x": "Infantry"
+              "id" : "leader_x",
+              "x" : "Infantry"
             },
             {
-              "id": "wounds",
-              "x": 3
+              "id" : "wounds",
+              "x" : 3
             },
             {
-              "id": "rifle_tactics",
-              "x": 2
+              "id" : "rifle_tactics",
+              "x" : 2
             }
           ],
-          "min": 1,
-          "max": 1
+          "min" : 1,
+          "max" : 1
         }
       ]
     },
-    "destroyer_lord": {
-      "name": "Traitor Warmaster",
-      "description": "Once one of the Emperor's favoured, this powerful Marine now seeks only to watch the galaxy burn.",
-      "category": "command",
-      "keywords": [
+    "destroyer_lord" : {
+      "name" : "Traitor Warmaster",
+      "description" : "Once one of the Emperor's favoured, this powerful Marine now seeks only to watch the galaxy burn.",
+      "category" : "command",
+      "keywords" : [
         "Infantry"
       ],
-      "subfactions": [
+      "subfactions" : [
         "none"
       ],
-      "rules": [
+      "rules" : [
         {
-          "id": "leader_x",
-          "x": "Infantry"
+          "id" : "leader_x",
+          "x" : "Infantry"
         },
         {
-          "id": "wounds",
-          "x": 4
+          "id" : "wounds",
+          "x" : 4
         },
         {
-          "id": "warmaster_tactics",
-          "x": 3
+          "id" : "warmaster_tactics",
+          "x" : 3
         },
         "ambush"
       ],
-      "models": [
+      "models" : [
         {
-          "name": "Traitor Warmaster",
-          "movement": 6,
-          "courage": 8,
-          "shoot": 7,
-          "fight": 7,
-          "defense": 10,
-          "reflexes": 7,
-          "weapons": [
+          "name" : "Traitor Warmaster",
+          "movement" : 6,
+          "courage" : 8,
+          "shoot" : 7,
+          "fight" : 7,
+          "defense" : 10,
+          "reflexes" : 7,
+          "weapons" : [
             {
-              "id": "archtraitor_sword",
-              "count": 6
+              "id" : "archtraitor_sword",
+              "count" : 6
             },
             {
-              "id": "archtraitor_claw",
-              "count": 3
+              "id" : "archtraitor_claw",
+              "count" : 3
             },
             {
-              "id": "archtraitor_ranged"
+              "id" : "archtraitor_ranged"
             }
           ],
-          "min": 1,
-          "max": 1
+          "min" : 1,
+          "max" : 1
         }
       ]
     },
-    "traitor_lord_on_bike": {
-      "name": "Traitor Lord on Bike",
-      "description": "A lord of the dark gods riding a bike.",
-      "subfactions": [
+    "traitor_lord_on_bike" : {
+      "name" : "Traitor Lord on Bike",
+      "description" : "A lord of the dark gods riding a bike.",
+      "subfactions" : [
         "none"
       ],
-      "category": "command",
-      "keywords": [
+      "category" : "command",
+      "keywords" : [
         "Biker"
       ],
-      "models": [
+      "models" : [
         {
-          "name": "Traitor Lord on Bike",
-          "movement": 8,
-          "courage": 7,
-          "shoot": 7,
-          "fight": 7,
-          "defense": 9,
-          "reflexes": 6,
-          "weapons": [
+          "name" : "Traitor Lord on Bike",
+          "movement" : 8,
+          "courage" : 7,
+          "shoot" : 7,
+          "fight" : 7,
+          "defense" : 9,
+          "reflexes" : 6,
+          "weapons" : [
             {
-              "id": "marine_rifle"
+              "id" : "marine_rifle"
             },
             "at_grenade",
             "twin_marine_rifle",
             {
-              "id": "chainsword",
-              "count": 4
+              "id" : "chainsword",
+              "count" : 4
             }
           ],
-          "options": [
+          "options" : [
             {
-              "replaceWeapon": [
+              "replaceWeapon" : [
                 "marine_rifle"
               ],
-              "withWeapon": [
+              "withWeapon" : [
                 "combi_plasma",
                 "combi_flamer",
                 "combi_fusion",
@@ -326,129 +326,129 @@
               ]
             },
             {
-              "replaceWeapon": [
+              "replaceWeapon" : [
                 "marine_rifle",
                 {
-                  "id": "chainsword",
-                  "count": 4
+                  "id" : "chainsword",
+                  "count" : 4
                 }
               ],
-              "withWeapon": [
+              "withWeapon" : [
                 [
                   "marine_pistol",
                   {
-                    "id": "chainsword",
-                    "count": 5
+                    "id" : "chainsword",
+                    "count" : 5
                   }
                 ],
                 {
-                  "id": "energy_claws",
-                  "count": 5
+                  "id" : "energy_claws",
+                  "count" : 5
                 }
               ]
             },
             {
-              "replaceWeapon": "marine_pistol",
-              "withWeapon": [
+              "replaceWeapon" : "marine_pistol",
+              "withWeapon" : [
                 "plasma_pistol"
               ]
             },
             {
-              "replaceWeapon": {
-                "id": "chainsword",
-                "count": 4
+              "replaceWeapon" : {
+                "id" : "chainsword",
+                "count" : 4
               },
-              "withWeapon": [
+              "withWeapon" : [
                 {
-                  "id": "energy_mace",
-                  "count": 4
+                  "id" : "energy_mace",
+                  "count" : 4
                 },
                 {
-                  "id": "energy_axe",
-                  "count": 4
+                  "id" : "energy_axe",
+                  "count" : 4
                 },
                 {
-                  "id": "energy_sword",
-                  "count": 4
+                  "id" : "energy_sword",
+                  "count" : 4
                 },
                 {
-                  "id": "energy_fist",
-                  "count": 4
+                  "id" : "energy_fist",
+                  "count" : 4
                 },
                 {
-                  "id": "energy_hammer",
-                  "count": 4
+                  "id" : "energy_hammer",
+                  "count" : 4
                 },
                 {
-                  "id": "energy_claws",
-                  "count": 4
+                  "id" : "energy_claws",
+                  "count" : 4
                 }
               ]
             },
             {
-              "replaceRule": {
-                "id": "rifle_tactics",
-                "x": 2
+              "replaceRule" : {
+                "id" : "rifle_tactics",
+                "x" : 2
               },
-              "withRule": {
-                "id": "melee_tactics",
-                "x": 2
+              "withRule" : {
+                "id" : "melee_tactics",
+                "x" : 2
               }
             }
           ],
-          "rules": [
+          "rules" : [
             {
-              "id": "impact",
-              "x": 1
+              "id" : "impact",
+              "x" : 1
             },
             {
-              "id": "leader_x",
-              "x": "Infantry"
+              "id" : "leader_x",
+              "x" : "Infantry"
             },
             {
-              "id": "wounds",
-              "x": 3
+              "id" : "wounds",
+              "x" : 3
             },
             {
-              "id": "rifle_tactics",
-              "x": 2
+              "id" : "rifle_tactics",
+              "x" : 2
             }
           ],
-          "min": 1,
-          "max": 1
+          "min" : 1,
+          "max" : 1
         }
       ]
     },
-    "dark_engineer": {
-      "name": "Dark Engineer",
-      "description": "A human dedicated to fixing the corrupted machines of the dark gods.",
-      "subfactions": [
+    "dark_engineer" : {
+      "name" : "Dark Engineer",
+      "description" : "A human dedicated to fixing the corrupted machines of the dark gods.",
+      "subfactions" : [
         "none"
       ],
-      "category": "command",
-      "models": [
+      "category" : "command",
+      "models" : [
         {
-          "name": "Dark Engineer",
-          "movement": 6,
-          "courage": 7,
-          "shoot": 7,
-          "fight": 6,
-          "defense": 10,
-          "reflexes": 6,
-          "weapons": [
+          "name" : "Dark Engineer",
+          "movement" : 6,
+          "courage" : 7,
+          "shoot" : 7,
+          "fight" : 6,
+          "defense" : 10,
+          "reflexes" : 6,
+          "weapons" : [
             "at_grenade",
             {
-              "id": "heavy_ccw",
-              "count": 2
+              "id" : "heavy_ccw",
+              "count" : 2
             },
             "marine_rifle"
           ],
-          "options": [
+          "options" : [
             {
-              "replaceWeapon": [
+              "replaceWeapon" : [
                 "marine_rifle"
               ],
-              "withWeapon": [
+              "withWeapon" : [
                 "combi_plasma",
                 "combi_flamer",
                 "combi_fusion",
@@ -456,172 +456,172 @@
               ]
             },
             {
-              "replaceWeapon": [
+              "replaceWeapon" : [
                 "marine_rifle",
                 {
-                  "id": "heavy_ccw",
-                  "count": 2
+                  "id" : "heavy_ccw",
+                  "count" : 2
                 }
               ],
-              "withWeapon": [
+              "withWeapon" : [
                 [
                   "marine_pistol",
                   {
-                    "id": "chainsword",
-                    "count": 3
+                    "id" : "chainsword",
+                    "count" : 3
                   }
                 ]
               ]
             },
             {
-              "replaceWeapon": {
-                "id": "chainsword",
-                "count": 3
+              "replaceWeapon" : {
+                "id" : "chainsword",
+                "count" : 3
               },
-              "withWeapon": [
+              "withWeapon" : [
                 {
-                  "id": "energy_mace",
-                  "count": 3
+                  "id" : "energy_mace",
+                  "count" : 3
                 },
                 {
-                  "id": "energy_axe",
-                  "count": 3
+                  "id" : "energy_axe",
+                  "count" : 3
                 },
                 {
-                  "id": "energy_sword",
-                  "count": 3
+                  "id" : "energy_sword",
+                  "count" : 3
                 },
                 {
-                  "id": "energy_fist",
-                  "count": 3
+                  "id" : "energy_fist",
+                  "count" : 3
                 },
                 {
-                  "id": "energy_hammer",
-                  "count": 3
+                  "id" : "energy_hammer",
+                  "count" : 3
                 },
                 {
-                  "id": "energy_claws",
-                  "count": 4
+                  "id" : "energy_claws",
+                  "count" : 4
                 }
               ]
             },
             {
-              "replaceWeapon": "marine_pistol",
-              "withWeapon": [
+              "replaceWeapon" : "marine_pistol",
+              "withWeapon" : [
                 "plasma_pistol"
               ]
             },
             {
-              "replaceRule": [
+              "replaceRule" : [
                 {
-                  "id": "wounds",
-                  "x": 2
+                  "id" : "wounds",
+                  "x" : 2
                 }
               ],
-              "withRule": [
+              "withRule" : [
                 [
                   {
-                    "id": "wounds",
-                    "x": 3
+                    "id" : "wounds",
+                    "x" : 3
                   },
                   {
-                    "id": "rifle_tactics",
-                    "x": 2
+                    "id" : "rifle_tactics",
+                    "x" : 2
                   }
                 ]
               ],
-              "subfactions": [
+              "subfactions" : [
                 "siege_focus"
               ]
             },
             {
-              "replaceRule": [
+              "replaceRule" : [
                 {
-                  "id": "rifle_tactics",
-                  "x": 2
+                  "id" : "rifle_tactics",
+                  "x" : 2
                 }
               ],
-              "withRule": [
+              "withRule" : [
                 {
-                  "id": "melee_tactics",
-                  "x": 2
+                  "id" : "melee_tactics",
+                  "x" : 2
                 }
               ],
-              "subfactions": [
+              "subfactions" : [
                 "siege_focus"
               ]
             },
             {
-              "addRule": [
+              "addRule" : [
                 "destroyer_armor"
               ],
-              "subfactions": [
+              "subfactions" : [
                 "siege_focus"
               ]
             }
           ],
-          "rules": [
+          "rules" : [
             {
-              "id": "leader_x",
-              "x": "Infantry"
+              "id" : "leader_x",
+              "x" : "Infantry"
             },
             {
-              "id": "repair",
-              "x": 5
+              "id" : "repair",
+              "x" : 5
             },
             {
-              "id": "wounds",
-              "x": 2
+              "id" : "wounds",
+              "x" : 2
             }
           ],
-          "min": 1,
-          "max": 1
+          "min" : 1,
+          "max" : 1
         }
       ]
     },
-    "dark_psychic": {
-      "name": "Dark Psychic",
-      "description": "A powerful human whose mental powers have been twisted by the dark side.",
-      "category": "command",
-      "subfactions": [
+    "dark_psychic" : {
+      "name" : "Dark Psychic",
+      "description" : "A powerful human whose mental powers have been twisted by the dark side.",
+      "category" : "command",
+      "subfactions" : [
         "none"
       ],
-      "models": [
+      "models" : [
         {
-          "name": "Dark Psychic",
-          "movement": 6,
-          "courage": 7,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 8,
-          "reflexes": 6,
-          "weapons": [
+          "name" : "Dark Psychic",
+          "movement" : 6,
+          "courage" : 7,
+          "shoot" : 6,
+          "fight" : 6,
+          "defense" : 8,
+          "reflexes" : 6,
+          "weapons" : [
             "marine_pistol",
             "frags",
             {
-              "id": "energy_staff",
-              "count": 3
+              "id" : "energy_staff",
+              "count" : 3
             }
           ],
-          "options": [
+          "options" : [
             {
-              "replaceWeapon": [
+              "replaceWeapon" : [
                 "marine_pistol",
                 {
-                  "id": "energy_staff",
-                  "count": 3
+                  "id" : "energy_staff",
+                  "count" : 3
                 }
               ],
-              "withWeapon": [
+              "withWeapon" : [
                 {
-                  "id": "energy_claws",
-                  "count": 5
+                  "id" : "energy_claws",
+                  "count" : 5
                 }
               ]
             },
             {
-              "replaceWeapon": "marine_pistol",
-              "withWeapon": [
+              "replaceWeapon" : "marine_pistol",
+              "withWeapon" : [
                 "plasma_pistol",
                 "twin_marine_rifle",
                 "combi_plasma",
@@ -631,126 +631,126 @@
               ]
             },
             {
-              "replaceWeapon": {
-                "id": "energy_staff",
-                "count": 3
+              "replaceWeapon" : {
+                "id" : "energy_staff",
+                "count" : 3
               },
-              "withWeapon": [
+              "withWeapon" : [
                 {
-                  "id": "chainfist",
-                  "count": 3
+                  "id" : "chainfist",
+                  "count" : 3
                 },
                 {
-                  "id": "energy_mace",
-                  "count": 3
+                  "id" : "energy_mace",
+                  "count" : 3
                 },
                 {
-                  "id": "energy_axe",
-                  "count": 3
+                  "id" : "energy_axe",
+                  "count" : 3
                 },
                 {
-                  "id": "energy_fist",
-                  "count": 3
+                  "id" : "energy_fist",
+                  "count" : 3
                 },
                 {
-                  "id": "energy_hammer",
-                  "count": 3
+                  "id" : "energy_hammer",
+                  "count" : 3
                 },
                 {
-                  "id": "energy_claws",
-                  "count": 4
+                  "id" : "energy_claws",
+                  "count" : 4
                 },
                 {
-                  "id": "energy_sword",
-                  "count": 3
+                  "id" : "energy_sword",
+                  "count" : 3
                 }
               ]
             },
             {
-              "replaceRule": {
-                "id": "power",
-                "x": 1
+              "replaceRule" : {
+                "id" : "power",
+                "x" : 1
               },
-              "withRule": {
-                "id": "power",
-                "x": 2
+              "withRule" : {
+                "id" : "power",
+                "x" : 2
               }
             },
             {
-              "addRule": [
+              "addRule" : [
                 "jetpack",
                 "destroyer_armor"
               ]
             }
           ],
-          "rules": [
+          "rules" : [
             {
-              "id": "power",
-              "x": 1
+              "id" : "power",
+              "x" : 1
             },
             {
-              "id": "leader_x",
-              "x": "Infantry"
+              "id" : "leader_x",
+              "x" : "Infantry"
             },
             {
-              "id": "wounds",
-              "x": 2
+              "id" : "wounds",
+              "x" : 2
             }
           ],
-          "min": 1,
-          "max": 1
+          "min" : 1,
+          "max" : 1
         }
       ]
     },
-    "dark_psychic_on_bike": {
-      "name": "Dark Psychic on Bike",
-      "description": "A powerful human whose mental powers have been twisted by the dark side on a combat bike.",
-      "min": 1,
-      "max": 1,
-      "category": "command",
-      "keywords": [
+    "dark_psychic_on_bike" : {
+      "name" : "Dark Psychic on Bike",
+      "description" : "A powerful human whose mental powers have been twisted by the dark side on a combat bike.",
+      "min" : 1,
+      "max" : 1,
+      "category" : "command",
+      "keywords" : [
         "Biker"
       ],
-      "subfactions": [
+      "subfactions" : [
         "none"
       ],
-      "models": [
+      "models" : [
         {
-          "name": "Dark Psychic on Bike",
-          "movement": 10,
-          "courage": 7,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 9,
-          "reflexes": 6,
-          "weapons": [
+          "name" : "Dark Psychic on Bike",
+          "movement" : 10,
+          "courage" : 7,
+          "shoot" : 6,
+          "fight" : 6,
+          "defense" : 9,
+          "reflexes" : 6,
+          "weapons" : [
             "marine_pistol",
             "frags",
             "twin_marine_rifle",
             {
-              "id": "energy_staff",
-              "count": 3
+              "id" : "energy_staff",
+              "count" : 3
             }
           ],
-          "options": [
+          "options" : [
             {
-              "replaceWeapon": [
+              "replaceWeapon" : [
                 "marine_pistol",
                 {
-                  "id": "energy_staff",
-                  "count": 3
+                  "id" : "energy_staff",
+                  "count" : 3
                 }
               ],
-              "withWeapon": [
+              "withWeapon" : [
                 {
-                  "id": "energy_claws",
-                  "count": 5
+                  "id" : "energy_claws",
+                  "count" : 5
                 }
               ]
             },
             {
-              "replaceWeapon": "marine_pistol",
-              "withWeapon": [
+              "replaceWeapon" : "marine_pistol",
+              "withWeapon" : [
                 "plasma_pistol",
                 "combi_plasma",
                 "combi_flamer",
@@ -760,305 +760,305 @@
               ]
             },
             {
-              "replaceWeapon": {
-                "id": "energy_staff",
-                "count": 3
+              "replaceWeapon" : {
+                "id" : "energy_staff",
+                "count" : 3
               },
-              "withWeapon": [
+              "withWeapon" : [
                 {
-                  "id": "chainfist",
-                  "count": 3
+                  "id" : "chainfist",
+                  "count" : 3
                 },
                 {
-                  "id": "energy_mace",
-                  "count": 3
+                  "id" : "energy_mace",
+                  "count" : 3
                 },
                 {
-                  "id": "energy_axe",
-                  "count": 3
+                  "id" : "energy_axe",
+                  "count" : 3
                 },
                 {
-                  "id": "energy_fist",
-                  "count": 3
+                  "id" : "energy_fist",
+                  "count" : 3
                 },
                 {
-                  "id": "energy_hammer",
-                  "count": 3
+                  "id" : "energy_hammer",
+                  "count" : 3
                 },
                 {
-                  "id": "energy_claws",
-                  "count": 4
+                  "id" : "energy_claws",
+                  "count" : 4
                 },
                 {
-                  "id": "energy_sword",
-                  "count": 3
+                  "id" : "energy_sword",
+                  "count" : 3
                 }
               ]
             },
             {
-              "replaceRule": {
-                "id": "power",
-                "x": 1
+              "replaceRule" : {
+                "id" : "power",
+                "x" : 1
               },
-              "withRule": {
-                "id": "power",
-                "x": 2
+              "withRule" : {
+                "id" : "power",
+                "x" : 2
               }
             }
           ],
-          "rules": [
+          "rules" : [
             {
-              "id": "power",
-              "x": 1
+              "id" : "power",
+              "x" : 1
             },
             {
-              "id": "impact",
-              "x": 1
+              "id" : "impact",
+              "x" : 1
             },
             {
-              "id": "leader_x",
-              "x": "Infantry"
+              "id" : "leader_x",
+              "x" : "Infantry"
             },
             {
-              "id": "wounds",
-              "x": 2
+              "id" : "wounds",
+              "x" : 2
             }
           ],
-          "min": 1,
-          "max": 1
+          "min" : 1,
+          "max" : 1
         }
       ]
     },
-    "daemon_champion": {
-      "name": "Daemon Champion",
-      "description": "A massive daemon gifted in the art of war.",
-      "category": "command",
-      "subfactions": [
+    "daemon_champion" : {
+      "name" : "Daemon Champion",
+      "description" : "A massive daemon gifted in the art of war.",
+      "category" : "command",
+      "subfactions" : [
         "none",
         "pestilence_focus",
         "change_traitors"
       ],
-      "rules": [
+      "rules" : [
         {
-          "id": "leader_x",
-          "x": "Infantry"
+          "id" : "leader_x",
+          "x" : "Infantry"
         },
         {
-          "id": "wounds",
-          "x": 4
+          "id" : "wounds",
+          "x" : 4
         },
         {
-          "id": "melee_tactics",
-          "x": 1
+          "id" : "melee_tactics",
+          "x" : 1
         },
         {
-          "id": "power",
-          "x": 1
+          "id" : "power",
+          "x" : 1
         }
       ],
-      "keywords": [
+      "keywords" : [
         "Infantry"
       ],
-      "models": [
+      "models" : [
         {
-          "name": "Daemon Champion",
-          "movement": 8,
-          "courage": 7,
-          "shoot": 7,
-          "fight": 7,
-          "defense": 10,
-          "reflexes": 7,
-          "weapons": [
+          "name" : "Daemon Champion",
+          "movement" : 8,
+          "courage" : 7,
+          "shoot" : 7,
+          "fight" : 7,
+          "defense" : 10,
+          "reflexes" : 7,
+          "weapons" : [
             {
-              "id": "daemon_sword",
-              "count": 4
+              "id" : "daemon_sword",
+              "count" : 4
             },
             {
-              "id": "daemon_claws",
-              "count": 2
+              "id" : "daemon_claws",
+              "count" : 2
             }
           ],
-          "options": [
+          "options" : [
             {
-              "replaceWeapon": {
-                "id": "daemon_sword",
-                "count": 4
+              "replaceWeapon" : {
+                "id" : "daemon_sword",
+                "count" : 4
               },
-              "withWeapon": [
+              "withWeapon" : [
                 {
-                  "id": "daemon_axe",
-                  "count": 4
+                  "id" : "daemon_axe",
+                  "count" : 4
                 },
                 {
-                  "id": "daemon_claws",
-                  "count": 6
+                  "id" : "daemon_claws",
+                  "count" : 6
                 }
               ]
             },
             {
-              "replaceRule": {
-                "id": "power",
-                "x": 1
+              "replaceRule" : {
+                "id" : "power",
+                "x" : 1
               },
-              "withRule": [
+              "withRule" : [
                 {
-                  "id": "power",
-                  "x": 2
+                  "id" : "power",
+                  "x" : 2
                 },
                 {
-                  "id": "power",
-                  "x": 3
+                  "id" : "power",
+                  "x" : 3
                 }
               ]
             },
             {
-              "addRule": "wings"
+              "addRule" : "wings"
             }
           ],
-          "rules": [],
-          "min": 1,
-          "max": 1
+          "rules" : [],
+          "min" : 1,
+          "max" : 1
         }
       ]
     },
-    "dark_priest": {
-      "name": "Dark Priest",
-      "description": "A devotee of the dark gods who seeks to spread their faith to non-believers on the battlefield.",
-      "subfactions": [
+    "dark_priest" : {
+      "name" : "Dark Priest",
+      "description" : "A devotee of the dark gods who seeks to spread their faith to non-believers on the battlefield.",
+      "subfactions" : [
         "none"
       ],
-      "category": "command",
-      "models": [
+      "category" : "command",
+      "models" : [
         {
-          "name": "Dark Preist",
-          "movement": 6,
-          "courage": 7,
-          "shoot": 6,
-          "fight": 7,
-          "defense": 8,
-          "reflexes": 6,
-          "weapons": [
+          "name" : "Dark Preist",
+          "movement" : 6,
+          "courage" : 7,
+          "shoot" : 6,
+          "fight" : 7,
+          "defense" : 8,
+          "reflexes" : 6,
+          "weapons" : [
             "marine_pistol",
             {
-              "id": "holy_mace",
-              "count": 3
+              "id" : "holy_mace",
+              "count" : 3
             },
             "at_grenade"
           ],
-          "rules": [
+          "rules" : [
             {
-              "id": "leader_x",
-              "x": "Infantry"
+              "id" : "leader_x",
+              "x" : "Infantry"
             },
             {
-              "id": "wounds",
-              "x": 2
+              "id" : "wounds",
+              "x" : 2
             },
             "dark_prayer"
           ],
-          "min": 1,
-          "max": 1
+          "min" : 1,
+          "max" : 1
         }
       ]
     },
-    "cultists": {
-      "name": "Cultists",
-      "description": "Humans who have sold their souls to the dark gods.",
-      "subfactions": [
+    "cultists" : {
+      "name" : "Cultists",
+      "description" : "Humans who have sold their souls to the dark gods.",
+      "subfactions" : [
         "none",
         "change_traitors",
         "pestilence_focus"
       ],
-      "min": 10,
-      "max": 30,
-      "category": "core",
-      "models": [
+      "min" : 10,
+      "max" : 30,
+      "category" : "core",
+      "models" : [
         {
-          "name": "Cultist",
-          "movement": 6,
-          "courage": 5,
-          "shoot": 5,
-          "fight": 5,
-          "defense": 4,
-          "reflexes": 5,
-          "weapons": [
+          "name" : "Cultist",
+          "movement" : 6,
+          "courage" : 5,
+          "shoot" : 5,
+          "fight" : 5,
+          "defense" : 4,
+          "reflexes" : 5,
+          "weapons" : [
             "frags",
             "ccw",
             "defense_rifle"
           ],
-          "options": [
+          "options" : [
             {
-              "replaceWeapon": "defense_rifle",
-              "withWeapon": [
+              "replaceWeapon" : "defense_rifle",
+              "withWeapon" : [
                 [
                   "pistol",
                   {
-                    "id": "ccw",
-                    "count": 2
+                    "id" : "ccw",
+                    "count" : 2
                   }
                 ],
                 [
                   "shotgun",
                   {
-                    "id": "ccw",
-                    "count": 2
+                    "id" : "ccw",
+                    "count" : 2
                   }
                 ]
               ]
             },
             {
-              "replaceWeapon": "defense_rifle",
-              "withWeapon": [
+              "replaceWeapon" : "defense_rifle",
+              "withWeapon" : [
                 "flamethrower",
                 "light_machinegun"
               ],
-              "modelLimit": "2/10"
+              "modelLimit" : "2/10"
             }
           ],
-          "min": 10,
-          "max": 30
+          "min" : 10,
+          "max" : 30
         }
       ]
     },
-    "plague_walkers": {
-      "name": "Plague Walkers",
-      "description": "Humans who have been mutated into walking undead.",
-      "subfactions": [
+    "plague_walkers" : {
+      "name" : "Plague Walkers",
+      "description" : "Humans who have been mutated into walking undead.",
+      "subfactions" : [
         "pestilence_focus"
       ],
-      "category": "core",
-      "models": [
+      "category" : "core",
+      "models" : [
         {
-          "name": "Plague Walker",
-          "movement": 5,
-          "courage": 5,
-          "shoot": 5,
-          "fight": 5,
-          "defense": 5,
-          "reflexes": 5,
-          "weapons": [
+          "name" : "Plague Walker",
+          "movement" : 5,
+          "courage" : 5,
+          "shoot" : 5,
+          "fight" : 5,
+          "defense" : 5,
+          "reflexes" : 5,
+          "weapons" : [
             {
-              "id": "ccw",
-              "count": 2
+              "id" : "ccw",
+              "count" : 2
             }
           ],
-          "min": 10,
-          "max": 20
+          "min" : 10,
+          "max" : 20
         }
       ]
     },
-    "traitor_marines": {
-      "name": "Traitor Marines",
-      "description": "Marines corrupted by the dark gods.",
-      "subfactions": [
+    "traitor_marines" : {
+      "name" : "Traitor Marines",
+      "description" : "Marines corrupted by the dark gods.",
+      "subfactions" : [
         "none"
       ],
-      "category": "core",
-      "options": [
+      "category" : "core",
+      "options" : [
         {
-          "modelLimit": "1/5",
-          "replaceWeapon": "marine_rifle",
-          "withWeapon": [
+          "modelLimit" : "1/5",
+          "replaceWeapon" : "marine_rifle",
+          "withWeapon" : [
             "heavy_machinegun",
             "missile_launcher",
             "laser_cannon",
@@ -1070,40 +1070,40 @@
           ]
         },
         {
-          "modelLimit": "1/10",
-          "replaceWeapon": "marine_rifle",
-          "withWeapon": [
+          "modelLimit" : "1/10",
+          "replaceWeapon" : "marine_rifle",
+          "withWeapon" : [
             "fusion_rifle"
           ],
-          "subfactions": [
+          "subfactions" : [
             "siege_focus"
           ]
         },
         {
-          "addWeapon": "fusion_bomb",
-          "modelLimit": 3
+          "addWeapon" : "fusion_bomb",
+          "modelLimit" : 3
         }
       ],
-      "models": [
+      "models" : [
         {
-          "name": "Traitor Leader",
-          "movement": 6,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 8,
-          "reflexes": 6,
-          "weapons": [
+          "name" : "Traitor Leader",
+          "movement" : 6,
+          "courage" : 6,
+          "shoot" : 6,
+          "fight" : 6,
+          "defense" : 8,
+          "reflexes" : 6,
+          "weapons" : [
             "marine_rifle",
             "heavy_ccw",
             "at_grenade"
           ],
-          "options": [
+          "options" : [
             {
-              "replaceWeapon": [
+              "replaceWeapon" : [
                 "marine_rifle"
               ],
-              "withWeapon": [
+              "withWeapon" : [
                 "combi_plasma",
                 "combi_flamer",
                 "combi_fusion",
@@ -1111,194 +1111,194 @@
               ]
             },
             {
-              "replaceWeapon": [
+              "replaceWeapon" : [
                 "marine_rifle",
                 "heavy_ccw"
               ],
-              "withWeapon": [
+              "withWeapon" : [
                 [
                   "marine_pistol",
                   {
-                    "id": "chainsword",
-                    "count": 2
+                    "id" : "chainsword",
+                    "count" : 2
                   }
                 ],
                 {
-                  "id": "energy_claws",
-                  "count": 4
+                  "id" : "energy_claws",
+                  "count" : 4
                 }
               ]
             },
             {
-              "replaceWeapon": {
-                "id": "chainsword",
-                "count": 2
+              "replaceWeapon" : {
+                "id" : "chainsword",
+                "count" : 2
               },
-              "withWeapon": [
+              "withWeapon" : [
                 {
-                  "id": "energy_mace",
-                  "count": 2
+                  "id" : "energy_mace",
+                  "count" : 2
                 },
                 {
-                  "id": "energy_axe",
-                  "count": 2
+                  "id" : "energy_axe",
+                  "count" : 2
                 },
                 {
-                  "id": "energy_sword",
-                  "count": 2
+                  "id" : "energy_sword",
+                  "count" : 2
                 },
                 {
-                  "id": "energy_fist",
-                  "count": 2
+                  "id" : "energy_fist",
+                  "count" : 2
                 },
                 {
-                  "id": "energy_hammer",
-                  "count": 2
+                  "id" : "energy_hammer",
+                  "count" : 2
                 },
                 {
-                  "id": "energy_claws",
-                  "count": 3
+                  "id" : "energy_claws",
+                  "count" : 3
                 }
               ]
             },
             {
-              "replaceWeapon": "marine_pistol",
-              "withWeapon": [
+              "replaceWeapon" : "marine_pistol",
+              "withWeapon" : [
                 "plasma_pistol"
               ]
             }
           ],
-          "min": 1,
-          "max": 1
+          "min" : 1,
+          "max" : 1
         },
         {
-          "name": "Traitor Marine",
-          "movement": 6,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 8,
-          "reflexes": 6,
-          "weapons": [
+          "name" : "Traitor Marine",
+          "movement" : 6,
+          "courage" : 6,
+          "shoot" : 6,
+          "fight" : 6,
+          "defense" : 8,
+          "reflexes" : 6,
+          "weapons" : [
             "marine_rifle",
             "heavy_ccw",
             "at_grenade"
           ],
-          "options": [
+          "options" : [
             {
-              "replaceWeapon": [
+              "replaceWeapon" : [
                 "marine_rifle",
                 "heavy_ccw"
               ],
-              "withWeapon": [
+              "withWeapon" : [
                 [
                   "marine_pistol",
                   {
-                    "id": "chainsword",
-                    "count": 2
+                    "id" : "chainsword",
+                    "count" : 2
                   }
                 ]
               ]
             }
           ],
-          "min": 4,
-          "max": 20
+          "min" : 4,
+          "max" : 20
         }
       ]
     },
-    "lord_of_pestilence": {
-      "name": "Lord of Pestilence",
-      "description": "A lord of death and decay.",
-      "subfactions": [
+    "lord_of_pestilence" : {
+      "name" : "Lord of Pestilence",
+      "description" : "A lord of death and decay.",
+      "subfactions" : [
         "pestilence_focus"
       ],
-      "category": "command",
-      "models": [
+      "category" : "command",
+      "models" : [
         {
-          "name": "Lord of Pestilence",
-          "movement": 5,
-          "courage": 7,
-          "shoot": 7,
-          "fight": 7,
-          "defense": 9,
-          "reflexes": 6,
-          "weapons": [
+          "name" : "Lord of Pestilence",
+          "movement" : 5,
+          "courage" : 7,
+          "shoot" : 7,
+          "fight" : 7,
+          "defense" : 9,
+          "reflexes" : 6,
+          "weapons" : [
             {
-              "id": "pestilence_great_cleaver",
-              "count": 3
+              "id" : "pestilence_great_cleaver",
+              "count" : 3
             }
           ],
-          "options": [
+          "options" : [
             {
-              "replaceWeapon": [
+              "replaceWeapon" : [
                 {
-                  "id": "pestilence_great_cleaver",
-                  "count": 3
+                  "id" : "pestilence_great_cleaver",
+                  "count" : 3
                 }
               ],
-              "withWeapon": [
+              "withWeapon" : [
                 {
-                  "id": "pestilence_scythe",
-                  "count": 3
+                  "id" : "pestilence_scythe",
+                  "count" : 3
                 },
                 [
                   {
-                    "id": "pestilence_claw",
-                    "count": 3
+                    "id" : "pestilence_claw",
+                    "count" : 3
                   },
                   "pestilence_sprayer"
                 ]
               ]
             }
           ],
-          "rules": [
+          "rules" : [
             {
-              "id": "leader_x",
-              "x": "Infantry"
+              "id" : "leader_x",
+              "x" : "Infantry"
             },
             {
-              "id": "wounds",
-              "x": 3
+              "id" : "wounds",
+              "x" : 3
             },
             {
-              "id": "melee_tactics",
-              "x": 2
+              "id" : "melee_tactics",
+              "x" : 2
             },
             "ambush"
           ],
-          "min": 1,
-          "max": 1
+          "min" : 1,
+          "max" : 1
         }
       ]
     },
-    "pestilence_psychic": {
-      "name": "Pestilence Psychic",
-      "description": "A powerful infected marine whose mental powers can be used for destruction.",
-      "subfactions": [
+    "pestilence_psychic" : {
+      "name" : "Pestilence Psychic",
+      "description" : "A powerful infected marine whose mental powers can be used for destruction.",
+      "subfactions" : [
         "pestilence_focus"
       ],
-      "category": "command",
-      "models": [
+      "category" : "command",
+      "models" : [
         {
-          "name": "Pestilence Psychic",
-          "movement": 6,
-          "courage": 7,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 8,
-          "reflexes": 6,
-          "weapons": [
+          "name" : "Pestilence Psychic",
+          "movement" : 6,
+          "courage" : 7,
+          "shoot" : 6,
+          "fight" : 6,
+          "defense" : 8,
+          "reflexes" : 6,
+          "weapons" : [
             "marine_pistol",
             "frags",
             {
-              "id": "energy_staff",
-              "count": 4
+              "id" : "energy_staff",
+              "count" : 4
             }
           ],
-          "options": [
+          "options" : [
             {
-              "replaceWeapon": "marine_pistol",
-              "withWeapon": [
+              "replaceWeapon" : "marine_pistol",
+              "withWeapon" : [
                 "combi_fusion",
                 "combi_flamer",
                 "combi_plasma",
@@ -1308,238 +1308,238 @@
               ]
             },
             {
-              "replaceWeapon": {
-                "id": "energy_staff",
-                "count": 4
+              "replaceWeapon" : {
+                "id" : "energy_staff",
+                "count" : 4
               },
-              "withWeapon": [
+              "withWeapon" : [
                 {
-                  "id": "chainfist",
-                  "count": 4
+                  "id" : "chainfist",
+                  "count" : 4
                 },
                 {
-                  "id": "energy_mace",
-                  "count": 4
+                  "id" : "energy_mace",
+                  "count" : 4
                 },
                 {
-                  "id": "energy_axe",
-                  "count": 4
+                  "id" : "energy_axe",
+                  "count" : 4
                 },
                 {
-                  "id": "energy_fist",
-                  "count": 4
+                  "id" : "energy_fist",
+                  "count" : 4
                 },
                 {
-                  "id": "energy_hammer",
-                  "count": 4
+                  "id" : "energy_hammer",
+                  "count" : 4
                 },
                 {
-                  "id": "energy_claws",
-                  "count": 5
+                  "id" : "energy_claws",
+                  "count" : 5
                 },
                 {
-                  "id": "energy_sword",
-                  "count": 4
+                  "id" : "energy_sword",
+                  "count" : 4
                 }
               ]
             },
             {
-              "replaceRule": {
-                "id": "power",
-                "x": 1
+              "replaceRule" : {
+                "id" : "power",
+                "x" : 1
               },
-              "withRule": {
-                "id": "power",
-                "x": 2
+              "withRule" : {
+                "id" : "power",
+                "x" : 2
               }
             },
             {
-              "addRule": [
+              "addRule" : [
                 "destroyer_armor"
               ]
             }
           ],
-          "rules": [
+          "rules" : [
             {
-              "id": "power",
-              "x": 1
+              "id" : "power",
+              "x" : 1
             },
             {
-              "id": "leader_x",
-              "x": "Infantry"
+              "id" : "leader_x",
+              "x" : "Infantry"
             },
             {
-              "id": "wounds",
-              "x": 2
+              "id" : "wounds",
+              "x" : 2
             }
           ],
-          "min": 1,
-          "max": 1
+          "min" : 1,
+          "max" : 1
         }
       ]
     },
-    "pestilence_surgeon": {
-      "name": "Pestilence Surgeon",
-      "description": "A doctor infected with pestilence.",
-      "category": "specialist",
-      "rules": [
+    "pestilence_surgeon" : {
+      "name" : "Pestilence Surgeon",
+      "description" : "A doctor infected with pestilence.",
+      "category" : "specialist",
+      "rules" : [
         {
-          "id": "leader_x",
-          "x": "Infantry"
+          "id" : "leader_x",
+          "x" : "Infantry"
         },
         "medical_training",
         {
-          "id": "wounds",
-          "x": 2
+          "id" : "wounds",
+          "x" : 2
         }
       ],
-      "subfactions": [
+      "subfactions" : [
         "pestilence_focus"
       ],
-      "models": [
+      "models" : [
         {
-          "name": "Pestilence Surgeon",
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 8,
-          "movement": 6,
-          "reflexes": 6,
-          "weapons": [
+          "name" : "Pestilence Surgeon",
+          "courage" : 6,
+          "shoot" : 6,
+          "fight" : 6,
+          "defense" : 8,
+          "movement" : 6,
+          "reflexes" : 6,
+          "weapons" : [
             "pestilence_grenade",
             {
-              "id": "pestilence_sword",
-              "count": 4
+              "id" : "pestilence_sword",
+              "count" : 4
             },
             "marine_pistol"
           ],
-          "min": 1,
-          "max": 1
+          "min" : 1,
+          "max" : 1
         }
       ]
     },
-    "pestilence_marines": {
-      "name": "Pestilence Marines",
-      "description": "Marines corrupted by the dark gods.",
-      "subfactions": [
+    "pestilence_marines" : {
+      "name" : "Pestilence Marines",
+      "description" : "Marines corrupted by the dark gods.",
+      "subfactions" : [
         "pestilence_focus"
       ],
-      "category": "core",
-      "options": [
+      "category" : "core",
+      "options" : [
         {
-          "replaceWeapon": [
+          "replaceWeapon" : [
             "marine_rifle",
             "pestilence_ccw"
           ],
-          "withWeapon": [
+          "withWeapon" : [
             [
               "marine_pistol",
               {
-                "id": "pestilence_ccw",
-                "count": 2
+                "id" : "pestilence_ccw",
+                "count" : 2
               }
             ]
           ]
         }
       ],
-      "models": [
+      "models" : [
         {
-          "name": "Pestilence Marine Leader",
-          "movement": 6,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 8,
-          "reflexes": 6,
-          "weapons": [
+          "name" : "Pestilence Marine Leader",
+          "movement" : 6,
+          "courage" : 6,
+          "shoot" : 6,
+          "fight" : 6,
+          "defense" : 8,
+          "reflexes" : 6,
+          "weapons" : [
             "marine_rifle",
             "pestilence_ccw",
             "pestilence_grenade"
           ],
-          "options": [
+          "options" : [
             {
-              "replaceWeapon": [
+              "replaceWeapon" : [
                 "marine_rifle"
               ],
-              "withWeapon": [
+              "withWeapon" : [
                 "plasma_rifle"
               ]
             },
             {
-              "replaceWeapon": {
-                "id": "pestilence_ccw",
-                "count": 2
+              "replaceWeapon" : {
+                "id" : "pestilence_ccw",
+                "count" : 2
               },
-              "withWeapon": [
+              "withWeapon" : [
                 {
-                  "id": "pestilence_sword",
-                  "count": 2
+                  "id" : "pestilence_sword",
+                  "count" : 2
                 },
                 {
-                  "id": "energy_fist",
-                  "count": 2
+                  "id" : "energy_fist",
+                  "count" : 2
                 }
               ]
             },
             {
-              "replaceWeapon": "marine_pistol",
-              "withWeapon": [
+              "replaceWeapon" : "marine_pistol",
+              "withWeapon" : [
                 "plasma_pistol"
               ]
             }
           ],
-          "min": 1,
-          "max": 1
+          "min" : 1,
+          "max" : 1
         },
         {
-          "name": "Pestilence Marine",
-          "movement": 6,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 8,
-          "reflexes": 6,
-          "weapons": [
+          "name" : "Pestilence Marine",
+          "movement" : 6,
+          "courage" : 6,
+          "shoot" : 6,
+          "fight" : 6,
+          "defense" : 8,
+          "reflexes" : 6,
+          "weapons" : [
             "marine_rifle",
             "pestilence_ccw",
             "pestilence_grenade"
           ],
-          "min": 4,
-          "max": 9,
-          "options": [
+          "min" : 4,
+          "max" : 9,
+          "options" : [
             {
-              "replaceWeapon": [
+              "replaceWeapon" : [
                 "marine_rifle",
                 "pestilence_ccw"
               ],
-              "withWeapon": [
+              "withWeapon" : [
                 {
-                  "id": "pestilence_great_flail",
-                  "count": 2
+                  "id" : "pestilence_great_flail",
+                  "count" : 2
                 },
                 {
-                  "id": "pestilence_great_cleaver",
-                  "count": 2
+                  "id" : "pestilence_great_cleaver",
+                  "count" : 2
                 },
                 {
-                  "id": "pestilence_axe",
-                  "count": 2
+                  "id" : "pestilence_axe",
+                  "count" : 2
                 },
                 [
                   {
-                    "id": "pestilence_mace"
+                    "id" : "pestilence_mace"
                   },
                   {
-                    "id": "pestilence_axe"
+                    "id" : "pestilence_axe"
                   }
                 ]
               ],
-              "limit": 1
+              "limit" : 1
             },
             {
-              "modelLimit": "1/5",
-              "replaceWeapon": "marine_rifle",
-              "withWeapon": [
+              "modelLimit" : "1/5",
+              "replaceWeapon" : "marine_rifle",
+              "withWeapon" : [
                 "plasma_rifle",
                 "pestilence_sprayer",
                 "pestilence_launcher",
@@ -1547,9 +1547,9 @@
               ]
             },
             {
-              "modelLimit": "1/10",
-              "replaceWeapon": "marine_rifle",
-              "withWeapon": [
+              "modelLimit" : "1/10",
+              "replaceWeapon" : "marine_rifle",
+              "withWeapon" : [
                 "pestilence_sprayer",
                 "pestilence_launcher"
               ]
@@ -1558,461 +1558,461 @@
         }
       ]
     },
-    "pestilence_destroyers": {
-      "name": "Pestilence Destroyers",
-      "description": "Destroyers that are infected with pestilence.",
-      "rules": [
+    "pestilence_destroyers" : {
+      "name" : "Pestilence Destroyers",
+      "description" : "Destroyers that are infected with pestilence.",
+      "rules" : [
         "ambush"
       ],
-      "subfactions": [
+      "subfactions" : [
         "pestilence_focus"
       ],
-      "category": "specialist",
-      "models": [
+      "category" : "specialist",
+      "models" : [
         {
-          "name": "Pestilence Destroyer",
-          "movement": 5,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 9,
-          "reflexes": 6,
-          "weapons": [
+          "name" : "Pestilence Destroyer",
+          "movement" : 5,
+          "courage" : 6,
+          "shoot" : 6,
+          "fight" : 6,
+          "defense" : 9,
+          "reflexes" : 6,
+          "weapons" : [
             "twin_marine_rifle",
             {
-              "id": "pestilence_sword",
-              "count": 2
+              "id" : "pestilence_sword",
+              "count" : 2
             }
           ],
-          "options": [
+          "options" : [
             {
-              "replaceWeapon": "twin_marine_rifle",
-              "withWeapon": [
+              "replaceWeapon" : "twin_marine_rifle",
+              "withWeapon" : [
                 "combi_plasma",
                 "combi_flamer",
                 "combi_fusion"
               ]
             },
             {
-              "modelLimit": "2/5",
-              "replaceWeapon": "twin_marine_rifle",
-              "withWeapon": [
+              "modelLimit" : "2/5",
+              "replaceWeapon" : "twin_marine_rifle",
+              "withWeapon" : [
                 "pestilence_sprayer",
                 "pestilence_launcher",
                 "reaper_cannon"
               ]
             },
             {
-              "replaceWeapon": {
-                "id": "pestilence_sword",
-                "count": 2
+              "replaceWeapon" : {
+                "id" : "pestilence_sword",
+                "count" : 2
               },
-              "withWeapon": [
+              "withWeapon" : [
                 {
-                  "id": "pestilence_axe",
-                  "count": 2
+                  "id" : "pestilence_axe",
+                  "count" : 2
                 }
               ]
             },
             {
-              "modelLimit": "1/5",
-              "replaceWeapon": [
+              "modelLimit" : "1/5",
+              "replaceWeapon" : [
                 "twin_marine_rifle",
                 {
-                  "id": "pestilence_sword",
-                  "count": 2
+                  "id" : "pestilence_sword",
+                  "count" : 2
                 }
               ],
-              "withWeapon": [
+              "withWeapon" : [
                 {
-                  "id": "pestilence_great_flail",
-                  "count": 4
+                  "id" : "pestilence_great_flail",
+                  "count" : 4
                 }
               ]
             }
           ],
-          "min": 5,
-          "max": 10
+          "min" : 5,
+          "max" : 10
         }
       ]
     },
-    "pestilence_elite_destroyers": {
-      "name": "Pestilence Elite Destroyers",
-      "description": "Destroyers that are infected with pestilence.",
-      "rules": [
+    "pestilence_elite_destroyers" : {
+      "name" : "Pestilence Elite Destroyers",
+      "description" : "Destroyers that are infected with pestilence.",
+      "rules" : [
         "ambush"
       ],
-      "subfactions": [
+      "subfactions" : [
         "pestilence_focus"
       ],
-      "category": "specialist",
-      "models": [
+      "category" : "specialist",
+      "models" : [
         {
-          "name": "Pestilence Elite Destroyer Leader",
-          "movement": 5,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 7,
-          "defense": 9,
-          "reflexes": 6,
-          "rules": [
+          "name" : "Pestilence Elite Destroyer Leader",
+          "movement" : 5,
+          "courage" : 6,
+          "shoot" : 6,
+          "fight" : 7,
+          "defense" : 9,
+          "reflexes" : 6,
+          "rules" : [
             {
-              "id": "wounds",
-              "x": 2
+              "id" : "wounds",
+              "x" : 2
             }
           ],
-          "weapons": [
+          "weapons" : [
             "pestilence_pistol",
             {
-              "id": "pestilence_scythe",
-              "count": 2
+              "id" : "pestilence_scythe",
+              "count" : 2
             }
           ],
-          "min": 1,
-          "max": 1,
-          "options": [
+          "min" : 1,
+          "max" : 1,
+          "options" : [
             {
-              "addWeapon": [
+              "addWeapon" : [
                 "pestilence_pistol"
               ]
             }
           ]
         },
         {
-          "name": "Pestilence Elite Destroyer",
-          "movement": 5,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 7,
-          "defense": 9,
-          "reflexes": 6,
-          "rules": [
+          "name" : "Pestilence Elite Destroyer",
+          "movement" : 5,
+          "courage" : 6,
+          "shoot" : 6,
+          "fight" : 7,
+          "defense" : 9,
+          "reflexes" : 6,
+          "rules" : [
             {
-              "id": "wounds",
-              "x": 2
+              "id" : "wounds",
+              "x" : 2
             }
           ],
-          "weapons": [
+          "weapons" : [
             "pestilence_pistol",
             {
-              "id": "pestilence_scythe",
-              "count": 2
+              "id" : "pestilence_scythe",
+              "count" : 2
             }
           ],
-          "min": 2,
-          "max": 4
+          "min" : 2,
+          "max" : 4
         }
       ]
     },
-    "pestilence_hauler": {
-      "name": "Pestilence Hauler",
-      "description": "A lightly armored living strike vehicle.",
-      "rules": [
+    "pestilence_hauler" : {
+      "name" : "Pestilence Hauler",
+      "description" : "A lightly armored living strike vehicle.",
+      "rules" : [
         "vulnerable_rear",
         "damage_table_vehicle"
       ],
-      "subfactions": [
+      "subfactions" : [
         "pestilence_focus"
       ],
-      "keywords": [
+      "keywords" : [
         "Vehicle"
       ],
-      "category": "strike",
-      "models": [
+      "category" : "strike",
+      "models" : [
         {
-          "name": "Pestilence Hauler",
-          "movement": 8,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 10,
-          "reflexes": 6,
-          "weapons": [
+          "name" : "Pestilence Hauler",
+          "movement" : 8,
+          "courage" : 6,
+          "shoot" : 6,
+          "fight" : 6,
+          "defense" : 10,
+          "reflexes" : 6,
+          "weapons" : [
             {
-              "id": "pestilence_spit",
-              "mount": [
+              "id" : "pestilence_spit",
+              "mount" : [
                 "Front"
               ]
             },
             {
-              "id": "hauler_jaws",
-              "count": 3
+              "id" : "hauler_jaws",
+              "count" : 3
             },
             {
-              "id": "heavy_fusion_rifle",
-              "mount": [
+              "id" : "heavy_fusion_rifle",
+              "mount" : [
                 "Front"
               ]
             },
             {
-              "id": "missile_launcher",
-              "mount": [
+              "id" : "missile_launcher",
+              "mount" : [
                 "Front"
               ]
             }
           ],
-          "min": 1,
-          "max": 3
+          "min" : 1,
+          "max" : 3
         }
       ]
     },
-    "pestilence_tank": {
-      "name": "Pestilence Tank",
-      "description": "An armored tank helmed by Pestilence Marines.",
-      "rules": [
+    "pestilence_tank" : {
+      "name" : "Pestilence Tank",
+      "description" : "An armored tank helmed by Pestilence Marines.",
+      "rules" : [
         {
-          "id": "impact",
-          "x": 6
+          "id" : "impact",
+          "x" : 6
         },
         "vulnerable_side_rear",
         "damage_table_vehicle"
       ],
-      "subfactions": [
+      "subfactions" : [
         "pestilence_focus"
       ],
-      "keywords": [
+      "keywords" : [
         "Vehicle"
       ],
-      "category": "heavy",
-      "models": [
+      "category" : "heavy",
+      "models" : [
         {
-          "name": "Pestilence Tank",
-          "movement": 10,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 12,
-          "reflexes": 6,
-          "weapons": [
+          "name" : "Pestilence Tank",
+          "movement" : 10,
+          "courage" : 6,
+          "shoot" : 6,
+          "fight" : 6,
+          "defense" : 12,
+          "reflexes" : 6,
+          "weapons" : [
             {
-              "id": "pestilence_mortar",
-              "mount": [
+              "id" : "pestilence_mortar",
+              "mount" : [
                 "Front"
               ]
             },
             {
-              "id": "light_machinegun",
-              "mount": [
+              "id" : "light_machinegun",
+              "mount" : [
                 "Front"
               ]
             }
           ],
-          "options": [
+          "options" : [
             {
-              "addRule": [
+              "addRule" : [
                 {
-                  "id": "dozer",
-                  "name": "Dozer Blade"
+                  "id" : "dozer",
+                  "name" : "Dozer Blade"
                 }
               ]
             },
             {
-              "replaceWeapon": "light_machinegun",
-              "withWeapon": "heavy_machinegun"
+              "replaceWeapon" : "light_machinegun",
+              "withWeapon" : "heavy_machinegun"
             },
             {
-              "addWeapon": [
+              "addWeapon" : [
                 {
-                  "id": "pestilence_sprayer",
-                  "mount": [
+                  "id" : "pestilence_sprayer",
+                  "mount" : [
                     "Front"
                   ],
-                  "count": 2
+                  "count" : 2
                 },
                 {
-                  "id": "pestilence_cannon",
-                  "mount": [
+                  "id" : "pestilence_cannon",
+                  "mount" : [
                     "Front"
                   ],
-                  "count": 2
+                  "count" : 2
                 }
               ],
-              "limit": 1
+              "limit" : 1
             }
           ],
-          "min": 1,
-          "max": 1
+          "min" : 1,
+          "max" : 1
         }
       ]
     },
-    "traitor_berzerkers": {
-      "name": "Traitor Berzerkers",
-      "description": "Marines corrupted by the dark gods filled with rage.",
-      "subfactions": [
+    "traitor_berzerkers" : {
+      "name" : "Traitor Berzerkers",
+      "description" : "Marines corrupted by the dark gods filled with rage.",
+      "subfactions" : [
         "rage_focus"
       ],
-      "category": "core",
-      "models": [
+      "category" : "core",
+      "models" : [
         {
-          "name": "Berzerker Leader",
-          "movement": 6,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 8,
-          "reflexes": 6,
-          "weapons": [
+          "name" : "Berzerker Leader",
+          "movement" : 6,
+          "courage" : 6,
+          "shoot" : 6,
+          "fight" : 6,
+          "defense" : 8,
+          "reflexes" : 6,
+          "weapons" : [
             "marine_rifle",
             "at_grenade",
             {
-              "id": "chainsword",
-              "count": 3
+              "id" : "chainsword",
+              "count" : 3
             }
           ],
-          "options": [
+          "options" : [
             {
-              "replaceWeapon": [
+              "replaceWeapon" : [
                 "marine_pistol"
               ],
-              "withWeapon": [
+              "withWeapon" : [
                 "combi_plasma",
                 "combi_flamer",
                 "combi_fusion",
                 "twin_marine_rifle",
                 "marine_rifle",
                 {
-                  "id": "chainaxe",
-                  "count": 2
+                  "id" : "chainaxe",
+                  "count" : 2
                 }
               ]
             },
             {
-              "replaceWeapon": "marine_pistol",
-              "withWeapon": [
+              "replaceWeapon" : "marine_pistol",
+              "withWeapon" : [
                 "plasma_pistol"
               ]
             },
             {
-              "replaceWeapon": {
-                "id": "chainsword",
-                "count": 3
+              "replaceWeapon" : {
+                "id" : "chainsword",
+                "count" : 3
               },
-              "withWeapon": [
+              "withWeapon" : [
                 {
-                  "id": "energy_mace",
-                  "count": 3
+                  "id" : "energy_mace",
+                  "count" : 3
                 },
                 {
-                  "id": "energy_axe",
-                  "count": 3
+                  "id" : "energy_axe",
+                  "count" : 3
                 },
                 {
-                  "id": "energy_sword",
-                  "count": 3
+                  "id" : "energy_sword",
+                  "count" : 3
                 },
                 {
-                  "id": "energy_fist",
-                  "count": 3
+                  "id" : "energy_fist",
+                  "count" : 3
                 },
                 {
-                  "id": "energy_hammer",
-                  "count": 3
+                  "id" : "energy_hammer",
+                  "count" : 3
                 },
                 {
-                  "id": "energy_claws",
-                  "count": 4
+                  "id" : "energy_claws",
+                  "count" : 4
                 },
                 {
-                  "id": "chainaxe",
-                  "count": 3
+                  "id" : "chainaxe",
+                  "count" : 3
                 }
               ]
             },
             {
-              "replaceWeapon": [
+              "replaceWeapon" : [
                 "marine_pistol",
                 {
-                  "id": "chainsword",
-                  "count": 3
+                  "id" : "chainsword",
+                  "count" : 3
                 }
               ],
-              "withWeapon": [
+              "withWeapon" : [
                 {
-                  "id": "energy_claws",
-                  "count": 5
+                  "id" : "energy_claws",
+                  "count" : 5
                 }
               ]
             }
           ],
-          "min": 1,
-          "max": 1
+          "min" : 1,
+          "max" : 1
         },
         {
-          "name": "Berzerker Marine",
-          "movement": 6,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 8,
-          "reflexes": 6,
-          "weapons": [
+          "name" : "Berzerker Marine",
+          "movement" : 6,
+          "courage" : 6,
+          "shoot" : 6,
+          "fight" : 6,
+          "defense" : 8,
+          "reflexes" : 6,
+          "weapons" : [
             "marine_pistol",
             {
-              "id": "chainsword",
-              "count": 3
+              "id" : "chainsword",
+              "count" : 3
             },
             "at_grenade"
           ],
-          "options": [
+          "options" : [
             {
-              "modelLimit": 2,
-              "replaceWeapon": "marine_pistol",
-              "withWeapon": [
+              "modelLimit" : 2,
+              "replaceWeapon" : "marine_pistol",
+              "withWeapon" : [
                 "plasma_pistol"
               ]
             },
             {
-              "replaceWeapon": "marine_pistol",
-              "withWeapon": {
-                "id": "chainaxe",
-                "count": 2
+              "replaceWeapon" : "marine_pistol",
+              "withWeapon" : {
+                "id" : "chainaxe",
+                "count" : 2
               }
             },
             {
-              "replaceWeapon": [
+              "replaceWeapon" : [
                 {
-                  "id": "chainsword",
-                  "count": 3
+                  "id" : "chainsword",
+                  "count" : 3
                 }
               ],
-              "withWeapon": {
-                "id": "chainaxe",
-                "count": 3
+              "withWeapon" : {
+                "id" : "chainaxe",
+                "count" : 3
               }
             }
           ],
-          "min": 4,
-          "max": 19
+          "min" : 4,
+          "max" : 19
         }
       ]
     },
-    "traitor_devastators": {
-      "name": "Traitor Devastators",
-      "description": "A squad of highly trained traitor marines armed to the teeth with advanced weaponry.",
-      "subfactions": [
+    "traitor_devastators" : {
+      "name" : "Traitor Devastators",
+      "description" : "A squad of highly trained traitor marines armed to the teeth with advanced weaponry.",
+      "subfactions" : [
         "none"
       ],
-      "category": "heavy",
-      "models": [
+      "category" : "heavy",
+      "models" : [
         {
-          "name": "Traitor Devastator Leader",
-          "movement": 6,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 8,
-          "reflexes": 6,
-          "weapons": [
+          "name" : "Traitor Devastator Leader",
+          "movement" : 6,
+          "courage" : 6,
+          "shoot" : 6,
+          "fight" : 6,
+          "defense" : 8,
+          "reflexes" : 6,
+          "weapons" : [
             "marine_rifle",
             "heavy_ccw",
             "at_grenade"
           ],
-          "options": [
+          "options" : [
             {
-              "replaceWeapon": [
+              "replaceWeapon" : [
                 "marine_rifle"
               ],
-              "withWeapon": [
+              "withWeapon" : [
                 "combi_plasma",
                 "combi_flamer",
                 "combi_fusion",
@@ -2021,82 +2021,82 @@
                 "plasma_rifle",
                 "fusion_rifle"
               ],
-              "limit": 1
+              "limit" : 1
             },
             {
-              "replaceWeapon": [
+              "replaceWeapon" : [
                 "marine_rifle",
                 "heavy_ccw"
               ],
-              "withWeapon": [
+              "withWeapon" : [
                 [
                   "marine_pistol",
                   {
-                    "id": "chainsword",
-                    "count": 2
+                    "id" : "chainsword",
+                    "count" : 2
                   }
                 ]
               ]
             },
             {
-              "replaceWeapon": {
-                "id": "chainsword",
-                "count": 2
+              "replaceWeapon" : {
+                "id" : "chainsword",
+                "count" : 2
               },
-              "withWeapon": [
+              "withWeapon" : [
                 {
-                  "id": "energy_mace",
-                  "count": 2
+                  "id" : "energy_mace",
+                  "count" : 2
                 },
                 {
-                  "id": "energy_axe",
-                  "count": 2
+                  "id" : "energy_axe",
+                  "count" : 2
                 },
                 {
-                  "id": "energy_sword",
-                  "count": 2
+                  "id" : "energy_sword",
+                  "count" : 2
                 },
                 {
-                  "id": "energy_fist",
-                  "count": 2
+                  "id" : "energy_fist",
+                  "count" : 2
                 },
                 {
-                  "id": "energy_hammer",
-                  "count": 2
+                  "id" : "energy_hammer",
+                  "count" : 2
                 },
                 {
-                  "id": "energy_claws",
-                  "count": 3
+                  "id" : "energy_claws",
+                  "count" : 3
                 }
               ]
             },
             {
-              "replaceWeapon": "marine_pistol",
-              "withWeapon": [
+              "replaceWeapon" : "marine_pistol",
+              "withWeapon" : [
                 "plasma_pistol"
               ]
             }
           ],
-          "min": 1,
-          "max": 1
+          "min" : 1,
+          "max" : 1
         },
         {
-          "name": "Traitor Devastator",
-          "movement": 6,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 8,
-          "reflexes": 6,
-          "weapons": [
+          "name" : "Traitor Devastator",
+          "movement" : 6,
+          "courage" : 6,
+          "shoot" : 6,
+          "fight" : 6,
+          "defense" : 8,
+          "reflexes" : 6,
+          "weapons" : [
             "laser_cannon",
             "at_grenade",
             "heavy_ccw"
           ],
-          "options": [
+          "options" : [
             {
-              "replaceWeapon": "laser_cannon",
-              "withWeapon": [
+              "replaceWeapon" : "laser_cannon",
+              "withWeapon" : [
                 "heavy_machinegun",
                 "autocannon",
                 "missile_launcher",
@@ -2104,141 +2104,141 @@
               ]
             }
           ],
-          "rules": [],
-          "min": 4,
-          "max": 14
+          "rules" : [],
+          "min" : 4,
+          "max" : 14
         }
       ]
     },
-    "possessed_brothers": {
-      "name": "Possessed Traitor Marines",
-      "description": "A squad of traitor marines that have been gifted with daemonic mutations to aid them in battle.",
-      "subfactions": [
+    "possessed_brothers" : {
+      "name" : "Possessed Traitor Marines",
+      "description" : "A squad of traitor marines that have been gifted with daemonic mutations to aid them in battle.",
+      "subfactions" : [
         "none"
       ],
-      "category": "specialist",
-      "rules": [
+      "category" : "specialist",
+      "rules" : [
         "mutations"
       ],
-      "options": [
+      "options" : [
         {
-          "addRule": "fly",
-          "modelLimit": "all"
+          "addRule" : "fly",
+          "modelLimit" : "all"
         }
       ],
-      "models": [
+      "models" : [
         {
-          "name": "Possessed Traitor Marine",
-          "movement": 7,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 8,
-          "reflexes": 6,
-          "weapons": [
+          "name" : "Possessed Traitor Marine",
+          "movement" : 7,
+          "courage" : 6,
+          "shoot" : 6,
+          "fight" : 6,
+          "defense" : 8,
+          "reflexes" : 6,
+          "weapons" : [
             {
-              "id": "chainsword",
-              "count": 2
+              "id" : "chainsword",
+              "count" : 2
             }
           ],
-          "rules": [],
-          "min": 5,
-          "max": 10
+          "rules" : [],
+          "min" : 5,
+          "max" : 10
         }
       ]
     },
-    "greater_possessed_brothers": {
-      "name": "Greater Possessed Traitor Marines",
-      "description": "A squad of traitor marines that have been gifted with significant daemonic mutations to aid them in battle.",
-      "min": 1,
-      "max": 2,
-      "subfactions": [
+    "greater_possessed_brothers" : {
+      "name" : "Greater Possessed Traitor Marines",
+      "description" : "A squad of traitor marines that have been gifted with significant daemonic mutations to aid them in battle.",
+      "min" : 1,
+      "max" : 2,
+      "subfactions" : [
         "none"
       ],
-      "category": "specialist",
-      "rules": [
+      "category" : "specialist",
+      "rules" : [
         "mutations",
         {
-          "id": "wounds",
-          "x": 3
+          "id" : "wounds",
+          "x" : 3
         }
       ],
-      "models": [
+      "models" : [
         {
-          "name": "Greater Possessed Traitor Marine",
-          "movement": 7,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 7,
-          "defense": 9,
-          "reflexes": 5,
-          "weapons": [
+          "name" : "Greater Possessed Traitor Marine",
+          "movement" : 7,
+          "courage" : 6,
+          "shoot" : 6,
+          "fight" : 7,
+          "defense" : 9,
+          "reflexes" : 5,
+          "weapons" : [
             {
-              "id": "huge_mutated_claw",
-              "count": 5
+              "id" : "huge_mutated_claw",
+              "count" : 5
             }
           ],
-          "min": 1,
-          "max": 2
+          "min" : 1,
+          "max" : 2
         }
       ]
     },
-    "talon_raptors": {
-      "name": "Talon Raptors",
-      "description": "A squad of elite traitor marines jumping into the fray with a jetpack.",
-      "subfactions": [
+    "talon_raptors" : {
+      "name" : "Talon Raptors",
+      "description" : "A squad of elite traitor marines jumping into the fray with a jetpack.",
+      "subfactions" : [
         "none"
       ],
-      "category": "strike",
-      "rules": [
+      "category" : "strike",
+      "rules" : [
         "ambush",
         "fly",
         "fear"
       ],
-      "options": [
+      "options" : [
         {
-          "replaceWeapon": [
+          "replaceWeapon" : [
             "marine_pistol",
             {
-              "id": "chainsword",
-              "count": 2
+              "id" : "chainsword",
+              "count" : 2
             }
           ],
-          "withWeapon": [
+          "withWeapon" : [
             {
-              "id": "energy_claws",
-              "count": 3
+              "id" : "energy_claws",
+              "count" : 3
             }
           ]
         },
         {
-          "addWeapon": "fusion_bomb",
-          "modelLimit": 3
+          "addWeapon" : "fusion_bomb",
+          "modelLimit" : 3
         }
       ],
-      "models": [
+      "models" : [
         {
-          "name": "Talon Raptor Leader",
-          "movement": 8,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 8,
-          "reflexes": 6,
-          "weapons": [
+          "name" : "Talon Raptor Leader",
+          "movement" : 8,
+          "courage" : 6,
+          "shoot" : 6,
+          "fight" : 6,
+          "defense" : 8,
+          "reflexes" : 6,
+          "weapons" : [
             "marine_pistol",
             "at_grenade",
             {
-              "id": "chainsword",
-              "count": 2
+              "id" : "chainsword",
+              "count" : 2
             }
           ],
-          "options": [
+          "options" : [
             {
-              "replaceWeapon": [
+              "replaceWeapon" : [
                 "marine_pistol"
               ],
-              "withWeapon": [
+              "withWeapon" : [
                 "combi_plasma",
                 "combi_flamer",
                 "combi_fusion",
@@ -2248,311 +2248,311 @@
               ]
             },
             {
-              "replaceWeapon": {
-                "id": "chainsword",
-                "count": 2
+              "replaceWeapon" : {
+                "id" : "chainsword",
+                "count" : 2
               },
-              "withWeapon": [
+              "withWeapon" : [
                 {
-                  "id": "energy_mace",
-                  "count": 2
+                  "id" : "energy_mace",
+                  "count" : 2
                 },
                 {
-                  "id": "energy_axe",
-                  "count": 2
+                  "id" : "energy_axe",
+                  "count" : 2
                 },
                 {
-                  "id": "energy_sword",
-                  "count": 2
+                  "id" : "energy_sword",
+                  "count" : 2
                 },
                 {
-                  "id": "energy_fist",
-                  "count": 2
+                  "id" : "energy_fist",
+                  "count" : 2
                 },
                 {
-                  "id": "energy_hammer",
-                  "count": 2
+                  "id" : "energy_hammer",
+                  "count" : 2
                 },
                 {
-                  "id": "energy_claws",
-                  "count": 3
+                  "id" : "energy_claws",
+                  "count" : 3
                 },
                 {
-                  "id": "chainaxe",
-                  "count": 2
+                  "id" : "chainaxe",
+                  "count" : 2
                 }
               ]
             }
           ],
-          "min": 1,
-          "max": 1
+          "min" : 1,
+          "max" : 1
         },
         {
-          "name": "Talon Raptor",
-          "movement": 8,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 8,
-          "reflexes": 6,
-          "weapons": [
+          "name" : "Talon Raptor",
+          "movement" : 8,
+          "courage" : 6,
+          "shoot" : 6,
+          "fight" : 6,
+          "defense" : 8,
+          "reflexes" : 6,
+          "weapons" : [
             "marine_pistol",
             "at_grenade",
             {
-              "id": "chainsword",
-              "count": 2
+              "id" : "chainsword",
+              "count" : 2
             }
           ],
-          "options": [
+          "options" : [
             {
-              "replaceWeapon": [
+              "replaceWeapon" : [
                 "marine_pistol",
                 {
-                  "id": "chainsword",
-                  "count": 2
+                  "id" : "chainsword",
+                  "count" : 2
                 }
               ],
-              "withWeapon": [
+              "withWeapon" : [
                 [
                   "plasma_pistol",
                   {
-                    "id": "chainsword",
-                    "count": 2
+                    "id" : "chainsword",
+                    "count" : 2
                   }
                 ],
                 "plasma_rifle",
                 "flamethrower",
                 "fusion_rifle"
               ],
-              "modelLimit": 2
+              "modelLimit" : 2
             }
           ],
-          "min": 4,
-          "max": 14
+          "min" : 4,
+          "max" : 14
         }
       ]
     },
-    "traitor_destoyers": {
-      "name": "Traitor Destroyers",
-      "description": "Destroyers that have been corrupted by the dark gods.",
-      "rules": [
+    "traitor_destoyers" : {
+      "name" : "Traitor Destroyers",
+      "description" : "Destroyers that have been corrupted by the dark gods.",
+      "rules" : [
         "ambush"
       ],
-      "subfactions": [
+      "subfactions" : [
         "none"
       ],
-      "category": "specialist",
-      "options": [
+      "category" : "specialist",
+      "options" : [
         {
-          "replaceWeapon": "twin_marine_rifle",
-          "withWeapon": [
+          "replaceWeapon" : "twin_marine_rifle",
+          "withWeapon" : [
             "combi_plasma",
             "combi_flamer",
             "combi_fusion"
           ]
         },
         {
-          "replaceWeapon": "twin_marine_rifle",
-          "withWeapon": [
+          "replaceWeapon" : "twin_marine_rifle",
+          "withWeapon" : [
             "heavy_flamethrower",
             "reaper_cannon"
           ],
-          "modelLimit": "1/5"
+          "modelLimit" : "1/5"
         },
         {
-          "replaceWeapon": {
-            "id": "chainaxe",
-            "count": 2
+          "replaceWeapon" : {
+            "id" : "chainaxe",
+            "count" : 2
           },
-          "withWeapon": [
+          "withWeapon" : [
             {
-              "id": "chainfist",
-              "count": 2
+              "id" : "chainfist",
+              "count" : 2
             },
             {
-              "id": "energy_mace",
-              "count": 2
+              "id" : "energy_mace",
+              "count" : 2
             },
             {
-              "id": "energy_axe",
-              "count": 2
+              "id" : "energy_axe",
+              "count" : 2
             },
             {
-              "id": "energy_fist",
-              "count": 2
+              "id" : "energy_fist",
+              "count" : 2
             },
             {
-              "id": "energy_hammer",
-              "count": 2
+              "id" : "energy_hammer",
+              "count" : 2
             },
             {
-              "id": "energy_claws",
-              "count": 3
+              "id" : "energy_claws",
+              "count" : 3
             }
           ]
         },
         {
-          "replaceWeapon": [
+          "replaceWeapon" : [
             "twin_marine_rifle",
             {
-              "id": "chainaxe",
-              "count": 2
+              "id" : "chainaxe",
+              "count" : 2
             }
           ],
-          "withWeapon": [
+          "withWeapon" : [
             {
-              "id": "energy_claws",
-              "count": 4
+              "id" : "energy_claws",
+              "count" : 4
             }
           ]
         },
         {
-          "addWeapon": [
+          "addWeapon" : [
             "missile_rack"
           ],
-          "modelLimit": "1/5",
-          "subfactions": [
+          "modelLimit" : "1/5",
+          "subfactions" : [
             "siege_focus"
           ]
         }
       ],
-      "models": [
+      "models" : [
         {
-          "name": "Traitor Destroyer Leader",
-          "movement": 5,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 9,
-          "reflexes": 6,
-          "weapons": [
+          "name" : "Traitor Destroyer Leader",
+          "movement" : 5,
+          "courage" : 6,
+          "shoot" : 6,
+          "fight" : 6,
+          "defense" : 9,
+          "reflexes" : 6,
+          "weapons" : [
             "twin_marine_rifle",
             {
-              "id": "chainaxe",
-              "count": 2
+              "id" : "chainaxe",
+              "count" : 2
             }
           ],
-          "min": 1,
-          "max": 1
+          "min" : 1,
+          "max" : 1
         },
         {
-          "name": "Traitor Destroyer",
-          "movement": 5,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 9,
-          "reflexes": 6,
-          "weapons": [
+          "name" : "Traitor Destroyer",
+          "movement" : 5,
+          "courage" : 6,
+          "shoot" : 6,
+          "fight" : 6,
+          "defense" : 9,
+          "reflexes" : 6,
+          "weapons" : [
             "twin_marine_rifle",
             {
-              "id": "chainaxe",
-              "count": 2
+              "id" : "chainaxe",
+              "count" : 2
             }
           ],
-          "min": 4,
-          "max": 9
+          "min" : 4,
+          "max" : 9
         }
       ]
     },
-    "mutated_destoyers": {
-      "name": "Mutated Destroyers",
-      "description": "Destroyers that have been corrupted by the dark gods and have been gifted with extra mutations to aid them in battle.",
-      "rules": [
+    "mutated_destoyers" : {
+      "name" : "Mutated Destroyers",
+      "description" : "Destroyers that have been corrupted by the dark gods and have been gifted with extra mutations to aid them in battle.",
+      "rules" : [
         "ambush",
         {
-          "id": "wounds",
-          "x": 2
+          "id" : "wounds",
+          "x" : 2
         }
       ],
-      "category": "specialist",
-      "subfactions": [
+      "category" : "specialist",
+      "subfactions" : [
         "none"
       ],
-      "models": [
+      "models" : [
         {
-          "name": "Mutated Destroyer",
-          "movement": 4,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 9,
-          "reflexes": 5,
-          "weapons": [
+          "name" : "Mutated Destroyer",
+          "movement" : 4,
+          "courage" : 6,
+          "shoot" : 6,
+          "fight" : 6,
+          "defense" : 9,
+          "reflexes" : 5,
+          "weapons" : [
             {
-              "id": "mutated_fists",
-              "count": 3
+              "id" : "mutated_fists",
+              "count" : 3
             },
             "mutated_guns"
           ],
-          "min": 1,
-          "max": 3,
-          "rules": []
+          "min" : 1,
+          "max" : 3,
+          "rules" : []
         }
       ]
     },
-    "traitor_bikers": {
-      "name": "Traitor Bikers",
-      "description": "Traitor marines on combat bikes.",
-      "rules": [
+    "traitor_bikers" : {
+      "name" : "Traitor Bikers",
+      "description" : "Traitor marines on combat bikes.",
+      "rules" : [
         {
-          "id": "impact",
-          "x": 1
+          "id" : "impact",
+          "x" : 1
         }
       ],
-      "subfactions": [
+      "subfactions" : [
         "none"
       ],
-      "category": "strike",
-      "options": [
+      "category" : "strike",
+      "options" : [
         {
-          "replaceWeapon": [
+          "replaceWeapon" : [
             "marine_pistol"
           ],
-          "withWeapon": [
+          "withWeapon" : [
             "marine_rifle"
           ]
         },
         {
-          "addWeapon": [
+          "addWeapon" : [
             "twin_marine_rifle"
           ]
         },
         {
-          "replaceWeapon": "twin_marine_rifle",
-          "withWeapon": [
+          "replaceWeapon" : "twin_marine_rifle",
+          "withWeapon" : [
             "plasma_rifle",
             "flamethrower",
             "fusion_rifle"
           ]
         }
       ],
-      "models": [
+      "models" : [
         {
-          "name": "Traitor Biker Leader",
-          "movement": 8,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 8,
-          "reflexes": 6,
-          "weapons": [
+          "name" : "Traitor Biker Leader",
+          "movement" : 8,
+          "courage" : 6,
+          "shoot" : 6,
+          "fight" : 6,
+          "defense" : 8,
+          "reflexes" : 6,
+          "weapons" : [
             "marine_pistol",
             "frags",
             {
-              "id": "chainsword",
-              "count": 2
+              "id" : "chainsword",
+              "count" : 2
             }
           ],
-          "options": [
+          "options" : [
             {
-              "replaceWeapon": [
+              "replaceWeapon" : [
                 "marine_pistol"
               ],
-              "withWeapon": [
+              "withWeapon" : [
                 {
-                  "id": "energy_claws",
-                  "count": 2
+                  "id" : "energy_claws",
+                  "count" : 2
                 },
                 "combi_plasma",
                 "combi_flamer",
@@ -2562,148 +2562,148 @@
               ]
             },
             {
-              "replaceWeapon": [
+              "replaceWeapon" : [
                 {
-                  "id": "chainsword",
-                  "count": 2
+                  "id" : "chainsword",
+                  "count" : 2
                 }
               ],
-              "withWeapon": [
+              "withWeapon" : [
                 {
-                  "id": "energy_sword",
-                  "count": 2
+                  "id" : "energy_sword",
+                  "count" : 2
                 },
                 {
-                  "id": "energy_fist",
-                  "count": 2
+                  "id" : "energy_fist",
+                  "count" : 2
                 },
                 {
-                  "id": "energy_hammer",
-                  "count": 2
+                  "id" : "energy_hammer",
+                  "count" : 2
                 }
               ]
             }
           ],
-          "min": 1,
-          "max": 1
+          "min" : 1,
+          "max" : 1
         },
         {
-          "name": "Traitor Biker",
-          "movement": 8,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 8,
-          "reflexes": 6,
-          "weapons": [
+          "name" : "Traitor Biker",
+          "movement" : 8,
+          "courage" : 6,
+          "shoot" : 6,
+          "fight" : 6,
+          "defense" : 8,
+          "reflexes" : 6,
+          "weapons" : [
             "marine_pistol",
             {
-              "id": "chainsword",
-              "count": 2
+              "id" : "chainsword",
+              "count" : 2
             },
             "frags"
           ],
-          "options": [
+          "options" : [
             {
-              "replaceWeapon": [
+              "replaceWeapon" : [
                 "marine_pistol"
               ],
-              "withWeapon": [
+              "withWeapon" : [
                 "fusion_rifle",
                 "flamethrower",
                 "plasma_rifle"
               ],
-              "modelLimit": 2
+              "modelLimit" : 2
             }
           ],
-          "min": 2,
-          "max": 8
+          "min" : 2,
+          "max" : 8
         }
       ],
-      "keywords": [
+      "keywords" : [
         "Biker"
       ]
     },
-    "daemon_spawn": {
-      "name": "Daemon Spawn",
-      "description": "Horribly mutated beings that run rampant on the battlefield.",
-      "rules": [
+    "daemon_spawn" : {
+      "name" : "Daemon Spawn",
+      "description" : "Horribly mutated beings that run rampant on the battlefield.",
+      "rules" : [
         "mutations",
         "agile",
         "fear",
         {
-          "id": "wounds",
-          "x": 2
+          "id" : "wounds",
+          "x" : 2
         }
       ],
-      "subfactions": [
+      "subfactions" : [
         "none",
         "change_traitors",
         "rage_focus",
         "pestilence_focus"
       ],
-      "category": "strike",
-      "models": [
+      "category" : "strike",
+      "models" : [
         {
-          "name": "Daemon Spawn",
-          "movement": 7,
-          "courage": 7,
-          "shoot": 0,
-          "fight": 5,
-          "defense": 7,
-          "reflexes": 6,
-          "weapons": [
+          "name" : "Daemon Spawn",
+          "movement" : 7,
+          "courage" : 7,
+          "shoot" : 0,
+          "fight" : 5,
+          "defense" : 7,
+          "reflexes" : 6,
+          "weapons" : [
             {
-              "id": "claws",
-              "count": 3
+              "id" : "claws",
+              "count" : 3
             }
           ],
-          "rules": [],
-          "min": 1,
-          "max": 5
+          "rules" : [],
+          "min" : 1,
+          "max" : 5
         }
       ]
     },
-    "traitor_apc": {
-      "name": "Traitor APC",
-      "description": "A durable transport built by the loyal marines.",
-      "rules": [
+    "traitor_apc" : {
+      "name" : "Traitor APC",
+      "description" : "A durable transport built by the loyal marines.",
+      "rules" : [
         {
-          "id": "impact",
-          "x": 3
+          "id" : "impact",
+          "x" : 3
         },
         {
-          "id": "transport",
-          "x": 11
+          "id" : "transport",
+          "x" : 11
         },
         "vulnerable_side_rear",
         "damage_table_vehicle"
       ],
-      "subfactions": [
+      "subfactions" : [
         "none",
         "change_traitors",
         "pestilence_focus"
       ],
-      "category": "transport",
-      "keywords": [
+      "category" : "transport",
+      "keywords" : [
         "Vehicle"
       ],
-      "models": [
+      "models" : [
         {
-          "name": "Traitor APC",
-          "movement": 10,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 11,
-          "reflexes": 6,
-          "weapons": [
+          "name" : "Traitor APC",
+          "movement" : 10,
+          "courage" : 6,
+          "shoot" : 6,
+          "fight" : 6,
+          "defense" : 11,
+          "reflexes" : 6,
+          "weapons" : [
             "twin_marine_rifle"
           ],
-          "options": [
+          "options" : [
             {
-              "replaceWeapon": "twin_marine_rifle",
-              "withWeapon": [
+              "replaceWeapon" : "twin_marine_rifle",
+              "withWeapon" : [
                 "combi_plasma",
                 "combi_flamer",
                 "combi_fusion",
@@ -2711,68 +2711,68 @@
               ]
             },
             {
-              "addRule": [
+              "addRule" : [
                 "spiked_ram",
                 {
-                  "id": "dozer",
-                  "name": "Dozer Blade"
+                  "id" : "dozer",
+                  "name" : "Dozer Blade"
                 },
                 "doom_siren"
               ]
             }
           ],
-          "min": 1,
-          "max": 1
+          "min" : 1,
+          "max" : 1
         }
       ]
     },
-    "traitor_tank": {
-      "name": "Traitor Battle Tank",
-      "description": "An armored tank helmed by the Traitor Marines.",
-      "rules": [
+    "traitor_tank" : {
+      "name" : "Traitor Battle Tank",
+      "description" : "An armored tank helmed by the Traitor Marines.",
+      "rules" : [
         {
-          "id": "impact",
-          "x": 6
+          "id" : "impact",
+          "x" : 6
         },
         "vulnerable_side_rear",
         "damage_table_vehicle"
       ],
-      "subfactions": [
+      "subfactions" : [
         "none",
         "change_traitors",
         "pestilence_focus"
       ],
-      "keywords": [
+      "keywords" : [
         "Vehicle"
       ],
-      "category": "heavy",
-      "models": [
+      "category" : "heavy",
+      "models" : [
         {
-          "name": "Battle Tank",
-          "movement": 10,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 3,
-          "defense": 12,
-          "reflexes": 5,
-          "weapons": [
+          "name" : "Battle Tank",
+          "movement" : 10,
+          "courage" : 6,
+          "shoot" : 6,
+          "fight" : 3,
+          "defense" : 12,
+          "reflexes" : 5,
+          "weapons" : [
             "heavy_autocannon"
           ],
-          "options": [
+          "options" : [
             {
-              "addRule": [
+              "addRule" : [
                 {
-                  "id": "spiked_ram"
+                  "id" : "spiked_ram"
                 },
                 {
-                  "id": "dozer",
-                  "name": "Dozer Blade"
+                  "id" : "dozer",
+                  "name" : "Dozer Blade"
                 },
                 "doom_siren"
               ]
             },
             {
-              "addWeapon": [
+              "addWeapon" : [
                 "combi_plasma",
                 "combi_flamer",
                 "combi_fusion",
@@ -2780,18 +2780,18 @@
               ]
             },
             {
-              "addWeapon": [
+              "addWeapon" : [
                 [
                   {
-                    "id": "heavy_machinegun",
-                    "mount": [
+                    "id" : "heavy_machinegun",
+                    "mount" : [
                       "Left",
                       "Front"
                     ]
                   },
                   {
-                    "id": "heavy_machinegun",
-                    "mount": [
+                    "id" : "heavy_machinegun",
+                    "mount" : [
                       "Right",
                       "Front"
                     ]
@@ -2799,96 +2799,96 @@
                 ],
                 [
                   {
-                    "id": "laser_cannon",
-                    "mount": [
+                    "id" : "laser_cannon",
+                    "mount" : [
                       "Left",
                       "Front"
                     ]
                   },
                   {
-                    "id": "laser_cannon",
-                    "mount": [
+                    "id" : "laser_cannon",
+                    "mount" : [
                       "Right",
                       "Front"
                     ]
                   }
                 ]
               ],
-              "limit": 1
+              "limit" : 1
             },
             {
-              "replaceWeapon": "heavy_autocannon",
-              "withWeapon": [
+              "replaceWeapon" : "heavy_autocannon",
+              "withWeapon" : [
                 "demolition_cannon",
                 "twin_laser_cannon"
               ]
             }
           ],
-          "min": 1,
-          "max": 1
+          "min" : 1,
+          "max" : 1
         }
       ]
     },
-    "marine_heavy_tank": {
-      "name": "Heavy Assault APC",
-      "description": "A heavily armored transport sporting an arsenal of weapons built by the Traitor Marines.",
-      "rules": [
+    "marine_heavy_tank" : {
+      "name" : "Heavy Assault APC",
+      "description" : "A heavily armored transport sporting an arsenal of weapons built by the Traitor Marines.",
+      "rules" : [
         {
-          "id": "impact",
-          "x": 6
+          "id" : "impact",
+          "x" : 6
         },
         {
-          "id": "transport",
-          "x": 11
+          "id" : "transport",
+          "x" : 11
         },
         "vulnerable_rear",
         "damage_table_vehicle",
         "assault_ramp"
       ],
-      "subfactions": [
+      "subfactions" : [
         "none",
         "change_traitors",
         "rage_focus",
         "pestilence_focus"
       ],
-      "keywords": [
+      "keywords" : [
         "Vehicle"
       ],
-      "category": "heavy",
-      "models": [
+      "category" : "heavy",
+      "models" : [
         {
-          "name": "Heavy Assault APC",
-          "movement": 10,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 3,
-          "defense": 13,
-          "reflexes": 6,
-          "weapons": [
+          "name" : "Heavy Assault APC",
+          "movement" : 10,
+          "courage" : 6,
+          "shoot" : 6,
+          "fight" : 3,
+          "defense" : 13,
+          "reflexes" : 6,
+          "weapons" : [
             {
-              "id": "twin_heavy_machinegun",
-              "mount": [
+              "id" : "twin_heavy_machinegun",
+              "mount" : [
                 "Front"
               ]
             },
             {
-              "id": "twin_laser_cannon",
-              "mount": [
+              "id" : "twin_laser_cannon",
+              "mount" : [
                 "Left",
                 "Front"
               ]
             },
             {
-              "id": "twin_laser_cannon",
-              "mount": [
+              "id" : "twin_laser_cannon",
+              "mount" : [
                 "Right",
                 "Front"
               ]
             }
           ],
-          "options": [
+          "options" : [
             {
-              "addWeapon": [
+              "addWeapon" : [
                 "combi_plasma",
                 "combi_flamer",
                 "combi_fusion",
@@ -2897,83 +2897,83 @@
               ]
             },
             {
-              "addRule": [
+              "addRule" : [
                 "spiked_ram",
                 {
-                  "id": "dozer",
-                  "name": "Dozer Blade"
+                  "id" : "dozer",
+                  "name" : "Dozer Blade"
                 },
                 "doom_siren"
               ]
             }
           ],
-          "rules": [],
-          "min": 1,
-          "max": 1
+          "rules" : [],
+          "min" : 1,
+          "max" : 1
         }
       ]
     },
-    "infernal_brute": {
-      "name": "Infernal Brute",
-      "description": "A corrupted attack walker upgraded with infernal weapons.",
-      "rules": [
+    "infernal_brute" : {
+      "name" : "Infernal Brute",
+      "description" : "A corrupted attack walker upgraded with infernal weapons.",
+      "rules" : [
         "vulnerable_rear",
         "damage_table_vehicle"
       ],
-      "subfactions": [
+      "subfactions" : [
         "none",
         "change_traitors",
         "pestilence_focus"
       ],
-      "category": "specialist",
-      "keywords": [
+      "category" : "specialist",
+      "keywords" : [
         "Vehicle"
       ],
-      "models": [
+      "models" : [
         {
-          "name": "Infernal Brute",
-          "movement": 8,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 11,
-          "reflexes": 6,
-          "weapons": [
+          "name" : "Infernal Brute",
+          "movement" : 8,
+          "courage" : 6,
+          "shoot" : 6,
+          "fight" : 6,
+          "defense" : 11,
+          "reflexes" : 6,
+          "weapons" : [
             {
-              "id": "brute_fist",
-              "count": 4
+              "id" : "brute_fist",
+              "count" : 4
             },
             "heavy_fusion_rifle"
           ],
-          "options": [
+          "options" : [
             {
-              "replaceWeapon": "heavy_fusion_rifle",
-              "withWeapon": [
+              "replaceWeapon" : "heavy_fusion_rifle",
+              "withWeapon" : [
                 {
-                  "id": "brute_fist",
-                  "count": 4
+                  "id" : "brute_fist",
+                  "count" : 4
                 },
                 [
                   {
-                    "id": "brute_fist",
-                    "count": 4
+                    "id" : "brute_fist",
+                    "count" : 4
                   },
                   "twin_marine_rifle"
                 ],
                 [
                   {
-                    "id": "brute_fist",
-                    "count": 4
+                    "id" : "brute_fist",
+                    "count" : 4
                   },
                   "heavy_flamethrower"
                 ],
                 {
-                  "id": "brute_flail",
-                  "count": 4
+                  "id" : "brute_flail",
+                  "count" : 4
                 },
                 {
-                  "id": "brute_hammer",
-                  "count": 4
+                  "id" : "brute_hammer",
+                  "count" : 4
                 },
                 "plasma_cannon",
                 "missile_launcher",
@@ -2983,910 +2983,912 @@
               ]
             }
           ],
-          "min": 1,
-          "max": 1
+          "min" : 1,
+          "max" : 1
         }
       ]
     },
-    "havoc_mauler": {
-      "name": "Traitor Mauler",
-      "description": "A viscious beast of twisted metal and flesh made to dominate the battlefeild.",
-      "rules": [
+    "havoc_mauler" : {
+      "name" : "Traitor Mauler",
+      "description" : "A viscious beast of twisted metal and flesh made to dominate the battlefeild.",
+      "rules" : [
         "fear",
         "vulnerable_rear",
         "damage_table_vehicle"
       ],
-      "subfactions": [
+      "subfactions" : [
         "none",
         "change_traitors",
         "rage_focus"
       ],
-      "category": "heavy",
-      "keywords": [
+      "category" : "heavy",
+      "keywords" : [
         "Vehicle"
       ],
-      "models": [
+      "models" : [
         {
-          "name": "Traitor Mauler",
-          "movement": 8,
-          "courage": 6,
-          "shoot": 5,
-          "fight": 5,
-          "defense": 12,
-          "reflexes": 6,
-          "weapons": [
+          "name" : "Traitor Mauler",
+          "movement" : 8,
+          "courage" : 6,
+          "shoot" : 5,
+          "fight" : 5,
+          "defense" : 12,
+          "reflexes" : 6,
+          "weapons" : [
             {
-              "id": "fiend_claws",
-              "count": 3
+              "id" : "fiend_claws",
+              "count" : 3
             },
             {
-              "id": "maul_cutter",
-              "count": 2
+              "id" : "maul_cutter",
+              "count" : 2
             }
           ],
-          "options": [
+          "options" : [
             {
-              "replaceWeapon": {
-                "id": "maul_cutter",
-                "count": 2
+              "replaceWeapon" : {
+                "id" : "maul_cutter",
+                "count" : 2
               },
-              "withWeapon": [
+              "withWeapon" : [
                 {
-                  "id": "steel_tails",
-                  "count": 6
+                  "id" : "steel_tails",
+                  "count" : 6
                 }
               ]
             }
           ],
-          "rules": [],
-          "min": 1,
-          "max": 1
+          "rules" : [],
+          "min" : 1,
+          "max" : 1
         }
       ]
     },
-    "havoc_fiend": {
-      "name": "Traitor Fiend",
-      "description": "A viscious beast of twisted metal and flesh made to dominate the battlefeild.",
-      "rules": [
+    "havoc_fiend" : {
+      "name" : "Traitor Fiend",
+      "description" : "A viscious beast of twisted metal and flesh made to dominate the battlefeild.",
+      "rules" : [
         "fear",
         "vulnerable_rear",
         "damage_table_vehicle"
       ],
-      "subfactions": [
+      "subfactions" : [
         "none",
         "change_traitors",
         "rage_focus"
       ],
-      "category": "heavy",
-      "keywords": [
+      "category" : "heavy",
+      "keywords" : [
         "Vehicle"
       ],
-      "models": [
+      "models" : [
         {
-          "name": "Traitor Fiend",
-          "movement": 8,
-          "courage": 6,
-          "shoot": 5,
-          "fight": 5,
-          "defense": 12,
-          "reflexes": 6,
-          "weapons": [
+          "name" : "Traitor Fiend",
+          "movement" : 8,
+          "courage" : 6,
+          "shoot" : 5,
+          "fight" : 5,
+          "defense" : 12,
+          "reflexes" : 6,
+          "weapons" : [
             {
-              "id": "fiend_jaws",
-              "count": 4
+              "id" : "fiend_jaws",
+              "count" : 4
             },
             {
-              "id": "ecto_cannon",
-              "count": 2
+              "id" : "ecto_cannon",
+              "count" : 2
             }
           ],
-          "options": [
+          "options" : [
             {
-              "replaceWeapon": {
-                "id": "ecto_cannon",
-                "count": 2
+              "replaceWeapon" : {
+                "id" : "ecto_cannon",
+                "count" : 2
               },
-              "withWeapon": {
-                "id": "forge_cannon",
-                "count": 2
+              "withWeapon" : {
+                "id" : "forge_cannon",
+                "count" : 2
               }
             },
             {
-              "replaceWeapon": {
-                "id": "fiend_jaws",
-                "count": 4
+              "replaceWeapon" : {
+                "id" : "fiend_jaws",
+                "count" : 4
               },
-              "withWeapon": {
-                "id": "ecto_cannon",
-                "count": 2
+              "withWeapon" : {
+                "id" : "ecto_cannon",
+                "count" : 2
               }
             }
           ],
-          "rules": [],
-          "min": 1,
-          "max": 1
+          "rules" : [],
+          "min" : 1,
+          "max" : 1
         }
       ]
     },
-    "spider_walker": {
-      "name": "Spider Walker",
-      "description": "An infernal machine built to mimic a venomous spider.",
-      "rules": [
+    "spider_walker" : {
+      "name" : "Spider Walker",
+      "description" : "An infernal machine built to mimic a venomous spider.",
+      "rules" : [
         "walker",
         "vulnerable_side_rear",
         "damage_table_vehicle"
       ],
-      "subfactions": [
+      "subfactions" : [
         "none",
         "change_traitors",
         "rage_focus"
       ],
-      "category": "heavy",
-      "keywords": [
+      "category" : "heavy",
+      "keywords" : [
         "Vehicle"
       ],
-      "models": [
+      "models" : [
         {
-          "name": "Spider Walker",
-          "movement": 10,
-          "courage": 6,
-          "shoot": 5,
-          "fight": 5,
-          "defense": 11,
-          "reflexes": 6,
-          "weapons": [
+          "name" : "Spider Walker",
+          "movement" : 10,
+          "courage" : 6,
+          "shoot" : 5,
+          "fight" : 5,
+          "defense" : 11,
+          "reflexes" : 6,
+          "weapons" : [
             {
-              "id": "excruciating_cannons",
-              "count": 2
+              "id" : "excruciating_cannons",
+              "count" : 2
             },
             {
-              "id": "claws_and_tendrils",
-              "count": 6
+              "id" : "claws_and_tendrils",
+              "count" : 6
             }
           ],
-          "rules": [],
-          "min": 1,
-          "max": 1
+          "rules" : [],
+          "min" : 1,
+          "max" : 1
         }
       ]
     },
-    "crab_walker": {
-      "name": "Crab Walker",
-      "description": "A huge demonic creation of metal which is powered by the souls of its victims.",
-      "rules": [
+    "crab_walker" : {
+      "name" : "Crab Walker",
+      "description" : "A huge demonic creation of metal which is powered by the souls of its victims.",
+      "rules" : [
         "vulnerable_rear",
         "damage_table_vehicle"
       ],
-      "subfactions": [
+      "subfactions" : [
         "none",
         "change_traitors",
         "rage_focus",
         "pestilence_focus"
       ],
-      "category": "heavy",
-      "keywords": [
+      "category" : "heavy",
+      "keywords" : [
         "Vehicle"
       ],
-      "models": [
+      "models" : [
         {
-          "name": "Crab Walker",
-          "movement": 8,
-          "courage": 6,
-          "shoot": 5,
-          "fight": 5,
-          "defense": 12,
-          "reflexes": 6,
-          "weapons": [
+          "name" : "Crab Walker",
+          "movement" : 8,
+          "courage" : 6,
+          "shoot" : 5,
+          "fight" : 5,
+          "defense" : 12,
+          "reflexes" : 6,
+          "weapons" : [
             "crab_cannon",
             {
-              "id": "crab_claw"
+              "id" : "crab_claw"
             },
             "havoc_missiles",
             "twin_laser_cannon"
           ],
-          "options": [
+          "options" : [
             {
-              "addRule": [
+              "addRule" : [
                 "doom_siren"
               ]
             },
             {
-              "replaceWeapon": "havoc_missiles",
-              "withWeapon": [
+              "replaceWeapon" : "havoc_missiles",
+              "withWeapon" : [
                 {
-                  "id": "crab_flail",
-                  "count": 6
+                  "id" : "crab_flail",
+                  "count" : 6
                 },
                 "twin_heavy_flamethrower"
               ]
             },
             {
-              "replaceWeapon": "twin_laser_cannon",
-              "withWeapon": [
+              "replaceWeapon" : "twin_laser_cannon",
+              "withWeapon" : [
                 "reaper_cannon",
                 "twin_heavy_machinegun"
               ]
             }
           ],
-          "rules": [],
-          "min": 1,
-          "max": 1
+          "rules" : [],
+          "min" : 1,
+          "max" : 1
         }
       ]
     },
-    "havoc_dragon": {
-      "name": "Traitor Dragon",
-      "description": "A living metal airplane designed to drag other aircraft out of the air.",
-      "rules": [
+    "havoc_dragon" : {
+      "name" : "Traitor Dragon",
+      "description" : "A living metal airplane designed to drag other aircraft out of the air.",
+      "rules" : [
         "fly",
         "vulnerable_rear",
         "damage_table_vehicle"
       ],
-      "subfactions": [
+      "subfactions" : [
         "none",
         "change_traitors",
         "rage_focus"
       ],
-      "category": "strike",
-      "keywords": [
+      "category" : "strike",
+      "keywords" : [
         "Vehicle"
       ],
-      "models": [
+      "models" : [
         {
-          "name": "Traitor Dragon",
-          "movement": 12,
-          "courage": 6,
-          "shoot": 5,
-          "fight": 6,
-          "defense": 11,
-          "reflexes": 6,
-          "weapons": [
+          "name" : "Traitor Dragon",
+          "movement" : 12,
+          "courage" : 6,
+          "shoot" : 5,
+          "fight" : 6,
+          "defense" : 11,
+          "reflexes" : 6,
+          "weapons" : [
             "forge_flamethrower",
             {
-              "id": "dragon_claws",
-              "count": 4
+              "id" : "dragon_claws",
+              "count" : 4
             }
           ],
-          "options": [
+          "options" : [
             {
-              "replaceWeapon": "forge_flamethrower",
-              "withWeapon": [
+              "replaceWeapon" : "forge_flamethrower",
+              "withWeapon" : [
                 "forge_cannon"
               ]
             }
           ],
-          "rules": [],
-          "min": 1,
-          "max": 1
+          "rules" : [],
+          "min" : 1,
+          "max" : 1
         }
       ]
     },
-    "sorcerer_lord": {
-      "name": "Sorcerer Lord",
-      "description": "A master of combat that leads the forces of change.",
-      "rules": [
+    "sorcerer_lord" : {
+      "name" : "Sorcerer Lord",
+      "description" : "A master of combat that leads the forces of change.",
+      "rules" : [
         {
-          "id": "leader_x",
-          "x": "Infantry"
+          "id" : "leader_x",
+          "x" : "Infantry"
         },
         {
-          "id": "power",
-          "x": 2
+          "id" : "power",
+          "x" : 2
         },
         {
-          "id": "wounds",
-          "x": 3
+          "id" : "wounds",
+          "x" : 3
         },
         {
-          "id": "rifle_tactics",
-          "x": 2
+          "id" : "rifle_tactics",
+          "x" : 2
         }
       ],
-      "subfactions": [
+      "subfactions" : [
         "change_traitors"
       ],
-      "category": "command",
-      "models": [
+      "category" : "command",
+      "models" : [
         {
-          "name": "Sorcerer Lord",
-          "movement": 6,
-          "courage": 7,
-          "shoot": 7,
-          "fight": 7,
-          "defense": 8,
-          "reflexes": 6,
-          "weapons": [
+          "name" : "Sorcerer Lord",
+          "movement" : 6,
+          "courage" : 7,
+          "shoot" : 7,
+          "fight" : 7,
+          "defense" : 8,
+          "reflexes" : 6,
+          "weapons" : [
             "hexed_pistol",
             "at_grenade",
             {
-              "id": "energy_staff",
-              "count": 3
+              "id" : "energy_staff",
+              "count" : 3
             }
           ],
-          "options": [
+          "options" : [
             {
-              "replaceWeapon": "hexed_pistol",
-              "withWeapon": [
+              "replaceWeapon" : "hexed_pistol",
+              "withWeapon" : [
                 "plasma_pistol",
                 "hexed_flamethrower_pistol"
               ]
             },
             {
-              "replaceRule": {
-                "id": "rifle_tactics",
-                "x": 2
+              "replaceRule" : {
+                "id" : "rifle_tactics",
+                "x" : 2
               },
-              "withRule": {
-                "id": "melee_tactics",
-                "x": 2
+              "withRule" : {
+                "id" : "melee_tactics",
+                "x" : 2
               }
             },
             {
-              "addRule": "disk_of_change"
+              "addRule" : "disk_of_change"
             }
           ],
-          "min": 1,
-          "max": 1
+          "min" : 1,
+          "max" : 1
         }
       ]
     },
-    "sorcerer": {
-      "name": "Sorcerer",
-      "description": "A distinguished sorcerer who has managed to rise through the ranks of the change brothers.",
-      "rules": [
+    "sorcerer" : {
+      "name" : "Sorcerer",
+      "description" : "A distinguished sorcerer who has managed to rise through the ranks of the change brothers.",
+      "rules" : [
         {
-          "id": "leader_x",
-          "x": "Infantry"
+          "id" : "leader_x",
+          "x" : "Infantry"
         },
         {
-          "id": "power",
-          "x": 1
+          "id" : "power",
+          "x" : 1
         },
         {
-          "id": "wounds",
-          "x": 2
+          "id" : "wounds",
+          "x" : 2
         },
         {
-          "id": "rifle_tactics",
-          "x": 1
+          "id" : "rifle_tactics",
+          "x" : 1
         }
       ],
-      "subfactions": [
+      "subfactions" : [
         "change_traitors"
       ],
-      "category": "command",
-      "models": [
+      "category" : "command",
+      "models" : [
         {
-          "name": "Sorcerer",
-          "movement": 6,
-          "courage": 7,
-          "shoot": 7,
-          "fight": 7,
-          "defense": 8,
-          "reflexes": 6,
-          "weapons": [
+          "name" : "Sorcerer",
+          "movement" : 6,
+          "courage" : 7,
+          "shoot" : 7,
+          "fight" : 7,
+          "defense" : 8,
+          "reflexes" : 6,
+          "weapons" : [
             "hexed_pistol",
             "at_grenade",
             {
-              "id": "energy_staff",
-              "count": 3
+              "id" : "energy_staff",
+              "count" : 3
             }
           ],
-          "options": [
+          "options" : [
             {
-              "replaceWeapon": "hexed_pistol",
-              "withWeapon": [
+              "replaceWeapon" : "hexed_pistol",
+              "withWeapon" : [
                 "plasma_pistol",
                 "hexed_flamethrower_pistol"
               ]
             },
             {
-              "replaceRule": {
-                "id": "rifle_tactics",
-                "x": 2
+              "replaceRule" : {
+                "id" : "rifle_tactics",
+                "x" : 2
               },
-              "withRule": {
-                "id": "melee_tactics",
-                "x": 2
+              "withRule" : {
+                "id" : "melee_tactics",
+                "x" : 2
               }
             },
             {
-              "addRule": "disk_of_change"
+              "addRule" : "disk_of_change"
             }
           ],
-          "min": 1,
-          "max": 1
+          "min" : 1,
+          "max" : 1
         }
       ]
     },
-    "birdman_sorcerer": {
-      "name": "Birdman Sorcerer",
-      "description": "A mutated half bird half man sorcerer that leads demonic forces of change.",
-      "rules": [
+    "birdman_sorcerer" : {
+      "name" : "Birdman Sorcerer",
+      "description" : "A mutated half bird half man sorcerer that leads demonic forces of change.",
+      "rules" : [
         {
-          "id": "leader_x",
-          "x": "Infantry"
+          "id" : "leader_x",
+          "x" : "Infantry"
         },
         {
-          "id": "power",
-          "x": 1
+          "id" : "power",
+          "x" : 1
         },
         {
-          "id": "wounds",
-          "x": 2
+          "id" : "wounds",
+          "x" : 2
         }
       ],
-      "subfactions": [
+      "subfactions" : [
         "change_traitors"
       ],
-      "category": "specialist",
-      "models": [
+      "category" : "specialist",
+      "models" : [
         {
-          "name": "Birdman Sorcerer",
-          "movement": 6,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 6,
-          "reflexes": 4,
-          "weapons": [
+          "name" : "Birdman Sorcerer",
+          "movement" : 6,
+          "courage" : 6,
+          "shoot" : 6,
+          "fight" : 6,
+          "defense" : 6,
+          "reflexes" : 4,
+          "weapons" : [
             {
-              "id": "energy_staff",
-              "count": 3
+              "id" : "energy_staff",
+              "count" : 3
             }
           ],
-          "options": [
+          "options" : [
             {
-              "replaceRule": [
+              "replaceRule" : [
                 {
-                  "id": "power",
-                  "x": 1
+                  "id" : "power",
+                  "x" : 1
                 }
               ],
-              "withRule": [
+              "withRule" : [
                 {
-                  "id": "power",
-                  "x": 2
+                  "id" : "power",
+                  "x" : 2
                 }
               ]
             },
             {
-              "addRule": "disk_of_change"
+              "addRule" : "disk_of_change"
             }
           ],
-          "min": 1,
-          "max": 1
+          "min" : 1,
+          "max" : 1
         }
       ]
     },
-    "arch_mage": {
-      "name": "Psychic Arch-Traitor",
-      "description": "Built as a biological weapon against the Psychic God, this Arch-Marine defied his destiny and joined the deity's legions",
-      "rules": [
+    "arch_mage" : {
+      "name" : "Psychic Arch-Traitor",
+      "description" : "Built as a biological weapon against the Psychic God, this Arch-Marine defied his destiny and joined the deity's legions",
+      "rules" : [
         {
-          "id": "power",
-          "x": 3
+          "id" : "power",
+          "x" : 3
         },
         {
-          "id": "archmage_tactics",
-          "x": 3
+          "id" : "archmage_tactics",
+          "x" : 3
         },
         "damage_table_titan",
         "fly",
         "archmage",
         {
-          "id": "psychic_prowess",
-          "x": 2
+          "id" : "psychic_prowess",
+          "x" : 2
         }
       ],
-      "subfactions": [
+      "subfactions" : [
         "change_traitors"
       ],
-      "category": "super_heavy",
-      "models": [
+      "category" : "super_heavy",
+      "models" : [
         {
-          "name": "Psychic Arch-Traitor",
-          "movement": 12,
-          "courage": 7,
-          "shoot": 7,
-          "fight": 7,
-          "defense": 13,
-          "reflexes": 6,
-          "weapons": [
+          "name" : "Psychic Arch-Traitor",
+          "movement" : 12,
+          "courage" : 7,
+          "shoot" : 7,
+          "fight" : 7,
+          "defense" : 13,
+          "reflexes" : 6,
+          "weapons" : [
             "arch_staff"
           ],
-          "min": 1,
-          "max": 1
+          "min" : 1,
+          "max" : 1
         }
       ]
     },
-    "change_traitors": {
-      "name": "Psychic Traitor Marines",
-      "description": "Hexed traitor marines whose bodies have been turned to dust by a horrible curse, but fight on as mindless automatons in their remaining armor.",
-      "subfactions": [
+    "change_traitors" : {
+      "name" : "Psychic Traitor Marines",
+      "description" : "Hexed traitor marines whose bodies have been turned to dust by a horrible curse, but fight on as mindless automatons in their remaining armor.",
+      "subfactions" : [
         "change_traitors"
       ],
-      "category": "core",
-      "options": [
+      "category" : "core",
+      "options" : [
         {
-          "modelLimit": "1/5",
-          "replaceWeapon": "hexed_rifle",
-          "withWeapon": "reaper_minigun"
+          "modelLimit" : "1/5",
+          "replaceWeapon" : "hexed_rifle",
+          "withWeapon" : "reaper_minigun"
         }
       ],
-      "models": [
+      "models" : [
         {
-          "name": "Psychic Marine Sorcerer",
-          "movement": 5,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 8,
-          "reflexes": 6,
-          "weapons": [
+          "name" : "Psychic Marine Sorcerer",
+          "movement" : 5,
+          "courage" : 6,
+          "shoot" : 6,
+          "fight" : 6,
+          "defense" : 8,
+          "reflexes" : 6,
+          "weapons" : [
             "hexed_pistol",
             {
-              "id": "energy_staff",
-              "count": 2
+              "id" : "energy_staff",
+              "count" : 2
             }
           ],
-          "options": [
+          "options" : [
             {
-              "replaceRule": {
-                "id": "ward",
-                "x": 1
+              "replaceRule" : {
+                "id" : "ward",
+                "x" : 1
               },
-              "withRule": {
-                "id": "power",
-                "x": 1
+              "withRule" : {
+                "id" : "power",
+                "x" : 1
               }
             },
             {
-              "replaceWeapon": "hexed_pistol",
-              "withWeapon": [
+              "replaceWeapon" : "hexed_pistol",
+              "withWeapon" : [
                 "hexed_flamethrower_pistol",
                 "plasma_pistol"
               ]
             }
           ],
-          "rules": [
+          "rules" : [
             {
-              "id": "ward",
-              "x": 1
+              "id" : "ward",
+              "x" : 1
             }
           ],
-          "min": 1,
-          "max": 1
+          "min" : 1,
+          "max" : 1
         },
         {
-          "name": "Psychic Marine",
-          "movement": 5,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 8,
-          "reflexes": 6,
-          "weapons": [
+          "name" : "Psychic Marine",
+          "movement" : 5,
+          "courage" : 6,
+          "shoot" : 6,
+          "fight" : 6,
+          "defense" : 8,
+          "reflexes" : 6,
+          "weapons" : [
             "hexed_rifle",
             "heavy_ccw"
           ],
-          "options": [
+          "options" : [
             {
-              "replaceWeapon": "hexed_rifle",
-              "withWeapon": "hexed_flamethrower"
+              "replaceWeapon" : "hexed_rifle",
+              "withWeapon" : "hexed_flamethrower"
             }
           ],
-          "min": 4,
-          "max": 19
+          "min" : 4,
+          "max" : 19
         }
       ]
     },
-    "change_destroyers": {
-      "name": "Psychic Destroyers",
-      "description": "Change brothers in destroyer amror suffering from the same curse as their brothers, but still fight stolidly by their side.",
-      "rules": [
+    "change_destroyers" : {
+      "name" : "Psychic Destroyers",
+      "description" : "Change brothers in destroyer amror suffering from the same curse as their brothers, but still fight stolidly by their side.",
+      "rules" : [
         "ambush"
       ],
-      "subfactions": [
+      "subfactions" : [
         "change_traitors"
       ],
-      "category": "specialist",
-      "options": [
+      "category" : "specialist",
+      "options" : [
         {
-          "replaceWeapon": "twin_hexed_rifle",
-          "withWeapon": [
+          "replaceWeapon" : "twin_hexed_rifle",
+          "withWeapon" : [
             "heavy_flamethrower",
             "reaper_minigun"
           ],
-          "modelLimit": "1/5"
+          "modelLimit" : "1/5"
         },
         {
-          "addWeapon": [
+          "addWeapon" : [
             "missile_rack"
           ],
-          "modelLimit": "1/5"
+          "modelLimit" : "1/5"
         }
       ],
-      "models": [
+      "models" : [
         {
-          "name": "Psychic Destroyer Sorceror",
-          "movement": 4,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 9,
-          "reflexes": 6,
-          "weapons": [
+          "name" : "Psychic Destroyer Sorceror",
+          "movement" : 4,
+          "courage" : 6,
+          "shoot" : 6,
+          "fight" : 6,
+          "defense" : 9,
+          "reflexes" : 6,
+          "weapons" : [
             "twin_hexed_rifle",
             {
-              "id": "energy_sword",
-              "count": 2
+              "id" : "energy_sword",
+              "count" : 2
             }
           ],
-          "options": [
+          "options" : [
             {
-              "replaceRule": {
-                "id": "ward",
-                "x": 1
+              "replaceRule" : {
+                "id" : "ward",
+                "x" : 1
               },
-              "withRule": {
-                "id": "power",
-                "x": 1
+              "withRule" : {
+                "id" : "power",
+                "x" : 1
               }
             },
             {
-              "replaceWeapon": "twin_hexed_rifle",
-              "withWeapon": [
+              "replaceWeapon" : "twin_hexed_rifle",
+              "withWeapon" : [
                 {
-                  "id": "energy_sword",
-                  "count": 2
+                  "id" : "energy_sword",
+                  "count" : 2
                 }
               ]
             }
           ],
-          "rules": [
+          "rules" : [
             {
-              "id": "ward",
-              "x": 1
+              "id" : "ward",
+              "x" : 1
             }
           ],
-          "min": 1,
-          "max": 1
+          "min" : 1,
+          "max" : 1
         },
         {
-          "name": "Psychic Destroyer",
-          "movement": 4,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 9,
-          "reflexes": 6,
-          "weapons": [
+          "name" : "Psychic Destroyer",
+          "movement" : 4,
+          "courage" : 6,
+          "shoot" : 6,
+          "fight" : 6,
+          "defense" : 9,
+          "reflexes" : 6,
+          "weapons" : [
             "twin_hexed_rifle",
             {
-              "id": "energy_sword",
-              "count": 2
+              "id" : "energy_sword",
+              "count" : 2
             }
           ],
-          "min": 4,
-          "max": 9
+          "min" : 4,
+          "max" : 9
         }
       ]
     },
-    "birdmen": {
-      "name": "Birdmen",
-      "description": "Mutated half avian-half man creatures that fights with the change brothers to acheive their goals.",
-      "subfactions": [
+    "birdmen" : {
+      "name" : "Birdmen",
+      "description" : "Mutated half avian-half man creatures that fights with the change brothers to acheive their goals.",
+      "subfactions" : [
         "change_traitors"
       ],
-      "category": "core",
-      "models": [
+      "category" : "core",
+      "models" : [
         {
-          "name": "Birdman",
-          "movement": 6,
-          "courage": 5,
-          "shoot": 5,
-          "fight": 6,
-          "defense": 6,
-          "reflexes": 5,
-          "options": [
+          "name" : "Birdman",
+          "movement" : 6,
+          "courage" : 5,
+          "shoot" : 5,
+          "fight" : 6,
+          "defense" : 6,
+          "reflexes" : 5,
+          "options" : [
             {
-              "replaceWeapon": [
+              "replaceWeapon" : [
                 "marine_pistol",
                 "chainsword"
               ],
-              "withWeapon": {
-                "id": "hexed_blades",
-                "count": 2
+              "withWeapon" : {
+                "id" : "hexed_blades",
+                "count" : 2
               }
             }
           ],
-          "weapons": [
+          "weapons" : [
             "marine_pistol",
             "chainsword"
           ],
-          "min": 10,
-          "max": 30
+          "min" : 10,
+          "max" : 30
         }
       ]
     },
-    "warp_beast": {
-      "name": "Warp Beast",
-      "description": "An amalgamation of corupted flesh whose power is harnessed by a massive portal on it's back.",
-      "rules": [
+    "warp_beast" : {
+      "name" : "Warp Beast",
+      "description" : "An amalgamation of corupted flesh whose power is harnessed by a massive portal on it's back.",
+      "rules" : [
         {
-          "id": "power",
-          "x": 1
+          "id" : "power",
+          "x" : 1
         },
         "damage_table_monster",
         "vulnerable_rear"
       ],
-      "subfactions": [
+      "subfactions" : [
         "change_traitors"
       ],
-      "category": "heavy",
-      "models": [
+      "category" : "heavy",
+      "models" : [
         {
-          "name": "Warp Beast",
-          "movement": 8,
-          "courage": 6,
-          "shoot": 0,
-          "fight": 5,
-          "defense": 11,
-          "reflexes": 5,
-          "weapons": [
+          "name" : "Warp Beast",
+          "movement" : 8,
+          "courage" : 6,
+          "shoot" : 0,
+          "fight" : 5,
+          "defense" : 11,
+          "reflexes" : 5,
+          "weapons" : [
             {
-              "id": "enormous_claws",
-              "count": 2
+              "id" : "enormous_claws",
+              "count" : 2
             },
             {
-              "id": "tentacle_maw",
-              "count": 2
+              "id" : "tentacle_maw",
+              "count" : 2
             }
           ],
-          "options": [],
-          "min": 1,
-          "max": 1
+          "options" : [],
+          "min" : 1,
+          "max" : 1
         }
       ]
     },
-    "birdmen_disc_riders": {
-      "name": "Birdmen Disk Riders",
-      "description": "Exhalted birdmen riding psychic disks.",
-      "rules": [
+    "birdmen_disc_riders" : {
+      "name" : "Birdmen Disk Riders",
+      "description" : "Exhalted birdmen riding psychic disks.",
+      "rules" : [
         "hover",
         {
-          "id": "impact",
-          "x": 1
+          "id" : "impact",
+          "x" : 1
         },
         {
-          "id": "resilient",
-          "x": 3
+          "id" : "resilient",
+          "x" : 3
         }
       ],
-      "subfactions": [
+      "subfactions" : [
         "change_traitors"
       ],
-      "category": "strike",
-      "models": [
+      "category" : "strike",
+      "models" : [
         {
-          "name": "Birdman Disk Rider",
-          "movement": 10,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 6,
-          "reflexes": 5,
-          "weapons": [
+          "name" : "Birdman Disk Rider",
+          "movement" : 10,
+          "courage" : 6,
+          "shoot" : 6,
+          "fight" : 6,
+          "defense" : 6,
+          "reflexes" : 5,
+          "weapons" : [
             "marine_pistol",
             {
-              "id": "chainsword",
-              "count": 2
+              "id" : "chainsword",
+              "count" : 2
             }
           ],
-          "options": [
+          "options" : [
             {
-              "replaceWeapon": [
+              "replaceWeapon" : [
                 "marine_pistol",
                 {
-                  "id": "chainsword",
-                  "count": 2
+                  "id" : "chainsword",
+                  "count" : 2
                 }
               ],
-              "withWeapon": [
+              "withWeapon" : [
                 {
-                  "id": "hexed_blades",
-                  "count": 3
+                  "id" : "hexed_blades",
+                  "count" : 3
                 },
                 {
-                  "id": "hexed_spear",
-                  "count": 3
+                  "id" : "hexed_spear",
+                  "count" : 3
                 },
                 [
                   "hexed_bow",
                   {
-                    "id": "heavy_ccw",
-                    "count": 2
+                    "id" : "heavy_ccw",
+                    "count" : 2
                   }
                 ]
               ]
             }
           ],
-          "min": 3,
-          "max": 9
+          "min" : 3,
+          "max" : 9
         }
       ]
     },
-    "traitor_siegebreaker": {
-      "name": "Traitor Siegebreakers",
-      "description": "Marines who excel at breaching enemy lines under heavy fire.",
-      "rules": [
-        "shield"
+    "traitor_siegebreaker" : {
+      "name" : "Traitor Siegebreakers",
+      "description" : "Marines who excel at breaching enemy lines under heavy fire.",
+      "rules" : [
+        "combat_shield"
       ],
-      "subfactions": [
+      "subfactions" : [
         "none",
         "siege_focus"
       ],
-      "category": "specialist",
-      "options": [
+      "category" : "specialist",
+      "options" : [
         {
-          "replaceWeapon": [
+          "replaceWeapon" : [
             "marine_rifle",
             "heavy_ccw"
           ],
-          "withWeapon": [
+          "withWeapon" : [
             [
               "marine_pistol",
               {
-                "id": "chainsword",
-                "count": 2
+                "id" : "chainsword",
+                "count" : 2
               }
             ],
             [
               "marine_shotgun",
               {
-                "id": "chainsword",
-                "count": 2
+                "id" : "chainsword",
+                "count" : 2
               }
             ]
           ]
         },
         {
-          "replaceWeapon": [
+          "replaceWeapon" : [
             "marine_rifle"
           ],
-          "withWeapon": [
+          "withWeapon" : [
             "fusion_rifle",
             "plasma_rifle",
-            "laser_cannon"
+            "laser_cannon",
+            "flamethrower",
+            "gravity_rifle"
           ],
-          "modelLimit": "2/5"
+          "modelLimit" : "2/5"
         },
         {
-          "addWeapon": "fusion_bomb",
-          "modelLimit": 3
+          "addWeapon" : "fusion_bomb",
+          "modelLimit" : 3
         }
       ],
-      "models": [
+      "models" : [
         {
-          "name": "Traitor Siegebreaker Leader",
-          "movement": 6,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 8,
-          "reflexes": 6,
-          "weapons": [
+          "name" : "Traitor Siegebreaker Leader",
+          "movement" : 6,
+          "courage" : 6,
+          "shoot" : 6,
+          "fight" : 6,
+          "defense" : 8,
+          "reflexes" : 6,
+          "weapons" : [
             "marine_rifle",
             "heavy_ccw",
             "at_grenade"
           ],
-          "options": [
+          "options" : [
             {
-              "replaceWeapon": [
+              "replaceWeapon" : [
                 "marine_rifle"
               ],
-              "withWeapon": [
+              "withWeapon" : [
                 "combi_plasma",
                 "combi_flamer",
                 "combi_fusion",
@@ -3894,823 +3896,823 @@
               ]
             },
             {
-              "replaceWeapon": {
-                "id": "chainsword",
-                "count": 2
+              "replaceWeapon" : {
+                "id" : "chainsword",
+                "count" : 2
               },
-              "withWeapon": [
+              "withWeapon" : [
                 {
-                  "id": "energy_mace",
-                  "count": 2
+                  "id" : "energy_mace",
+                  "count" : 2
                 },
                 {
-                  "id": "energy_axe",
-                  "count": 2
+                  "id" : "energy_axe",
+                  "count" : 2
                 },
                 {
-                  "id": "energy_sword",
-                  "count": 2
+                  "id" : "energy_sword",
+                  "count" : 2
                 },
                 {
-                  "id": "energy_fist",
-                  "count": 2
+                  "id" : "energy_fist",
+                  "count" : 2
                 },
                 {
-                  "id": "energy_hammer",
-                  "count": 2
+                  "id" : "energy_hammer",
+                  "count" : 2
                 },
                 {
-                  "id": "energy_claws",
-                  "count": 3
+                  "id" : "energy_claws",
+                  "count" : 3
                 }
               ]
             },
             {
-              "replaceWeapon": [
+              "replaceWeapon" : [
                 "marine_pistol"
               ],
-              "withWeapon": [
+              "withWeapon" : [
                 "plasma_pistol"
               ]
             }
           ],
-          "min": 1,
-          "max": 1
+          "min" : 1,
+          "max" : 1
         },
         {
-          "name": "Traitor Siegebreaker",
-          "movement": 6,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 8,
-          "reflexes": 6,
-          "weapons": [
+          "name" : "Traitor Siegebreaker",
+          "movement" : 6,
+          "courage" : 6,
+          "shoot" : 6,
+          "fight" : 6,
+          "defense" : 8,
+          "reflexes" : 6,
+          "weapons" : [
             "marine_rifle",
             "heavy_ccw",
             "at_grenade"
           ],
-          "min": 4,
-          "max": 19
+          "min" : 4,
+          "max" : 9
         }
       ]
     }
   },
-  "weapons": {
-    "pestilence_grenade": {
-      "name": "Pestilence Grenades",
-      "profiles": [
+  "weapons" : {
+    "pestilence_grenade" : {
+      "name" : "Pestilence Grenades",
+      "profiles" : [
         {
-          "name": "Pestilence",
-          "attacks": 1,
-          "short": 6,
-          "rules": [
+          "name" : "Pestilence",
+          "attacks" : 1,
+          "short" : 6,
+          "rules" : [
             "pestilence",
             "grenade",
             {
-              "id": "blast",
-              "x": 3
+              "id" : "blast",
+              "x" : 3
             }
           ]
         },
         {
-          "name": "AT",
-          "attacks": 1,
-          "short": 6,
-          "ap": 4,
-          "rules": [
+          "name" : "AT",
+          "attacks" : 1,
+          "short" : 6,
+          "ap" : 4,
+          "rules" : [
             "grenade"
           ]
         }
       ]
     },
-    "pestilence_scythe": {
-      "name": "Pestilence Scythe",
-      "profiles": [
+    "pestilence_scythe" : {
+      "name" : "Pestilence Scythe",
+      "profiles" : [
         {
-          "name": "Cleave",
-          "attacks": 1,
-          "ap": 4,
-          "short": "Melee",
-          "rules": [
+          "name" : "Cleave",
+          "attacks" : 1,
+          "ap" : 4,
+          "short" : "Melee",
+          "rules" : [
             "pestilence",
             "cumbersome"
           ]
         },
         {
-          "name": "Sweep",
-          "attacks": 2,
-          "ap": 1,
-          "short": "Melee",
-          "rules": [
+          "name" : "Sweep",
+          "attacks" : 2,
+          "ap" : 1,
+          "short" : "Melee",
+          "rules" : [
             "pestilence"
           ]
         }
       ]
     },
-    "hauler_jaws": {
-      "name": "Hauler Jaws",
-      "attacks": 1,
-      "short": "Melee",
-      "ap": 2,
-      "rules": [
+    "hauler_jaws" : {
+      "name" : "Hauler Jaws",
+      "attacks" : 1,
+      "short" : "Melee",
+      "ap" : 2,
+      "rules" : [
         "pestilence"
       ]
     },
-    "pestilence_spit": {
-      "name": "Pestilence Spit",
-      "attacks": 1,
-      "short": 6,
-      "medium": 12,
-      "ap": 1,
-      "rules": [
+    "pestilence_spit" : {
+      "name" : "Pestilence Spit",
+      "attacks" : 1,
+      "short" : 6,
+      "medium" : 12,
+      "ap" : 1,
+      "rules" : [
         "pestilence",
         {
-          "id": "blast",
-          "x": 3
+          "id" : "blast",
+          "x" : 3
         }
       ]
     },
-    "pestilence_pistol": {
-      "name": "Pestilence Pistol",
-      "attacks": 1,
-      "short": 6,
-      "ap": 1,
-      "rules": [
+    "pestilence_pistol" : {
+      "name" : "Pestilence Pistol",
+      "attacks" : 1,
+      "short" : 6,
+      "ap" : 1,
+      "rules" : [
         "pistol",
         "pestilence"
       ]
     },
-    "pestilence_great_scythe": {
-      "name": "Pestilence Great-scythe",
-      "attacks": 1,
-      "ap": 5,
-      "short": "Melee",
-      "rules": [
+    "pestilence_great_scythe" : {
+      "name" : "Pestilence Great-scythe",
+      "attacks" : 1,
+      "ap" : 5,
+      "short" : "Melee",
+      "rules" : [
         "pestilence",
         "cumbersome"
       ]
     },
-    "pestilence_launcher": {
-      "name": "Pestilence Launcher",
-      "attacks": 1,
-      "short": 12,
-      "medium": 24,
-      "ap": 4,
-      "rules": [
+    "pestilence_launcher" : {
+      "name" : "Pestilence Launcher",
+      "attacks" : 1,
+      "short" : 12,
+      "medium" : 24,
+      "ap" : 4,
+      "rules" : [
         "assault",
         "pestilence"
       ]
     },
-    "pestilence_mortar": {
-      "name": "Pestilence Mortar",
-      "attacks": 1,
-      "short": 24,
-      "medium": 48,
-      "ap": 5,
-      "rules": [
+    "pestilence_mortar" : {
+      "name" : "Pestilence Mortar",
+      "attacks" : 1,
+      "short" : 24,
+      "medium" : 48,
+      "ap" : 5,
+      "rules" : [
         "indirect",
         "pestilence",
         {
-          "id": "blast",
-          "x": 3
+          "id" : "blast",
+          "x" : 3
         }
       ]
     },
-    "pestilence_cannon": {
-      "name": "Pestilence Cannon",
-      "attacks": 1,
-      "short": 18,
-      "medium": 36,
-      "ap": 7,
-      "rules": [
+    "pestilence_cannon" : {
+      "name" : "Pestilence Cannon",
+      "attacks" : 1,
+      "short" : 18,
+      "medium" : 36,
+      "ap" : 7,
+      "rules" : [
         "pestilence"
       ]
     },
-    "pestilence_sprayer": {
-      "name": "Pestilence Sprayer",
-      "attacks": 3,
-      "short": 6,
-      "medium": 12,
-      "ap": 1,
-      "rules": [
+    "pestilence_sprayer" : {
+      "name" : "Pestilence Sprayer",
+      "attacks" : 3,
+      "short" : 6,
+      "medium" : 12,
+      "ap" : 1,
+      "rules" : [
         "pestilence"
       ]
     },
-    "pestilence_sword": {
-      "name": "Pestilence Sword",
-      "attacks": 1,
-      "ap": 2,
-      "short": "Melee",
-      "rules": [
+    "pestilence_sword" : {
+      "name" : "Pestilence Sword",
+      "attacks" : 1,
+      "ap" : 2,
+      "short" : "Melee",
+      "rules" : [
         "pestilence"
       ]
     },
-    "pestilence_flail": {
-      "name": "Pestilence Flail",
-      "attacks": 1,
-      "ap": 1,
-      "short": "Melee",
-      "rules": [
+    "pestilence_flail" : {
+      "name" : "Pestilence Flail",
+      "attacks" : 1,
+      "ap" : 1,
+      "short" : "Melee",
+      "rules" : [
         "pestilence"
       ]
     },
-    "pestilence_great_cleaver": {
-      "name": "Pestilence Great-cleaver",
-      "attacks": 1,
-      "ap": 5,
-      "short": "Melee",
-      "rules": [
+    "pestilence_great_cleaver" : {
+      "name" : "Pestilence Great-cleaver",
+      "attacks" : 1,
+      "ap" : 5,
+      "short" : "Melee",
+      "rules" : [
         "pestilence",
         "cumbersome"
       ]
     },
-    "pestilence_axe": {
-      "name": "Pestilence Axe",
-      "attacks": 1,
-      "ap": 3,
-      "short": "Melee",
-      "rules": [
+    "pestilence_axe" : {
+      "name" : "Pestilence Axe",
+      "attacks" : 1,
+      "ap" : 3,
+      "short" : "Melee",
+      "rules" : [
         "pestilence"
       ]
     },
-    "pestilence_mace": {
-      "name": "Pestilence Mace",
-      "attacks": 1,
-      "ap": 3,
-      "short": "Melee",
-      "rules": [
+    "pestilence_mace" : {
+      "name" : "Pestilence Mace",
+      "attacks" : 1,
+      "ap" : 3,
+      "short" : "Melee",
+      "rules" : [
         "pestilence",
         "cumbersome"
       ]
     },
-    "pestilence_claw": {
-      "name": "Pestilence Claw",
-      "attacks": 1,
-      "ap": 5,
-      "short": "Melee",
-      "rules": [
+    "pestilence_claw" : {
+      "name" : "Pestilence Claw",
+      "attacks" : 1,
+      "ap" : 5,
+      "short" : "Melee",
+      "rules" : [
         "pestilence",
         "cumbersome"
       ]
     },
-    "pestilence_ccw": {
-      "name": "Pestilence CCW",
-      "attacks": 1,
-      "ap": 1,
-      "short": "Melee",
-      "rules": [
+    "pestilence_ccw" : {
+      "name" : "Pestilence CCW",
+      "attacks" : 1,
+      "ap" : 1,
+      "short" : "Melee",
+      "rules" : [
         "pestilence"
       ]
     },
-    "hexed_flamethrower_pistol": {
-      "name": "Hexed Flamethrower Pistol",
-      "attacks": 3,
-      "short": 6,
-      "ap": 1,
-      "rules": [
+    "hexed_flamethrower_pistol" : {
+      "name" : "Hexed Flamethrower Pistol",
+      "attacks" : 3,
+      "short" : 6,
+      "ap" : 1,
+      "rules" : [
         "rending",
         "flame"
       ]
     },
-    "hexed_rifle": {
-      "name": "Hexed Marine Rifle",
-      "attacks": 1,
-      "short": 12,
-      "medium": 24,
-      "ap": 2,
-      "rules": [
+    "hexed_rifle" : {
+      "name" : "Hexed Marine Rifle",
+      "attacks" : 1,
+      "short" : 12,
+      "medium" : 24,
+      "ap" : 2,
+      "rules" : [
         "rapid_fire"
       ]
     },
-    "hexed_flamethrower": {
-      "name": "Hexed Flamethrower",
-      "attacks": 3,
-      "short": 6,
-      "medium": 12,
-      "ap": 1,
-      "rules": [
+    "hexed_flamethrower" : {
+      "name" : "Hexed Flamethrower",
+      "attacks" : 3,
+      "short" : 6,
+      "medium" : 12,
+      "ap" : 1,
+      "rules" : [
         "rending",
         "flame"
       ]
     },
-    "hexed_pistol": {
-      "name": "Hexed Pistol",
-      "attacks": 1,
-      "short": 6,
-      "medium": 12,
-      "ap": 2
+    "hexed_pistol" : {
+      "name" : "Hexed Pistol",
+      "attacks" : 1,
+      "short" : 6,
+      "medium" : 12,
+      "ap" : 2
     },
-    "reaper_minigun": {
-      "name": "Reaper Minigun",
-      "attacks": 6,
-      "short": 12,
-      "medium": 24,
-      "ap": 2
+    "reaper_minigun" : {
+      "name" : "Reaper Minigun",
+      "attacks" : 6,
+      "short" : 12,
+      "medium" : 24,
+      "ap" : 2
     },
-    "missile_rack": {
-      "name": "Missile Rack",
-      "attacks": 2,
-      "short": 12,
-      "medium": 24,
-      "ap": 6
+    "missile_rack" : {
+      "name" : "Missile Rack",
+      "attacks" : 2,
+      "short" : 12,
+      "medium" : 24,
+      "ap" : 6
     },
-    "hexed_blades": {
-      "name": "Hexed Blades",
-      "attacks": 1,
-      "short": "Melee",
-      "ap": 1
+    "hexed_blades" : {
+      "name" : "Hexed Blades",
+      "attacks" : 1,
+      "short" : "Melee",
+      "ap" : 1
     },
-    "hexed_spear": {
-      "name": "Hexed Spear",
-      "attacks": 1,
-      "short": "Melee",
-      "rules": [
+    "hexed_spear" : {
+      "name" : "Hexed Spear",
+      "attacks" : 1,
+      "short" : "Melee",
+      "rules" : [
         {
-          "id": "impact",
-          "x": 1
+          "id" : "impact",
+          "x" : 1
         }
       ],
-      "ap": 2
+      "ap" : 2
     },
-    "hexed_bow": {
-      "name": "Hexed Bow",
-      "attacks": 2,
-      "short": 12,
-      "medium": 24,
-      "ap": 2,
-      "rules": [
+    "hexed_bow" : {
+      "name" : "Hexed Bow",
+      "attacks" : 2,
+      "short" : 12,
+      "medium" : 24,
+      "ap" : 2,
+      "rules" : [
         "rending"
       ]
     },
-    "arch_staff": {
-      "name": "Arch-Psyker's Blessed Staff",
-      "profiles": [
+    "arch_staff" : {
+      "name" : "Arch-Psyker's Blessed Staff",
+      "profiles" : [
         {
-          "name": "Strike",
-          "attacks": 5,
-          "short": "Melee",
-          "ap": 8
+          "name" : "Strike",
+          "attacks" : 5,
+          "short" : "Melee",
+          "ap" : 8
         },
         {
-          "name": "Sweep",
-          "attacks": 10,
-          "short": "Melee",
-          "ap": 4
+          "name" : "Sweep",
+          "attacks" : 10,
+          "short" : "Melee",
+          "ap" : 4
         }
       ]
     },
-    "claws": {
-      "name": "Mutated Claws",
-      "attacks": 1,
-      "short": "Melee",
-      "ap": 3
+    "claws" : {
+      "name" : "Mutated Claws",
+      "attacks" : 1,
+      "short" : "Melee",
+      "ap" : 3
     },
-    "twin_hexed_rifle": {
-      "name": "Twin Hexed Rifle",
-      "attacks": 2,
-      "short": 12,
-      "medium": 24,
-      "ap": 2
+    "twin_hexed_rifle" : {
+      "name" : "Twin Hexed Rifle",
+      "attacks" : 2,
+      "short" : 12,
+      "medium" : 24,
+      "ap" : 2
     },
-    "enormous_claws": {
-      "name": "Enormous Claws",
-      "attacks": 1,
-      "short": "Melee",
-      "ap": 6
+    "enormous_claws" : {
+      "name" : "Enormous Claws",
+      "attacks" : 1,
+      "short" : "Melee",
+      "ap" : 6
     },
-    "tentacle_maw": {
-      "name": "Tentacled Maw",
-      "attacks": 1,
-      "short": "Melee",
-      "ap": 2,
-      "rules": [
+    "tentacle_maw" : {
+      "name" : "Tentacled Maw",
+      "attacks" : 1,
+      "short" : "Melee",
+      "ap" : 2,
+      "rules" : [
         {
-          "id": "blast",
-          "x": 3
+          "id" : "blast",
+          "x" : 3
         }
       ]
     },
-    "archtraitor_sword": {
-      "name": "Sword of the Arch-Traitor",
-      "attacks": 1,
-      "short": "Melee",
-      "ap": 5
+    "archtraitor_sword" : {
+      "name" : "Sword of the Arch-Traitor",
+      "attacks" : 1,
+      "short" : "Melee",
+      "ap" : 5
     },
-    "archtraitor_claw": {
-      "name": "Claw of the Arch-Traitor",
-      "attacks": 1,
-      "short": "Melee",
-      "ap": 8
+    "archtraitor_claw" : {
+      "name" : "Claw of the Arch-Traitor",
+      "attacks" : 1,
+      "short" : "Melee",
+      "ap" : 8
     },
-    "archtraitor_ranged": {
-      "name": "Dark Gods' Blessed Rifle",
-      "attacks": 2,
-      "short": 12,
-      "medium": 24,
-      "ap": 2,
-      "rules": [
+    "archtraitor_ranged" : {
+      "name" : "Dark Gods' Blessed Rifle",
+      "attacks" : 2,
+      "short" : 12,
+      "medium" : 24,
+      "ap" : 2,
+      "rules" : [
         "rapid_fire"
       ]
     },
-    "pestilence_great_flail": {
-      "name": "Pestilence Great-flail",
-      "attacks": 1,
-      "ap": 4,
-      "short": "Melee",
-      "rules": [
+    "pestilence_great_flail" : {
+      "name" : "Pestilence Great-flail",
+      "attacks" : 1,
+      "ap" : 4,
+      "short" : "Melee",
+      "rules" : [
         "pestilence"
       ]
     }
   },
-  "rules": {
-    "warmaster_tactics": {
-      "name": "Warmaster Tactics",
-      "inputs": [
+  "rules" : {
+    "warmaster_tactics" : {
+      "name" : "Warmaster Tactics",
+      "inputs" : [
         "x"
       ],
-      "description": "When this unit is activated, choose up to X friendly _Infantry_ units within 6\" to receive one of the following bonuses until the end of the round: \n * Re-roll all failed Accuracy tests \n * Re-roll all failed Strength tests",
-      "points": [
+      "description" : "When this unit is activated, choose up to X friendly _Infantry_ units within 6\" to receive one of the following bonuses until the end of the round: \n * Re-roll all failed Accuracy tests \n * Re-roll all failed Strength tests",
+      "points" : [
         "rule.x",
         {
-          "multiply": 20
+          "multiply" : 20
         }
       ]
     },
-    "doom_siren": {
-      "name": "Doom Siren",
-      "description": "Enemy units within 6\" of this model suffer -1 Courage.",
-      "points": 5
+    "doom_siren" : {
+      "name" : "Doom Siren",
+      "description" : "Enemy units within 6\" of this model suffer -1 Courage.",
+      "points" : 5
     },
-    "rifle_tactics": {
-      "name": "Rifle Tactics",
-      "inputs": [
+    "rifle_tactics" : {
+      "name" : "Rifle Tactics",
+      "inputs" : [
         "x"
       ],
-      "description": "When this unit is activated, choose up to X friendly Infantry units within 6\". Those units may re-roll failed Accuracy tests of 9+ until the end of the round.",
-      "points": 10
+      "description" : "When this unit is activated, choose up to X friendly Infantry units within 6\". Those units may re-roll failed Accuracy tests of 9+ until the end of the round.",
+      "points" : 10
     },
-    "melee_tactics": {
-      "name": "Melee Tactics",
-      "inputs": [
+    "melee_tactics" : {
+      "name" : "Melee Tactics",
+      "inputs" : [
         "x"
       ],
-      "description": "When this unit is activated, choose up to X friendly Infantry units within 6\". Those units may re-roll failed Strength tests of 9+ until the end of the round.",
-      "points": 10
+      "description" : "When this unit is activated, choose up to X friendly Infantry units within 6\". Those units may re-roll failed Strength tests of 9+ until the end of the round.",
+      "points" : 10
     },
-    "archmage_tactics": {
-      "name": "Arch-Psyker's Tactics",
-      "inputs": [
+    "archmage_tactics" : {
+      "name" : "Arch-Psyker's Tactics",
+      "inputs" : [
         "x"
       ],
-      "description": "When this unit is activated, choose up to X friendly units with the Power special rule within 6\".  Those units may reroll dice rolls of 9+ while using the Power ability until the end of the round.",
-      "points": 5
+      "description" : "When this unit is activated, choose up to X friendly units with the Power special rule within 6\".  Those units may reroll dice rolls of 9+ while using the Power ability until the end of the round.",
+      "points" : 5
     },
-    "archmage": {
-      "name": "Blessings of the Psyker God",
-      "description": "When this unit casts the Shock Wave Power, double the number of hits it deals.",
-      "points": 10
+    "archmage" : {
+      "name" : "Blessings of the Psyker God",
+      "description" : "When this unit casts the Shock Wave Power, double the number of hits it deals.",
+      "points" : 10
     },
-    "sniper": {
-      "name": "Sniper",
-      "description": "This weapon ignores cover and may choose the model that is hit."
+    "sniper" : {
+      "name" : "Sniper",
+      "description" : "This weapon ignores cover and may choose the model that is hit."
     },
-    "psychic_helmet": {
-      "name": "Psychic Helmet",
-      "description": "The bearer gets +1 to all Psychic tests.",
-      "effects": [
+    "psychic_helmet" : {
+      "name" : "Psychic Helmet",
+      "description" : "The bearer gets +1 to all Psychic tests.",
+      "effects" : [
         {
-          "type": "grantRule",
-          "rule": {
-            "id": "power",
-            "x": 1
+          "type" : "grantRule",
+          "rule" : {
+            "id" : "power",
+            "x" : 1
           },
-          "frequency": 5
+          "frequency" : 5
         }
       ]
     },
-    "war_chant": {
-      "name": "War Chant",
-      "description": "This model and friendly Infantry units within 3\" gain the Furious keyword.",
-      "effects": [
+    "war_chant" : {
+      "name" : "War Chant",
+      "description" : "This model and friendly Infantry units within 3\" gain the Furious keyword.",
+      "effects" : [
         {
-          "type": "grantRule",
-          "rule": "furious",
-          "frequency": 100,
-          "target": "friendly"
+          "type" : "grantRule",
+          "rule" : "furious",
+          "frequency" : 100,
+          "target" : "friendly"
         }
       ]
     },
-    "invigorating_beam": {
-      "effects": [
+    "invigorating_beam" : {
+      "effects" : [
         {
-          "type": "alterStat",
-          "statName": "movement",
-          "value": 6,
-          "frequency": 5,
-          "target": "friendly",
-          "range": 12
+          "type" : "alterStat",
+          "statName" : "movement",
+          "value" : 6,
+          "frequency" : 5,
+          "target" : "friendly",
+          "range" : 12
         }
       ]
     },
-    "encroaching_mutations": {
-      "effects": [
+    "encroaching_mutations" : {
+      "effects" : [
         {
-          "type": "alterStat",
-          "statName": "shoot",
-          "value": 1,
-          "target": "enemy",
-          "range": 24
+          "type" : "alterStat",
+          "statName" : "shoot",
+          "value" : 1,
+          "target" : "enemy",
+          "range" : 24
         }
       ]
     },
-    "inspiring_word": {
-      "effects": [
+    "inspiring_word" : {
+      "effects" : [
         {
-          "type": "grantRule",
-          "rule": {
-            "id": "resilient",
-            "x": 3
+          "type" : "grantRule",
+          "rule" : {
+            "id" : "resilient",
+            "x" : 3
           },
-          "target": "friendly",
-          "range": 6
+          "target" : "friendly",
+          "range" : 6
         }
       ]
     },
-    "dark_prayer": {
-      "name": "Dark Prayers",
-      "description": "When this unit is activated, choose a Blessing for this unit or a friendly _Infantry_ unit within 6\" to receive until the end of the turn:\n* Cloak of Shadows: Roll a die when a model in this unit loses a wound. On a value of 1 or 2 that wound is not lost.\n* Eternal Hatred: When this unit fights, hit rolls of 1 or 2 generate an additional attack.\n* Omen of Doom: This unit may re-roll failed Strength tests of 9+ until the end of the round.",
-      "points": [
+    "dark_prayer" : {
+      "name" : "Dark Prayers",
+      "description" : "When this unit is activated, choose a Blessing for this unit or a friendly _Infantry_ unit within 6\" to receive until the end of the turn:\n* Cloak of Shadows: Roll a die when a model in this unit loses a wound. On a value of 1 or 2 that wound is not lost.\n* Eternal Hatred: When this unit fights, hit rolls of 1 or 2 generate an additional attack.\n* Omen of Doom: This unit may re-roll failed Strength tests of 9+ until the end of the round.",
+      "points" : [
         5
       ]
     }
   },
-  "strategies": {
-    "hate": {
-      "phase": "activation",
-      "subfactions": [
+  "strategies" : {
+    "hate" : {
+      "phase" : "activation",
+      "subfactions" : [
         "none",
         "change_traitors",
         "pestilence_focus"
       ],
-      "name": "Hate",
-      "flavor": "Full with fury, traitor marines can launch devastating close combat assaults.",
-      "description": "Use before an Infantry unit fights. Hit rolls of 1 or 2 gain +1 AP.",
-      "cost": 1
+      "name" : "Hate",
+      "flavor" : "Full with fury, traitor marines can launch devastating close combat assaults.",
+      "description" : "Use before an Infantry unit fights. Hit rolls of 1 or 2 gain +1 AP.",
+      "cost" : 1
     },
-    "daemonforge": {
-      "phase": "activation",
-      "subfactions": [
+    "daemonforge" : {
+      "phase" : "activation",
+      "subfactions" : [
         "none",
         "change_traitors",
         "pestilence_focus"
       ],
-      "name": "Daemonforge",
-      "flavor": "Imbued with demonic energy, traitor vehicles can call upon the powers of the dark gods.",
-      "description": "Use before a _Vehicle_ unit is targeted by an attack. Roll a D10 for each hit. On a 3 or less that hit is prevented.",
-      "cost": 2
+      "name" : "Daemonforge",
+      "flavor" : "Imbued with demonic energy, traitor vehicles can call upon the powers of the dark gods.",
+      "description" : "Use before a _Vehicle_ unit is targeted by an attack. Roll a D10 for each hit. On a 3 or less that hit is prevented.",
+      "cost" : 2
     },
-    "fearless": {
-      "subfactions": [
+    "fearless" : {
+      "subfactions" : [
         "none",
         "change_traitors",
         "pestilence_focus"
       ],
-      "name": "Fearless",
-      "phase": "activation",
-      "description": "Use before activating a unit. That unit may immediately remove up to 2 Shock.",
-      "flavor": "Marines are trained to stay strong even in the toughest fights.",
-      "cost": 1
+      "name" : "Fearless",
+      "phase" : "activation",
+      "description" : "Use before activating a unit. That unit may immediately remove up to 2 Shock.",
+      "flavor" : "Marines are trained to stay strong even in the toughest fights.",
+      "cost" : 1
     },
-    "concealment": {
-      "subfactions": [
+    "concealment" : {
+      "subfactions" : [
         "stealth_focus"
       ],
-      "name": "Concealment",
-      "phase": "activation",
-      "flavor": "Traitor marines are sometimes trained in stealth tactics allowing them to hide even in plain sight.",
-      "description": "Use this strategy when a unit is targeted by an enemy Shooting attack. That unit gets -1 Accuracy this attack.",
-      "cost": 2
+      "name" : "Concealment",
+      "phase" : "activation",
+      "flavor" : "Traitor marines are sometimes trained in stealth tactics allowing them to hide even in plain sight.",
+      "description" : "Use this strategy when a unit is targeted by an enemy Shooting attack. That unit gets -1 Accuracy this attack.",
+      "cost" : 2
     },
-    "infiltrate": {
-      "subfactions": [
+    "infiltrate" : {
+      "subfactions" : [
         "stealth_focus"
       ],
-      "name": "Infiltrate",
-      "phase": "pre_game",
-      "description": "Up to half of any force's units, one point for each may be placed in Ambush before the game begins. Any round after the first, when this unit is activated while in reserves, you may choose a point on the battlefield 12\" away from any enemy units and take an Initiative check. If passed, place the unit at that location on the location. If failed, use D10 scattering to determine the landing location of the unit relative to the chosen point.",
-      "flavor": "With countless battles experienced, these soldiers are trained to react to any situation.",
-      "cost": "1/per"
+      "name" : "Infiltrate",
+      "phase" : "pre_game",
+      "description" : "Up to half of any force's units, one point for each may be placed in Ambush before the game begins. Any round after the first, when this unit is activated while in reserves, you may choose a point on the battlefield 12\" away from any enemy units and take an Initiative check. If passed, place the unit at that location on the location. If failed, use D10 scattering to determine the landing location of the unit relative to the chosen point.",
+      "flavor" : "With countless battles experienced, these soldiers are trained to react to any situation.",
+      "cost" : "1/per"
     },
-    "decoy": {
-      "subfactions": [
+    "decoy" : {
+      "subfactions" : [
         "stealth_focus"
       ],
-      "name": "Decoy",
-      "phase": "activation",
-      "description": "Use after a _Leader_ unit has been targeted by a Shooting attack within 6\" of a friendly _Infantry_ unit. For this attack, you can roll a D10 each time an attack made with a ranged weapon hits that unit. On an 8 or less a hit is transferred to the _Infantry_ unit instead of the original target.",
-      "flavor": "Unsure of which is the real leader, enemies often get confused and shoot a different target.",
-      "cost": 2
+      "name" : "Decoy",
+      "phase" : "activation",
+      "description" : "Use after a _Leader_ unit has been targeted by a Shooting attack within 6\" of a friendly _Infantry_ unit. For this attack, you can roll a D10 each time an attack made with a ranged weapon hits that unit. On an 8 or less a hit is transferred to the _Infantry_ unit instead of the original target.",
+      "flavor" : "Unsure of which is the real leader, enemies often get confused and shoot a different target.",
+      "cost" : 2
     },
-    "psychic_channeling": {
-      "phase": "activation",
-      "subfactions": [
+    "psychic_channeling" : {
+      "phase" : "activation",
+      "subfactions" : [
         "change_traitors"
       ],
-      "name": "Psychic Channeling",
-      "flavor": "With focus and energy, even the most difficult psychic powers can be manifested.",
-      "description": "Use before a unit rolls for casting a psychic power. The spell charge value is increased by 1 and the spell has +6\" of range.",
-      "cost": 1
+      "name" : "Psychic Channeling",
+      "flavor" : "With focus and energy, even the most difficult psychic powers can be manifested.",
+      "description" : "Use before a unit rolls for casting a psychic power. The spell charge value is increased by 1 and the spell has +6\" of range.",
+      "cost" : 1
     },
-    "hex_rounds": {
-      "phase": "activation",
-      "subfactions": [
+    "hex_rounds" : {
+      "phase" : "activation",
+      "subfactions" : [
         "change_traitors"
       ],
-      "name": "Hex Rounds",
-      "flavor": "Sometimes used, hex rounds are imbued with psychic fire and are highly deadly.",
-      "description": "Use before an Infantry unit shoots. Add +6\" to the short and long range bands of all weapons.",
-      "cost": 1
+      "name" : "Hex Rounds",
+      "flavor" : "Sometimes used, hex rounds are imbued with psychic fire and are highly deadly.",
+      "description" : "Use before an Infantry unit shoots. Add +6\" to the short and long range bands of all weapons.",
+      "cost" : 1
     },
-    "cursed_form": {
-      "subfactions": [
+    "cursed_form" : {
+      "subfactions" : [
         "change_traitors"
       ],
-      "name": "Cursed Form",
-      "phase": "activation",
-      "description": "Use before taking Save rolls for an _Infantry_ unit. It gets +1 Save.",
-      "flavor": "Psychic Traitors, cursed with the loss of their souls, they are less susceptible to damage.",
-      "cost": 2
+      "name" : "Cursed Form",
+      "phase" : "activation",
+      "description" : "Use before taking Save rolls for an _Infantry_ unit. It gets +1 Save.",
+      "flavor" : "Psychic Traitors, cursed with the loss of their souls, they are less susceptible to damage.",
+      "cost" : 2
     },
-    "resilience_pestilence": {
-      "name": "Resilience",
-      "subfactions": [
+    "resilience_pestilence" : {
+      "name" : "Resilience",
+      "subfactions" : [
         "pestilence_focus"
       ],
-      "phase": "activation",
-      "flavor": "These marines are so diseased and rotten that they often shrug off some powerful attacks.",
-      "description": "Use this strategy when one of your units is targeted by an attack. Roll a die for each hit, on a 3 or less that hit is prevented.",
-      "cost": 1
+      "phase" : "activation",
+      "flavor" : "These marines are so diseased and rotten that they often shrug off some powerful attacks.",
+      "description" : "Use this strategy when one of your units is targeted by an attack. Roll a die for each hit, on a 3 or less that hit is prevented.",
+      "cost" : 1
     },
-    "pestilent_aura": {
-      "name": "Pestilent Aura",
-      "subfactions": [
+    "pestilent_aura" : {
+      "name" : "Pestilent Aura",
+      "subfactions" : [
         "pestilence_focus"
       ],
-      "phase": "activation",
-      "flavor": "Following these marines is an aura of death and disease.",
-      "description": "Use this strategy when you activate one of your _Infantry_ or _Heavy Infantry_ units. Up to 2 units within 6\" take 3 hits with AP 1 each.",
-      "cost": 2
+      "phase" : "activation",
+      "flavor" : "Following these marines is an aura of death and disease.",
+      "description" : "Use this strategy when you activate one of your _Infantry_ or _Heavy Infantry_ units. Up to 2 units within 6\" take 3 hits with AP 1 each.",
+      "cost" : 2
     },
-    "pestilence_rounds": {
-      "name": "Pestilence Rounds",
-      "subfactions": [
+    "pestilence_rounds" : {
+      "name" : "Pestilence Rounds",
+      "subfactions" : [
         "pestilence_focus"
       ],
-      "phase": "activation",
-      "flavor": "Sometimes it is necessary to infuse marine rifle rounds with disease to cause extra damage.",
-      "description": "Use this strategy when one of your _Infantry_ or _Heavy Infantry_ units Shoots. Choose a weapon name. Each successful hit roll of 2 or less with that weapon gets +1 AP.",
-      "cost": 1
+      "phase" : "activation",
+      "flavor" : "Sometimes it is necessary to infuse marine rifle rounds with disease to cause extra damage.",
+      "description" : "Use this strategy when one of your _Infantry_ or _Heavy Infantry_ units Shoots. Choose a weapon name. Each successful hit roll of 2 or less with that weapon gets +1 AP.",
+      "cost" : 1
     },
-    "resilience_siege": {
-      "name": "Resilience",
-      "subfactions": [
+    "resilience_siege" : {
+      "name" : "Resilience",
+      "subfactions" : [
         "siege_focus"
       ],
-      "phase": "activation",
-      "flavor": "These marines are able to shrug off even the deadliest blasts after centuries of trench warfare.",
-      "description": "Use this strategy when one of your units is targeted by an attack. Roll a die for each hit, on a 3 or less that hit is prevented.",
-      "cost": 1
+      "phase" : "activation",
+      "flavor" : "These marines are able to shrug off even the deadliest blasts after centuries of trench warfare.",
+      "description" : "Use this strategy when one of your units is targeted by an attack. Roll a die for each hit, on a 3 or less that hit is prevented.",
+      "cost" : 1
     },
-    "tank_hunter_rounds": {
-      "name": "Tank Hunter Rounds",
-      "subfactions": [
+    "demolition_expertise" : {
+      "name" : "Demolition Expertise",
+      "subfactions" : [
         "siege_focus"
       ],
-      "phase": "activation",
-      "flavor": "Instead of specialised units, every marine is armed with potent explosive ammunition to use against heavily armored foes.",
-      "description": "Use this strategy when one of your _Infantry_ units Shoots. All hits with _Marine Rifles_ gain +1 AP. If the enemy unit is a _Vehicle_ all hits with _Marine Rifles_ gain +2 AP instead.",
-      "cost": 1
+      "phase" : "activation",
+      "flavor" : "Every marine is armed with potent explosives to use against heavily armored foes.",
+      "description" : "Use this strategy when one of your _Infantry_ units Shoots. An additional model in that unit may use a _Grenade_ weapon.",
+      "cost" : 2
     },
-    "grim_slaughter": {
-      "name": "Grim Slaughterer",
-      "subfactions": [
+    "grim_slaughter" : {
+      "name" : "Grim Slaughterer",
+      "subfactions" : [
         "siege_focus"
       ],
-      "phase": "activation",
-      "flavor": "Countless battles have worn down the Siege Marines into cold-hearted killers without mercy or compassion.",
-      "description": "Use this strategy when one of your _Infantry_ units Shoots or Fights. It gains +1 Strength, +1 Accuracy and +1 Save for that attack.",
-      "cost": 2
+      "phase" : "activation",
+      "flavor" : "Countless battles have worn down the Siege Marines into cold-hearted killers without mercy or compassion.",
+      "description" : "Use this strategy when one of your _Infantry_ units Shoots or Fights. It gains +1 Strength, +1 Accuracy and +1 Save for that attack.",
+      "cost" : 2
     }
   },
-  "powers": {
-    "beam": {
-      "subfactions": [
+  "powers" : {
+    "beam" : {
+      "subfactions" : [
         "none",
         "change_traitors",
         "pestilence_focus"
       ],
-      "name": "Invigorating Beam",
-      "description": "Target friendly unit within 12\"may immediately make a free move action.",
-      "charge": 7
+      "name" : "Invigorating Beam",
+      "description" : "Target friendly unit within 12\"may immediately make a free move action.",
+      "charge" : 7
     },
-    "magic_shield": {
-      "subfactions": [
+    "magic_shield" : {
+      "subfactions" : [
         "none",
         "change_traitors",
         "pestilence_focus"
       ],
-      "name": "Shield",
-      "description": "Target friendly unit within 12\". Until the end of the round, roll a D10 each time that unit is hit. On a 2 or less, that hit is ignored.",
-      "charge": 7
+      "name" : "Shield",
+      "description" : "Target friendly unit within 12\". Until the end of the round, roll a D10 each time that unit is hit. On a 2 or less, that hit is ignored.",
+      "charge" : 7
     },
-    "weakness": {
-      "subfactions": [
+    "weakness" : {
+      "subfactions" : [
         "none",
         "change_traitors",
         "pestilence_focus"
       ],
-      "name": "Weakness",
-      "description": "Target enemy unit within 18\" must re-roll one die of your choice on its next Save test.",
-      "charge": 6
+      "name" : "Weakness",
+      "description" : "Target enemy unit within 18\" must re-roll one die of your choice on its next Save test.",
+      "charge" : 6
     },
-    "illusion": {
-      "subfactions": [
+    "illusion" : {
+      "subfactions" : [
         "none",
         "change_traitors",
         "pestilence_focus"
       ],
-      "name": "Encroaching Mutations",
-      "description": "Target enemy unit within 18\" gets -1 to hit the next time it shoots or fights.",
-      "charge": 6
+      "name" : "Encroaching Mutations",
+      "description" : "Target enemy unit within 18\" gets -1 to hit the next time it shoots or fights.",
+      "charge" : 6
     },
-    "strike": {
-      "subfactions": [
+    "strike" : {
+      "subfactions" : [
         "none",
         "change_traitors",
         "pestilence_focus"
       ],
-      "name": "Strike",
-      "description": "Target enemy unit within 18\" takes 2 hits with AP 5.",
-      "charge": 6
+      "name" : "Strike",
+      "description" : "Target enemy unit within 18\" takes 2 hits with AP 5.",
+      "charge" : 6
     },
-    "terror": {
-      "subfactions": [
+    "terror" : {
+      "subfactions" : [
         "none",
         "change_traitors",
         "pestilence_focus"
       ],
-      "name": "Terror",
-      "description": "Target enemy unit within 12\" immediately takes 3 Shock.",
-      "charge": 7
+      "name" : "Terror",
+      "description" : "Target enemy unit within 12\" immediately takes 3 Shock.",
+      "charge" : 7
     },
-    "death": {
-      "name": "Bolt",
-      "subfactions": [
+    "death" : {
+      "name" : "Bolt",
+      "subfactions" : [
         "change_traitors"
       ],
-      "description": "Target enemy unit within 18\" takes 1 hit with AP 7.",
-      "charge": 6
+      "description" : "Target enemy unit within 18\" takes 1 hit with AP 7.",
+      "charge" : 6
     },
-    "storm": {
-      "subfactions": [
+    "storm" : {
+      "subfactions" : [
         "change_traitors"
       ],
-      "name": "Storm",
-      "description": "Target enemy unit within 18\" take 5 hits with AP 1.",
-      "charge": 6
+      "name" : "Storm",
+      "description" : "Target enemy unit within 18\" take 5 hits with AP 1.",
+      "charge" : 6
     },
-    "inferno": {
-      "subfactions": [
+    "inferno" : {
+      "subfactions" : [
         "change_traitors"
       ],
-      "name": "Inferno",
-      "description": "Target enemy unit within 12\" takes 3 hits with AP 3.",
-      "charge": 6
+      "name" : "Inferno",
+      "description" : "Target enemy unit within 12\" takes 3 hits with AP 3.",
+      "charge" : 6
     },
-    "rust": {
-      "subfactions": [
+    "rust" : {
+      "subfactions" : [
         "siege_focus"
       ],
-      "name": "Curse of Rust",
-      "description": "Target enemy unit within 12\" has -1 Save until the end of the turn. If the unit is a _Vehicle_ it has -3 Save instead.",
-      "charge": 5
+      "name" : "Curse of Rust",
+      "description" : "Target enemy unit within 12\" has -1 Save until the end of the turn. If the unit is a _Vehicle_ it has -3 Save instead.",
+      "charge" : 5
     },
-    "iron_skin": {
-      "subfactions": [
+    "iron_skin" : {
+      "subfactions" : [
         "siege_focus"
       ],
-      "name": "Iron Skin",
-      "description": "Target friendly unit within 12\" has +1 Save until the end of the turn.",
-      "charge": 6
+      "name" : "Iron Skin",
+      "description" : "Target friendly unit within 12\" has +1 Save until the end of the turn.",
+      "charge" : 6
     },
-    "barrage": {
-      "subfactions": [
+    "barrage" : {
+      "subfactions" : [
         "siege_focus"
       ],
-      "name": "Psychic Barrage",
-      "description": "Target enemy unit within 18\" take 5 hits with AP 1.",
-      "charge": 6
+      "name" : "Psychic Barrage",
+      "description" : "Target enemy unit within 18\" take 5 hits with AP 1.",
+      "charge" : 6
     }
   }
 }
