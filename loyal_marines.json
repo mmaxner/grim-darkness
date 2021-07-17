@@ -3,9 +3,6 @@
     "id": "loyal_marines",
     "author": "guitarninja#5707",
     "color": "#0d407f",
-    "background": "The Loyal Marines are an arm of the Imperium's military, one of the best-equipped and best trained. They are genetically engineered for battle and created for the sole purpose of destroying the enemies of the Imperium.",
-    "strengths": "The Loyal Marines have the tools for just about every situation, and can take on many types of foes. They are as flexible as you need them to be.",
-    "weaknesses": "Loyal Marines tend to be quite tough and highly trained and as such, their units are often quite expensive and may find it difficult to field models to cover a large battlefield.",
     "units": {
         "arch_marine_tactics": {
             "name": "Arch-Marine of Tactics",
@@ -3175,5 +3172,15 @@
         },
         "doom": {"subfactions": ["psychic_marines"], "name": "Doom", "description": "Target enemy model within 12\" takes 1 automatic hit with AP(7).", "charge": 6},
         "purge": {"subfactions": ["psychic_marines"], "name": "Purge", "description": "Target enemy unit within 12\" take 8 automatic hits with AP 0.", "charge": 6}
-    }
+    },
+    "buyLinks": [
+        {
+            "name": "Games Workshop",
+            "link": "https://www.games-workshop.com/en-US/Warhammer-40-000?N=2562756967+3694373482"
+        },
+        {
+            "name": "OnePageRules",
+            "link": "https://www.myminifactory.com/object/3d-print-battle-brothers-bundle-137115"
+        }
+    ]
 }

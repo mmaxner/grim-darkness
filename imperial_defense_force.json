@@ -1350,5 +1350,15 @@
             "flavor": "A battle cannon with extra deadly force.",
             "points": 20
         }
-    }
+    },
+    "buyLinks": [
+        {
+            "name": "Games Workshop",
+            "link": "https://www.games-workshop.com/en-US/Warhammer-40-000?N=2562756967+1138996955"
+        },
+        {
+            "name": "Victoria Miniatures",
+            "link": "https://victoriaminiatures.com/"
+        }
+    ]
 }
