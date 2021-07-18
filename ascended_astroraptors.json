@@ -97,7 +97,10 @@
                     "reflexes": 6,
                     "movement": 7,
                     "weapons": ["laser_pistol", "frags", {"id": "ccw", "count": 3}, "strafing_run_fighter_plane"],
-                    "options": [{"replaceWeapon": "laser_pistol", "withWeapon": ["plasma_pistol", "machine_pistol", "heavy_laser_pistol", "flamethrower_pistol", "heavy_pistol"]}, {"replaceWeapon": "strafing_run_fighter_plane", "withWeapon": ["strafing_run_heavy_plane"]}],
+                    "options": [
+                        {"replaceWeapon": "laser_pistol", "withWeapon": ["plasma_pistol", "machine_pistol", "heavy_laser_pistol", "flamethrower_pistol", "heavy_pistol"]},
+                        {"replaceWeapon": "strafing_run_fighter_plane", "withWeapon": ["strafing_run_heavy_plane"]}
+                    ],
                     "rules": [],
                     "min": 1,
                     "max": 1
@@ -120,7 +123,10 @@
                     "reflexes": 6,
                     "movement": 7,
                     "weapons": ["laser_pistol", "frags", {"id": "ccw", "count": 3}, "orbital_bombardment_light"],
-                    "options": [{"replaceWeapon": "laser_pistol", "withWeapon": ["plasma_pistol", "machine_pistol", "heavy_laser_pistol", "flamethrower_pistol", "heavy_pistol"]}, {"replaceWeapon": "orbital_bombardment_light", "withWeapon": ["orbital_bombardment_heavy"]}],
+                    "options": [
+                        {"replaceWeapon": "laser_pistol", "withWeapon": ["plasma_pistol", "machine_pistol", "heavy_laser_pistol", "flamethrower_pistol", "heavy_pistol"]},
+                        {"replaceWeapon": "orbital_bombardment_light", "withWeapon": ["orbital_bombardment_heavy"]}
+                    ],
                     "rules": [],
                     "min": 1,
                     "max": 1
@@ -170,7 +176,10 @@
                     "reflexes": 6,
                     "movement": 7,
                     "weapons": ["laser_pistol", "frags", {"id": "servo_arm", "count": 3}],
-                    "options": [{"replaceWeapon": "laser_pistol", "withWeapon": ["plasma_pistol", "machine_pistol", "heavy_laser_pistol", "flamethrower_pistol", "heavy_pistol"]}, {"replaceRule": {"id": "repair", "x": 3}, "withRule":  {"id": "repair", "x": 5} }],
+                    "options": [
+                        {"replaceWeapon": "laser_pistol", "withWeapon": ["plasma_pistol", "machine_pistol", "heavy_laser_pistol", "flamethrower_pistol", "heavy_pistol"]},
+                        {"replaceRule": {"id": "repair", "x": 3}, "withRule": {"id": "repair", "x": 5}}
+                    ],
                     "rules": [],
                     "min": 1,
                     "max": 1
@@ -197,10 +206,7 @@
                             "withWeapon": ["flamethrower", "grenade_launcher", "fusion_rifle", "plasma_rifle", "light_laser_cannon", "seismic_cannon", "heavy_auto_laser", "light_machinegun"],
                             "modelLimit": "2/5"
                         },
-                        {
-                            "replaceWeapon": "laser_carbine",
-                            "withWeapon": ["shrapnel_shotgun"]
-                        }
+                        {"replaceWeapon": "laser_carbine", "withWeapon": ["shrapnel_shotgun"]}
                     ],
                     "rules": [],
                     "min": 5,
@@ -390,27 +396,22 @@
             "max": 10,
             "rules": ["scout"],
             "models": [
-                {"name": "Ranger", 
-                    "courage": 6, 
-                    "shoot": 6, 
-                    "fight": 5, 
-                    "movement": 7, 
-                    "defense": 6, 
-                    "reflexes": 5, 
+                {
+                    "name": "Ranger",
+                    "courage": 6,
+                    "shoot": 6,
+                    "fight": 5,
+                    "movement": 7,
+                    "defense": 6,
+                    "reflexes": 5,
                     "weapons": ["laser_pistol", "frags", {"id": "heavy_ccw", "count": 2}],
                     "options": [
-                       {
-                            "replaceWeapon": "laser_pistol",
-                            "withWeapon": ["plasma_pistol", "machine_pistol", "heavy_laser_pistol", "flamethrower_pistol", "heavy_pistol"],
-                            "modelLimit": "2/5"
-                       },
-                       {
-                           "replaceWeapon": {"id": "heavy_ccw", "count": 2},
-                           "withWeapon": ["energy_sword"]
-                       }
-                    ] ,
-                    "min": 5, 
-                    "max": 10}
+                        {"replaceWeapon": "laser_pistol", "withWeapon": ["plasma_pistol", "machine_pistol", "heavy_laser_pistol", "flamethrower_pistol", "heavy_pistol"], "modelLimit": "2/5"},
+                        {"replaceWeapon": {"id": "heavy_ccw", "count": 2}, "withWeapon": ["energy_sword"]}
+                    ],
+                    "min": 5,
+                    "max": 10
+                }
             ]
         },
         "jump_troopers": {
@@ -429,15 +430,9 @@
                     "reflexes": 6,
                     "weapons": ["laser_pistol", "frags", {"id": "heavy_ccw", "count": 2}],
                     "options": [
-                        {
-                             "replaceWeapon": "laser_pistol",
-                             "withWeapon": ["plasma_pistol", "machine_pistol", "heavy_laser_pistol", "flamethrower_pistol", "heavy_pistol"]
-                        },
-                        {
-                            "replaceWeapon": {"id": "heavy_ccw", "count": 2},
-                            "withWeapon": ["energy_sword"]
-                        }
-                     ] ,
+                        {"replaceWeapon": "laser_pistol", "withWeapon": ["plasma_pistol", "machine_pistol", "heavy_laser_pistol", "flamethrower_pistol", "heavy_pistol"]},
+                        {"replaceWeapon": {"id": "heavy_ccw", "count": 2}, "withWeapon": ["energy_sword"]}
+                    ],
                     "min": 5,
                     "max": 10
                 }
@@ -458,13 +453,7 @@
                     "movement": 7,
                     "reflexes": 7,
                     "weapons": [{"id": "laser_pistol", "count": 3}, {"id": "heavy_ccw", "count": 2}],
-                    "options": [
-                        {
-                             "replaceWeapon": "laser_pistol",
-                             "withWeapon": ["plasma_pistol", "machine_pistol", "heavy_laser_pistol", "flamethrower_pistol", "heavy_pistol", "railvolver"]
-                        }
-                        
-                     ] ,
+                    "options": [{"replaceWeapon": "laser_pistol", "withWeapon": ["plasma_pistol", "machine_pistol", "heavy_laser_pistol", "flamethrower_pistol", "heavy_pistol", "railvolver"]}],
                     "min": 1,
                     "max": 1
                 }
@@ -484,38 +473,38 @@
             "models": [
                 {
                     "name": "Raptor Biker Leader",
-                    "courage": 6, 
-                    "shoot": 6, 
-                    "fight": 5, 
-                    "movement": 8, 
-                    "defense": 7, 
-                    "reflexes": 5, 
+                    "courage": 6,
+                    "shoot": 6,
+                    "fight": 5,
+                    "movement": 8,
+                    "defense": 7,
+                    "reflexes": 5,
                     "weapons": ["laser_carbine", "blasting_charges", {"id": "heavy_ccw"}],
                     "options": [
-                        {"replaceWeapon": "pistol", "withWeapon": ["plasma_pistol", "machine_pistol", "heavy_laser_pistol", "flamethrower_pistol", "heavy_pistol"],
-                        "addRule": [{"id": "impact", "x": 2}]}
+                        {
+                            "replaceWeapon": "pistol",
+                            "withWeapon": ["plasma_pistol", "machine_pistol", "heavy_laser_pistol", "flamethrower_pistol", "heavy_pistol"],
+                            "addRule": [{"id": "impact", "x": 2}]
+                        }
                     ],
                     "min": 1,
                     "max": 1
                 },
                 {
                     "name": "Raptor Biker",
-                    "courage": 6, 
-                    "shoot": 6, 
-                    "fight": 5, 
-                    "movement": 8, 
-                    "defense": 7, 
-                    "reflexes": 5, 
+                    "courage": 6,
+                    "shoot": 6,
+                    "fight": 5,
+                    "movement": 8,
+                    "defense": 7,
+                    "reflexes": 5,
                     "weapons": ["laser_carbine", "blasting_charges", {"id": "heavy_ccw"}],
-                    "options": [
-                        {"replaceModel": "sidecar_biker", "modelLimit": "1/3"}
-                    ],
+                    "options": [{"replaceModel": "sidecar_biker", "modelLimit": "1/3"}],
                     "min": 3,
                     "max": 11
                 }
             ]
         },
-
         "battle_tank": {
             "name": "Battle Tank",
             "description": "A main line battle tank.",
@@ -680,7 +669,10 @@
                     "options": [
                         {"addRule": [{"id": "dozer", "name": "Dozer Blade"}, "extra_armor"]},
                         {"addWeapon": [{"id": "light_machinegun", "count": 1}, {"id": "twin_marine_rifle", "count": 1}], "limit": 1},
-                        {"replaceWeapon": {"id": "twin_shard_mortar", "count": 2}, "withWeapon": ["artillery_cannon", {"id": "twin_aa_autocannon", "count": 2}, "eagle_rockets", "death_missile", "twin_gatling_aa"]},
+                        {
+                            "replaceWeapon": {"id": "twin_shard_mortar", "count": 2},
+                            "withWeapon": ["artillery_cannon", {"id": "twin_aa_autocannon", "count": 2}, "eagle_rockets", "death_missile", "twin_gatling_aa"]
+                        },
                         {"replaceWeapon": {"id": "heavy_flamethrower", "mount": ["Front"]}, "withWeapon": [{"id": "heavy_machinegun", "mount": ["Front"]}]}
                     ],
                     "min": 1,
@@ -827,29 +819,14 @@
         "fusion_cannon": {"name": "Fusion Cannon", "attacks": 2, "short": 12, "medium": 24, "ap": 6, "rules": [{"id": "critical", "x": 1}]},
         "power_bolt": {"medium": 18, "attacks": 1, "ap": 7},
         "power_storm": {"medium": 9, "ap": 1, "attacks": 8},
-        "laser_carbine": {
-            "name": "Charge Carbine",
-            "attacks": 1, "short": 9, "medium": 18, "ap": 1, "rules": ["overcharge", "assault"]
-        },
+        "laser_carbine": {"name": "Charge Carbine", "attacks": 1, "short": 9, "medium": 18, "ap": 1, "rules": ["overcharge", "assault"]},
         "shrapnel_shotgun": {"name": "Shrapnel Shotgun", "attacks": 1, "short": 6, "medium": 12, "ap": 1, "rules": ["assault", "lethal"]},
-        "heavy_laser_carbine": {
-            "name": "Heavy Charge Carbine",
-            "attacks": 1, "short": 12, "medium": 24, "ap": 2, "rules": ["overcharge", "assault"]
-        },
+        "heavy_laser_carbine": {"name": "Heavy Charge Carbine", "attacks": 1, "short": 12, "medium": 24, "ap": 2, "rules": ["overcharge", "assault"]},
         "rail_rifle": {"name": "Rail Rifle", "attacks": 1, "short": 18, "medium": 36, "ap": 4, "rules": ["sniper"]},
-        "heavy_auto_laser": {
-            "name": "Heavy Auto-Charge Rifle",
-            "attacks": 2, "short": 12, "medium": 24, "ap": 2, "rules": ["overcharge", "assault"]
-        },
+        "heavy_auto_laser": {"name": "Heavy Auto-Charge Rifle", "attacks": 2, "short": 12, "medium": 24, "ap": 2, "rules": ["overcharge", "assault"]},
         "feral_gnashing": {"name": "Feral Gnashing", "attacks": 1, "short": "Melee", "ap": 1, "rules": ["rending"]},
-        "laser_pistol": {
-            "name": "Charge Pistol",
-            "attacks": 1, "short": 6, "ap": 1, "rules": ["overcharge", "pistol"]
-        },
-        "heavy_laser_pistol": {
-            "name": "Heavy Charge Pistol",
-            "attacks": 1, "short": 6, "ap": 2, "rules": ["overcharge", "pistol"]
-        },
+        "laser_pistol": {"name": "Charge Pistol", "attacks": 1, "short": 6, "ap": 1, "rules": ["overcharge", "pistol"]},
+        "heavy_laser_pistol": {"name": "Heavy Charge Pistol", "attacks": 1, "short": 6, "ap": 2, "rules": ["overcharge", "pistol"]},
         "twin_gatling_aa": {"name": "Twin Gatling Anti-Air Gun", "attacks": 8, "short": 24, "medium": 48, "ap": 2, "rules": [{"id": "anti_air"}]},
         "strafing_run_fighter_plane": {"name": "Fighter Plane (Strafing Run)", "attacks": 6, "short": 18, "medium": 36, "ap": 1, "rules": ["indirect"]},
         "strafing_run_heavy_plane": {"name": "Heavy Fighter Plane (Strafing Run)", "attacks": 4, "short": 18, "medium": 36, "ap": 4, "rules": ["indirect"]},
@@ -862,7 +839,6 @@
         "machine_pistol": {"name": "Machine Pistol", "attacks": 2, "short": 6, "rules": ["pistol"]},
         "assassins_knife": {"name": "Assassin's Knife", "attacks": 1, "short": "Melee", "ap": 3, "rules": ["rending"]},
         "railvolver": {"name": "Railvolver", "attacks": 1, "short": 6, "medium": 12, "ap": 4, "rules": ["pistol"]}
-        
     },
     "rules": {
         "raptor_tactics": {
@@ -913,10 +889,5 @@
             "cost": 1
         }
     },
-    "buyLinks": [
-        {
-            "name": "Treadhead Rad",
-            "link": "https://www.myminifactory.com/campaigns/raygun-raptors-95"
-        }
-    ]
+    "buyLinks": [{"name": "Treadhead Rad", "link": "https://www.myminifactory.com/campaigns/raygun-raptors-95"}]
 }
