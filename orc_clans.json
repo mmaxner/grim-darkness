@@ -991,7 +991,6 @@
                     "reflexes": 5,
                     "movement": 6,
                     "weapons": ["heavy_cannon", {"id": "walker_saw", "count": 4}],
-                    "options": [{"replaceWeapon": {"id": "walker_saw", "count": 4}, "withWeapon": [{"id": "walker_claw", "count": 4}, "heavy_cannon"]}],
                     "min": 1,
                     "max": 1
                 }
