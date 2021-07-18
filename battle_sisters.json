@@ -126,7 +126,7 @@
             "min": 5,
             "max": 10,
             "category": "specialist",
-            "rules": ["support", "medical_training", {"id": "wounds", "x": 2}],
+            "rules": ["support", "medic", {"id": "wounds", "x": 2}],
             "models": [
                 {
                     "name": "Nurse Sister",

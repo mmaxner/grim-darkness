@@ -1387,7 +1387,7 @@
           "id": "leader_x",
           "x": "Infantry"
         },
-        "medical_training",
+        "medic",
         {
           "id": "wounds",
           "x": 2
