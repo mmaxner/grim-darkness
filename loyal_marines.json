@@ -643,7 +643,7 @@
                 {"addRule": {"id": "stealth", "name": "Camouflage Cloak"}, "modelLimit": "all"},
                 {"addWeapon": "fusion_bomb", "modelLimit": 3}
             ],
-            "rules": ["outflank"],
+            "rules": ["scout"],
             "models": [
                 {
                     "name": "Scout Marine Leader",
