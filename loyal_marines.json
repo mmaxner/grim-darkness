@@ -1349,6 +1349,102 @@
                 }
             ]
         },
+        "marine_bikers": {
+            "name": "Marine Bikers",
+            "description": "Traitor marines on combat bikes.",
+            "rules": [{"id": "impact", "x": 1}],
+            "subfactions": ["none"],
+            "category": "strike",
+            "options": [
+                {"replaceWeapon": ["marine_pistol"], "withWeapon": ["marine_rifle"]},
+                {
+                    "replaceWeapon": {"id": "twin_marine_rifle", "mount": ["Front"]},
+                    "withWeapon": [{"id": "twin_plasma_rifle", "mount": ["Front"]}, {"id": "twin_flamethrower", "mount": ["Front"]}, {"id": "twin_fusion_rifle", "mount": ["Front"]}]
+                }
+            ],
+            "models": [
+                {
+                    "name": "Marine Biker Leader",
+                    "movement": 8,
+                    "courage": 6,
+                    "shoot": 6,
+                    "fight": 6,
+                    "defense": 8,
+                    "reflexes": 6,
+                    "weapons": [{"id": "twin_marine_rifle", "mount": ["Front"]}, "marine_pistol", "frags", {"id": "chainsword", "count": 2}],
+                    "options": [
+                        {"replaceWeapon": ["marine_pistol"], "withWeapon": [{"id": "energy_claws", "count": 2}, "combi_plasma", "combi_flamer", "combi_fusion", "twin_marine_rifle", "plasma_pistol"]},
+                        {
+                            "replaceWeapon": [{"id": "chainsword", "count": 2}],
+                            "withWeapon": [{"id": "energy_sword", "count": 2}, {"id": "energy_fist", "count": 2}, {"id": "energy_hammer", "count": 2}]
+                        }
+                    ],
+                    "min": 1,
+                    "max": 1
+                },
+                {
+                    "name": "Traitor Biker",
+                    "movement": 8,
+                    "courage": 6,
+                    "shoot": 6,
+                    "fight": 6,
+                    "defense": 8,
+                    "reflexes": 6,
+                    "weapons": [{"id": "twin_marine_rifle", "mount": ["Front"]}, "marine_pistol", {"id": "chainsword", "count": 2}, "frags"],
+                    "options": [{"replaceWeapon": ["marine_pistol"], "withWeapon": ["fusion_rifle", "flamethrower", "plasma_rifle"], "modelLimit": 2}],
+                    "min": 2,
+                    "max": 8
+                }
+            ],
+            "keywords": ["Biker"]
+        },
+        "scout_bikers": {
+            "name": "Scout Bikers",
+            "description": "Scout marines on combat bikes.",
+            "rules": [{"id": "impact", "x": 1}, "scout"],
+            "subfactions": ["none"],
+            "category": "strike",
+            "options": [
+                {
+                    "replaceWeapon": {"id": "twin_marine_rifle", "mount": ["Front"]},
+                    "withWeapon": [{"id": "grenade_launcher", "mount": ["Front"]}]
+                }
+            ],
+            "models": [
+                {
+                    "name": "Scout Biker Leader",
+                    "movement": 8,
+                    "courage": 6,
+                    "shoot": 6,
+                    "fight": 6,
+                    "defense": 7,
+                    "reflexes": 6,
+                    "weapons": [{"id": "twin_marine_rifle", "mount": ["Front"]}, "marine_shotgun", "frags", {"id": "heavy_ccw", "count": 2}],
+                    "options": [
+                        {"replaceWeapon": ["marine_pistol"], "withWeapon": [{"id": "energy_claws", "count": 2}, "combi_plasma", "combi_flamer", "combi_fusion", "twin_marine_rifle", "plasma_pistol"]},
+                        {
+                            "replaceWeapon": [{"id": "chainsword", "count": 2}],
+                            "withWeapon": [{"id": "energy_sword", "count": 2}, {"id": "energy_fist", "count": 2}, {"id": "energy_hammer", "count": 2}]
+                        }
+                    ],
+                    "min": 1,
+                    "max": 1
+                },
+                {
+                    "name": "Scout Biker",
+                    "movement": 8,
+                    "courage": 6,
+                    "shoot": 6,
+                    "fight": 6,
+                    "defense": 7,
+                    "reflexes": 6,
+                    "weapons": [{"id": "twin_marine_rifle", "mount": ["Front"]}, "marine_shotgun", {"id": "heavy_ccw", "count": 2}, "frags"],
+                    "min": 2,
+                    "max": 8
+                }
+            ],
+            "keywords": ["Biker"]
+        },
         "assault_squad": {
             "name": "Assault Squad",
             "description": "A squad of elite marines trained to fight in close combat.",
@@ -2663,8 +2759,8 @@
                 }
             ]
         },
-        "loyal_siegebreaker": {
-            "name": "Loyal Siegebreakers",
+        "marine_siegebreaker": {
+            "name": "Marine Siegebreakers",
             "description": "Marines who excel at breaching enemy lines under heavy fire.",
             "rules": ["combat_shield"],
             "subfactions": ["none", "siege_masters"],
