@@ -990,7 +990,7 @@
                     "defense": 12,
                     "reflexes": 5,
                     "movement": 6,
-                    "weapons": ["heavy_cannon", {"id": "walker_saw", "count": 4}],
+                    "weapons": ["heavy_cannon", {"id": "walker_saw", "count": 4}, "heavy_flamethrower"],
                     "min": 1,
                     "max": 1
                 }
