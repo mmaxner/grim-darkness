@@ -3,13 +3,16 @@
     "id": "loyal_marines",
     "author": "guitarninja#5707",
     "color": "#0d407f",
+    "background": "The Loyal Marines are an arm of the Imperium's military, one of the best-equipped and best trained. They are genetically engineered for battle and created for the sole purpose of destroying the enemies of the Imperium.",
+    "strengths": "The Loyal Marines have the tools for just about every situation, and can take on many types of foes. They are as flexible as you need them to be.",
+    "weaknesses": "Loyal Marines tend to be quite tough and highly trained and as such, their units are often quite expensive and may find it difficult to field models to cover a large battlefield.",
     "units": {
         "arch_marine_tactics": {
             "name": "Arch-Marine of Tactics",
             "description": "One of the original founders of the loyal marines and an extremely powerful leader.",
             "category": "command",
             "keywords": ["Infantry"],
-            "rules": [{"id": "leader_x", "x": "Infantry"},  {"id": "wounds", "x": 5}, {"id": "arch_tactics", "x": 2}],
+            "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "wounds", "x": 5}, {"id": "arch_tactics", "x": 2}],
             "subfactions": ["none"],
             "models": [
                 {
@@ -33,7 +36,7 @@
             "max": 10,
             "category": "command",
             "keywords": ["Infantry"],
-            "rules": [{"id": "leader_x", "x": "Infantry"},  {"id": "wounds", "x": 4}, {"id": "rifle_tactics", "x": 2}],
+            "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "wounds", "x": 4}, {"id": "rifle_tactics", "x": 2}],
             "subfactions": ["none", "wolf_marines", "assault_focus", "alien_hunters", "siege_masters"],
             "models": [
                 {
@@ -99,7 +102,7 @@
             "max": 10,
             "category": "command",
             "keywords": ["Infantry"],
-            "rules": [{"id": "leader_x", "x": "Infantry"},  {"id": "wounds", "x": 3}, {"id": "rifle_tactics", "x": 2}],
+            "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "wounds", "x": 3}, {"id": "rifle_tactics", "x": 2}],
             "subfactions": ["none", "wolf_marines", "assault_focus", "alien_hunters"],
             "models": [
                 {
@@ -184,7 +187,7 @@
             "max": 10,
             "category": "command",
             "keywords": ["Infantry"],
-            "rules": [{"id": "leader_x", "x": "Infantry"},  {"id": "wounds", "x": 3}, {"id": "rifle_tactics", "x": 2}],
+            "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "wounds", "x": 3}, {"id": "rifle_tactics", "x": 2}],
             "subfactions": ["none", "wolf_marines", "assault_focus", "alien_hunters"],
             "models": [
                 {
@@ -216,7 +219,7 @@
             "description": "A fearless next-generation leader in stealth armor.",
             "category": "command",
             "keywords": ["Infantry"],
-            "rules": [{"id": "leader_x", "x": "Infantry"},  {"id": "wounds", "x": 3}, {"id": "rifle_tactics", "x": 2}, "scout", "stealth"],
+            "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "wounds", "x": 3}, {"id": "rifle_tactics", "x": 2}, "scout", "stealth"],
             "subfactions": ["none", "wolf_marines", "assault_focus", "alien_hunters"],
             "models": [
                 {
@@ -571,11 +574,10 @@
                     "options": [
                         {
                             "modelLimit": 1,
-                            "limit": 1,
                             "replaceWeapon": "marine_rifle",
                             "withWeapon": ["heavy_machinegun", "missile_launcher", "laser_cannon", "heavy_fusion_rifle", "plasma_cannon", "gravity_cannon"]
                         },
-                        {"modelLimit": 1, "limit": 1, "replaceWeapon": "marine_rifle", "withWeapon": ["plasma_rifle", "flamethrower", "fusion_rifle", "gravity_rifle"]}
+                        {"modelLimit": 1, "replaceWeapon": "marine_rifle", "withWeapon": ["plasma_rifle", "flamethrower", "fusion_rifle", "gravity_rifle"]}
                     ],
                     "rules": [],
                     "min": 4,
@@ -627,7 +629,6 @@
                         },
                         {"modelLimit": 1, "limit": 1, "replaceWeapon": "marine_rifle", "withWeapon": ["plasma_rifle", "flamethrower", "fusion_rifle", "gravity_rifle"]}
                     ],
-                    "rules": [],
                     "min": 4,
                     "max": 9
                 }
@@ -2411,11 +2412,13 @@
             "max": 10,
             "category": "specialist",
             "subfactions": ["psychic_marines"],
-            "options": [{
-                "replaceWeapon": ["storm_rifle", {"id": "psychic_sword", "count": 2}],
-                "withWeapon": [["heavy_ccw", "incinerator"], ["heavy_ccw", "psychic_silencer"], ["heavy_ccw", "psychic_cannon"]],
-                "modelLimit": 4
-            }],
+            "options": [
+                {
+                    "replaceWeapon": ["storm_rifle", {"id": "psychic_sword", "count": 2}],
+                    "withWeapon": [["heavy_ccw", "incinerator"], ["heavy_ccw", "psychic_silencer"], ["heavy_ccw", "psychic_cannon"]],
+                    "modelLimit": 4
+                }
+            ],
             "rules": [],
             "models": [
                 {
@@ -2658,6 +2661,38 @@
                     "min": 1,
                     "max": 1
                 }
+            ]
+        },
+        "loyal_siegebreaker": {
+            "name": "Loyal Siegebreakers",
+            "description": "Marines who excel at breaching enemy lines under heavy fire.",
+            "rules": ["combat_shield"],
+            "subfactions": ["none", "siege_masters"],
+            "category": "specialist",
+            "options": [
+                {"replaceWeapon": ["marine_rifle", "heavy_ccw"], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 2}], ["marine_shotgun", {"id": "chainsword", "count": 2}]]},
+                {"replaceWeapon": ["marine_rifle"], "withWeapon": ["fusion_rifle", "plasma_rifle", "laser_cannon", "flamethrower", "gravity_rifle"], "modelLimit": "2/5"},
+                {"addWeapon": "fusion_bomb", "modelLimit": 3}
+            ],
+            "models": [
+                {
+                    "name": "Siegebreaker Leader",
+                    "movement": 6,
+                    "courage": 6,
+                    "shoot": 6,
+                    "fight": 6,
+                    "defense": 8,
+                    "reflexes": 6,
+                    "weapons": ["marine_rifle", "heavy_ccw", "at_grenade"],
+                    "options": [
+                        {"replaceWeapon": ["marine_rifle"], "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "twin_marine_rifle"]},
+                        {"replaceWeapon": {"id": "chainsword", "count": 2}, "withWeapon": [{"id": "energy_sword", "count": 2}, {"id": "energy_fist", "count": 2}, {"id": "energy_hammer", "count": 2}]},
+                        {"replaceWeapon": ["marine_pistol"], "withWeapon": ["plasma_pistol"]}
+                    ],
+                    "min": 1,
+                    "max": 1
+                },
+                {"name": "Siegebreaker", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 8, "reflexes": 6, "weapons": ["marine_rifle", "heavy_ccw", "at_grenade"], "min": 4, "max": 9}
             ]
         }
     },
@@ -3141,26 +3176,14 @@
         }
     ],
     "powers": {
-        "fortify": {
-            "name": "Courage",
-            "description": "Target friendly unit within 12\" gets +1 Courage until the of the round.",
-            "charge": 8
-        },
+        "fortify": {"name": "Courage", "description": "Target friendly unit within 12\" gets +1 Courage until the of the round.", "charge": 8},
         "magic_shield": {
             "name": "Shield",
             "description": "Target friendly unit within 12\". Until the end of the round, roll a D10 each time that unit is hit. On a 2 or less, that hit is ignored.",
             "charge": 7
         },
-        "clouded": {
-            "name": "Clouded",
-            "description": "Target enemy unit within 18\" gets -1 Accuracy until the end of the round.",
-            "charge": 6
-        },
-        "pacify": {
-            "name": "Pacify",
-            "description": "Target enemy unit within 18\" suffers -1 Strength with its next attack.",
-            "charge": 6
-        },
+        "clouded": {"name": "Clouded", "description": "Target enemy unit within 18\" gets -1 Accuracy until the end of the round.", "charge": 6},
+        "pacify": {"name": "Pacify", "description": "Target enemy unit within 18\" suffers -1 Strength with its next attack.", "charge": 6},
         "storm": {"name": "Storm", "description": "Target enemy unit within 12\" take 5 hits with AP 1.", "charge": 6},
         "bolt": {"name": "Bolt", "description": "Target enemy unit within 18\" takes 2 hits with AP 5.", "charge": 6},
         "snare": {"subfactions": ["alien_hunters"], "name": "Snare", "description": "Target enemy unit within 18\" gets -2\" of Movement until the end of the round.", "charge": 7},
@@ -3172,15 +3195,5 @@
         },
         "doom": {"subfactions": ["psychic_marines"], "name": "Doom", "description": "Target enemy model within 12\" takes 1 automatic hit with AP(7).", "charge": 6},
         "purge": {"subfactions": ["psychic_marines"], "name": "Purge", "description": "Target enemy unit within 12\" take 8 automatic hits with AP 0.", "charge": 6}
-    },
-    "buyLinks": [
-        {
-            "name": "Games Workshop",
-            "link": "https://www.games-workshop.com/en-US/Warhammer-40-000?N=2562756967+3694373482"
-        },
-        {
-            "name": "OnePageRules",
-            "link": "https://www.myminifactory.com/object/3d-print-battle-brothers-bundle-137115"
-        }
-    ]
+    }
 }
