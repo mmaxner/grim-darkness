@@ -67,6 +67,7 @@
                             ]
                         },
                         {"addRule": ["jetpack", "destroyer_armor"], "limit": 1},
+                        {"addRule": ["combat_shield"]},
                         {"replaceRule": {"id": "rifle_tactics", "x": 2}, "withRule": {"id": "melee_tactics", "x": 2}}
                     ],
                     "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "wounds", "x": 3}, {"id": "rifle_tactics", "x": 2}],
@@ -112,7 +113,7 @@
                     "fight": 7,
                     "defense": 9,
                     "reflexes": 6,
-                    "weapons": [{"id": "marine_rifle"}, "at_grenade", "twin_marine_rifle", {"id": "chainsword", "count": 4}],
+                    "weapons": [{"id": "marine_rifle"}, "at_grenade", {"id": "chainsword", "count": 4}, {"id": "twin_marine_rifle", "mount": ["Front"]}],
                     "options": [
                         {"replaceWeapon": ["marine_rifle"], "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "twin_marine_rifle"]},
                         {"replaceWeapon": ["marine_rifle", {"id": "chainsword", "count": 4}], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 5}], {"id": "energy_claws", "count": 5}]},
@@ -127,6 +128,10 @@
                                 {"id": "energy_hammer", "count": 4},
                                 {"id": "energy_claws", "count": 4}
                             ]
+                        },
+                        {
+                            "replaceWeapon": {"id": "twin_marine_rifle", "mount": ["Front"]},
+                            "withWeapon": [{"id": "twin_plasma_rifle", "mount": ["Front"]}, {"id": "twin_flamethrower", "mount": ["Front"]}, {"id": "twin_fusion_rifle", "mount": ["Front"]}]
                         },
                         {"replaceRule": {"id": "rifle_tactics", "x": 2}, "withRule": {"id": "melee_tactics", "x": 2}}
                     ],
@@ -232,7 +237,7 @@
                     "fight": 6,
                     "defense": 9,
                     "reflexes": 6,
-                    "weapons": ["marine_pistol", "frags", "twin_marine_rifle", {"id": "energy_staff", "count": 3}],
+                    "weapons": ["marine_pistol", "frags", {"id": "energy_staff", "count": 3}, {"id": "twin_marine_rifle", "mount": ["Front"]}],
                     "options": [
                         {"replaceWeapon": ["marine_pistol", {"id": "energy_staff", "count": 3}], "withWeapon": [{"id": "energy_claws", "count": 5}]},
                         {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "combi_plasma", "combi_flamer", "combi_fusion", "twin_marine_rifle", "marine_rifle"]},
@@ -247,6 +252,10 @@
                                 {"id": "energy_claws", "count": 4},
                                 {"id": "energy_sword", "count": 3}
                             ]
+                        },
+                        {
+                            "replaceWeapon": {"id": "twin_marine_rifle", "mount": ["Front"]},
+                            "withWeapon": [{"id": "twin_plasma_rifle", "mount": ["Front"]}, {"id": "twin_flamethrower", "mount": ["Front"]}, {"id": "twin_fusion_rifle", "mount": ["Front"]}]
                         },
                         {"replaceRule": {"id": "power", "x": 1}, "withRule": {"id": "power", "x": 2}}
                     ],
@@ -941,7 +950,10 @@
             "category": "strike",
             "options": [
                 {"replaceWeapon": ["marine_pistol"], "withWeapon": ["marine_rifle"]},
-                {"replaceWeapon":{"id": "twin_marine_rifle", "mount": ["Front"]} , "withWeapon": [{"id": "twin_plasma_rifle", "mount": ["Front"]}, {"id": "twin_flamethrower", "mount": ["Front"]}, {"id": "twin_fusion_rifle", "mount": ["Front"]}]}
+                {
+                    "replaceWeapon": {"id": "twin_marine_rifle", "mount": ["Front"]},
+                    "withWeapon": [{"id": "twin_plasma_rifle", "mount": ["Front"]}, {"id": "twin_flamethrower", "mount": ["Front"]}, {"id": "twin_fusion_rifle", "mount": ["Front"]}]
+                }
             ],
             "models": [
                 {
@@ -952,7 +964,7 @@
                     "fight": 6,
                     "defense": 8,
                     "reflexes": 6,
-                    "weapons": [{"id": "twin_marine_rifle", "mount": ["Front"]},"marine_pistol", "frags", {"id": "chainsword", "count": 2}],
+                    "weapons": [{"id": "twin_marine_rifle", "mount": ["Front"]}, "marine_pistol", "frags", {"id": "chainsword", "count": 2}],
                     "options": [
                         {"replaceWeapon": ["marine_pistol"], "withWeapon": [{"id": "energy_claws", "count": 2}, "combi_plasma", "combi_flamer", "combi_fusion", "twin_marine_rifle", "plasma_pistol"]},
                         {
@@ -971,7 +983,7 @@
                     "fight": 6,
                     "defense": 8,
                     "reflexes": 6,
-                    "weapons": [{"id": "twin_marine_rifle", "mount": ["Front"]},"marine_pistol", {"id": "chainsword", "count": 2}, "frags"],
+                    "weapons": [{"id": "twin_marine_rifle", "mount": ["Front"]}, "marine_pistol", {"id": "chainsword", "count": 2}, "frags"],
                     "options": [{"replaceWeapon": ["marine_pistol"], "withWeapon": ["fusion_rifle", "flamethrower", "plasma_rifle"], "modelLimit": 2}],
                     "min": 2,
                     "max": 8

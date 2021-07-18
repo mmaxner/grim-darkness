@@ -98,10 +98,7 @@
         "captain": {
             "name": "Captain",
             "description": "A fearless leader.",
-            "min": 5,
-            "max": 10,
             "category": "command",
-            "keywords": ["Infantry"],
             "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "wounds", "x": 3}, {"id": "rifle_tactics", "x": 2}],
             "subfactions": ["none", "wolf_marines", "assault_focus", "alien_hunters"],
             "models": [
@@ -115,7 +112,7 @@
                     "movement": 6,
                     "weapons": [{"id": "marine_rifle"}, "at_grenade", {"id": "heavy_ccw", "count": 3}],
                     "options": [
-                        {"replaceWeapon": ["marine_rifle"], "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "twin_marine_rifle"], "limit": 1},
+                        {"replaceWeapon": ["marine_rifle"], "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "twin_marine_rifle"]},
                         {"replaceWeapon": ["marine_rifle", {"id": "heavy_ccw", "count": 3}], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 4}]]},
                         {
                             "replaceWeapon": {"id": "chainsword", "count": 4},
@@ -340,11 +337,9 @@
         "prime_champion_on_bike": {
             "name": "Prime Champion on Bike",
             "description": "A fearless next-generation combat master on a bike.",
-            "min": 5,
-            "max": 10,
             "category": "command",
-            "keywords": ["Infantry", "Biker"],
-            "rules": [{"id": "leader_x", "x": "Infantry, Biker"}, {"id": "wounds", "x": 3}, {"id": "melee_tactics_bike", "x": 1}],
+            "keywords": ["Biker"],
+            "rules": [{"id": "leader_x", "x": "Infantry, Biker"}, {"id": "wounds", "x": 3}, {"id": "melee_tactics_bike", "x": 1}, {"id": "impact", "x": 1}],
             "subfactions": ["none", "wolf_marines", "assault_focus", "alien_hunters"],
             "models": [
                 {
@@ -356,7 +351,13 @@
                     "defense": 9,
                     "reflexes": 6,
                     "weapons": [{"id": "twin_prime_rifle", "mount": ["Front"]}, "at_grenade", {"id": "holy_mace", "count": 4}, "prime_pistol"],
-                    "options": [{"replaceRule": {"id": "melee_tactics_bike", "x": 1}, "withRule": {"id": "melee_tactics_bike", "x": 2}}],
+                    "options": [
+                        {
+                            "replaceWeapon": {"id": "twin_prime_rifle", "mount": ["Front"]},
+                            "withWeapon": [{"id": "twin_plasma_rifle", "mount": ["Front"]}, {"id": "twin_flamethrower", "mount": ["Front"]}, {"id": "twin_fusion_rifle", "mount": ["Front"]}]
+                        },
+                        {"replaceRule": {"id": "melee_tactics_bike", "x": 1}, "withRule": {"id": "melee_tactics_bike", "x": 2}}
+                    ],
                     "min": 1,
                     "max": 1
                 }
@@ -1351,7 +1352,7 @@
         },
         "marine_bikers": {
             "name": "Marine Bikers",
-            "description": "Traitor marines on combat bikes.",
+            "description": "Loyal marines on combat bikes.",
             "rules": [{"id": "impact", "x": 1}],
             "subfactions": ["none"],
             "category": "strike",
@@ -1383,7 +1384,7 @@
                     "max": 1
                 },
                 {
-                    "name": "Traitor Biker",
+                    "name": "Marine Biker",
                     "movement": 8,
                     "courage": 6,
                     "shoot": 6,
@@ -1404,12 +1405,7 @@
             "rules": [{"id": "impact", "x": 1}, "scout"],
             "subfactions": ["none"],
             "category": "strike",
-            "options": [
-                {
-                    "replaceWeapon": {"id": "twin_marine_rifle", "mount": ["Front"]},
-                    "withWeapon": [{"id": "grenade_launcher", "mount": ["Front"]}]
-                }
-            ],
+            "options": [{"replaceWeapon": {"id": "twin_marine_rifle", "mount": ["Front"]}, "withWeapon": [{"id": "grenade_launcher", "mount": ["Front"]}]}],
             "models": [
                 {
                     "name": "Scout Biker Leader",
@@ -3130,7 +3126,7 @@
             "subfactions": ["psychic_marines"],
             "name": "Psychic Aim",
             "phase": "activation",
-            "description": "Use when shooting with an _Infantry_ unit. That unit may target enemies it cannot see at -1 Accuracy.",
+            "description": "Use when shooting with an _Infantry_ unit. That unit may target enemies it cannot see.",
             "flavor": "Psychic marines are trained to use their psychic vision to guide their shots.",
             "cost": 1
         },
