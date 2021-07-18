@@ -10,7 +10,7 @@
             "description": "One of the strongest Orcs to ever live and a dreadfully scary opponent in a fight.",
             "category": "command",
             "keywords": ["Infantry"],
-            "rules": [{"id": "leader_x", "x": "Infantry"},  {"id": "wounds", "x": 5}, {"id": "grand_warlord_tactics", "x": 2}],
+            "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "wounds", "x": 5}, {"id": "grand_warlord_tactics", "x": 2}],
             "subfactions": ["none"],
             "models": [
                 {
@@ -48,10 +48,7 @@
                     "options": [
                         {"replaceRule": {"id": "orc_tactics", "x": 1}, "withRule": {"id": "orc_tactics", "x": 2}},
                         {"replaceWeapon": "heavy_pistol", "withWeapon": ["carbine", "twin_carbine", "combi_heavy_flamer", "combi_rocket_launcher"]},
-                        {
-                            "replaceWeapon": {"id": "heavy_ccw", "count": 5},
-                            "withWeapon": [{"id": "ultra_axe", "count": 5}, {"id": "ultra_saw", "count": 5}, {"id": "ultra_claw", "count": 5}]
-                        },
+                        {"replaceWeapon": {"id": "heavy_ccw", "count": 5}, "withWeapon": [{"id": "ultra_axe", "count": 5}, {"id": "ultra_saw", "count": 5}, {"id": "ultra_claw", "count": 5}]},
                         {"addRule": ["ultra_armor", {"id": "resilient", "x": 3, "name": "Cyborg Body"}], "limit": 1}
                     ],
                     "min": 1,
@@ -78,10 +75,7 @@
                     "weapons": ["heavy_pistol", "frags", {"id": "heavy_ccw", "count": 3}],
                     "options": [
                         {"replaceWeapon": "heavy_pistol", "withWeapon": ["carbine", "twin_carbine", "combi_heavy_flamer", "combi_rocket_launcher"]},
-                        {
-                            "replaceWeapon": {"id": "heavy_ccw", "count": 3},
-                            "withWeapon": [{"id": "ultra_axe", "count": 3}, {"id": "ultra_saw", "count": 3}, {"id": "ultra_claw", "count": 3}]
-                        },
+                        {"replaceWeapon": {"id": "heavy_ccw", "count": 3}, "withWeapon": [{"id": "ultra_axe", "count": 3}, {"id": "ultra_saw", "count": 3}, {"id": "ultra_claw", "count": 3}]},
                         {"replaceRule": {"id": "power", "x": 1}, "withRule": {"id": "power", "x": 2}}
                     ],
                     "rules": [{"id": "power", "x": 1}],
@@ -112,10 +106,7 @@
                             "replaceWeapon": "heavy_pistol",
                             "withWeapon": ["carbine", "twin_carbine", "combi_heavy_flamer", "combi_rocket_launcher", "plasma_pistol", "teleport_pistol", "plasma_rifle", "rocket_launcher", "shock_gun"]
                         },
-                        {
-                            "replaceWeapon": {"id": "heavy_ccw", "count": 3},
-                            "withWeapon": [{"id": "ultra_axe", "count": 3}, {"id": "ultra_saw", "count": 3}, {"id": "ultra_claw", "count": 3}]
-                        },
+                        {"replaceWeapon": {"id": "heavy_ccw", "count": 3}, "withWeapon": [{"id": "ultra_axe", "count": 3}, {"id": "ultra_saw", "count": 3}, {"id": "ultra_claw", "count": 3}]},
                         {"addRule": ["heavy_armor", "ultra_armor", {"id": "resilient", "x": 3, "name": "Cyborg Body"}], "limit": 1},
                         {"replaceRule": {"id": "repair", "x": 3}, "withRule": {"id": "repair", "x": 5}},
                         {"addRule": ["precision_monicle"]},
@@ -125,19 +116,7 @@
                     "min": 1,
                     "max": 1
                 },
-                {
-                    "name": "Goblin Assistant",
-                    "movement": 6,
-                    "courage": 2,
-                    "shoot": 3,
-                    "fight": 3,
-                    "defense": 3,
-                    "reflexes": 2,
-                    "weapons": ["ccw"],
-                    "rules": ["goblin_assistant"],
-                    "min": 0,
-                    "max": 1
-                }
+                {"name": "Goblin Assistant", "movement": 6, "courage": 2, "shoot": 3, "fight": 3, "defense": 3, "reflexes": 2, "weapons": ["ccw"], "rules": ["goblin_assistant"], "min": 0, "max": 1}
             ]
         },
         "warbanner_boss": {
@@ -159,10 +138,7 @@
                     "weapons": ["heavy_pistol", "frags", {"id": "heavy_ccw", "count": 3}],
                     "options": [
                         {"replaceWeapon": "heavy_pistol", "withWeapon": ["carbine", "twin_carbine"]},
-                        {
-                            "replaceWeapon": {"id": "heavy_ccw", "count": 3},
-                            "withWeapon": [{"id": "ultra_axe", "count": 3}, {"id": "ultra_saw", "count": 3}, {"id": "ultra_claw", "count": 3}]
-                        }
+                        {"replaceWeapon": {"id": "heavy_ccw", "count": 3}, "withWeapon": [{"id": "ultra_axe", "count": 3}, {"id": "ultra_saw", "count": 3}, {"id": "ultra_claw", "count": 3}]}
                     ],
                     "min": 1,
                     "max": 1
@@ -188,10 +164,7 @@
                     "weapons": ["heavy_pistol", "frags", {"id": "heavy_ccw", "count": 3}],
                     "options": [
                         {"replaceWeapon": "heavy_pistol", "withWeapon": ["carbine", "twin_carbine", "combi_heavy_flamer", "combi_rocket_launcher", "plasma_pistol"]},
-                        {
-                            "replaceWeapon": {"id": "heavy_ccw", "count": 3},
-                            "withWeapon": [{"id": "ultra_axe", "count": 3}, {"id": "ultra_saw", "count": 3}, {"id": "ultra_claw", "count": 3}]
-                        }
+                        {"replaceWeapon": {"id": "heavy_ccw", "count": 3}, "withWeapon": [{"id": "ultra_axe", "count": 3}, {"id": "ultra_saw", "count": 3}, {"id": "ultra_claw", "count": 3}]}
                     ],
                     "min": 1,
                     "max": 1
@@ -206,7 +179,7 @@
             "max": 1,
             "category": "command",
             "keywords": ["Goblin", "Infantry"],
-            "rules": [{"id": "leader_x", "x": "Infantry"},  {"id": "wounds", "x": 3}, {"id": "goblin_tactics", "x": 1}],
+            "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "wounds", "x": 3}, {"id": "goblin_tactics", "x": 1}],
             "models": [
                 {
                     "name": "Goblin Leader",
@@ -271,19 +244,7 @@
                     "min": 1,
                     "max": 1
                 },
-                {
-                    "name": "Goblin Assistant",
-                    "movement": 6,
-                    "courage": 4,
-                    "shoot": 5,
-                    "fight": 4,
-                    "defense": 4,
-                    "reflexes": 5,
-                    "weapons": ["ccw"],
-                    "rules": ["goblin_assistant"],
-                    "min": 2,
-                    "max": 2
-                }
+                {"name": "Goblin Assistant", "movement": 6, "courage": 4, "shoot": 5, "fight": 4, "defense": 4, "reflexes": 5, "weapons": ["ccw"], "rules": ["goblin_assistant"], "min": 2, "max": 2}
             ]
         },
         "goblin_repair_team": {
@@ -545,11 +506,20 @@
             "description": "A group of orcs bosses ready to cause maximum havoc.",
             "category": "core",
             "options": [
+                {"replaceWeapon": {"id": "heavy_ccw", "count": 3}, "withWeapon": [{"id": "ultra_axe", "count": 3}, {"id": "ultra_saw", "count": 3}, {"id": "ultra_claw", "count": 3}]},
                 {
-                    "replaceWeapon": {"id": "heavy_ccw", "count": 3},
-                    "withWeapon": [{"id": "ultra_axe", "count": 3}, {"id": "ultra_saw", "count": 3}, {"id": "ultra_claw", "count": 3}]
+                    "replaceWeapon": "heavy_pistol",
+                    "withWeapon": [
+                        {"id": "heavy_ccw", "count": 1},
+                        {"id": "ultra_axe", "count": 1},
+                        {"id": "ultra_saw", "count": 1},
+                        {"id": "ultra_claw", "count": 1},
+                        "carbine",
+                        "twin_carbine",
+                        "combi_heavy_flamer",
+                        "combi_rocket_launcher"
+                    ]
                 },
-                {"replaceWeapon": "heavy_pistol", "withWeapon": [{"id": "heavy_ccw", "count": 1}, {"id": "ultra_axe", "count": 1}, {"id": "ultra_saw", "count": 1}, {"id": "ultra_claw", "count": 1}, "carbine", "twin_carbine", "combi_heavy_flamer", "combi_rocket_launcher"]},
                 {"addWeapon": "fusion_bomb", "modelLimit": 3}
             ],
             "models": [
@@ -638,10 +608,7 @@
                     "weapons": ["heavy_pistol", "frags", {"id": "heavy_ccw", "count": 3}],
                     "options": [
                         {"replaceWeapon": "heavy_pistol", "withWeapon": ["carbine", "twin_carbine", "combi_heavy_flamer", "combi_rocket_launcher"]},
-                        {
-                            "replaceWeapon": {"id": "heavy_ccw", "count": 3},
-                            "withWeapon": [{"id": "ultra_axe", "count": 3}, {"id": "ultra_saw", "count": 3}, {"id": "ultra_claw", "count": 3}]
-                        }
+                        {"replaceWeapon": {"id": "heavy_ccw", "count": 3}, "withWeapon": [{"id": "ultra_axe", "count": 3}, {"id": "ultra_saw", "count": 3}, {"id": "ultra_claw", "count": 3}]}
                     ],
                     "min": 0,
                     "max": 1
@@ -668,10 +635,7 @@
             "category": "strike",
             "keywords": ["Biker"],
             "options": [
-                {
-                    "replaceWeapon": {"id": "heavy_ccw", "count": 3},
-                    "withWeapon": [{"id": "ultra_axe", "count": 3}, {"id": "ultra_saw", "count": 3}, {"id": "ultra_claw", "count": 3}]
-                },
+                {"replaceWeapon": {"id": "heavy_ccw", "count": 3}, "withWeapon": [{"id": "ultra_axe", "count": 3}, {"id": "ultra_saw", "count": 3}, {"id": "ultra_claw", "count": 3}]},
                 {"replaceWeapon": "heavy_pistol", "withWeapon": ["carbine", "twin_carbine", "combi_heavy_flamer", "combi_rocket_launcher"]}
             ],
             "rules": [{"id": "wounds", "x": 2}],
@@ -989,14 +953,56 @@
                 }
             ]
         },
+        "mek_walker": {
+            "name": "Mechanic Walker",
+            "description": "A special walker piloted by an Orc mechanic.",
+            "category": "command",
+            "keywords": ["Vehicle"],
+            "rules": ["vulnerable_rear", "damage_table_vehicle", {"id": "repair", "x": 3}],
+            "models": [
+                {
+                    "name": "Mechanic Walker",
+                    "courage": 6,
+                    "shoot": 5,
+                    "fight": 6,
+                    "defense": 12,
+                    "reflexes": 5,
+                    "movement": 6,
+                    "weapons": ["heavy_cannon", {"id": "walker_saw", "count": 4}],
+                    "options": [{"replaceWeapon": {"id": "walker_saw", "count": 4}, "withWeapon": [{"id": "walker_claw", "count": 4}, "heavy_cannon"]}],
+                    "min": 1,
+                    "max": 1
+                }
+            ]
+        },
+        "mega_walker": {
+            "name": "Mega Walker",
+            "description": "A souped-up orc walker with some deadly weapons.",
+            "category": "heavy",
+            "keywords": ["Vehicle"],
+            "rules": ["vulnerable_rear", "damage_table_vehicle"],
+            "models": [
+                {
+                    "name": "Mega Walker",
+                    "courage": 5,
+                    "shoot": 4,
+                    "fight": 6,
+                    "defense": 12,
+                    "reflexes": 5,
+                    "movement": 6,
+                    "weapons": ["heavy_cannon", {"id": "walker_saw", "count": 4}],
+                    "options": [{"replaceWeapon": {"id": "walker_saw", "count": 4}, "withWeapon": [{"id": "walker_claw", "count": 4}, "heavy_cannon"]}],
+                    "min": 1,
+                    "max": 1
+                }
+            ]
+        },
         "orc_walker": {
             "name": "Orc Walker",
             "description": "A larger and more deadly walker built and piloted by orcs.",
             "category": "heavy",
             "keywords": ["Vehicle"],
-            "min": 1,
-            "max": 1,
-            "rules": ["fear", "vulnerable_rear", "damage_table_vehicle"],
+            "rules": ["vulnerable_rear", "damage_table_vehicle"],
             "models": [
                 {
                     "name": "Orc Walker",
@@ -1314,7 +1320,13 @@
                     "defense": 13,
                     "reflexes": 5,
                     "movement": 8,
-                    "weapons": [{"id": "deathstorm_plasma_cannon", "mount": ["Front"]}, {"id": "mega_claw"}, {"id": "plasma_rifle", "mount": ["Front"]}, {"id": "twin_heavy_machinegun", "count": 2, "mount": ["Front"]}, {"id": "rocket_launcher", "count": 2, "mount": ["Front"]}],
+                    "weapons": [
+                        {"id": "deathstorm_plasma_cannon", "mount": ["Front"]},
+                        {"id": "mega_claw"},
+                        {"id": "plasma_rifle", "mount": ["Front"]},
+                        {"id": "twin_heavy_machinegun", "count": 2, "mount": ["Front"]},
+                        {"id": "rocket_launcher", "count": 2, "mount": ["Front"]}
+                    ],
                     "options": [
                         {"replaceWeapon": {"id": "deathstorm_plasma_cannon", "mount": ["Front"]}, "withWeapon": [{"id": "deathstorm_minigun", "mount": ["Front"]}]},
                         {"replaceWeapon": {"id": "plasma_rifle", "mount": ["Front"]}, "withWeapon": [{"id": "heavy_flamethrower", "mount": ["Front"]}]},
@@ -1342,7 +1354,13 @@
                     "defense": 13,
                     "reflexes": 5,
                     "movement": 8,
-                    "weapons": [{"id": "titan_chopper", "count": 2}, {"id": "heavy_machinegun", "count": 2}, {"id": "heavy_stomp", "count": 3}, {"id": "titan_death_cannon", "mount": ["Front"]}, {"id": "titan_gatling_gun", "mount": ["Front"]}],
+                    "weapons": [
+                        {"id": "titan_chopper", "count": 2},
+                        {"id": "heavy_machinegun", "count": 2},
+                        {"id": "heavy_stomp", "count": 3},
+                        {"id": "titan_death_cannon", "mount": ["Front"]},
+                        {"id": "titan_gatling_gun", "mount": ["Front"]}
+                    ],
                     "options": [
                         {"addWeapon": {"id": "titan_rocket_launcher", "mount": ["Front"]}},
                         {"addRule": [{"id": "transport", "x": 20, "name": "Carrier Compartment"}, "force_field", "orc_idol"]}
@@ -1390,10 +1408,7 @@
             "weapons": ["heavy_pistol", "frags", {"id": "heavy_ccw", "count": 3}],
             "options": [
                 {"replaceWeapon": ["heavy_pistol", {"id": "heavy_ccw", "count": 1}], "withWeapon": ["carbine", "twin_carbine", "combi_heavy_flamer", "combi_rocket_launcher"]},
-                {
-                    "replaceWeapon": {"id": "heavy_ccw", "count": 3},
-                    "withWeapon": [{"id": "ultra_axe", "count": 3}, {"id": "ultra_saw", "count": 3}, {"id": "ultra_claw", "count": 3}]
-                }
+                {"replaceWeapon": {"id": "heavy_ccw", "count": 3}, "withWeapon": [{"id": "ultra_axe", "count": 3}, {"id": "ultra_saw", "count": 3}, {"id": "ultra_claw", "count": 3}]}
             ],
             "min": 0,
             "max": 1
@@ -1424,10 +1439,7 @@
             "weapons": ["heavy_pistol", "frags", {"id": "heavy_ccw", "count": 3}],
             "options": [
                 {"replaceWeapon": "heavy_pistol", "withWeapon": ["shotgun", "carbine", "twin_carbine", "combi_heavy_flamer", "combi_rocket_launcher"]},
-                {
-                    "replaceWeapon": {"id": "heavy_ccw", "count": 3},
-                    "withWeapon": [{"id": "ultra_axe", "count": 3}, {"id": "ultra_saw", "count": 3}, {"id": "ultra_claw", "count": 3}]
-                }
+                {"replaceWeapon": {"id": "heavy_ccw", "count": 3}, "withWeapon": [{"id": "ultra_axe", "count": 3}, {"id": "ultra_saw", "count": 3}, {"id": "ultra_claw", "count": 3}]}
             ],
             "min": 0,
             "max": 1
@@ -1444,10 +1456,7 @@
             "weapons": ["heavy_pistol", "frags", {"id": "heavy_ccw", "count": 3}],
             "options": [
                 {"replaceWeapon": "heavy_pistol", "withWeapon": ["carbine", "twin_carbine", "combi_heavy_flamer", "combi_rocket_launcher"]},
-                {
-                    "replaceWeapon": {"id": "heavy_ccw", "count": 3},
-                    "withWeapon": [{"id": "ultra_axe", "count": 3}, {"id": "ultra_saw", "count": 3}, {"id": "ultra_claw", "count": 3}]
-                }
+                {"replaceWeapon": {"id": "heavy_ccw", "count": 3}, "withWeapon": [{"id": "ultra_axe", "count": 3}, {"id": "ultra_saw", "count": 3}, {"id": "ultra_claw", "count": 3}]}
             ],
             "min": 0,
             "max": 1
@@ -1485,10 +1494,7 @@
         "deathstorm_plasma_cannon": {"name": "Deathstorm Plasma Cannon", "attacks": 2, "short": 18, "medium": 36, "ap": 6, "rules": ["overcharge", {"id": "blast", "x": 3}]},
         "mini_claw": {"name": "Mini-Claw", "attacks": 1, "short": "Melee", "ap": 5},
         "walker_claw": {"name": "Walker-Claw", "attacks": 1, "short": "Melee", "ap": 6},
-        "mega_claw": {"name": "Mega Claw", "profiles": [
-            {"name": "Strike", "attacks": 4, "short": "Melee", "ap": 8},
-            {"name": "Sweep", "attacks": 8, "short": "Melee", "ap": 4}
-        ]},
+        "mega_claw": {"name": "Mega Claw", "profiles": [{"name": "Strike", "attacks": 4, "short": "Melee", "ap": 8}, {"name": "Sweep", "attacks": 8, "short": "Melee", "ap": 4}]},
         "mega_saw": {"name": "Mega-Saw", "attacks": 4, "short": "Melee", "ap": 6},
         "walker_saw": {"name": "Walker-Saw", "attacks": 1, "short": "Melee", "ap": 5},
         "heavy_mortar": {"name": "Heavy Mortar", "attacks": 1, "short": 24, "medium": 48, "ap": 1, "rules": ["indirect", {"id": "blast", "x": 3}]},
@@ -1507,10 +1513,7 @@
         "carbine": {"name": "Burst Carbine", "attacks": 1, "short": 9, "medium": 18, "ap": 1, "rules": ["assault", "rapid_fire"]},
         "twin_carbine": {"name": "Twin Burst Carbine", "attacks": 2, "short": 9, "medium": 18, "ap": 1, "rules": ["assault", "rapid_fire"]},
         "grand_carbine": {"name": "Grand Carbine", "attacks": 12, "short": 9, "medium": 18, "ap": 2, "rules": ["assault"]},
-        "grand_claw": {"name": "Grand Claw", "profiles": [
-            {"name": "Strike", "attacks": 5, "short": "Melee", "ap": 7},
-            {"name": "Sweep", "attacks": 10, "short": "Melee", "ap": 3}
-        ]},
+        "grand_claw": {"name": "Grand Claw", "profiles": [{"name": "Strike", "attacks": 5, "short": "Melee", "ap": 7}, {"name": "Sweep", "attacks": 10, "short": "Melee", "ap": 3}]},
         "super_claw": {"name": "Super-Claw", "attacks": 3, "short": "Melee", "ap": 5},
         "twin_mini_mg": {"name": "Twin Mini-MGs", "attacks": 6, "ap": 2, "short": 9, "medium": 18, "rules": ["assault"]},
         "twin_double_shotgun": {"name": "Twin Double Shotgun", "attacks": 4, "short": 6, "medium": 12, "ap": 2, "rules": ["assault"]},
@@ -1550,10 +1553,7 @@
         "double_shotgun": {"name": "Double Shotgun", "attacks": 2, "short": 6, "medium": 12, "ap": 2},
         "relic_ultra_claw": {"name": "Killer Claw", "attacks": 1, "ap": 6, "short": "Melee", "rules": ["cumbersome"]},
         "goring_tusks": {"name": "Goring Tusks", "attacks": 1, "ap": 8, "short": "Melee"},
-        "titan_chopper": {"name": "Titan Chopper", "profiles": [
-            {"name": "Strike", "attacks": 3, "short": "Melee", "ap": 8},
-            {"name": "Sweep", "attacks": 6, "short": "Melee", "ap": 4}
-        ]}
+        "titan_chopper": {"name": "Titan Chopper", "profiles": [{"name": "Strike", "attacks": 3, "short": "Melee", "ap": 8}, {"name": "Sweep", "attacks": 6, "short": "Melee", "ap": 4}]}
     },
     "rules": {
         "grand_warlord_tactics": {
@@ -1739,13 +1739,7 @@
         }
     },
     "buyLinks": [
-        {
-            "name": "Games Workshop",
-            "link": "https://www.games-workshop.com/en-US/Warhammer-40-000?N=2562756967+854227620"
-        },
-        {
-            "name": "Gear Guts' Mek Shop",
-            "link": "https://geargutsmekshop.com/"
-        }
+        {"name": "Games Workshop", "link": "https://www.games-workshop.com/en-US/Warhammer-40-000?N=2562756967+854227620"},
+        {"name": "Gear Guts' Mek Shop", "link": "https://geargutsmekshop.com/"}
     ]
 }
