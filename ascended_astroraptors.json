@@ -912,5 +912,11 @@
             "flavor": "Highly trained and expertly attentive, Astro-raptor troops can react in an instant.",
             "cost": 1
         }
-    }
+    },
+    "buyLinks": [
+        {
+            "name": "Treadhead Rad",
+            "link": "https://www.myminifactory.com/campaigns/raygun-raptors-95"
+        }
+    ]
 }
