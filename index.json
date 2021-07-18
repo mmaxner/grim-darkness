@@ -382,7 +382,7 @@
             "name": "Plasma Grenades",
             "profiles": [
                 {"name": "Standard", "attacks": 1, "short": 6, "ap": 1, "rules": ["grenade", {"id": "blast", "x": 3}]},
-                {"name": "Overcharge", "attacks": 1, "short": 6, "ap": 5, "rules": ["grenade", "overheat"]}
+                {"name": "Overcharge", "attacks": 1, "short": 6, "ap": 5, "rules": ["grenade", "overcharge"]}
             ]
         },
         "frags": {"name": "Frag Grenades", "attacks": 1, "short": 6, "rules": ["grenade", {"id": "blast", "x": 3}]},
@@ -463,18 +463,18 @@
         "marine_shotgun": {"name": "Marine Shotgun", "attacks": 1, "short": 6, "medium": 12, "ap": 1, "rules": ["brutal", "assault"]},
         "shotgun": {"name": "Shotgun", "attacks": 1, "short": 6, "medium": 12, "rules": ["assault", "brutal"]},
         "energy_claws": {"name": "Energy Claws", "attacks": 1, "short": "Melee", "ap": 2, "rules": ["rending"]},
-        "plasma_pistol": {"name": "Plasma Pistol", "ap": 5, "short": 6, "attacks": 1, "rules": ["pistol", "overheat"]},
-        "plasma_rifle": {"name": "Plasma Rifle", "rules": ["rapid_fire", "overheat"], "ap": 5, "medium": 24, "short": 12, "attacks": 1},
+        "plasma_pistol": {"name": "Plasma Pistol", "ap": 5, "short": 6, "attacks": 1, "rules": ["pistol", "overcharge"]},
+        "plasma_rifle": {"name": "Plasma Rifle", "rules": ["rapid_fire", "overcharge"], "ap": 5, "medium": 24, "short": 12, "attacks": 1},
         "combi_plasma": {
             "name": "Combi-plasma",
             "profiles": [
-                {"name": "Standard", "attacks": 1, "short": 12, "medium": 24, "ap": 5, "rules": ["rapid_fire", "overheat"]},
+                {"name": "Standard", "attacks": 1, "short": 12, "medium": 24, "ap": 5, "rules": ["rapid_fire", "overcharge"]},
                 {"name": "Rifle", "attacks": 1, "short": 12, "medium": 24, "ap": 1, "rules": ["rapid_fire"]}
             ]
         },
-        "twin_plasma_rifle": {"name": "Twin Plasma Rifle", "rules": ["rapid_fire", "overheat"], "ap": 5, "medium": 24, "short": 12, "attacks": 2},
-        "plasma_cannon": {"name": "Plasma Cannon", "rules": [{"id": "blast", "x": 2}, "overheat"], "ap": 5, "medium": 36, "short": 18, "attacks": 1},
-        "twin_plasma_cannon": {"name": "Twin Plasma Cannon", "rules": [{"id": "blast", "x": 2}, "overheat"], "ap": 5, "medium": 36, "short": 18, "attacks": 2},
+        "twin_plasma_rifle": {"name": "Twin Plasma Rifle", "rules": ["rapid_fire", "overcharge"], "ap": 5, "medium": 24, "short": 12, "attacks": 2},
+        "plasma_cannon": {"name": "Plasma Cannon", "rules": [{"id": "blast", "x": 2}, "overcharge"], "ap": 5, "medium": 36, "short": 18, "attacks": 1},
+        "twin_plasma_cannon": {"name": "Twin Plasma Cannon", "rules": [{"id": "blast", "x": 2}, "overcharge"], "ap": 5, "medium": 36, "short": 18, "attacks": 2},
         "twin_marine_rifle": {"name": "Twin Marine Rifle", "attacks": 2, "short": 12, "medium": 24, "ap": 1, "rules": ["rapid_fire"]},
         "energy_axe": {"name": "Energy Axe", "attacks": 1, "short": "Melee", "ap": 3},
         "energy_mace": {"name": "Energy Mace", "attacks": 1, "short": "Melee", "ap": 4},
@@ -582,8 +582,8 @@
         "psychic_cannon": {"name": "Psychic Cannon", "attacks": 3, "short": 12, "medium": 24, "ap": 4},
         "heavy_psychic_cannon": {"name": "Heavy Psychic Cannon", "attacks": 5, "short": 12, "medium": 24, "ap": 4},
         "twin_assault_light_machinegun": {"name": "Twin Assault Light Machingun", "attacks": 6, "short": 24, "medium": 48},
-        "heavy_plasma_cannon": {"name": "Heavy Plasma Cannon", "rules": [{"id": "blast", "x": 3}, "overheat"], "ap": 5, "medium": 36, "short": 18, "attacks": 1},
-        "twin_heavy_plasma_cannon": {"name": "Twin Heavy Plasma Cannon", "rules": [{"id": "blast", "x": 3}, "overheat"], "ap": 5, "medium": 36, "short": 18, "attacks": 2},
+        "heavy_plasma_cannon": {"name": "Heavy Plasma Cannon", "rules": [{"id": "blast", "x": 3}, "overcharge"], "ap": 5, "medium": 36, "short": 18, "attacks": 1},
+        "twin_heavy_plasma_cannon": {"name": "Twin Heavy Plasma Cannon", "rules": [{"id": "blast", "x": 3}, "overcharge"], "ap": 5, "medium": 36, "short": 18, "attacks": 2},
         "holy_mace": {"name": "Holy Mace", "attacks": 1, "short": "Melee", "ap": 3},
         "incendiary_cannon": {"name": "Incendiary Cannon", "attacks": 6, "ap": 2, "short": 6, "medium": 12, "rules": []},
         "heavy_gatling_gun": {"name": "Heavy Gatling Gun", "attacks": 6, "short": 15, "medium": 30, "ap": 2},
@@ -616,12 +616,12 @@
         "prime_precision_rifle": {"name": "Prime Precision Rifle", "attacks": 1, "short": 24, "medium": 48, "ap": 2},
         "prime_chainsword": {"name": "Prime Chainsword", "attacks": 1, "ap": 1, "short": "Melee"},
         "prime_fusion_rifle": {"name": "Prime Fusion Rifle", "attacks": 1, "short": 18, "medium": 36, "ap": 6, "rules": ["rapid_fire", {"id": "critical", "x": 1}]},
-        "heavy_plasma_rifle": {"rules": ["overheat"], "name": "Heavy Plasma Rifle", "ap": 6, "medium": 36, "short": 18, "attacks": 1},
-        "plasma_assault_rifle": {"name": "Plasma Assault Rifle", "rules": ["assault", "overheat"], "ap": 5, "medium": 24, "short": 12, "attacks": 1},
-        "plasma_carbine": {"name": "Plasma Carbine", "rules": ["assault", "overheat"], "ap": 5, "medium": 18, "short": 9, "attacks": 1},
+        "heavy_plasma_rifle": {"rules": ["overcharge"], "name": "Heavy Plasma Rifle", "ap": 6, "medium": 36, "short": 18, "attacks": 1},
+        "plasma_assault_rifle": {"name": "Plasma Assault Rifle", "rules": ["assault", "overcharge"], "ap": 5, "medium": 24, "short": 12, "attacks": 1},
+        "plasma_carbine": {"name": "Plasma Carbine", "rules": ["assault", "overcharge"], "ap": 5, "medium": 18, "short": 9, "attacks": 1},
         "assault_carbine": {"name": "Assault Carbine", "attacks": 1, "short": 9, "medium": 18, "ap": 2, "rules": [{"id": "assault"}]},
         "twin_assault_carbine": {"name": "Twin Assault Carbine", "attacks": 2, "short": 9, "medium": 18, "ap": 2, "rules": [{"id": "assault"}]},
-        "twin_plasma_carbine": {"name": "Twin Plasma Carbine", "rules": ["assault", "overheat"], "ap": 5, "medium": 18, "short": 9, "attacks": 2},
+        "twin_plasma_carbine": {"name": "Twin Plasma Carbine", "rules": ["assault", "overcharge"], "ap": 5, "medium": 18, "short": 9, "attacks": 2},
         "prime_energy_sword": {"name": "Prime Energy Sword", "attacks": 1, "short": "Melee", "ap": 3},
         "fist_carbine": {"name": "Fist Carbine", "attacks": 1, "short": 9, "medium": 18, "ap": 1, "rules": ["assault"]},
         "fist_flamethrower": {"name": "Fist Flamethrower", "attacks": 3, "short": 6, "medium": 12, "ap": 1, "rules": ["assault", "flame"]},
@@ -761,7 +761,7 @@
             "description": "This model's movement is increased by 2\". This model may cross all terrain as if it was not there. This unit may be set aside in reserves before the match begins if all models have ambush. Any round after the first, when this unit is activated while in reserves, you may choose a point on the battlefield 12\" away from any enemy units and take an Initiative check. If passed, place the unit at that location on the location. If failed, use D10 scattering to determine the landing location of the unit relative to the chosen point.",
             "points": 4
         },
-        "overheat": {"name": "Overheat", "description": "The firer must take 1 save for each hit roll of 9+.", "points": ["weapon.attacks", {"multiply": -2}]},
+        "overcharge": {"name": "overcharge", "description": "The firer must take 1 save for each hit roll of 9+.", "points": ["weapon.attacks", {"multiply": -2}]},
         "destroyer_armor": {
             "name": "Destroyer Armor",
             "hidden": true,
