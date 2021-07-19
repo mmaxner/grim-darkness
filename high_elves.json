@@ -165,7 +165,7 @@
                     "shoot": 6,
                     "fight": 5,
                     "defense": 6,
-                    "reflexes": 7,
+                    "reflexes": 6,
                     "weapons": ["shard_rifle", "plasma_grenade", {"id": "ccw", "count": 1}],
                     "options": [{"replaceModel": "avenger_leader", "modelLimit": 1}],
                     "min": 5,
@@ -567,7 +567,7 @@
             "shoot": 6,
             "fight": 5,
             "defense": 6,
-            "reflexes": 7,
+            "reflexes": 6,
             "weapons": ["shard_rifle", "plasma_grenade", {"id": "ccw", "count": 1}],
             "options": [
                 {
