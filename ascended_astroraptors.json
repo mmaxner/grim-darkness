@@ -707,7 +707,7 @@
         "armored_walker": {
             "name": "Armored Walker",
             "description": "An armored light combat walker.",
-            "rules": ["vulnerable_rear", "damage_table_vehicle"],
+            "rules": ["vulnerable_rear", "damage_table_vehicle", "walker"],
             "keywords": ["Vehicle"],
             "min": 1,
             "max": 1,
