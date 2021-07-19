@@ -970,7 +970,8 @@
                     "movement": 6,
                     "weapons": [{"id": "heavy_cannon", "count": 2}],
                     "options": [{"replaceWeapon": {"id": "heavy_cannon", "count": 1}, "withWeapon": [{"id": "walker_claw", "count": 4}, {"id": "walker_saw", "count": 4}]},
-                    {"replaceWeapon": {"id": "heavy_cannon", "count": 1}, "withWeapon": [{"id": "walker_claw", "count": 4}, {"id": "walker_saw", "count": 4} ]}
+                    {"replaceWeapon": {"id": "heavy_cannon", "count": 1}, "withWeapon": [{"id": "walker_claw", "count": 4}, {"id": "walker_saw", "count": 4} ]},
+                    {"addRule": ["force_field"]}
                 ],
                     "min": 1,
                     "max": 1
