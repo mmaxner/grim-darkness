@@ -954,7 +954,7 @@
             "keywords": ["Infantry"],
             "subfactions": ["wolf_marines"],
             "options": [
-                {"replaceWeapon": {"id": "energy_claws", "count": 3}, "withWeapon": [[{"id": "energy_hammer", "count": 2}, "wolf_shield"], {"id": "energy_greataxe", "count": 2}]},
+                {"replaceWeapon": {"id": "energy_claws", "count": 3}, "withWeapon": [[{"id": "energy_hammer", "count": 2}, "combat_shield"], {"id": "energy_greataxe", "count": 2}]},
                 {"addWeapon": "wolf_grenade_launcher"}
             ],
             "models": [
@@ -2865,7 +2865,6 @@
             ]
         },
         "wolf_grenade_launcher": {"name": "Wolf Grenade Launcher", "attacks": 1, "ap": 1, "short": 6, "medium": 12, "rules": ["assault"]},
-        "wolf_shield": {"name": "Wolf Shield", "attacks": 0, "short": "Melee", "rules": ["shielding"]},
         "ancient_chainsword": {"name": "Ancient Chainsword", "attacks": 3, "ap": 2, "short": "Melee"},
         "arch_fist_shoot": {"name": "Arch-Marine Fist (Ranged)", "attacks": 3, "short": 12, "medium": 24, "ap": 3, "rules": ["rapid_fire"]},
         "arch_fist_fight": {"name": "Arch-Marine Fist (Melee)", "short": "Melee", "attacks": 1, "ap": 7, "rules": ["rending"]},
