@@ -699,7 +699,8 @@
         "smoke_grenades": {"name": "Smokes", "attacks": 1, "short": 6, "rules": ["grenade", "smoke", "indirect"]},
         "razor_talons": {"name": "Razor Talons", "attacks": 1, "short": "Melee", "ap": 1},
         "light_razor_talons": {"name": "Light Razor Talons", "attacks": 1, "short": "Melee"},
-        "combat_shield": {"name": "Combat Shield", "attacks": 0, "short": "Melee", "rules": ["shielding"]}
+        "combat_shield": {"name": "Combat Shield", "attacks": 0, "short": "Melee", "rules": ["shielding"]},
+        "titan_shield": {"name": "Combat Shield", "attacks": 0, "short": "Melee", "rules": ["titan_shield"]}
     },
     "rules": {
         "smoke": {
@@ -815,7 +816,8 @@
         },
         "marking_flares": {"name": "Marking Flares", "description": "Once per round, a friendly _Biker_ unit may gain +4\" of Movement.", "points": 5},
         "surveying_device": {"name": "Surveying Device", "description": "Once per round, a friendly _Infantry_ unit within 12\" may ignore the benefit of cover while shooting.", "points": 10},
-        "spotting_device": {"name": "Spotting Device", "description": "Increase the short and long range of all ranged weapons equipped by this unit by 6\".", "points": 5}
+        "spotting_device": {"name": "Spotting Device", "description": "Increase the short and long range of all ranged weapons equipped by this unit by 6\".", "points": 5},
+        "titan_shield": {"name": "Combat Shield", "description": "Roll a die for each hit this model takes. On a 3 or less that hit is prevented.", "points": 10}
     },
     "units": {
         "defense_line": {
