@@ -67,7 +67,7 @@
                             ]
                         },
                         {"addRule": ["jetpack", "destroyer_armor"], "limit": 1},
-                        {"addRule": ["combat_shield"]},
+                        {"addWeapon": ["combat_shield"]},
                         {"replaceRule": {"id": "rifle_tactics", "x": 2}, "withRule": {"id": "melee_tactics", "x": 2}}
                     ],
                     "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "wounds", "x": 3}, {"id": "rifle_tactics", "x": 2}],
@@ -1486,7 +1486,6 @@
         "traitor_siegebreaker": {
             "name": "Traitor Siegebreakers",
             "description": "Marines who excel at breaching enemy lines under heavy fire.",
-            "rules": ["combat_shield"],
             "subfactions": ["none", "siege_focus"],
             "category": "specialist",
             "options": [
@@ -1503,7 +1502,7 @@
                     "fight": 6,
                     "defense": 8,
                     "reflexes": 6,
-                    "weapons": ["marine_rifle", "heavy_ccw", "at_grenade"],
+                    "weapons": ["marine_rifle", "combat_shield", "heavy_ccw", "at_grenade"],
                     "options": [
                         {"replaceWeapon": ["marine_rifle"], "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "twin_marine_rifle"]},
                         {
