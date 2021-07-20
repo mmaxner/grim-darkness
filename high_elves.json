@@ -268,7 +268,7 @@
                         {
                             "replaceWeapon": [{"id": "wraith_sword", "count": 2}],
                             "withWeapon": [
-                                [{"id": "wraith_axe", "count": 2}, "forcefield_shield"],
+                                [{"id": "wraith_axe", "count": 2}, "combat_shield"],
                                 ["wraith_cannon", {"id": "wraith_fists", "count": 1}],
                                 ["distortion_rifle", {"id": "wraith_fists", "count": 1}]
                             ],
@@ -574,7 +574,7 @@
                     "replaceWeapon": ["shard_rifle", {"id": "ccw", "count": 1}],
                     "withWeapon": [
                         [{"id": "shard_rifle", "count": 2}, {"id": "ccw", "count": 1}],
-                        [{"id": "energy_glaive", "count": 2}, "shining_shield"],
+                        [{"id": "energy_glaive", "count": 2}, "combat_shield"],
                         ["shard_pistol", {"id": "energy_sword", "count": 2}],
                         ["shard_pistol", {"id": "energy_glaive", "count": 2}]
                     ]
@@ -721,8 +721,6 @@
         "doom_artillery_cannon": {"name": "Doom Artillery Cannon", "attacks": 2, "short": 24, "medium": 48, "ap": 4, "rules": ["indirect", {"id": "blast", "x": 3}]},
         "sky_cannon": {"name": "Sky Cannon", "attacks": 2, "short": 18, "medium": 36, "ap": 4},
         "twin_sky_cannon": {"name": "Twin Sky Cannon", "attacks": 4, "short": 18, "medium": 36, "ap": 4},
-        "shining_shield": {"name": "Shining Shield", "attacks": 0, "short": "Melee", "rules": ["shielding"]},
-        "forcefield_shield": {"name": "Forcefield Shield", "attacks": 0, "short": "Melee", "rules": ["shielding"]},
         "star_spear": {"name": "Star Spear", "attacks": 1, "short": "Melee", "ap": 4, "rules": ["cumbersome"]},
         "laser_lance_melee": {"name": "Laser Lance (Melee)", "attacks": 1, "short": "Melee", "ap": 1, "rules": ["lance"]},
         "laser_lance_shoot": {"name": "Laser Lance (Shooting)", "attacks": 1, "short": 6, "medium": 12, "ap": 1, "rules": ["rending"]},
