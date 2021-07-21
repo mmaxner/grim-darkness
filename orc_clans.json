@@ -1034,19 +1034,8 @@
                     "options": [
                         {
                             "replaceWeapon": {"id": "heavy_flamethrower", "count": 1},
-                            "withWeapon": [{"id": "walker_claw", "count": 2}, {"id": "walker_saw", "count": 2}, "rocket_launcher", "heavy_machinegun"]
-                        },
-                        {
-                            "replaceWeapon": {"id": "heavy_flamethrower", "count": 1},
-                            "withWeapon": [{"id": "walker_claw", "count": 2}, {"id": "walker_saw", "count": 2}, "rocket_launcher", "heavy_machinegun"]
-                        },
-                        {
-                            "replaceWeapon": {"id": "heavy_flamethrower", "count": 1},
-                            "withWeapon": [{"id": "walker_claw", "count": 2}, {"id": "walker_saw", "count": 2}, "rocket_launcher", "heavy_machinegun"]
-                        },
-                        {
-                            "replaceWeapon": {"id": "heavy_flamethrower", "count": 1},
-                            "withWeapon": [{"id": "walker_claw", "count": 2}, {"id": "walker_saw", "count": 2}, "rocket_launcher", "heavy_machinegun"]
+                            "withWeapon": [{"id": "walker_claw", "count": 2}, {"id": "walker_saw", "count": 2}, "plasma_cannon", "rocket_launcher", "heavy_machinegun"],
+                            "count": 4
                         }
                     ],
                     "min": 1,
