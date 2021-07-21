@@ -453,7 +453,7 @@
                     "fight": 5,
                     "shoot": 5,
                     "defense": 10,
-                    "movement": 7,
+                    "movement": 8,
                     "weapons": [{"id": "large_razor_talons", "count": 4}],
                     "options": [
                         {"replaceWeapon": {"id": "large_razor_talons", "count": 2}, "withWeapon": [{"id": "crushing_claws", "count": 2}]},
