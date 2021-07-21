@@ -70,7 +70,6 @@
                     "fight": 7,
                     "defense": 8,
                     "reflexes": 7,
-                    "wounds": 6,
                     "movement": 8,
                     "weapons": [{"id": "large_piercing_claws", "count": 6}],
                     "options": [{"replaceRule": {"id": "swarm_melee_tactics", "x": 1}, "withRule": {"id": "swarm_melee_tactics", "x": 2}}],
@@ -94,7 +93,6 @@
                     "fight": 6,
                     "defense": 6,
                     "reflexes": 6,
-                    "wounds": 1,
                     "movement": 8,
                     "weapons": [{"id": "piercing_claws", "count": 3}],
                     "options": [{"addWeapon": ["razor_talons"]}, {"addWeapon": ["meat_hooks", "acidic_jaws"], "limit": 1, "modelLimit": "1/4"}],
@@ -119,7 +117,6 @@
                     "fight": 7,
                     "defense": 9,
                     "reflexes": 7,
-                    "wounds": 1,
                     "movement": 6,
                     "weapons": ["consumer", {"id": "razor_talons", "count": 4}],
                     "options": [
@@ -154,7 +151,6 @@
                     "fight": 6,
                     "defense": 7,
                     "reflexes": 6,
-                    "wounds": 1,
                     "movement": 6,
                     "weapons": ["consumer", {"id": "razor_talons", "count": 3}],
                     "min": 1,
@@ -167,12 +163,32 @@
                     "fight": 6,
                     "defense": 7,
                     "reflexes": 6,
-                    "wounds": 1,
                     "movement": 6,
                     "weapons": ["consumer", {"id": "razor_talons", "count": 3}],
                     "options": [{"replaceWeapon": "consumer", "withWeapon": ["spiked_strangler", "acid_cannon"], "modelLimit": "1/3"}],
                     "min": 2,
                     "max": 8
+                }
+            ]
+        },
+        "burrowers": {
+            "name": "Hive Burrowers",
+            "description": "Large bugs which burrow underground to surprise their targets.",
+            "category": "strike",
+            "rules": [{"id": "wounds", "x": 2}, "ambush"],
+            "models": [
+                {
+                    "name": "Hive Burrower",
+                    "courage": 4,
+                    "shoot": 5,
+                    "fight": 6,
+                    "defense": 6,
+                    "reflexes": 4,
+                    "movement": 7,
+                    "weapons": [{"id": "razor_talons", "count": 4}],
+                    "options": [{"replaceWeapon:": {"id": "razor_talons", "count": 2}, "withWeapon": {"id": "piercing_claws", "count": 2}}, {"addWeapon": ["spikefists", "consumer", "acid_spitter"]}],
+                    "min": 3,
+                    "max": 9
                 }
             ]
         },
@@ -188,10 +204,9 @@
                     "fight": 5,
                     "defense": 4,
                     "reflexes": 4,
-                    "wounds": 1,
                     "movement": 7,
                     "weapons": ["meat_borer", "ccw"],
-                    "options": [{"replaceWeapon": "meat_borer", "withWeapon": ["consumer"]}, {"addRule": ["toxic_sacks", "adrenaline_glands"]}],
+                    "options": [{"replaceWeapon": "meat_borer", "withWeapon": ["consumer", "spikefists"]}, {"addRule": ["toxic_sacks", "adrenaline_glands"]}],
                     "min": 10,
                     "max": 30
                 }
@@ -212,7 +227,6 @@
                     "fight": 6,
                     "defense": 4,
                     "reflexes": 4,
-                    "wounds": 1,
                     "movement": 7,
                     "weapons": [{"id": "light_razor_talons", "count": 2}],
                     "options": [{"addRule": ["toxic_sacks", "adrenaline_glands"]}],
@@ -442,18 +456,12 @@
                     "movement": 7,
                     "weapons": [{"id": "large_razor_talons", "count": 4}],
                     "options": [
-                        {
-                            "replaceWeapon": {"id": "large_razor_talons", "count": 2},
-                            "withWeapon": [{"id": "crushing_claws", "count": 2}]
-                        },
+                        {"replaceWeapon": {"id": "large_razor_talons", "count": 2}, "withWeapon": [{"id": "crushing_claws", "count": 2}]},
                         {
                             "replaceWeapon": {"id": "large_razor_talons", "count": 2},
                             "withWeapon": ["heavy_acid_cannon", "chokethorn_cannon", {"id": "maggot_spitter", "count": 2}, {"id": "brain_consumer", "count": 2}]
                         },
-                        {
-                            "replaceWeapon": {"id": "large_razor_talons", "count": 2},
-                            "withWeapon": [{"id": "maggot_spitter", "count": 2}, {"id": "brain_consumer", "count": 2}]
-                        },
+                        {"replaceWeapon": {"id": "large_razor_talons", "count": 2}, "withWeapon": [{"id": "maggot_spitter", "count": 2}, {"id": "brain_consumer", "count": 2}]},
                         {"addWeapon": ["bonemace", "thrashing_scythe"], "limit": 1},
                         {"addWeapon": ["huge_acidic_jaws", "bio_plasma"], "limit": 1},
                         {"addRule": ["enhanced_senses", "adrenaline_glands_large", "toxic_sacks_large", "tusks"]},
@@ -507,37 +515,11 @@
     },
     "rules": {
         "tusks": {"name": "Tusks", "hidden": true, "description_short": "Impact +3", "description": "This model gains +3 impact.", "points": 6},
-        "adrenaline_glands": {
-            "name": "Adrenaline Glands",
-            "hidden": true,
-            "description_short": "+1\" Movement",
-            "description": "This model gets +1\" Movement",
-            "points": 1
-        },
-        "adrenaline_glands_large": {
-            "name": "Adrenaline Glands",
-            "hidden": true,
-            "description_short": "+1\" Movement",
-            "description": "This model gets +1\" Movement",
-            "points": 5
-        },
-        "toxic_sacks": {
-            "name": "Toxic Sacks",
-            "description": "Hit rolls of 1 or 2 gain +1 AP.",
-            "points": 1
-        },
-        "toxic_sacks_large": {
-            "name": "Toxic Sacks",
-            "description": "Hit rolls of 1 or 2 gain +1 AP.",
-            "points": 5
-        },
-        "enhanced_senses": {
-            "name": "Enhanced Senses",
-            "hidden": true,
-            "description_short": "+1 Accuracy",
-            "description": "This model gets +1 Accuracy",
-            "points": 10
-        },
+        "adrenaline_glands": {"name": "Adrenaline Glands", "hidden": true, "description_short": "+1\" Movement", "description": "This model gets +1\" Movement", "points": 1},
+        "adrenaline_glands_large": {"name": "Adrenaline Glands", "hidden": true, "description_short": "+1\" Movement", "description": "This model gets +1\" Movement", "points": 5},
+        "toxic_sacks": {"name": "Toxic Sacks", "description": "Hit rolls of 1 or 2 gain +1 AP.", "points": 1},
+        "toxic_sacks_large": {"name": "Toxic Sacks", "description": "Hit rolls of 1 or 2 gain +1 AP.", "points": 5},
+        "enhanced_senses": {"name": "Enhanced Senses", "hidden": true, "description_short": "+1 Accuracy", "description": "This model gets +1 Accuracy", "points": 10},
         "swarm_melee_tactics": {
             "name": "Swarm Melee Tactics",
             "inputs": ["x"],
@@ -597,13 +579,7 @@
         }
     },
     "buyLinks": [
-        {
-            "name": "Games Workshop",
-            "link": "https://www.games-workshop.com/en-US/Warhammer-40-000?N=2562756967+77492817"
-        },
-        {
-            "name": "OnePageRules",
-            "link": "https://www.myminifactory.com/object/3d-print-alien-hives-army-bundle-145588"
-        }
-    ] 
+        {"name": "Games Workshop", "link": "https://www.games-workshop.com/en-US/Warhammer-40-000?N=2562756967+77492817"},
+        {"name": "OnePageRules", "link": "https://www.myminifactory.com/object/3d-print-alien-hives-army-bundle-145588"}
+    ]
 }
