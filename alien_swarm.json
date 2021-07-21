@@ -11,7 +11,7 @@
             "name": "Hive Lord",
             "description": "A representation of the hive mind itself come to direct the swarm's attacks",
             "category": "command",
-            "keywords": ["Hive Mind"],
+            "keywords": ["Monster"],
             "rules": ["damage_table_monster"],
             "models": [
                 {
@@ -59,7 +59,7 @@
             "description": "A massive mutant with psychic powers",
             "min": 1,
             "max": 1,
-            "keywords": ["Hive Mind"],
+            "keywords": ["Monster"],
             "category": "command",
             "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "wounds", "x": 3}, {"id": "swarm_melee_tactics", "x": 1}],
             "models": [
@@ -109,7 +109,7 @@
             "min": 1,
             "max": 1,
             "category": "command",
-            "keywords": ["Heavy Infantry", "Hive Mind"],
+            "keywords": ["Heavy Infantry"],
             "rules": [{"id": "leader_x", "x": "Infantry, Heavy Infantry"}, {"id": "wounds", "x": 3}, {"id": "swarm_melee_tactics", "x": 1}],
             "models": [
                 {
@@ -407,7 +407,7 @@
             "name": "Psychic Beasts",
             "description": "",
             "category": "specialist",
-            "keywords": ["Hive Mind"],
+            "keywords": ["Monster"],
             "rules": [{"id": "wounds", "x": 2}],
             "models": [
                 {
@@ -416,14 +416,14 @@
                     "reflexes": 6,
                     "fight": 5,
                     "shoot": 0,
-                    "defense": 8,
+                    "defense": 6,
                     "movement": 5,
-                    "weapons": ["ccw"],
+                    "weapons": ["heavy_ccw"],
                     "rules": [{"id": "power", "x": 1}],
                     "min": 1,
                     "max": 1
                 },
-                {"name": "Psychic Beast", "courage": 7, "reflexes": 6, "fight": 5, "shoot": 0, "defense": 8, "movement": 5, "weapons": ["ccw"], "min": 2, "max": 5}
+                {"name": "Psychic Beast", "courage": 7, "reflexes": 6, "fight": 5, "shoot": 0, "defense": 6, "movement": 5, "weapons": ["heavy_ccw"], "min": 2, "max": 5}
             ]
         },
         "carnivorous_beast": {
