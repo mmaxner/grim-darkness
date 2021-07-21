@@ -76,7 +76,7 @@
             }
         },
         "corrupted_defense_force": {
-            "version": "0.1",
+            "version": "1.0",
             "name": "Corrupted Defense Force",
             "id": "corrupted_defense_force",
             "url": "corrupted_defense_force.json",
