@@ -109,7 +109,7 @@
                     "fight": 5,
                     "defense": 5,
                     "reflexes": 6,
-                    "weapons": ["shard_carbine", "plasma_grenade", {"id": "ccw", "count": 1}],
+                    "weapons": ["shard_carbine", "plasma_grenade", "ccw"],
                     "min": 1,
                     "max": 1
                 },
@@ -121,7 +121,7 @@
                     "fight": 5,
                     "defense": 5,
                     "reflexes": 6,
-                    "weapons": ["shard_carbine", "plasma_grenade", {"id": "ccw", "count": 1}],
+                    "weapons": ["shard_carbine", "plasma_grenade", "ccw"],
                     "min": 4,
                     "max": 19
                 },
@@ -166,7 +166,7 @@
                     "fight": 5,
                     "defense": 6,
                     "reflexes": 6,
-                    "weapons": ["shard_rifle", "plasma_grenade", {"id": "ccw", "count": 1}],
+                    "weapons": ["shard_rifle", "plasma_grenade", "ccw"],
                     "options": [{"replaceModel": "avenger_leader", "modelLimit": 1}],
                     "min": 5,
                     "max": 10
@@ -180,7 +180,7 @@
             "max": 1,
             "category": "core",
             "keywords": ["Infantry"],
-            "rules": ["stealth", "ambush"],
+            "rules": ["stealth", "scout"],
             "models": [
                 {
                     "name": "Rangers",
@@ -190,7 +190,7 @@
                     "fight": 5,
                     "defense": 5,
                     "reflexes": 6,
-                    "weapons": ["shard_sniper", "plasma_grenade", {"id": "ccw", "count": 1}],
+                    "weapons": ["shard_sniper", "plasma_grenade", "ccw"],
                     "min": 5,
                     "max": 10
                 }
@@ -568,12 +568,12 @@
             "fight": 5,
             "defense": 6,
             "reflexes": 6,
-            "weapons": ["shard_rifle", "plasma_grenade", {"id": "ccw", "count": 1}],
+            "weapons": ["shard_rifle", "plasma_grenade", "ccw"],
             "options": [
                 {
-                    "replaceWeapon": ["shard_rifle", {"id": "ccw", "count": 1}],
+                    "replaceWeapon": ["shard_rifle", "ccw"],
                     "withWeapon": [
-                        [{"id": "shard_rifle", "count": 2}, {"id": "ccw", "count": 1}],
+                        [{"id": "shard_rifle", "count": 2}, "ccw"],
                         [{"id": "energy_glaive", "count": 2}, "combat_shield"],
                         ["shard_pistol", {"id": "energy_sword", "count": 2}],
                         ["shard_pistol", {"id": "energy_glaive", "count": 2}]
