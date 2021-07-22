@@ -137,14 +137,14 @@
                 }
             ]
         },
-        "warrior_squad": {
-            "name": "Warrior Team",
+        "fire_team": {
+            "name": "Fire Team",
             "description": "A squad of infantry who excell at ranged shooting.",
             "min": 1,
             "max": 1,
             "category": "core",
             "options": [
-                {"replaceWeapon": "pulse_carbine", "withWeapon": ["pulse_shotgun", "pulse_rifle"]},
+                {"replaceWeapon": "pulse_carbine", "withWeapon": ["pulse_rifle"]},
                 {"addModel": "support_turret"},
                 {"addModel": ["spotter_drone", "gunner_drone", "shield_drone"], "modelLimit": 2},
                 {"addModel": "guardian_drone"}
@@ -158,21 +158,21 @@
                     "fight": 4,
                     "defense": 6,
                     "reflexes": 6,
-                    "weapons": ["pulse_carbine", {"id": "ccw", "count": 1}, "stun_grenades"],
+                    "weapons": ["pulse_carbine", "ccw", "stun_grenades"],
                     "options": [{"replaceModel": "warrior_team_leader", "modelLimit": 1}],
                     "min": 5,
                     "max": 12
                 }
             ]
         },
-        "warrior_squad_veteran": {
-            "name": "Veteran Warrior Team",
+        "fire_team_veteran": {
+            "name": "Veteran Fire Team",
             "description": "A squad of infantry who excell at ranged shooting.",
             "min": 1,
             "max": 1,
             "category": "core",
             "options": [
-                {"replaceWeapon": "pulse_carbine", "withWeapon": ["pulse_shotgun", "pulse_rifle"]},
+                {"replaceWeapon": "pulse_carbine", "withWeapon": ["pulse_rifle"]},
                 {"addModel": "support_turret"},
                 {"addModel": ["spotter_drone", "gunner_drone", "shield_drone"], "modelLimit": 2},
                 {"addModel": "guardian_drone"}
@@ -186,10 +186,64 @@
                     "fight": 5,
                     "defense": 6,
                     "reflexes": 6,
-                    "weapons": ["pulse_carbine", {"id": "ccw", "count": 1}, "stun_grenades"],
+                    "weapons": ["pulse_carbine", "ccw", "stun_grenades"],
                     "options": [{"replaceModel": "veteran_warrior_team_leader", "modelLimit": 1}],
                     "min": 5,
                     "max": 12
+                }
+            ]
+        },
+        "assault_team": {
+            "name": "Assault Team",
+            "description": "A squad of infantry who excell at ranged shooting.",
+            "min": 1,
+            "max": 1,
+            "category": "core",
+            "options": [
+                {"addModel": "support_turret"},
+                {"addModel": ["spotter_drone", "gunner_drone", "shield_drone"], "modelLimit": 2},
+                {"addModel": "guardian_drone"}
+            ],
+            "models": [
+                {
+                    "name": "Assaulter",
+                    "movement": 6,
+                    "courage": 4,
+                    "shoot": 5,
+                    "fight": 5,
+                    "defense": 6,
+                    "reflexes": 6,
+                    "weapons": ["pulse_shotgun", {"id": "ccw", "count": 2}, "stun_grenades"],
+                    "options": [{"replaceModel": "assault_team_leader", "modelLimit": 1}],
+                    "min": 5,
+                    "max": 9
+                }
+            ]
+        },
+        "veteran_assault_team": {
+            "name": "Veteran Assault Team",
+            "description": "A squad of infantry who excell at ranged shooting.",
+            "min": 1,
+            "max": 1,
+            "category": "core",
+            "options": [
+                {"addModel": "support_turret"},
+                {"addModel": ["spotter_drone", "gunner_drone", "shield_drone"], "modelLimit": 2},
+                {"addModel": "guardian_drone"}
+            ],
+            "models": [
+                {
+                    "name": "Veteran Assaulter",
+                    "movement": 6,
+                    "courage": 5,
+                    "shoot": 5,
+                    "fight": 6,
+                    "defense": 6,
+                    "reflexes": 6,
+                    "weapons": ["pulse_shotgun", {"id": "ccw", "count": 2}, "stun_grenades"],
+                    "options": [{"replaceModel": "veteran_assault_team_leader", "modelLimit": 1}],
+                    "min": 5,
+                    "max": 9
                 }
             ]
         },
@@ -216,7 +270,7 @@
                     "fight": 4,
                     "defense": 5,
                     "reflexes": 6,
-                    "weapons": ["pulse_carbine", {"id": "ccw", "count": 1}, "stun_grenades"],
+                    "weapons": ["pulse_carbine", "ccw", "stun_grenades"],
                     "options": [{"replaceModel": "pathfinder_team_leader", "modelLimit": 1}],
                     "min": 5,
                     "max": 10
@@ -308,7 +362,7 @@
                     "defense": 7,
                     "reflexes": 5,
                     "rules": ["fly"],
-                    "weapons": ["neutron_carbine", {"id": "ccw", "count": 1}],
+                    "weapons": ["neutron_carbine", "ccw"],
                     "options": [{"replaceModel": "insect_warrior_leader", "modelLimit": 1}],
                     "min": 5,
                     "max": 12
@@ -332,7 +386,7 @@
                     "fight": 4,
                     "defense": 8,
                     "reflexes": 6,
-                    "weapons": ["pulse_gatling", {"id": "ccw", "count": 1}, "stun_grenades"],
+                    "weapons": ["pulse_gatling", "ccw", "stun_grenades"],
                     "options": [{"replaceModel": "stealth_suit_leader", "modelLimit": 1}, {"replaceWeapon": "pulse_gatling", "withWeapon": ["fusion_blaster"], "modelLimit": 1}],
                     "min": 3,
                     "max": 6
@@ -670,7 +724,7 @@
             "defense": 7,
             "reflexes": 5,
             "rules": ["fly"],
-            "weapons": ["neutron_carbine", {"id": "ccw", "count": 1}],
+            "weapons": ["neutron_carbine", "ccw"],
             "min": 5,
             "max": 12
         },
@@ -688,10 +742,36 @@
             "max": 1
         },
         "veteran_warrior_team_leader": {
-            "name": "Veteran Team Leader",
+            "name": "Fire Team Leader",
             "movement": 6,
             "courage": 6,
             "shoot": 6,
+            "fight": 5,
+            "defense": 6,
+            "reflexes": 6,
+            "weapons": ["pulse_carbine", "ccw", "stun_grenades"],
+            "options": [{"addWeapon": "pulse_pistol"}, {"addRule": "spotting_laser"}],
+            "min": 1,
+            "max": 1
+        },
+        "warrior_team_leader": {
+            "name": "Fire Team Leader",
+            "movement": 6,
+            "courage": 5,
+            "shoot": 5,
+            "fight": 4,
+            "defense": 6,
+            "reflexes": 6,
+            "weapons": ["pulse_carbine", "ccw", "stun_grenades"],
+            "options": [{"addWeapon": "pulse_pistol"}, {"addRule": "spotting_laser"}],
+            "min": 1,
+            "max": 1
+        },
+        "assault_team_leader": {
+            "name": "Assault Team Leader",
+            "movement": 6,
+            "courage": 5,
+            "shoot": 5,
             "fight": 5,
             "defense": 6,
             "reflexes": 6,
@@ -700,12 +780,12 @@
             "min": 1,
             "max": 1
         },
-        "warrior_team_leader": {
-            "name": "Team Leader",
+        "veteran_assault_team_leader": {
+            "name": "Veteran Assault Team Leader",
             "movement": 6,
-            "courage": 5,
+            "courage": 6,
             "shoot": 5,
-            "fight": 4,
+            "fight": 6,
             "defense": 6,
             "reflexes": 6,
             "weapons": ["pulse_carbine", {"id": "ccw", "count": 2}, "stun_grenades"],
