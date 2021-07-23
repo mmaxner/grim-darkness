@@ -257,8 +257,7 @@
                     "options": [
                         {"addRule": ["banner"], "modelLimit": 1},
                         {"addRule": ["medic"], "modelLimit": 1},
-                        {"replaceWeapon": "laser_carbine", "withWeapon": ["shotgun", "flamethrower", "grenade_launcher", "fusion_rifle", "plasma_rifle", "sniper_rifle"]},
-                        {"addRule": ["heavy_armor"], "modelLimit": "all"}
+                        {"replaceWeapon": "laser_carbine", "withWeapon": ["shotgun", "flamethrower", "grenade_launcher", "fusion_rifle", "plasma_rifle", "sniper_rifle"]}
                     ],
                     "min": 4,
                     "max": 4
@@ -419,7 +418,7 @@
                     "weapons": ["laser_pistol", "frags", {"id": "heavy_ccw", "count": 2}],
                     "options": [
                         {"replaceWeapon": "laser_pistol", "withWeapon": ["plasma_pistol", "machine_pistol", "heavy_laser_pistol", "flamethrower_pistol", "thump_pistol"], "modelLimit": "2/5"},
-                        {"replaceWeapon": {"id": "heavy_ccw", "count": 2}, "withWeapon": ["energy_sword"]}
+                        {"replaceWeapon": {"id": "heavy_ccw", "count": 2}, "withWeapon": [{"id": "energy_sword", "count": 2}]}
                     ],
                     "min": 5,
                     "max": 10
