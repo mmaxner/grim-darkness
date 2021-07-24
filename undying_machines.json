@@ -10,7 +10,7 @@
             "min": 1,
             "max": 1,
             "category": "command",
-            "rules": ["hover", {"id": "leader_x", "x": "Infantry"}, "flare_shielding", "damage_table_vehicle", {"id": "impact", "x": 3}, {"id": "machine_tactics", "x": 1}],
+            "rules": ["hover", {"id": "leader_x", "x": "Infantry"}, "flare_shielding", "damage_chart", {"id": "impact", "x": 3}, {"id": "machine_tactics", "x": 1}],
             "keywords": ["Vehicle"],
             "models": [
                 {
@@ -237,7 +237,7 @@
             "min": 1,
             "max": 1,
             "category": "specialist",
-            "rules": [{"id": "leader_x", "x": "Infantry"}, "fly", {"id": "power", "x": 1}, "damage_table_monster"],
+            "rules": [{"id": "leader_x", "x": "Infantry"}, "fly", {"id": "power", "x": 1}, "damage_chart"],
             "keywords": ["Infantry"],
             "models": [
                 {
@@ -517,7 +517,7 @@
             "min": 1,
             "max": 1,
             "category": "transport",
-            "rules": ["hover", "flare_shielding", "vulnerable_side_rear", {"id": "impact", "x": 6}, {"id": "transport", "x": 11}, "damage_table_vehicle"],
+            "rules": ["hover", "flare_shielding", "vulnerable_side_rear", {"id": "impact", "x": 6}, {"id": "transport", "x": 11}, "damage_chart"],
             "keywords": ["Vehicle"],
             "models": [
                 {
@@ -541,7 +541,7 @@
             "min": 1,
             "max": 1,
             "category": "heavy",
-            "rules": ["hover", "flare_shielding", "damage_table_vehicle", {"id": "impact", "x": 3}],
+            "rules": ["hover", "flare_shielding", "damage_chart", {"id": "impact", "x": 3}],
             "keywords": ["Vehicle"],
             "models": [
                 {
@@ -565,7 +565,7 @@
             "min": 1,
             "max": 1,
             "category": "heavy",
-            "rules": ["walker", "flare_shielding", "damage_table_vehicle", {"id": "impact", "x": 3}],
+            "rules": ["walker", "flare_shielding", "damage_chart", {"id": "impact", "x": 3}],
             "keywords": ["Vehicle"],
             "models": [
                 {
@@ -588,7 +588,7 @@
             "min": 1,
             "max": 1,
             "category": "heavy",
-            "rules": ["hover", "flare_shielding", "vulnerable_side_rear", {"id": "impact", "x": 6}, "damage_table_vehicle"],
+            "rules": ["hover", "flare_shielding", "vulnerable_side_rear", {"id": "impact", "x": 6}, "damage_chart"],
             "keywords": ["Vehicle"],
             "models": [
                 {
@@ -611,7 +611,7 @@
             "min": 1,
             "max": 1,
             "category": "transport",
-            "rules": ["aircraft", {"id": "transport", "x": 11}, "damage_table_vehicle"],
+            "rules": ["aircraft", {"id": "transport", "x": 11}, "damage_chart"],
             "keywords": ["Vehicle", "Aircraft"],
             "models": [
                 {
@@ -635,7 +635,7 @@
             "min": 1,
             "max": 1,
             "category": "strike",
-            "rules": ["aircraft", "damage_table_aircraft"],
+            "rules": ["aircraft", "damage_chart"],
             "keywords": ["Vehicle", "Aircraft"],
             "models": [
                 {
@@ -659,7 +659,7 @@
             "min": 1,
             "max": 1,
             "category": "heavy",
-            "rules": ["walker", "flare_shielding", "vulnerable_side_rear", "damage_table_vehicle", "targeting_relay"],
+            "rules": ["walker", "flare_shielding", "vulnerable_side_rear", "damage_chart", "targeting_relay"],
             "keywords": ["Vehicle"],
             "models": [
                 {
@@ -712,7 +712,7 @@
             "min": 1,
             "max": 1,
             "category": "specialist",
-            "rules": ["walker", "reanimation_beam", "damage_table_vehicle"],
+            "rules": ["walker", "reanimation_beam", "damage_chart"],
             "keywords": ["Vehicle"],
             "models": [
                 {
@@ -735,7 +735,7 @@
             "min": 1,
             "max": 1,
             "category": "super_heavy",
-            "rules": ["hover", "flare_shielding", "vulnerable_rear", "damage_table_titan"],
+            "rules": ["hover", "flare_shielding", "vulnerable_rear", "damage_chart"],
             "keywords": ["Vehicle"],
             "models": [
                 {
@@ -784,7 +784,7 @@
             "min": 1,
             "max": 1,
             "category": "specialist",
-            "rules": [{"id": "leader_x", "x": "Infantry"}, "fly", {"id": "power", "x": 1}, "damage_table_monster"],
+            "rules": [{"id": "leader_x", "x": "Infantry"}, "fly", {"id": "power", "x": 1}, "damage_chart"],
             "keywords": ["Infantry"],
             "models": [
                 {
@@ -807,7 +807,7 @@
             "name": "Dimensional Shard Vault",
             "description": "A large hovering vault containing a dimensional shard.",
             "category": "super_heavy",
-            "rules": ["hover", "flare_shielding", "vulnerable_rear", "damage_table_titan", {"id": "power", "x": 3}, {"id": "psychic_prowess", "x": 2}],
+            "rules": ["hover", "flare_shielding", "vulnerable_rear", "damage_chart", {"id": "power", "x": 3}, {"id": "psychic_prowess", "x": 2}],
             "keywords": ["Vehicle"],
             "models": [
                 {

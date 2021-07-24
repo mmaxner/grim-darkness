@@ -538,7 +538,7 @@
             "max": 1,
             "category": "heavy",
             "keywords": ["Vehicle", "Battle Tank"],
-            "rules": ["vulnerable_side_rear", "damage_table_vehicle"],
+            "rules": ["vulnerable_side_rear", "damage_chart"],
             "models": [
                 {
                     "name": "Battle Tank",
@@ -574,7 +574,7 @@
         "scout_buggy": {
             "name": "Scout Buggy",
             "description": "A fast moving scout vehicle.",
-            "rules": [{"id": "impact", "x": 3}, "scout", "vulnerable_side_rear", "damage_table_vehicle", "marking_flares"],
+            "rules": [{"id": "impact", "x": 3}, "scout", "vulnerable_side_rear", "damage_chart", "marking_flares"],
             "category": "strike",
             "keywords": ["Vehicle"],
             "min": 1,
@@ -613,7 +613,7 @@
         "light_apc": {
             "name": "APC",
             "description": "A light transport of the Ascended Astro-Raptors.",
-            "rules": [{"id": "impact", "x": 3}, {"id": "transport", "x": 12}, "vulnerable_side_rear", "damage_table_vehicle"],
+            "rules": [{"id": "impact", "x": 3}, {"id": "transport", "x": 12}, "vulnerable_side_rear", "damage_chart"],
             "category": "transport",
             "keywords": ["Vehicle"],
             "min": 1,
@@ -644,7 +644,7 @@
         "assault_vehicle": {
             "name": "Assault Vehicle",
             "description": "A light assault vehicle with multiple roles.",
-            "rules": [{"id": "impact", "x": 3}, "vulnerable_side_rear", "damage_table_vehicle"],
+            "rules": [{"id": "impact", "x": 3}, "vulnerable_side_rear", "damage_chart"],
             "category": "heavy",
             "keywords": ["Vehicle"],
             "min": 1,
@@ -677,7 +677,7 @@
         "support_vehicle": {
             "name": "Support Vehicle",
             "description": "A support vehicle with multiple roles from artillery to anti-air.",
-            "rules": [{"id": "impact", "x": 3}, "vulnerable_side_rear", "damage_table_vehicle"],
+            "rules": [{"id": "impact", "x": 3}, "vulnerable_side_rear", "damage_chart"],
             "category": "heavy",
             "keywords": ["Vehicle"],
             "min": 1,
@@ -709,7 +709,7 @@
         "armored_walker": {
             "name": "Armored Walker",
             "description": "An armored light combat walker.",
-            "rules": ["vulnerable_rear", "damage_table_vehicle", "walker"],
+            "rules": ["vulnerable_rear", "damage_chart", "walker"],
             "keywords": ["Vehicle"],
             "min": 1,
             "max": 1,
@@ -763,7 +763,7 @@
         "light_gunship": {
             "name": "Light Transport Gunship",
             "description": "A light gunship with sliding doors for troop transport.",
-            "rules": [{"id": "transport", "x": 11}, "aircraft", "hover_mode", "damage_table_aircraft"],
+            "rules": [{"id": "transport", "x": 11}, "aircraft", "hover_mode", "damage_chart"],
             "category": "transport",
             "keywords": ["Vehicle"],
             "min": 1,
@@ -791,7 +791,7 @@
         "heavy_gunship": {
             "name": "Heavy Gunship",
             "description": "A heavy gunship with a variety of weapon options.",
-            "rules": ["aircraft", "hover_mode", "damage_table_aircraft"],
+            "rules": ["aircraft", "hover_mode", "damage_chart"],
             "category": "heavy",
             "keywords": ["Vehicle"],
             "min": 1,

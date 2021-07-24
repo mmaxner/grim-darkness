@@ -500,7 +500,7 @@
             "max": 1,
             "category": "heavy",
             "keywords": ["Vehicle", "Battle Tank"],
-            "rules": ["vulnerable_side_rear", "damage_table_vehicle"],
+            "rules": ["vulnerable_side_rear", "damage_chart"],
             "models": [
                 {
                     "name": "Cult Battle Tank",
@@ -536,7 +536,7 @@
         "support_vehicle": {
             "name": "Cult Support Vehicle",
             "description": "A support vehicle with multiple roles from artillery to anti-air.",
-            "rules": [{"id": "impact", "x": 3}, "vulnerable_side_rear", "damage_table_vehicle"],
+            "rules": [{"id": "impact", "x": 3}, "vulnerable_side_rear", "damage_chart"],
             "category": "heavy",
             "keywords": ["Vehicle"],
             "min": 1,
@@ -565,7 +565,7 @@
         "assault_vehicle": {
             "name": "Cult Assault Vehicle",
             "description": "A light assault vehicle with multiple roles.",
-            "rules": [{"id": "impact", "x": 3}, "vulnerable_side_rear", "damage_table_vehicle"],
+            "rules": [{"id": "impact", "x": 3}, "vulnerable_side_rear", "damage_chart"],
             "category": "heavy",
             "keywords": ["Vehicle"],
             "min": 1,
@@ -598,7 +598,7 @@
         "light_apc": {
             "name": "Cult APC",
             "description": "A light transport stolen from the imperial defense force.",
-            "rules": [{"id": "impact", "x": 3}, {"id": "transport", "x": 12}, "vulnerable_side_rear", "damage_table_vehicle"],
+            "rules": [{"id": "impact", "x": 3}, {"id": "transport", "x": 12}, "vulnerable_side_rear", "damage_chart"],
             "category": "transport",
             "keywords": ["Vehicle"],
             "min": 1,
@@ -629,7 +629,7 @@
         "scout_buggy": {
             "name": "Scout Buggy",
             "description": "A repurposed civilian or mining vehicle turned into a cult ambush wagon.",
-            "rules": [{"id": "impact", "x": 3}, "scout", "vulnerable_side_rear", "damage_table_vehicle", "marking_flares"],
+            "rules": [{"id": "impact", "x": 3}, "scout", "vulnerable_side_rear", "damage_chart", "marking_flares"],
             "category": "strike",
             "keywords": ["Vehicle"],
             "min": 1,
@@ -656,7 +656,7 @@
         "light_truck": {
             "name": "Cult Truck",
             "description": "A repurposed civilian or mining vehicle turned into a cult ambush wagon.",
-            "rules": [{"id": "impact", "x": 3}, {"id": "transport", "x": 12}, {"id": "open_topped", "x": 12}, "vulnerable_side_rear", "damage_table_vehicle"],
+            "rules": [{"id": "impact", "x": 3}, {"id": "transport", "x": 12}, {"id": "open_topped", "x": 12}, "vulnerable_side_rear", "damage_chart"],
             "category": "transport",
             "keywords": ["Vehicle"],
             "min": 1,
@@ -680,7 +680,7 @@
         "scout_walker": {
             "name": "Cult Scout Walker",
             "description": "A lightly equipped recon walker stolen from the imperial defense force.",
-            "rules": ["vulnerable_rear", "damage_table_vehicle", "scout"],
+            "rules": ["vulnerable_rear", "damage_chart", "scout"],
             "keywords": ["Vehicle"],
             "min": 1,
             "max": 1,
@@ -707,7 +707,7 @@
         "armored_walker": {
             "name": "Cult Armored Walker",
             "description": "An armored light combat walker stolen from the imperial defense force.",
-            "rules": ["vulnerable_rear", "damage_table_vehicle"],
+            "rules": ["vulnerable_rear", "damage_chart"],
             "keywords": ["Vehicle"],
             "min": 1,
             "max": 1,
@@ -734,7 +734,7 @@
         "light_gunship": {
             "name": "Cult Light Transport Gunship",
             "description": "A light gunship with sliding doors for troop transport stolen from the imperial defense force.",
-            "rules": [{"id": "transport", "x": 12}, "aircraft", "hover_mode", "damage_table_aircraft"],
+            "rules": [{"id": "transport", "x": 12}, "aircraft", "hover_mode", "damage_chart"],
             "category": "transport",
             "keywords": ["Vehicle"],
             "min": 1,
@@ -762,7 +762,7 @@
         "mining_truck": {
             "name": "Cult Mining Vehicle",
             "description": "A repurposed heavy mining vehicle turned into a cult heavy vehicle.",
-            "rules": [{"id": "heavy_impact", "x": 3}, {"id": "transport", "x": 6}, "vulnerable_side_rear", "damage_table_vehicle"],
+            "rules": [{"id": "heavy_impact", "x": 3}, {"id": "transport", "x": 6}, "vulnerable_side_rear", "damage_chart"],
             "category": "heavy",
             "keywords": ["Vehicle"],
             "min": 1,

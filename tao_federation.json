@@ -498,7 +498,7 @@
                     "defense": 11,
                     "reflexes": 6,
                     "weapons": [{"id": "pulse_gatling", "mount": ["Front"]}],
-                    "rules": [{"id": "impact", "x": 3}, {"id": "transport", "x": 12}, "vulnerable_side_rear", "hover", "damage_table_vehicle"],
+                    "rules": [{"id": "impact", "x": 3}, {"id": "transport", "x": 12}, "vulnerable_side_rear", "hover", "damage_chart"],
                     "options": [
                         {"addWeapon": [[{"id": "smart_missiles", "mount": ["Left, Front"]}, {"id": "smart_missiles", "mount": ["Right, Front"]}]]},
                         {"addWeapon": ["seeker_missiles"], "limit": 3},
@@ -527,7 +527,7 @@
                     "defense": 12,
                     "reflexes": 6,
                     "weapons": [{"id": "heavy_railgun", "mount": ["Front"]}],
-                    "rules": [{"id": "impact", "x": 6}, "vulnerable_side_rear", "hover", "damage_table_vehicle"],
+                    "rules": [{"id": "impact", "x": 6}, "vulnerable_side_rear", "hover", "damage_chart"],
                     "options": [
                         {"replaceWeapon": {"id": "heavy_railgun", "mount": ["Front"]}, "withWeapon": "ion_cannon"},
                         {
@@ -563,7 +563,7 @@
                     "defense": 9,
                     "reflexes": 6,
                     "weapons": [{"id": "pulse_gatling", "mount": ["Front"]}],
-                    "rules": [{"id": "impact", "x": 3}, "vulnerable_side_rear", "damage_table_vehicle"],
+                    "rules": [{"id": "impact", "x": 3}, "vulnerable_side_rear", "damage_chart"],
                     "options": [
                         {"replaceWeapon": {"id": "pulse_gatling", "mount": ["Front"]}, "withWeapon": {"id": "fusion_blaster", "mount": ["Front"]}},
                         {"addWeapon": ["seeker_missiles"], "limit": 3}
@@ -590,7 +590,7 @@
                     "fight": 4,
                     "defense": 11,
                     "reflexes": 6,
-                    "rules": ["damage_table_vehicle"],
+                    "rules": ["damage_chart"],
                     "weapons": [{"id": "suit_fists", "count": 2}],
                     "options": [
                         {"limit": 1, "addWeapon": ["heavy_rail_rifle", {"id": "heavy_missile_pod", "count": 2}]},
@@ -620,7 +620,7 @@
                     "fight": 4,
                     "defense": 12,
                     "reflexes": 6,
-                    "rules": ["damage_table_vehicle"],
+                    "rules": ["damage_chart"],
                     "weapons": [{"id": "suit_fists", "count": 4}, "ion_cannon", {"id": "plasma_rifle", "count": 2}],
                     "options": [
                         {"replaceWeapon": "ion_cannon", "withWeapon": "heavy_pulse_gatling"},
@@ -650,7 +650,7 @@
                     "fight": 4,
                     "defense": 11,
                     "reflexes": 6,
-                    "rules": ["stealth", "damage_table_vehicle"],
+                    "rules": ["stealth", "damage_chart"],
                     "weapons": ["suit_fists"],
                     "options": [
                         {"id": "ambush", "name": "Stealth Infiltration"},
@@ -678,7 +678,7 @@
                     "fight": 3,
                     "defense": 9,
                     "reflexes": 5,
-                    "rules": ["damage_table_aircraft", "aircraft"],
+                    "rules": ["damage_chart", "aircraft"],
                     "weapons": [{"id": "pulse_gatling", "mount": ["Front"]}, "quad_ion_rifle", {"id": "seeker_missiles", "count": 2}],
                     "options": [
                         {"addModel": "attached_gunner_drone", "modelLimit": 2},
@@ -706,7 +706,7 @@
                     "fight": 3,
                     "defense": 9,
                     "reflexes": 5,
-                    "rules": ["aircraft", "damage_table_aircraft", "spotting_laser"],
+                    "rules": ["aircraft", "damage_chart", "spotting_laser"],
                     "weapons": ["missile_pod", {"id": "seeker_missiles", "count": 2}, "ion_bombs"],
                     "min": 1,
                     "max": 1

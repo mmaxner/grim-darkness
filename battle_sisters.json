@@ -404,7 +404,7 @@
         "redemption_walker": {
             "name": "Redemption Walker",
             "description": "A walker atoning for its sins with righteous fury.",
-            "rules": ["walker", "vulnerable_rear", "damage_table_vehicle"],
+            "rules": ["walker", "vulnerable_rear", "damage_chart"],
             "category": "heavy",
             "keywords": ["Vehicle"],
             "min": 1,
@@ -432,7 +432,7 @@
         "apc": {
             "name": "APC",
             "description": "A durable transport with optional heavy weapons.",
-            "rules": [{"id": "impact", "x": 3}, {"id": "transport", "x": 11}, "vulnerable_side_rear", "damage_table_vehicle"],
+            "rules": [{"id": "impact", "x": 3}, {"id": "transport", "x": 11}, "vulnerable_side_rear", "damage_chart"],
             "category": "transport",
             "keywords": ["Vehicle"],
             "min": 1,
@@ -456,7 +456,7 @@
         "inferno_apc": {
             "name": "Inferno APC",
             "description": "A durable transport with attached heavy weapons.",
-            "rules": [{"id": "impact", "x": 3}, {"id": "transport", "x": 6}, "vulnerable_side_rear", "damage_table_vehicle"],
+            "rules": [{"id": "impact", "x": 3}, {"id": "transport", "x": 6}, "vulnerable_side_rear", "damage_chart"],
             "category": "transport",
             "keywords": ["Vehicle"],
             "models": [
@@ -482,7 +482,7 @@
         "organ_tank": {
             "name": "Organ Tank",
             "description": "A light tank with a unique organ-shaped missile array.",
-            "rules": [{"id": "impact", "x": 6}, "vulnerable_side_rear", "damage_table_vehicle"],
+            "rules": [{"id": "impact", "x": 6}, "vulnerable_side_rear", "damage_chart"],
             "category": "heavy",
             "keywords": ["Vehicle"],
             "min": 1,

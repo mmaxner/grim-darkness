@@ -11,7 +11,7 @@
             "description": "A representation of the hive mind itself come to direct the swarm's attacks",
             "category": "command",
             "keywords": ["Monster"],
-            "rules": ["damage_table_monster"],
+            "rules": ["damage_chart"],
             "models": [
                 {
                     "name": "Hive Lord",
@@ -280,7 +280,7 @@
             "name": "Transport Spore",
             "description": "A floating spore which can hover across the battlefield or be launched from hive ships",
             "category": "transport",
-            "rules": ["hover", "ambush", "damage_table_monster", {"id": "transport", "x": 20}],
+            "rules": ["hover", "ambush", "damage_chart", {"id": "transport", "x": 20}],
             "models": [
                 {
                     "name": "Transport Spore",
@@ -301,7 +301,7 @@
             "name": "Consumption Beast",
             "description": "A monster with huge tentacled jaws meant to rapidly consume biomass",
             "category": "specialist",
-            "rules": ["damage_table_monster"],
+            "rules": ["damage_chart"],
             "models": [
                 {
                     "name": "Consumption Beast",
@@ -362,7 +362,7 @@
             "name": "Mind Beast",
             "description": "",
             "category": "specialist",
-            "rules": ["damage_table_monster"],
+            "rules": ["damage_chart"],
             "models": [
                 {"name": "Mind Beast", "courage": 7, "reflexes": 6, "fight": 6, "shoot": 5, "defense": 11, "movement": 7, "weapons": [{"id": "large_razor_talons", "count": 3}], "min": 1, "max": 1}
             ]
@@ -443,7 +443,7 @@
             "name": "Carnivorous Beast",
             "description": "A huge alien beast with heavy scaled armor.",
             "category": "heavy",
-            "rules": ["damage_table_monster", {"id": "impact", "x": 3}],
+            "rules": ["damage_chart", {"id": "impact", "x": 3}],
             "models": [
                 {
                     "name": "Carnivorous Beast",

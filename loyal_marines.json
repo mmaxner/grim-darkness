@@ -1652,7 +1652,7 @@
         "marine_apc": {
             "name": "APC",
             "description": "A durable transport built by the loyal marines.",
-            "rules": [{"id": "impact", "x": 3}, {"id": "transport", "x": 11}, "vulnerable_side_rear", "damage_table_vehicle"],
+            "rules": [{"id": "impact", "x": 3}, {"id": "transport", "x": 11}, "vulnerable_side_rear", "damage_chart"],
             "subfactions": ["none", "wolf_marines", "assault_focus", "alien_hunters", "psychic_marines"],
             "category": "transport",
             "keywords": ["Vehicle"],
@@ -1678,7 +1678,7 @@
         "drop_pod": {
             "name": "Drop Pod",
             "description": "A durable transport built by the loyal marines.",
-            "rules": [{"id": "transport", "x": 12}, "damage_table_vehicle", "ambush"],
+            "rules": [{"id": "transport", "x": 12}, "damage_chart", "ambush"],
             "subfactions": ["none", "wolf_marines", "assault_focus", "alien_hunters", "psychic_marines"],
             "category": "transport",
             "keywords": ["Vehicle"],
@@ -1704,7 +1704,7 @@
         "marine_assault_apc": {
             "name": "Assault APC",
             "description": "A durable transport built by the loyal marines with upgraded weaponry.",
-            "rules": [{"id": "impact", "x": 3}, {"id": "transport", "x": 6}, "vulnerable_side_rear", "damage_table_vehicle"],
+            "rules": [{"id": "impact", "x": 3}, {"id": "transport", "x": 6}, "vulnerable_side_rear", "damage_chart"],
             "subfactions": ["none", "wolf_marines", "assault_focus", "alien_hunters", "psychic_marines"],
             "category": "transport",
             "keywords": ["Vehicle"],
@@ -1734,7 +1734,7 @@
         "marine_artillery_vehicle": {
             "name": "Artillery Vehicle",
             "description": "An armored artillery vehicle helmed by loyal marines.",
-            "rules": [{"id": "impact", "x": 3}, "vulnerable_side_rear", "damage_table_vehicle"],
+            "rules": [{"id": "impact", "x": 3}, "vulnerable_side_rear", "damage_chart"],
             "subfactions": ["none", "wolf_marines", "assault_focus", "alien_hunters", "psychic_marines"],
             "keywords": ["Vehicle"],
             "category": "heavy",
@@ -1757,7 +1757,7 @@
         "marine_battle_tank": {
             "name": "Battle Tank",
             "description": "An armored tank helmed by loyal marines.",
-            "rules": [{"id": "impact", "x": 6}, "vulnerable_side_rear", "damage_table_vehicle"],
+            "rules": [{"id": "impact", "x": 6}, "vulnerable_side_rear", "damage_chart"],
             "subfactions": ["none", "wolf_marines", "assault_focus", "alien_hunters", "psychic_marines"],
             "keywords": ["Vehicle"],
             "min": 1,
@@ -1793,7 +1793,7 @@
         "marine_heavy_tank": {
             "name": "Heavy Assault APC",
             "description": "A heavily armored transport sporting an arsenal of weapons built by the loyal marines.",
-            "rules": [{"id": "impact", "x": 6}, {"id": "transport", "x": 11}, "vulnerable_rear", "damage_table_vehicle", "assault_ramp"],
+            "rules": [{"id": "impact", "x": 6}, {"id": "transport", "x": 11}, "vulnerable_rear", "damage_chart", "assault_ramp"],
             "subfactions": ["none", "wolf_marines", "assault_focus", "alien_hunters", "psychic_marines"],
             "keywords": ["Vehicle"],
             "min": 1,
@@ -1835,7 +1835,7 @@
         "hover_apc": {
             "name": "Prime Hover APC",
             "description": "A durable transport with hover technology.",
-            "rules": [{"id": "impact", "x": 3}, {"id": "transport", "x": 12}, "vulnerable_side_rear", "hover", "damage_table_vehicle", "assault_ramp"],
+            "rules": [{"id": "impact", "x": 3}, {"id": "transport", "x": 12}, "vulnerable_side_rear", "hover", "damage_chart", "assault_ramp"],
             "subfactions": ["none", "wolf_marines", "assault_focus", "alien_hunters"],
             "keywords": ["Vehicle"],
             "min": 1,
@@ -1869,7 +1869,7 @@
         "heavy_hover_apc": {
             "name": "Prime Heavy Hover APC",
             "description": "A heavy transport with hover technology and loaded out with many weapons.",
-            "rules": [{"id": "impact", "x": 6}, {"id": "transport", "x": 12}, "vulnerable_rear", "hover", "damage_table_vehicle"],
+            "rules": [{"id": "impact", "x": 6}, {"id": "transport", "x": 12}, "vulnerable_rear", "hover", "damage_chart"],
             "subfactions": ["none", "wolf_marines", "assault_focus", "alien_hunters"],
             "keywords": ["Vehicle"],
             "min": 1,
@@ -1915,7 +1915,7 @@
         "prime_battle_tank": {
             "name": "Prime Hover Battle Tank",
             "description": "A heavy transport with hover technology and a large anti-tank weapon.",
-            "rules": [{"id": "impact", "x": 6}, "vulnerable_side_rear", "hover", "damage_table_vehicle"],
+            "rules": [{"id": "impact", "x": 6}, "vulnerable_side_rear", "hover", "damage_chart"],
             "subfactions": ["none", "wolf_marines", "assault_focus", "alien_hunters"],
             "keywords": ["Vehicle"],
             "min": 1,
@@ -1951,7 +1951,7 @@
         "heavy_hover_tank": {
             "name": "Prime Heavy Hover Tank",
             "description": "A heavy transport with hover technology and a large anti-tank weapon.",
-            "rules": [{"id": "impact", "x": 6}, {"id": "transport", "x": 6}, "vulnerable_rear", "hover", "damage_table_vehicle"],
+            "rules": [{"id": "impact", "x": 6}, {"id": "transport", "x": 6}, "vulnerable_rear", "hover", "damage_chart"],
             "subfactions": ["none", "wolf_marines", "assault_focus", "alien_hunters"],
             "keywords": ["Vehicle"],
             "min": 1,
@@ -1990,7 +1990,7 @@
         "prime_light_walker": {
             "name": "Prime Light Walker",
             "description": "A lightly equipped prime recon walker.",
-            "rules": ["vulnerable_rear", "scout", "damage_table_vehicle"],
+            "rules": ["vulnerable_rear", "scout", "damage_table"],
             "subfactions": ["none", "wolf_marines", "assault_focus", "alien_hunters"],
             "keywords": ["Vehicle"],
             "min": 1,
@@ -2018,7 +2018,7 @@
         "prime_assault_walker": {
             "name": "Prime Assault Walker",
             "description": "A heavily armed prime combat walker.",
-            "rules": ["vulnerable_rear", "damage_table_vehicle"],
+            "rules": ["vulnerable_rear", "damage_chart"],
             "category": "heavy",
             "subfactions": ["none", "wolf_marines", "assault_focus", "alien_hunters"],
             "keywords": ["Vehicle"],
@@ -2048,7 +2048,7 @@
         "assault_walker": {
             "name": "Assault Walker",
             "description": "A heavily armed combat walker.",
-            "rules": ["vulnerable_rear", "damage_table_vehicle"],
+            "rules": ["vulnerable_rear", "damage_chart"],
             "category": "heavy",
             "subfactions": ["none", "wolf_marines", "assault_focus", "alien_hunters"],
             "keywords": ["Vehicle"],
@@ -2079,7 +2079,7 @@
         "furious_assault_walker": {
             "name": "Furious Assault Walker",
             "description": "A heavily armed combat walker kitted for melee destruction.",
-            "rules": ["vulnerable_rear", "damage_table_vehicle"],
+            "rules": ["vulnerable_rear", "damage_chart"],
             "category": "heavy",
             "subfactions": ["assault_focus"],
             "keywords": ["Vehicle"],
@@ -2119,7 +2119,7 @@
         "veteran_assault_walker": {
             "name": "Veteran Assault Walker",
             "description": "An elite and heavily armed combat walker.",
-            "rules": ["vulnerable_rear", "damage_table_vehicle"],
+            "rules": ["vulnerable_rear", "damage_chart"],
             "category": "heavy",
             "subfactions": ["none", "wolf_marines", "assault_focus", "alien_hunters", "psychic_marines"],
             "keywords": ["Vehicle"],
@@ -2150,7 +2150,7 @@
         "psychic_assault_walker": {
             "name": "Psychic Assault Walker",
             "description": "A heavily armed combat walker with psychic powers.",
-            "rules": ["vulnerable_rear", "damage_table_vehicle"],
+            "rules": ["vulnerable_rear", "damage_chart"],
             "category": "heavy",
             "subfactions": ["psychic_marines"],
             "keywords": ["Vehicle"],
@@ -2184,7 +2184,7 @@
             "name": "Contemptor Assault Walker",
             "description": "A heavily armed ancient combat walker.",
             "subfactions": ["none", "wolf_marines", "assault_focus", "alien_hunters"],
-            "rules": ["vulnerable_rear", "damage_table_vehicle"],
+            "rules": ["vulnerable_rear", "damage_chart"],
             "category": "heavy",
             "keywords": ["Vehicle"],
             "min": 1,
@@ -2208,7 +2208,7 @@
         "raven_gunship": {
             "name": "Raven Gunship",
             "description": "A heavy transport and fire support gunship.",
-            "rules": ["aircraft", "damage_table_aircraft", "hover_mode", {"id": "transport", "x": 12}, {"id": "walker_transport", "x": 1}],
+            "rules": ["aircraft", "damage_chart", "hover_mode", {"id": "transport", "x": 12}, {"id": "walker_transport", "x": 1}],
             "category": "strike",
             "keywords": ["Vehicle", "Aircraft"],
             "subfactions": ["none", "psychic_marines", "wolf_marines", "assault_focus", "alien_hunters"],
@@ -2698,7 +2698,7 @@
         "grand_master_dread_walker": {
             "name": "Grand Master in Dread Walker",
             "description": "A large psychic walker with heavy weapons and extreme combat prowess.",
-            "rules": ["vulnerable_rear", {"id": "ward", "x": 1}, "damage_table_vehicle", {"id": "dread_walker_tactics", "x": 1}],
+            "rules": ["vulnerable_rear", {"id": "ward", "x": 1}, "damage_chart", {"id": "dread_walker_tactics", "x": 1}],
             "category": "command",
             "subfactions": ["psychic_marines"],
             "keywords": ["Vehicle"],
@@ -2728,7 +2728,7 @@
         "dread_walker": {
             "name": "Dread Walker",
             "description": "A large psychic walker with heavy weapons and extreme combat prowess.",
-            "rules": ["vulnerable_rear", {"id": "ward", "x": 1}, "damage_table_vehicle"],
+            "rules": ["vulnerable_rear", {"id": "ward", "x": 1}, "damage_chart"],
             "category": "heavy",
             "subfactions": ["psychic_marines"],
             "keywords": ["Vehicle"],

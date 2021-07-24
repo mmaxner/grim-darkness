@@ -202,7 +202,7 @@
             "inquisition_light_gunship": {
             "name": "Inquisition Light Gunship",
             "description": "A light gunship with sliding doors for troop transport.",
-            "rules": [{"id": "transport", "x": 11}, "aircraft", "hover_mode", "damage_table_aircraft"],
+            "rules": [{"id": "transport", "x": 11}, "aircraft", "hover_mode", "damage_chart"],
             "category": "transport",
             "keywords": ["Vehicle"],
             "min": 1,
@@ -230,7 +230,7 @@
         "marine_apc": {
             "name": "APC",
             "description": "A durable transport built for loyal marines and allies.",
-            "rules": [{"id": "impact", "x": 6}, {"id": "transport", "x": 11}, "vulnerable_side_rear", "damage_table_vehicle"],
+            "rules": [{"id": "impact", "x": 6}, {"id": "transport", "x": 11}, "vulnerable_side_rear", "damage_chart"],
             "category": "transport",
             "keywords": ["Vehicle"],
             "min": 1,
@@ -255,7 +255,7 @@
         "armored_stormtrooper_truck": {
             "name": "Armored Stormtrooper Truck",
             "description": "An armored transport of the imperial defense force.",
-            "rules": [{"id": "impact", "x": 3}, {"id": "transport", "x": 11}, "vulnerable_side_rear", "damage_table_vehicle"],
+            "rules": [{"id": "impact", "x": 3}, {"id": "transport", "x": 11}, "vulnerable_side_rear", "damage_chart"],
             "category": "transport",
             "keywords": ["Vehicle"],
             "min": 1,
@@ -284,7 +284,7 @@
         "marine_heavy_tank": {
             "name": "Heavy Assault APC",
             "description": "A heavily armored transport sporting an arsenal of weapons built by the loyal marines.",
-            "rules": [{"id": "impact", "x": 6}, {"id": "transport", "x": 11}, "vulnerable_rear", "damage_table_vehicle", "assault_ramp"],
+            "rules": [{"id": "impact", "x": 6}, {"id": "transport", "x": 11}, "vulnerable_rear", "damage_chart", "assault_ramp"],
             "keywords": ["Vehicle"],
             "min": 1,
             "category": "heavy",

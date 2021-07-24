@@ -392,7 +392,7 @@
         "landing_craft": {
             "name": "Landing Craft",
             "description": "A hovering landing craft for transporting troops.",
-            "rules": [{"id": "impact", "x": 3}, {"id": "transport", "x": 12}, "vulnerable_side_rear", "hover", "damage_table_vehicle"],
+            "rules": [{"id": "impact", "x": 3}, {"id": "transport", "x": 12}, "vulnerable_side_rear", "hover", "damage_chart"],
             "category": "transport",
             "keywords": ["Vehicle"],
             "min": 1,
@@ -416,7 +416,7 @@
         "assault_craft": {
             "name": "Assault Craft",
             "description": "A hovering tank for supporting landing assaults.",
-            "rules": [{"id": "impact", "x": 6}, "vulnerable_side_rear", "hover", "damage_table_vehicle"],
+            "rules": [{"id": "impact", "x": 6}, "vulnerable_side_rear", "hover", "damage_chart"],
             "category": "heavy",
             "keywords": ["Vehicle"],
             "min": 1,
@@ -440,7 +440,7 @@
         "crawler_tank": {
             "name": "Crawler Tank",
             "description": "A tank walking on large robotic legs.",
-            "rules": [{"id": "impact", "x": 6}, "vulnerable_side_rear", "walker", "damage_table_vehicle"],
+            "rules": [{"id": "impact", "x": 6}, "vulnerable_side_rear", "walker", "damage_chart"],
             "category": "heavy",
             "keywords": ["Vehicle"],
             "min": 1,
@@ -468,7 +468,7 @@
         "combat_robot": {
             "name": "Combat Robot",
             "description": "A robot built to smash with its fists or blast with deadly phosphor blasters.",
-            "rules": ["vulnerable_rear", "walker", "damage_table_vehicle"],
+            "rules": ["vulnerable_rear", "walker", "damage_chart"],
             "category": "heavy",
             "keywords": ["Vehicle"],
             "min": 1,
@@ -495,7 +495,7 @@
         "dragoon_walker": {
             "name": "Dragoon Walker",
             "description": "A light walker with a long taser lance.",
-            "rules": ["vulnerable_rear", "walker", "damage_table_vehicle"],
+            "rules": ["vulnerable_rear", "walker", "damage_chart"],
             "category": "heavy",
             "keywords": ["Vehicle"],
             "min": 1,
@@ -519,7 +519,7 @@
         "iron_walker": {
             "name": "Iron Walker",
             "description": "A light walker equipped with longer-range fire support weapons.",
-            "rules": ["vulnerable_rear", "walker", "damage_table_vehicle"],
+            "rules": ["vulnerable_rear", "walker", "damage_chart"],
             "category": "heavy",
             "keywords": ["Vehicle"],
             "min": 1,
@@ -543,7 +543,7 @@
         "gunship": {
             "name": "Gunship",
             "description": "A multi-role gunship.",
-            "rules": ["aircraft", "hover_mode", "damage_table_aircraft"],
+            "rules": ["aircraft", "hover_mode", "damage_chart"],
             "category": "heavy",
             "keywords": ["Vehicle", "Aircraft"],
             "min": 1,

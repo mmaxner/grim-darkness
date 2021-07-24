@@ -426,7 +426,7 @@
             "max": 1,
             "category": "heavy",
             "keywords": ["Vehicle", "Battle Tank"],
-            "rules": ["vulnerable_side_rear", "damage_table_vehicle"],
+            "rules": ["vulnerable_side_rear", "damage_chart"],
             "models": [
                 {
                     "name": "Corrupted Battle Tank",
@@ -462,7 +462,7 @@
         "light_apc": {
             "name": "Corrupted APC",
             "description": "A light transport of the corrupted defense force.",
-            "rules": [{"id": "impact", "x": 3}, {"id": "transport", "x": 12}, "vulnerable_side_rear", "damage_table_vehicle"],
+            "rules": [{"id": "impact", "x": 3}, {"id": "transport", "x": 12}, "vulnerable_side_rear", "damage_chart"],
             "category": "transport",
             "keywords": ["Vehicle"],
             "min": 1,
@@ -493,7 +493,7 @@
         "assault_vehicle": {
             "name": "Corrupted Assault Vehicle",
             "description": "A light assault vehicle with multiple roles.",
-            "rules": [{"id": "impact", "x": 3}, "vulnerable_side_rear", "damage_table_vehicle"],
+            "rules": [{"id": "impact", "x": 3}, "vulnerable_side_rear", "damage_chart"],
             "category": "heavy",
             "keywords": ["Vehicle"],
             "min": 1,
@@ -526,7 +526,7 @@
         "support_vehicle": {
             "name": "Corrupted Support Vehicle",
             "description": "A support vehicle with multiple roles from artillery to anti-air.",
-            "rules": [{"id": "impact", "x": 3}, "vulnerable_side_rear", "damage_table_vehicle"],
+            "rules": [{"id": "impact", "x": 3}, "vulnerable_side_rear", "damage_chart"],
             "category": "heavy",
             "keywords": ["Vehicle"],
             "min": 1,
@@ -555,7 +555,7 @@
         "scout_walker": {
             "name": "Corrupted Scout Walker",
             "description": "A lightly equipped recon walker.",
-            "rules": ["vulnerable_rear", "damage_table_vehicle", "scout"],
+            "rules": ["vulnerable_rear", "damage_chart", "scout"],
             "keywords": ["Vehicle"],
             "min": 1,
             "max": 1,
@@ -582,7 +582,7 @@
         "armored_walker": {
             "name": "Corrupted Armored Walker",
             "description": "An armored light combat walker.",
-            "rules": ["vulnerable_rear", "damage_table_vehicle"],
+            "rules": ["vulnerable_rear", "damage_chart"],
             "keywords": ["Vehicle"],
             "min": 1,
             "max": 1,
@@ -609,7 +609,7 @@
         "light_gunship": {
             "name": "Corrupted Transport Gunship",
             "description": "A light gunship with sliding doors for troop transport.",
-            "rules": [{"id": "transport", "x": 11}, "aircraft", "hover_mode", "damage_table_aircraft"],
+            "rules": [{"id": "transport", "x": 11}, "aircraft", "hover_mode", "damage_chart"],
             "category": "transport",
             "keywords": ["Vehicle"],
             "min": 1,
@@ -637,7 +637,7 @@
         "heavy_gunship": {
             "name": "Corrupted Heavy Gunship",
             "description": "A heavy gunship with a variety of weapon options.",
-            "rules": ["aircraft", "hover_mode", "damage_table_aircraft"],
+            "rules": ["aircraft", "hover_mode", "damage_chart"],
             "category": "heavy",
             "keywords": ["Vehicle"],
             "min": 1,
@@ -672,7 +672,7 @@
         "super_heavy_battle_tank": {
             "name": "Corrupted Super Heavy Battle Tank",
             "description": "A titanic battle tank with a variety of weapon options.",
-            "rules": ["vulnerable_rear", "damage_table_titan", {"id": "heavy_impact", "x": 6}],
+            "rules": ["vulnerable_rear", "damage_chart", {"id": "heavy_impact", "x": 6}],
             "category": "super_heavy",
             "keywords": ["Vehicle", "Battle Tank"],
             "min": 1,
