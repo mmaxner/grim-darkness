@@ -744,10 +744,6 @@
         },
         "gravity": {"name": "Gravity", "description": "This weapon gets +2 AP against targets with Save 10 or higher.", "points": ["weapon.attacks", {"multiply": 1}]},
         "homing": {"name": "Homing", "description": "This weapon hits at Accuracy +1.", "points": ["weapon.attacks"]},
-        "titanic": {
-            "name": "Titanic",
-            "description": "When this unit is activated it may only perform one action and benefit from abilties which trigger when the unit is activated once. It may then be activated a second time to perform its second action."
-        },
         "spiked_ram": {"name": "Spiked Ram", "hidden": true, "description": "This model gains Impact(+3).", "description_short": "Impact +3", "points": 6},
         "heavy_impact": {
             "name": "Heavy Impact",
