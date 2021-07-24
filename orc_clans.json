@@ -1351,7 +1351,7 @@
             "min": 1,
             "max": 1,
             "keywords": ["Super Heavy Vehicle"],
-            "rules": ["vulnerable_rear", "damage_chart", "walker"],
+            "rules": ["vulnerable_rear", "damage_chart", "titanic", "walker"],
             "models": [
                 {
                     "name": "Super Heavy Walker",
@@ -1384,7 +1384,7 @@
             "max": 1,
             "category": "super_heavy",
             "keywords": ["Super Heavy Vehicle"],
-            "rules": [{"id": "transport", "x": 20}, {"id": "open_topped", "x": 20}, "damage_chart", "vulnerable_rear", "walker", {"id": "impact", "x": 6}],
+            "rules": [{"id": "transport", "x": 20}, {"id": "open_topped", "x": 20}, "damage_chart", "titanic", "vulnerable_rear", "walker", {"id": "impact", "x": 6}],
             "models": [
                 {
                     "name": "Colossal Attack Beast",
