@@ -1,15 +1,15 @@
 {
-    "name": "Loyal Marines",
-    "id": "loyal_marines",
+    "name": "Imperial Marines",
+    "id": "imperial_marines",
     "author": "guitarninja#5707",
     "color": "#0d407f",
-    "background": "The Loyal Marines are an arm of the Imperium's military, one of the best-equipped and best trained. They are genetically engineered for battle and created for the sole purpose of destroying the enemies of the Imperium.",
-    "strengths": "The Loyal Marines have the tools for just about every situation, and can take on many types of foes. They are as flexible as you need them to be.",
-    "weaknesses": "Loyal Marines tend to be quite tough and highly trained and as such, their units are often quite expensive and may find it difficult to field models to cover a large battlefield.",
+    "background": "The Imperial Marines are an arm of the Imperium's military, one of the best-equipped and best trained. They are genetically engineered for battle and created for the sole purpose of destroying the enemies of the Imperium.",
+    "strengths": "The Imperial Marines have the tools for just about every situation, and can take on many types of foes. They are as flexible as you need them to be.",
+    "weaknesses": "Imperial Marines tend to be quite tough and highly trained and as such, their units are often quite expensive and may find it difficult to field models to cover a large battlefield.",
     "units": {
         "arch_marine_tactics": {
             "name": "Arch-Marine of Tactics",
-            "description": "One of the original founders of the loyal marines and an extremely powerful leader.",
+            "description": "One of the original founders of the imperial marines and an extremely powerful leader.",
             "category": "command",
             "keywords": ["Infantry"],
             "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "wounds", "x": 4}, {"id": "arch_tactics", "x": 2}],
@@ -537,8 +537,8 @@
                 }
             ]
         },
-        "loyal_marines": {
-            "name": "Loyal Marines",
+        "imperial_marines": {
+            "name": "Imperial Marines",
             "description": "Elite trained marines sworn to protect the Empire.",
             "category": "core",
             "options": [{"addWeapon": "fusion_bomb", "modelLimit": 3}, {"addRule": "multi_scanner", "modelLimit": 1}],
@@ -586,8 +586,8 @@
                 }
             ]
         },
-        "loyal_marines_angels": {
-            "name": "Loyal Marines",
+        "imperial_marines_angels": {
+            "name": "Imperial Marines",
             "description": "Elite trained marines sworn to protect the Empire.",
             "category": "core",
             "subfactions": ["assault_focus"],
@@ -1352,7 +1352,7 @@
         },
         "marine_bikers": {
             "name": "Marine Bikers",
-            "description": "Loyal marines on combat bikes.",
+            "description": "imperial marines on combat bikes.",
             "rules": [{"id": "impact", "x": 1}],
             "subfactions": ["none"],
             "category": "strike",
@@ -1651,7 +1651,7 @@
         },
         "marine_apc": {
             "name": "APC",
-            "description": "A durable transport built by the loyal marines.",
+            "description": "A durable transport built by the imperial marines.",
             "rules": [{"id": "impact", "x": 3}, {"id": "transport", "x": 11}, "vulnerable_side_rear", "damage_chart"],
             "subfactions": ["none", "wolf_marines", "assault_focus", "alien_hunters", "psychic_marines"],
             "category": "transport",
@@ -1677,7 +1677,7 @@
         },
         "drop_pod": {
             "name": "Drop Pod",
-            "description": "A durable transport built by the loyal marines.",
+            "description": "A durable transport built by the imperial marines.",
             "rules": [{"id": "transport", "x": 12}, "damage_chart", "ambush"],
             "subfactions": ["none", "wolf_marines", "assault_focus", "alien_hunters", "psychic_marines"],
             "category": "transport",
@@ -1703,7 +1703,7 @@
         },
         "marine_assault_apc": {
             "name": "Assault APC",
-            "description": "A durable transport built by the loyal marines with upgraded weaponry.",
+            "description": "A durable transport built by the imperial marines with upgraded weaponry.",
             "rules": [{"id": "impact", "x": 3}, {"id": "transport", "x": 6}, "vulnerable_side_rear", "damage_chart"],
             "subfactions": ["none", "wolf_marines", "assault_focus", "alien_hunters", "psychic_marines"],
             "category": "transport",
@@ -1733,7 +1733,7 @@
         },
         "marine_artillery_vehicle": {
             "name": "Artillery Vehicle",
-            "description": "An armored artillery vehicle helmed by loyal marines.",
+            "description": "An armored artillery vehicle helmed by imperial marines.",
             "rules": [{"id": "impact", "x": 3}, "vulnerable_side_rear", "damage_chart"],
             "subfactions": ["none", "wolf_marines", "assault_focus", "alien_hunters", "psychic_marines"],
             "keywords": ["Vehicle"],
@@ -1756,7 +1756,7 @@
         },
         "marine_battle_tank": {
             "name": "Battle Tank",
-            "description": "An armored tank helmed by loyal marines.",
+            "description": "An armored tank helmed by imperial marines.",
             "rules": [{"id": "impact", "x": 6}, "vulnerable_side_rear", "damage_chart"],
             "subfactions": ["none", "wolf_marines", "assault_focus", "alien_hunters", "psychic_marines"],
             "keywords": ["Vehicle"],
@@ -1792,7 +1792,7 @@
         },
         "marine_heavy_tank": {
             "name": "Heavy Assault APC",
-            "description": "A heavily armored transport sporting an arsenal of weapons built by the loyal marines.",
+            "description": "A heavily armored transport sporting an arsenal of weapons built by the imperial marines.",
             "rules": [{"id": "impact", "x": 6}, {"id": "transport", "x": 11}, "vulnerable_rear", "damage_chart", "assault_ramp"],
             "subfactions": ["none", "wolf_marines", "assault_focus", "alien_hunters", "psychic_marines"],
             "keywords": ["Vehicle"],
@@ -3153,7 +3153,7 @@
             "subfactions": ["stealth_focus"],
             "name": "Concealment",
             "phase": "activation",
-            "flavor": "Loyal marines are sometimes trained in stealth tactics allowing them to hide even in plain sight.",
+            "flavor": "imperial marines are sometimes trained in stealth tactics allowing them to hide even in plain sight.",
             "description": "Use this strategy when a unit is targeted by an enemy Shooting attack. That unit gets -1 Accuracy this attack.",
             "cost": 2
         },

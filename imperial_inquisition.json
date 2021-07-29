@@ -229,7 +229,7 @@
         },
         "marine_apc": {
             "name": "APC",
-            "description": "A durable transport built for loyal marines and allies.",
+            "description": "A durable transport built for imperial marines and allies.",
             "rules": [{"id": "impact", "x": 6}, {"id": "transport", "x": 11}, "vulnerable_side_rear", "damage_chart"],
             "category": "transport",
             "keywords": ["Vehicle"],
@@ -283,7 +283,7 @@
         },
         "marine_heavy_tank": {
             "name": "Heavy Assault APC",
-            "description": "A heavily armored transport sporting an arsenal of weapons built by the loyal marines.",
+            "description": "A heavily armored transport sporting an arsenal of weapons built by the imperial marines.",
             "rules": [{"id": "impact", "x": 6}, {"id": "transport", "x": 11}, "vulnerable_rear", "damage_chart", "assault_ramp"],
             "keywords": ["Vehicle"],
             "min": 1,

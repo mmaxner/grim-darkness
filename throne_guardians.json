@@ -389,7 +389,7 @@
         },
         "guardian_heavy_tank": {
             "name": "Relic Heavy Assault APC",
-            "description": "A heavily armored transport sporting an arsenal of weapons built by the loyal marines.",
+            "description": "A heavily armored transport sporting an arsenal of weapons built by the imperial marines.",
             "keywords": ["Vehicle"],
             "min": 1,
             "category": "heavy",
@@ -473,7 +473,7 @@
         },
         "marine_apc": {
             "name": "APC",
-            "description": "A durable transport built by the loyal marines.",
+            "description": "A durable transport built by the imperial marines.",
             "rules": [{"id": "impact", "x": 3}, {"id": "transport", "x": 11}, "vulnerable_side_rear", "damage_chart"],
             "category": "transport",
             "keywords": ["Vehicle"],
