@@ -105,7 +105,7 @@
             "min": 1,
             "max": 1,
             "category": "command",
-            "rules": [{"id": "leader_x", "x": "Infantry"},  {"id": "wounds", "x": 3}, {"id": "machine_tactics", "x": 2}],
+            "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "wounds", "x": 3}, {"id": "machine_tactics", "x": 2}],
             "keywords": ["Infantry"],
             "models": [
                 {
@@ -190,7 +190,9 @@
                     "reflexes": 6,
                     "weapons": [{"id": "energy_staff_melee", "count": 2}, "energy_staff_shoot"],
                     "options": [
-                        {"addWeapon": "tesla_field"}, {"addRule": ["flight_cloak", "dark_prism"]}, {"addRule": [{"id": "repair", "x": 5, "name": "Repair Orb"}, "control_orb", "phase_field", "time_orb"], "limit": 1}
+                        {"addWeapon": "tesla_field"},
+                        {"addRule": ["flight_cloak", "dark_prism"]},
+                        {"addRule": [{"id": "repair", "x": 5, "name": "Repair Orb"}, "control_orb", "phase_field", "time_orb"], "limit": 1}
                     ],
                     "min": 1,
                     "max": 1
@@ -313,27 +315,8 @@
             "category": "specialist",
             "rules": [],
             "keywords": ["Infantry"],
-            "options": [
-                {
-                    "replaceWeapon": [{"id": "war_scythe", "count": 3}],
-                    "withWeapon": [[{"id": "phase_sword", "count": 3}, "void_shield"]],
-                    "modelLimit": "all"
-                }
-            ],
-            "models": [
-                {
-                    "name": "Guardian",
-                    "courage": 6,
-                    "movement": 5,
-                    "shoot": 6,
-                    "fight": 6,
-                    "defense": 9,
-                    "reflexes": 5,
-                    "weapons": [{"id": "war_scythe", "count": 3}],
-                    "min": 5,
-                    "max": 10
-                }
-            ]
+            "options": [{"replaceWeapon": [{"id": "war_scythe", "count": 3}], "withWeapon": [[{"id": "phase_sword", "count": 3}, "void_shield"]], "modelLimit": "all"}],
+            "models": [{"name": "Guardian", "courage": 6, "movement": 5, "shoot": 6, "fight": 6, "defense": 9, "reflexes": 5, "weapons": [{"id": "war_scythe", "count": 3}], "min": 5, "max": 10}]
         },
         "praetorians": {
             "name": "Praetorians",
@@ -344,11 +327,7 @@
             "rules": ["fly"],
             "keywords": ["Infantry"],
             "options": [
-                {
-                    "replaceWeapon": ["antimatter_pistol", {"id": "void_sword", "count": 2}],
-                    "withWeapon": [["guardian_rod_shoot", {"id": "guardian_rod_melee", "count": 2}]],
-                    "modelLimit": "all"
-                }
+                {"replaceWeapon": ["antimatter_pistol", {"id": "void_sword", "count": 2}], "withWeapon": [["guardian_rod_shoot", {"id": "guardian_rod_melee", "count": 2}]], "modelLimit": "all"}
             ],
             "models": [
                 {
@@ -448,7 +427,19 @@
                     "min": 2,
                     "max": 5
                 },
-                {"name": "Plasma-cell", "courage": "-", "movement": 8, "shoot": 5, "fight": 5, "defense": "-", "reflexes": "-", "weapons": ["plasma_spike"], "rules": ["plasma_injector"], "min": 0, "max": 1}
+                {
+                    "name": "Plasma-cell",
+                    "courage": "-",
+                    "movement": 8,
+                    "shoot": 5,
+                    "fight": 5,
+                    "defense": "-",
+                    "reflexes": "-",
+                    "weapons": ["plasma_spike"],
+                    "rules": ["plasma_injector"],
+                    "min": 0,
+                    "max": 1
+                }
             ]
         },
         "tunneling_annihilators": {
@@ -486,7 +477,19 @@
                     "min": 2,
                     "max": 5
                 },
-                {"name": "Plasma-cell", "courage": "-", "movement": 8, "shoot": 5, "fight": 5, "defense": "-", "reflexes": "-", "weapons": ["plasma_spike"], "rules": ["plasma_injector"], "min": 0, "max": 1}
+                {
+                    "name": "Plasma-cell",
+                    "courage": "-",
+                    "movement": 8,
+                    "shoot": 5,
+                    "fight": 5,
+                    "defense": "-",
+                    "reflexes": "-",
+                    "weapons": ["plasma_spike"],
+                    "rules": ["plasma_injector"],
+                    "min": 0,
+                    "max": 1
+                }
             ]
         },
         "annihilators": {
@@ -778,31 +781,6 @@
                 }
             ]
         },
-        "dimensional_shard": {
-            "name": "Dimensional Shard",
-            "description": "A dimensional being that can take many forms, often regarded as a god of the sky.",
-            "min": 1,
-            "max": 1,
-            "category": "specialist",
-            "rules": [{"id": "leader_x", "x": "Infantry"}, "fly", {"id": "power", "x": 1}, "damage_chart"],
-            "keywords": ["Infantry"],
-            "models": [
-                {
-                    "name": "Dimensional Shard",
-                    "courage": 7,
-                    "movement": 8,
-                    "shoot": 7,
-                    "fight": 7,
-                    "defense": 10,
-                    "reflexes": 6,
-                    "weapons": [{"id": "dimensional_strikes", "count": 5}],
-                    "options": [{"replaceRule": {"id": "power", "x": 1}, "withRule": [{"id": "power", "x": 2}, {"id": "power", "x": 3}]}],
-                    "rules": [],
-                    "min": 1,
-                    "max": 1
-                }
-            ]
-        },
         "dimensional_shard_container": {
             "name": "Dimensional Shard Vault",
             "description": "A large hovering vault containing a dimensional shard.",
@@ -818,13 +796,8 @@
                     "fight": 6,
                     "defense": 13,
                     "reflexes": 5,
-                    "weapons": [
-                        {"id": "tesla_field"},
-                        "gravity_pulse"
-                    ],
-                    "options": [
-                        {"addRule": [{"id": "ambush_large", "name": "Orbital Drop"}]}
-                    ],
+                    "weapons": [{"id": "tesla_field"}, "gravity_pulse"],
+                    "options": [{"addRule": [{"id": "ambush_large", "name": "Orbital Drop"}]}],
                     "min": 1,
                     "max": 1
                 }
@@ -832,10 +805,7 @@
         }
     },
     "weapons": {
-        "heat_ray": {
-            "name": "Heat Ray",
-            "profiles": [{"name": "Focused", "attacks": 2, "short": 12, "medium": 24, "ap": 6}, {"name": "Dispersed", "attacks": 6, "short": 6, "medium": 12, "ap": 2}]
-        },
+        "heat_ray": {"name": "Heat Ray", "profiles": [{"name": "Focused", "attacks": 2, "short": 12, "medium": 24, "ap": 6}, {"name": "Dispersed", "attacks": 6, "short": 6, "medium": 12, "ap": 2}]},
         "doom_cannon": {
             "name": "Doom Cannon",
             "profiles": [
@@ -928,11 +898,7 @@
         "prideful_leader": {"name": "Prideful Leader", "description": "When this model activates, friendly _Infantry_ units within 6\" may remove one Shock.", "points": 1},
         "legend_nanobot_cloak": {"name": "Nanorobot Cloak", "description": "When this model is hit by an attack, roll a D10. On a 3 or less, that attack is prevented.", "points": 1},
         "relentless_advance": {"name": "Relentless Advance", "description": "Friendly _Infantry_ units within 6\" add +1\" to their Movement characteristic.", "points": 5},
-        "plasma_injector": {
-            "name": "Plasma Injector",
-            "description": "Once per round, this unit may re-roll a single failed Strength test.",
-            "points": 5
-        },
+        "plasma_injector": {"name": "Plasma Injector", "description": "Once per round, this unit may re-roll a single failed Strength test.", "points": 5},
         "machine_tactics": {
             "name": "Machine Tactics",
             "inputs": ["x"],
@@ -1075,13 +1041,7 @@
         "firestorm": {"name": "Firestorm", "description": "Target 2 enemy units within 6\" take 3 hits with AP 1 each.", "charge": 6}
     },
     "buyLinks": [
-        {
-            "name": "Games Workshop",
-            "link": "https://www.games-workshop.com/en-US/Warhammer-40-000?N=2562756967+2529025757"
-        },
-        {
-            "name": "OnePageRules",
-            "link": "https://www.myminifactory.com/object/3d-print-robot-legions-army-bundle-161672"
-        }
+        {"name": "Games Workshop", "link": "https://www.games-workshop.com/en-US/Warhammer-40-000?N=2562756967+2529025757"},
+        {"name": "OnePageRules", "link": "https://www.myminifactory.com/object/3d-print-robot-legions-army-bundle-161672"}
     ]
 }
