@@ -397,7 +397,7 @@
             ]
         },
         "excess_champion": {
-            "name": "Excess Champion",
+            "name": "Champion of Excess",
             "description": "A leader of the forces of excess.",
             "subfactions": ["none", "excess"],
             "keywords": ["infantry"],
@@ -405,7 +405,7 @@
             "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "power", "x": 1}, "herald"],
             "models": [
                 {
-                    "name": "Excess Champion",
+                    "name": "Champion of Excess",
                     "movement": 7,
                     "courage": 6,
                     "shoot": 7,
@@ -420,7 +420,7 @@
             ]
         },
         "excess_champion_on_exalted_chariot": {
-            "name": "Excess Champion on Exalted Chariot",
+            "name": "Champion of Excess on Exalted Chariot",
             "description": "A leader of the forces of excess on a contorted chariot.",
             "subfactions": ["none", "excess"],
             "keywords": ["Cavalry"],
@@ -428,7 +428,7 @@
             "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "power", "x": 1}, {"id": "impact", "x": 2}, "herald", "damage_chart"],
             "models": [
                 {
-                    "name": "Excess Champion on Exalted Chariot",
+                    "name": "Champion of Excess on Exalted Chariot",
                     "movement": 10,
                     "courage": 6,
                     "shoot": 7,
@@ -444,7 +444,7 @@
             ]
         },
         "excess_champion_reaper_chariot": {
-            "name": "Excess Champion on Reaper Chariot",
+            "name": "Champion of Excess on Reaper Chariot",
             "description": "A leader of the forces of excess on a bladed chariot made to reap souls on the battlefield.",
             "subfactions": ["none", "excess"],
             "keywords": ["Cavalry"],
@@ -452,7 +452,7 @@
             "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "power", "x": 1}, "herald", "damage_chart"],
             "models": [
                 {
-                    "name": "Excess Champion on Reaper Chariot",
+                    "name": "Champion of Excess on Reaper Chariot",
                     "movement": 10,
                     "courage": 6,
                     "shoot": 7,
@@ -468,7 +468,7 @@
             ]
         },
         "excess_champion_on_chariot": {
-            "name": "Excess Champion on Chariot",
+            "name": "Champion of Excess on Chariot",
             "description": "A leader of the forces of excess on a contorted chariot.",
             "subfactions": ["none", "excess"],
             "keywords": ["Cavalry"],
@@ -476,7 +476,7 @@
             "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "power", "x": 1}, {"id": "impact", "x": 2}, "herald"],
             "models": [
                 {
-                    "name": "Excess Champion on Chariot",
+                    "name": "Champion of Excess on Chariot",
                     "movement": 10,
                     "courage": 6,
                     "shoot": 7,
