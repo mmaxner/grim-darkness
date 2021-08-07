@@ -1445,6 +1445,7 @@
             "name": "Assault Squad",
             "description": "A squad of elite marines trained to fight in close combat.",
             "category": "strike",
+            "subfactions": ["none", "wolf_marines", "alien_hunters", "assault_focus"],
             "options": [{"addRule": "jetpack", "modelLimit": "all"}, {"addWeapon": "fusion_bomb", "modelLimit": 3}],
             "models": [
                 {
@@ -1580,6 +1581,7 @@
             "description": "Marines clad in very heavy armor and highly trained.",
             "rules": ["ambush"],
             "category": "specialist",
+            "subfactions": ["none", "wolf_marines", "alien_hunters", "assault_focus"],
             "options": [{"replaceWeapon": "twin_marine_rifle", "withWeapon": ["heavy_flamethrower", "missile_launcher", "minigun"], "modelLimit": "1/5"}],
             "models": [
                 {
@@ -1604,6 +1606,7 @@
             "name": "Devastators",
             "description": "A squad of highly trained marines armed to the teeth with advanced weaponry.",
             "category": "heavy",
+            "subfactions": ["none", "wolf_marines", "alien_hunters", "assault_focus"],
             "models": [
                 {
                     "name": "Devastator Leader",
