@@ -82,6 +82,34 @@
                 }
             ]
         },
+        "greater_demon_of_pestilence": {
+            "name": "Greater Daemon of Pestilence",
+            "description": "A corpulent monstrosity blessed by the god of pestilence",
+            "keywords": ["Monster"],
+            "category": "command",
+            "subfactions": ["pestilence"],
+            "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "resilient", "x": 2}, {"id": "power", "x": 2}],
+            "min": 1,
+            "max": 1,
+            "models": [
+                {
+                    "name": "Greater Daemon of Pestilence",
+                    "movement": 5,
+                    "courage": 7,
+                    "shoot": 6,
+                    "fight": 7,
+                    "defense": 12,
+                    "reflexes": 5,
+                    "min": 1,
+                    "max": 1,
+                    "weapons": [{"id": "bileblade", "count": 3}, {"id": "buboe_swarm", "count": 3}, {"id": "corrosive_vomit", "count": 1}, {"id": "dinner_bell", "count": 1}],
+                    "options": [
+                        {"replaceWeapon": {"id": "dinner_bell", "count": 1}, "withWeapon": {"id": "massive_bileblade", "count": 3}},
+                        {"replaceWeapon": {"id": "bileblade", "count": 3}, "withWeapon": {"id": "epic_flail", "count": 3}}
+                    ]
+                }
+            ]
+        },
         "daemon_champion": {
             "name": "Daemon Champion",
             "description": "A massive daemon gifted in the art of war.",
@@ -742,31 +770,7 @@
                 }
             ]
         },
-        "wrath_monger": {
-            "name": "Greater Daemon of War",
-            "description": "The war-god's most exalted warriors are granted the strongest bodies",
-            "keywords": ["monster"],
-            "category": "command",
-            "subfactions": ["war"],
-            "models": [
-                {
-                    "name": "Greater Daemon of War",
-                    "movement": 12,
-                    "courage": 7,
-                    "shoot": 5,
-                    "fight": 8,
-                    "defense": 11,
-                    "reflexes": 7,
-                    "min": 1,
-                    "max": 1,
-                    "weapons": [{"id": "blessed_axe", "count": 6}, {"id": "blessed_whip", "count": 1}],
-                    "rules": ["fly", {"id": "leader_x", "x": "Infantry"}, "ambush", {"id": "tough", "x": 2}, "damage_table_monster"],
-                    "options": [{"replaceWeapon": ["blessed_axe", "blessed_whip"], "withWeapon": {"id": "blessed_greataxe", "count": 6}}]
-                }
-            ]
-
-        },
-        "war_cavalry": {
+                "war_cavalry": {
             "name": "War Breakers",
             "description": "Cavalry of the war-god, designed to overrun the hardest armies",
             "keywords": ["cavalry"],
@@ -787,9 +791,92 @@
                 "rules": [{"id": "impact", "x": 2}, {"id": "wounds", "x": 2}]
             }
             ]
+        },
+        "pestilent_champion": {
+            "name": "Pestilent Champion",
+            "description": "A feculent champion of the god of pestilence",
+            "keywords": ["infantry"],
+            "category": "command",
+            "subfactions": ["pestilence"],
+            "models": [
+                {
+                    "name": "Pestilent Champion",
+                    "movement": 5,
+                    "courage": 6,
+                    "shoot": 4,
+                    "fight": 6,
+                    "defense": 7,
+                    "reflexes": 5,
+                    "min": 1,
+                    "max": 1,
+                    "weapons": [{"id": "bileblade", "count": 3}],
+                    "rules": [{"id": "power", "x": 1}, {"id": "leader_x", "x": "Infantry"}, {"id": "wounds", "x": 2}, "herald"]
+                }
+            ]
+        },
+        "pestilent_warriors": {
+            "name": "Pestilent Warriors",
+            "description": "Plagues given flesh, trying to spread themselves on the edge of a sword",
+            "keywords": ["infantry"],
+            "category": "core",
+            "subfactions": ["pestilence"],
+            "models": [
+                {
+                    "name": "Pestilent Warrior",
+                    "movement": 5,
+                    "courage": 6,
+                    "shoot": 4,
+                    "fight": 5,
+                    "defense": 6,
+                    "reflexes": 5,
                     "min": 10,
                     "max": 30,
-                    "weapons": [{"id": "war_sword", "count": 1}]
+                    "weapons": [{"id": "lesser_bileblade", "count": 1}],
+                    "options": [{"modelLimit": 1, "addRule": ["banner"]}, {"modelLimit": 1, "addRule": ["musician"]}, {"modelLimit": 1, "addRule": ["champion"]}]
+                }
+            ]
+        },
+        "buboes": {
+            "name": "Buboe Swarm",
+            "description": "More symptoms than plauges, buboes are only threats in swarms",
+            "keywords": ["cavalry"],
+            "category": "core",
+            "subfactions": ["pestilence"],
+            "models": [
+                {
+                    "name": "Buboe Swarm",
+                    "movement": 6,
+                    "courage": 6,
+                    "shoot": 4,
+                    "fight": 4,
+                    "defense": 5,
+                    "reflexes": 5,
+                    "min": 3,
+                    "max": 9,
+                    "weapons": [{"id": "buboe_swarm", "count": 5}],
+                    "rules": [{"id": "wounds", "x": 2}]
+                }
+            ]
+        },
+        "rot_flies": {
+            "name": "Rot Flies",
+            "description": "Pestilent warriors flying on horrid beasts to spread their infection",
+            "keywords": ["cavalry"],
+            "category": "strike",
+            "subfactions": ["pestilence"],
+            "models": [
+                {
+                    "name": "Rot Flies",
+                    "movement": 8,
+                    "courage": 6,
+                    "shoot": 5,
+                    "fight": 5,
+                    "defense": 7,
+                    "reflexes": 5,
+                    "min": 3,
+                    "max": 9,
+                    "weapons": [{"id": "lesser_bileblade", "count": 1}, {"id": "horrid_proboscis", "count": 4}, {"id": "infected_parts", "count": 2}],
+                    "options": [{"modelLimit": 1, "addRule": ["banner"]}, {"modelLimit": 1, "addRule": ["musician"]}, {"modelLimit": 1, "addRule": ["champion"]}]
                 }
             ]
         }
@@ -874,7 +961,16 @@
                         {"name": "Mighty Strike", "attacks": 1, "short": "Melee", "ap": "12"}]
             },
         "warbeast_horns": {"name": "Warbeast's Horns", "attacks": 1, "short": "Melee", "ap": 2},
-        "war_cavalry_sword": {"name": "Cavalry Blessed Sword", "attacks": 1, "short": "Melee", "ap": 5, "rules": ["rending"]}
+        "war_cavalry_sword": {"name": "Cavalry Blessed Sword", "attacks": 1, "short": "Melee", "ap": 5, "rules": ["rending"]},
+        "bileblade": {"name": "Bileblade", "attacks": 1, "short": "Melee", "ap": 4, "rules": "pestilence"},
+        "buboe_swarm": {"name": "Buboe_Swarm", "attacks": 1, "short": "Melee", "rules": "pestilence"},
+        "corrosive_vomit": {"name": "Corrosive Vomit", "attacks": 4, "ap": 5, "short": 3, "medium": 6, "rules": ["pestilence", "pistol"]},
+        "dinner_bell": {"name": "Dinner Bell", "attacks": 1, "ap": 3, "short": "Melee", "rules": ["pestilence"]},
+        "massive_bileblade": {"name": "Massive Bileblade", "attacks": 1, "ap": 6, "short": "Melee", "rules": "pestilence"},
+        "epic_flail": {"name": "Epic Flail",  "ap": 5, "short": "Melee", "rules": "pestilence"},
+        "lesser_bileblade": {"name": "Lesser Bileblade", "ap": 1, "short": "Melee", "rules": "pestilence"},
+        "horrid_proboscis": {"name": "Horrid Proboscis", "ap": 2, "short": "Melee", "rules": "pestilence"},
+        "infected_parts": {"name": "Infected Body Parts", "ap": 1, "short": 6, "medium": 12, "rules": "pestilence"}
     },
     "rules": {
         "melee_tactics": {
