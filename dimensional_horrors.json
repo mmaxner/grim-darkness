@@ -82,6 +82,34 @@
                 }
             ]
         },
+        "greater_demon_of_pestilence": {
+            "name": "Greater Daemon of Pestilence",
+            "description": "A corpulent monstrosity blessed by the god of pestilence",
+            "keywords": ["Monster"],
+            "category": "command",
+            "subfactions": ["pestilence"],
+            "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "resilient", "x": 2}, {"id": "power", "x": 2}],
+            "min": 1,
+            "max": 1,
+            "models": [
+                {
+                    "name": "Greater Daemon of Pestilence",
+                    "movement": 5,
+                    "courage": 7,
+                    "shoot": 6,
+                    "fight": 7,
+                    "defense": 12,
+                    "reflexes": 5,
+                    "min": 1,
+                    "max": 1,
+                    "weapons": [{"id": "bileblade", "count": 3}, {"id": "buboe_swarm", "count": 3}, {"id": "corrosive_vomit", "count": 1}, {"id": "dinner_bell", "count": 1}],
+                    "options": [
+                        {"replaceWeapon": {"id": "dinner_bell", "count": 1}, "withWeapon": {"id": "massive_bileblade", "count": 3}},
+                        {"replaceWeapon": {"id": "bileblade", "count": 3}, "withWeapon": {"id": "epic_flail", "count": 3}}
+                    ]
+                }
+            ]
+        },
         "daemon_champion": {
             "name": "Daemon Champion",
             "description": "A massive daemon gifted in the art of war.",
@@ -112,7 +140,7 @@
         "champion_of_change": {
             "name": "Champion of Change",
             "description": "A frightening leader of the forces of change.",
-            "subfactions": ["none", "change"],
+            "subfactions": ["change"],
             "category": "command",
             "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 2}, "herald"],
             "keywords": ["infantry"],
@@ -140,7 +168,7 @@
         "champion_of_change_on_chariot": {
             "name": "Champion of Change on Chariot",
             "description": "A frightening leader of the forces of change riding a fearsome chariot pulled by magical lampries.",
-            "subfactions": ["none", "change"],
+            "subfactions": ["change"],
             "category": "command",
             "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "power", "x": 1}, "hover", "damage_chart", "herald"],
             "keywords": ["infantry"],
@@ -164,7 +192,7 @@
         "blue_scholars": {
             "name": "Blue Scholars",
             "description": "Two enlightened blue daemons that travel the world collecting as m,uch new knowlege as they can.",
-            "subfactions": ["none", "change"],
+            "subfactions": ["change"],
             "keywords": ["cavalry"],
             "category": "command",
             "min": 1,
@@ -177,7 +205,7 @@
         "the_shifter": {
             "name": "The Shifter",
             "description": "A mysterious being able to morph its form into any other being. It enjoys using this ability to trick both enemies and foes with complicated pranks.",
-            "subfactions": ["none", "change"],
+            "subfactions": ["change"],
             "keywords": ["infantry"],
             "category": "command",
             "min": 1,
@@ -190,7 +218,7 @@
             "description": "Twisting warriors of change known for shifting forms before the very eyes of their victims.",
             "keywords": ["infantry"],
             "category": "core",
-            "subfactions": ["none", "change"],
+            "subfactions": ["change"],
             "min": 10,
             "max": 30,
             "options": [
@@ -243,7 +271,7 @@
             "name": "Flame Daemons",
             "description": "A shifting daemon of living flames.",
             "category": "specialist",
-            "subfactions": ["none", "change"],
+            "subfactions": ["change"],
             "min": 3,
             "max": 9,
             "rules": ["hover"],
@@ -266,7 +294,7 @@
         "manta_daemons": {
             "name": "Manta Daemons",
             "description": "Fast-flying manta-like daemons capable of close-range carnage.",
-            "subfactions": ["none", "change"],
+            "subfactions": ["change"],
             "category": "strike",
             "min": 3,
             "max": 9,
@@ -279,7 +307,7 @@
             "name": "Flame Chariot",
             "description": "An intimidating construction of flame and manta daemons summoned to provide heavy support on the battlefeild.",
             "keywords": ["cavalry"],
-            "subfactions": ["none", "change"],
+            "subfactions": ["change"],
             "category": "heavy",
             "min": 1,
             "max": 1,
@@ -355,7 +383,7 @@
         "soul_mirror": {
             "name": "Soul Mirror",
             "description": "A contorted, corrupted mirror able to show its enemies their greatest fears.",
-            "subfactions": ["none", "excess"],
+            "subfactions": ["excess"],
             "keywords": ["cavalry"],
             "category": "command",
             "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "power", "x": 2}, "no_escape"],
@@ -380,7 +408,7 @@
         "excess_champion": {
             "name": "Excess Champion",
             "description": "A leader of the forces of excess.",
-            "subfactions": ["none", "excess"],
+            "subfactions": ["excess"],
             "keywords": ["infantry"],
             "category": "command",
             "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "power", "x": 1}, "herald"],
@@ -483,7 +511,7 @@
         "beguiling_harpist": {
             "name": "Beguiling Harpist",
             "description": "A horribly alluring commander of the forces of excess that plays enthralling melodies on a harp made from her enemies.",
-            "subfactions": ["none", "excess"],
+            "subfactions": ["excess"],
             "keywords": ["infantry"],
             "category": "command",
             "rules": [{"id": "leader_x", "x": "Infantry"}, "psychic_syphon"],
@@ -508,7 +536,7 @@
         "deadly_duo": {
             "name": "Deadly Duo",
             "description": "Two excess daemons fused in horribly beautiful synchrony.",
-            "subfactions": ["none", "excess"],
+            "subfactions": ["excess"],
             "keywords": ["monster"],
             "category": "command",
             "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "power", "x": 1}],
@@ -521,7 +549,7 @@
         "mask_of_excess": {
             "name": "Mask of Excess",
             "description": "A phantasmic daemon summoned to the battlefield by the forces of excess.",
-            "subfactions": ["none", "excess"],
+            "subfactions": ["excess"],
             "keywords": ["infantry"],
             "category": "command",
             "rules": [{"id": "leader_x", "x": "Infantry"}, "agile"],
@@ -532,7 +560,7 @@
         "excess_warriors": {
             "name": "Excess Warriors",
             "description": "The main bulk of the forces of excess, these equally alluring and devastating warriors find pleasure in the pain they inflict on the battlefield.",
-            "subfactions": ["none", "excess"],
+            "subfactions": ["excess"],
             "keywords": ["infantry"],
             "category": "core",
             "min": 10,
@@ -546,7 +574,7 @@
             "name": "Excess Steed",
             "description": "A seductively mutated beast able to ferry forces fo slaanesh into battle or fight on their own.",
             "keywords": ["cavalry"],
-            "subfactions": ["none", "excess"],
+            "subfactions": ["excess"],
             "category": "specialist",
             "rules": ["agile"],
             "min": 1,
@@ -613,7 +641,7 @@
             "keywords": ["cavalry"],
             "category": "strike",
             "rules": ["agile"],
-            "subfactions": ["none", "excess"],
+            "subfactions": ["excess"],
             "min": 5,
             "max": 20,
             "options": [{"limit": 1, "addRule": [ "musician", "banner"]}],
@@ -735,9 +763,120 @@
                     "fight": 6,
                     "defense": 5,
                     "reflexes": 5,
+                    "min": 9,
+                    "max": 29,
+                    "weapons": [{"id": "war_sword", "count": 1}],
+                    "options": [{"modelLimit": 1, "addRule": ["banner_of_blood"]}, {"modelLimit": 1, "addRule": ["instrument_of_blood"]}, {"modelLimit": 1, "addRule": ["horrible_icon"]}]
+                }
+            ]
+        },
+                "war_cavalry": {
+            "name": "War Breakers",
+            "description": "Cavalry of the war-god, designed to overrun the hardest armies",
+            "keywords": ["cavalry"],
+            "category": "strike",
+            "subfactions": ["war"],
+            "models": [
+            {   
+                "name": "War Breaker",
+                "movement": 8,
+                "courage": 5,
+                "shoot": 4,
+                "fight": 7,
+                "defense": 7,
+                "reflexes": 6,
+                "min": 3,
+                "max": 12,
+                "weapons": [{"id": "war_cavalry_sword", "count": 3}, {"id": "warbeast_horns", "count": 3}] ,
+                "rules": [{"id": "impact", "x": 2}, {"id": "wounds", "x": 2}]
+            }
+            ]
+        },
+        "pestilent_champion": {
+            "name": "Pestilent Champion",
+            "description": "A feculent champion of the god of pestilence",
+            "keywords": ["infantry"],
+            "category": "command",
+            "subfactions": ["pestilence"],
+            "models": [
+                {
+                    "name": "Pestilent Champion",
+                    "movement": 5,
+                    "courage": 6,
+                    "shoot": 4,
+                    "fight": 6,
+                    "defense": 7,
+                    "reflexes": 5,
+                    "min": 1,
+                    "max": 1,
+                    "weapons": [{"id": "bileblade", "count": 3}],
+                    "rules": [{"id": "power", "x": 1}, {"id": "leader_x", "x": "Infantry"}, {"id": "wounds", "x": 2}, "herald"]
+                }
+            ]
+        },
+        "pestilent_warriors": {
+            "name": "Pestilent Warriors",
+            "description": "Plagues given flesh, trying to spread themselves on the edge of a sword",
+            "keywords": ["infantry"],
+            "category": "core",
+            "subfactions": ["pestilence"],
+            "models": [
+                {
+                    "name": "Pestilent Warrior",
+                    "movement": 5,
+                    "courage": 6,
+                    "shoot": 4,
+                    "fight": 5,
+                    "defense": 6,
+                    "reflexes": 5,
                     "min": 10,
                     "max": 30,
-                    "weapons": [{"id": "war_sword", "count": 1}]
+                    "weapons": [{"id": "lesser_bileblade", "count": 1}],
+                    "options": [{"modelLimit": 1, "addRule": ["banner"]}, {"modelLimit": 1, "addRule": ["musician"]}, {"modelLimit": 1, "addRule": ["champion"]}]
+                }
+            ]
+        },
+        "buboes": {
+            "name": "Buboe Swarm",
+            "description": "More symptoms than plauges, buboes are only threats in swarms",
+            "keywords": ["cavalry"],
+            "category": "core",
+            "subfactions": ["pestilence"],
+            "models": [
+                {
+                    "name": "Buboe Swarm",
+                    "movement": 6,
+                    "courage": 6,
+                    "shoot": 4,
+                    "fight": 4,
+                    "defense": 5,
+                    "reflexes": 5,
+                    "min": 3,
+                    "max": 9,
+                    "weapons": [{"id": "buboe_swarm", "count": 5}],
+                    "rules": [{"id": "wounds", "x": 2}]
+                }
+            ]
+        },
+        "rot_flies": {
+            "name": "Rot Flies",
+            "description": "Pestilent warriors flying on horrid beasts to spread their infection",
+            "keywords": ["cavalry"],
+            "category": "strike",
+            "subfactions": ["pestilence"],
+            "models": [
+                {
+                    "name": "Rot Flies",
+                    "movement": 8,
+                    "courage": 6,
+                    "shoot": 5,
+                    "fight": 5,
+                    "defense": 7,
+                    "reflexes": 5,
+                    "min": 3,
+                    "max": 9,
+                    "weapons": [{"id": "lesser_bileblade", "count": 1}, {"id": "horrid_proboscis", "count": 4}, {"id": "infected_parts", "count": 2}],
+                    "options": [{"modelLimit": 1, "addRule": ["banner"]}, {"modelLimit": 1, "addRule": ["musician"]}, {"modelLimit": 1, "addRule": ["champion"]}]
                 }
             ]
         }
@@ -817,10 +956,21 @@
         "hounds_teeth": {"name": "Hound's Jaws", "attacks": 1, "short": "Melee", "ap": 1},
         "blessed_axe": {"name": "War-Blessed Axe", "attacks": 1, "short": "Melee", "ap": 8},
         "blessed_whip": {"name": "War-Blessed Whip", "attacks": 1, "short": 6, "medium": 12, "ap": 5, "rules": ["pistol"]},
-        "blessed_greataxe": {
-            "name": "War-Blessed Greataxe",
-            "profiles": [{"name": "Sweeping Attack", "attacks": 2, "short": "Melee", "ap": 5}, {"name": "Mighty Strike", "attacks": 1, "short": "Melee", "ap": "12"}]
-        }
+        "blessed_greataxe": {"name": "War-Blessed Greataxe", 
+            "profiles": [{"name": "Sweeping Attack", "attacks": 2, "short": "Melee", "ap": 5},
+                        {"name": "Mighty Strike", "attacks": 1, "short": "Melee", "ap": "12"}]
+            },
+        "warbeast_horns": {"name": "Warbeast's Horns", "attacks": 1, "short": "Melee", "ap": 2},
+        "war_cavalry_sword": {"name": "Cavalry Blessed Sword", "attacks": 1, "short": "Melee", "ap": 5, "rules": ["rending"]},
+        "bileblade": {"name": "Bileblade", "attacks": 1, "short": "Melee", "ap": 4, "rules": "pestilence"},
+        "buboe_swarm": {"name": "Buboe_Swarm", "attacks": 1, "short": "Melee", "rules": "pestilence"},
+        "corrosive_vomit": {"name": "Corrosive Vomit", "attacks": 4, "ap": 5, "short": 3, "medium": 6, "rules": ["pestilence", "pistol"]},
+        "dinner_bell": {"name": "Dinner Bell", "attacks": 1, "ap": 3, "short": "Melee", "rules": ["pestilence"]},
+        "massive_bileblade": {"name": "Massive Bileblade", "attacks": 1, "ap": 6, "short": "Melee", "rules": "pestilence"},
+        "epic_flail": {"name": "Epic Flail",  "ap": 5, "short": "Melee", "rules": "pestilence"},
+        "lesser_bileblade": {"name": "Lesser Bileblade", "ap": 1, "short": "Melee", "rules": "pestilence"},
+        "horrid_proboscis": {"name": "Horrid Proboscis", "ap": 2, "short": "Melee", "rules": "pestilence"},
+        "infected_parts": {"name": "Infected Body Parts", "ap": 1, "short": 6, "medium": 12, "rules": "pestilence"}
     },
     "rules": {
         "melee_tactics": {
