@@ -924,14 +924,14 @@
         "warbeast_horns": {"name": "Warbeast's Horns", "attacks": 1, "short": "Melee", "ap": 2},
         "war_Cavalry_sword": {"name": "Cavalry Blessed Sword", "attacks": 1, "short": "Melee", "ap": 5, "rules": ["rending"]},
         "bileblade": {"name": "Bileblade", "attacks": 1, "short": "Melee", "ap": 4, "rules": ["pestilence"]},
-        "buboe_swarm": {"name": "Buboe_Swarm", "attacks": 1, "short": "Melee", "rules": ["pestilence"]},
+        "buboe_swarm": {"name": "Buboe Swarm", "attacks": 1, "short": "Melee", "rules": ["pestilence"]},
         "corrosive_vomit": {"name": "Corrosive Vomit", "attacks": 4, "ap": 5, "short": 3, "medium": 6, "rules": ["pestilence", "pistol"]},
         "dinner_bell": {"name": "Dinner Bell", "attacks": 1, "ap": 3, "short": "Melee", "rules": ["none", "pestilence"]},
         "massive_bileblade": {"name": "Massive Bileblade", "attacks": 1, "ap": 6, "short": "Melee", "rules": ["pestilence"]},
-        "epic_flail": {"name": "Epic Flail", "ap": 5, "short": "Melee", "rules": ["pestilence"]},
-        "lesser_bileblade": {"name": "Lesser Bileblade", "ap": 1, "short": "Melee", "rules": ["pestilence"]},
-        "horrid_proboscis": {"name": "Horrid Proboscis", "ap": 2, "short": "Melee", "rules": ["pestilence"]},
-        "infected_parts": {"name": "Infected Body Parts", "ap": 1, "short": 6, "medium": 12, "rules": ["pestilence"]}
+        "epic_flail": {"name": "Epic Flail", "ap": 5, "attacks": 1, "short": "Melee", "rules": ["pestilence"]},
+        "lesser_bileblade": {"name": "Lesser Bileblade", "ap": 1, "attacks": 1, "short": "Melee", "rules": ["pestilence"]},
+        "horrid_proboscis": {"name": "Horrid Proboscis", "ap": 2, "attacks": 1, "short": "Melee", "rules": ["pestilence"]},
+        "infected_parts": {"name": "Infected Body Parts", "ap": 1, "attacks": 1, "short": 6, "medium": 12, "rules": ["pestilence"]}
     },
     "rules": {
         "melee_tactics": {
