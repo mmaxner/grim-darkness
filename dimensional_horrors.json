@@ -5,7 +5,7 @@
     "background": "Mutated servants of the dark gods able to materialize anywhere their influence is strong enough.",
     "units": {
         "greater_daemon_of_change": {
-            "name": "Greater Daemon of Change",
+            "name": "Greater Demon of Change",
             "description": "A large winged creature enlightened with extreme knowlege and magical powers by the dark god of change.",
             "subfactions": ["change"],
             "rules": [{"id": "leader_x", "x": "Infantry"}, "fly", {"id": "power", "x": 3}, "fear", "damage_chart"],
@@ -13,7 +13,7 @@
             "keywords": ["monster"],
             "models": [
                 {
-                    "name": "Greater Daemon of Change",
+                    "name": "Greater Demon of Change",
                     "courage": 7,
                     "movement": 10,
                     "shoot": 7,
@@ -32,7 +32,7 @@
             ]
         },
         "greater_daemon_of_excess": {
-            "name": "Greater Daemon of Excess",
+            "name": "Greater Demon of Excess",
             "description": "An enlightened daemon of excess equally capable of leading forces and devestating enemies.",
             "subfactions": ["excess"],
             "keywords": ["Monster"],
@@ -40,7 +40,7 @@
             "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "resilient", "x": 2}, {"id": "power", "x": 2}],
             "models": [
                 {
-                    "name": "Greater Daemon of Excess",
+                    "name": "Greater Demon of Excess",
                     "movement": 12,
                     "courage": 7,
                     "shoot": 7,
@@ -56,14 +56,14 @@
             ]
         },
         "wrath_monger": {
-            "name": "Greater Daemon of War",
+            "name": "Greater Demon of War",
             "description": "The war-god's most exalted warriors are granted the strongest bodies",
             "keywords": ["Monster"],
             "category": "command",
             "subfactions": ["war"],
             "models": [
                 {
-                    "name": "Greater Daemon of War",
+                    "name": "Greater Demon of War",
                     "movement": 12,
                     "courage": 7,
                     "shoot": 5,
@@ -79,7 +79,7 @@
             ]
         },
         "greater_demon_of_pestilence": {
-            "name": "Greater Daemon of Pestilence",
+            "name": "Greater Demon of Pestilence",
             "description": "A corpulent monstrosity blessed by the god of pestilence",
             "keywords": ["Monster"],
             "category": "command",
@@ -87,7 +87,7 @@
             "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "resilient", "x": 2}, {"id": "power", "x": 2}],
             "models": [
                 {
-                    "name": "Greater Daemon of Pestilence",
+                    "name": "Greater Demon of Pestilence",
                     "movement": 5,
                     "courage": 7,
                     "shoot": 6,
@@ -105,14 +105,14 @@
             ]
         },
         "daemon_champion": {
-            "name": "Daemon Champion",
+            "name": "Demon Champion",
             "description": "A massive daemon gifted in the art of war.",
             "category": "command",
             "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "wounds", "x": 4}, {"id": "melee_tactics", "x": 1}, {"id": "power", "x": 1}],
             "keywords": ["Infantry"],
             "models": [
                 {
-                    "name": "Daemon Champion",
+                    "name": "Demon Champion",
                     "movement": 8,
                     "courage": 7,
                     "shoot": 7,
@@ -226,7 +226,7 @@
             ],
             "models": [
                 {
-                    "name": "Flame Warrior",
+                    "name": "Flame Demon",
                     "movement": 6,
                     "courage": 5,
                     "shoot": 4,
@@ -241,7 +241,7 @@
             ]
         },
         "exalted_flame_daemon": {
-            "name": "Exalted Flame Daemon",
+            "name": "Exalted Flame Demon",
             "description": "A daemon made of twisting, living flame held together by pure magic that acts as a leader for minor flame daemons.",
             "category": "specialist",
             "min": 1,
@@ -250,7 +250,7 @@
             "rules": ["hover", {"id": "wounds", "x": 2}],
             "models": [
                 {
-                    "name": "Exalted Flame Daemon",
+                    "name": "Exalted Flame Demon",
                     "movement": 8,
                     "courage": 6,
                     "shoot": 6,
@@ -265,7 +265,7 @@
             ]
         },
         "flame_daemon": {
-            "name": "Flame Daemons",
+            "name": "Flame Demons",
             "description": "A shifting daemon of living flames.",
             "category": "specialist",
             "subfactions": ["none", "change"],
@@ -274,7 +274,7 @@
             "rules": ["hover"],
             "models": [
                 {
-                    "name": "Flame Daemon",
+                    "name": "Flame Demon",
                     "movement": 8,
                     "courage": 5,
                     "shoot": 6,
@@ -289,7 +289,7 @@
             ]
         },
         "manta_daemons": {
-            "name": "Manta Daemons",
+            "name": "Manta Demons",
             "description": "Fast-flying manta-like daemons capable of close-range carnage.",
             "subfactions": ["none", "change"],
             "category": "strike",
@@ -297,7 +297,7 @@
             "max": 9,
             "rules": ["fly"],
             "models": [
-                {"name": "Manta Daemon", "movement": 8, "courage": 5, "shoot": 4, "fight": 5, "defense": 7, "reflexes": 5, "weapons": [{"id": "parasitic_bite", "count": 3}], "min": 3, "max": 9}
+                {"name": "Manta Demon", "movement": 8, "courage": 5, "shoot": 4, "fight": 5, "defense": 7, "reflexes": 5, "weapons": [{"id": "parasitic_bite", "count": 3}], "min": 3, "max": 9}
             ]
         },
         "flame_chariot": {
@@ -327,7 +327,7 @@
             ]
         },
         "giant_daemon_spawn": {
-            "name": "Giant Daemon Spawn",
+            "name": "Giant Demon Spawn",
             "description": "A giant mutated creature able to wreak havoc on the battlefeild.",
             "keywords": ["monster"],
             "subfactions": ["none", "change", "war", "pestilence", "excess"],
@@ -335,7 +335,7 @@
             "rules": ["agile", {"id": "resilient", "x": 3}],
             "models": [
                 {
-                    "name": "Giant Daemon Spawn",
+                    "name": "Giant Demon Spawn",
                     "movement": 10,
                     "courage": 7,
                     "shoot": 4,
@@ -350,7 +350,7 @@
             ]
         },
         "daemon_machine": {
-            "name": "Daemon Machine",
+            "name": "Demon Machine",
             "description": "An unholy melding of daemon and machine into a horrifying weapon.",
             "keywords": ["Vehicle"],
             "subfactions": ["none", "change", "war", "pestilence", "excess"],
@@ -358,7 +358,7 @@
             "rules": ["fear", "walker", "damage_chart"],
             "models": [
                 {
-                    "name": "Daemon Machine",
+                    "name": "Demon Machine",
                     "movement": 8,
                     "courage": 5,
                     "shoot": 5,
@@ -535,7 +535,7 @@
             "models": [{"name": "Mask of Excess", "movement": 8, "courage": 6, "shoot": 7, "fight": 7, "defense": 5, "reflexes": 5, "weapons": ["segmented_claws"], "min": 1, "max": 1, "rules": []}]
         },
         "excess_warriors": {
-            "name": "Excess Warriors",
+            "name": "Excess Demons",
             "description": "The main bulk of the forces of excess, these equally alluring and devastating warriors find pleasure in the pain they inflict on the battlefield.",
             "subfactions": ["none", "excess"],
             "keywords": ["infantry"],
@@ -544,7 +544,7 @@
             "max": 30,
             "options": [{"modelLimit": 1, "addRule": ["banner"]}, {"modelLimit": 1, "addRule": ["musician"]}, {"modelLimit": 1, "addRule": ["champion"]}],
             "models": [
-                {"name": "Excess Warrior", "movement": 7, "courage": 5, "shoot": 6, "fight": 6, "defense": 5, "reflexes": 5, "weapons": [{"id": "sweeping_claws", "count": 2}], "min": 10, "max": 30}
+                {"name": "Excess Demon", "movement": 7, "courage": 5, "shoot": 6, "fight": 6, "defense": 5, "reflexes": 5, "weapons": [{"id": "sweeping_claws", "count": 2}], "min": 10, "max": 30}
             ]
         },
         "excess_steed": {
@@ -611,7 +611,7 @@
             ]
         },
         "excess_warriors_on_steeds": {
-            "name": "Excess Warriors on Steeds",
+            "name": "Excess Demons on Steeds",
             "description": "A seductively mutated beast able to ferring forces of slaanesh into battle.",
             "keywords": ["Cavalry"],
             "category": "strike",
@@ -718,7 +718,7 @@
             ]
         },
         "wrath_warriors": {
-            "name": "Wrath Warriors",
+            "name": "Wrath Demons",
             "description": ["Minions of the war-god, these ferocious demons know no rest, only battle."],
             "keywords": ["infantry"],
             "category": "core",
@@ -728,7 +728,7 @@
             "options": [{"modelLimit": 1, "addRule": ["banner"]}, {"modelLimit": 1, "addRule": ["musician"]}, {"modelLimit": 1, "addRule": ["champion"]}],
             "models": [
                 {
-                    "name": "Warrior",
+                    "name": "Demon",
                     "movement": 6,
                     "courage": 6,
                     "shoot": 6,
@@ -787,14 +787,14 @@
             ]
         },
         "pestilent_warriors": {
-            "name": "Pestilent Warriors",
+            "name": "Pestilent Demons",
             "description": "Plagues given flesh, trying to spread themselves on the edge of a sword",
             "keywords": ["infantry"],
             "category": "core",
             "subfactions": ["none", "pestilence"],
             "models": [
                 {
-                    "name": "Pestilent Warrior",
+                    "name": "Pestilent Demon",
                     "movement": 5,
                     "courage": 6,
                     "shoot": 4,
@@ -854,8 +854,8 @@
         }
     },
     "models": {
-        "pink_warriors": {"name": "Pink Warrior", "movement": 6, "courage": 5, "shoot": 6, "fight": 6, "defense": 6, "reflexes": 5, "weapons": ["twisting_flames", "ccw"], "min": 10, "max": 30},
-        "blue_warriors": {"name": "Blue Warrior", "movement": 6, "courage": 5, "shoot": 5, "fight": 5, "defense": 5, "reflexes": 5, "weapons": ["twisting_flames", "ccw"], "min": 0, "max": 30}
+        "pink_warriors": {"name": "Pink Demon", "movement": 6, "courage": 5, "shoot": 6, "fight": 6, "defense": 6, "reflexes": 5, "weapons": ["twisting_flames", "ccw"], "min": 10, "max": 30},
+        "blue_warriors": {"name": "Blue Demon", "movement": 6, "courage": 5, "shoot": 5, "fight": 5, "defense": 5, "reflexes": 5, "weapons": ["twisting_flames", "ccw"], "min": 0, "max": 30}
     },
     "weapons": {
         "exalted_staff_of_change": {"name": "Exalted Staff of Change", "attacks": 5, "short": "Melee", "ap": 4},
@@ -894,7 +894,7 @@
         "power_cannon": {"name": "Power Cannon", "attacks": 3, "short": 24, "medium": 48, "ap": 4},
         "power_claw": {"name": "Power Claw", "attacks": 1, "short": "Melee", "ap": 6},
         "phlegm_cannon": {"name": "Phlegm Cannon", "attacks": 1, "short": 18, "medium": 36, "ap": 6, "rules": [{"id": "blast", "x": 3}]},
-        "daemon_claw": {"name": "Daemon Claw", "attacks": 10, "short": "Melee", "ap": 6},
+        "daemon_claw": {"name": "Demon Claw", "attacks": 10, "short": "Melee", "ap": 6},
         "lashing_tentacles": {"name": "Lashing Tentacles", "attacks": 1, "short": "Melee", "ap": 3},
         "sweeping_claws": {"name": "Sweeping Claws", "attacks": 1, "short": "Melee", "ap": 0, "rules": ["rending"]},
         "tormenting_whips": {"name": "Tormenting Whips", "attacks": 3, "short": 6, "ap": 1, "rules": ["pistol"]},
@@ -942,7 +942,7 @@
         },
         "herald": {"name": "Herald", "description": "Once per round, a friendly _Infantry_ unit within 6\" may gain +1 AP on all Melee weapons.", "points": 5},
         "psychic_syphon": {"name": "Psychic Syphon", "description": "Enemy models within 12\" of this model suffer -1 to their psychic tests.", "points": 5},
-        "chanting_warriors": {"name": "Chanting Warriors", "description": "Enemy units must subtract one from psychic tests within 9\" of this model.", "points": 5},
+        "chanting_warriors": {"name": "Chanting Demons", "description": "Enemy units must subtract one from psychic tests within 9\" of this model.", "points": 5},
         "no_escape": {"name": "No Escape", "description": "Enemy units attempting to fall back from this unit take their Initiative test at -2.", "points": 1},
         "ritual_dagger": {"name": "Ritual Dagger", "description": "After this model fights in Melee, one enemy unit in its engagement range takes 2 automatic hits."},
         "glittering_sheild": {"name": "Glittering Sheild", "description": "This model gains Resilient(+1).", "points": 2},
