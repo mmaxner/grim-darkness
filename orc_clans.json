@@ -1775,6 +1775,30 @@
             "flavor": "Striking when the enemy least expects is a good way to quietly deal with an enemy.",
             "description": "Use this strategy when an _Infantry_ unit charges. If the charging unit only makes a single move action this activation, enemy units may not react to that charge.",
             "cost": 1
+        },
+        "toughness": {
+            "subfactions": ["toughness_focus"],
+            "name": "Toughness",
+            "phase": "activation",
+            "description": "Use when an _Infantry_ unit takes Save rolls. Roll a die for each hit this unit takes. On a 3 or less that hit is prevented.",
+            "flavor": "These marines are particularly tough and can take a hit.",
+            "cost": 2
+        },
+        "durability": {
+            "subfactions": ["toughness_focus"],
+            "name": "Durability",
+            "phase": "activation",
+            "description": "Use before activating a unit with a Damage Chart. That unit is treated as having no critical damage tokens for this activation.",
+            "flavor": "Some of the most well-maintained vehicles and machinery can operate under great stress.",
+            "cost": 1
+        },
+        "piercing_blows": {
+            "subfactions": ["toughness_focus"],
+            "name": "Piercing Blows",
+            "phase": "activation",
+            "flavor": "These Orcs are so tough they can even pentrate some armor for extra damage.",
+            "description": "Use when an _Infantry_ unit performs a Fight action. Hit rolls of 1 or 2 gain +1 AP.",
+            "cost": 1
         }
     },
     "buyLinks": [
