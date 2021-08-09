@@ -1606,7 +1606,7 @@
         "wrecking_ball": {"name": "Wrecking Ball", "hidden": true, "description_short": "Impact +3", "description": "This model gains +3 impact.", "points": 6},
         "boarding_plank": {"name": "Boarding Plank", "description_short": "Impact +3", "hidden": true, "description": "This model gains +3 impact.", "points": 6},
         "extra_space": {"name": "Extra Space", "description_short": "Transport +10", "hidden": true, "description": "This model gains +10 impact.", "points": 10},
-        "extra_armor": {"name": "Extra Armor", "description_short": "Save +1", "hidden": true, "description": "This model gains +1 Save.", "points": 10},
+        "extra_armor": {"name": "Extra Armor", "description_short": "Save +1", "hidden": true, "description": "This model gains +1 Save.", "points": 12},
         "war_banner": {"name": "War Banner", "description": "Once per round, a friendly _Infantry_ unit within 6\" gains +1 AP on all Melee weapons.", "points": 10}
     },
     "relics": {
