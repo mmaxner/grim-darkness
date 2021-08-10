@@ -210,6 +210,44 @@
                 }
             ]
         },
+        "seekers": {
+            "name": "Seeker Sisters",
+            "description": "A group of battle sisters seeking out evil to eradicate.",
+            "category": "core",
+            "options": [
+                {"replaceWeapon": {"id": "energy_mace", "count": 2}, "withWeapon": [{"id": "energy_halberd", "count": 2}]}
+            ],
+            "models": [
+                {
+                    "name": "Seeker Superior",
+                    "movement": 6,
+                    "courage": 6,
+                    "shoot": 5,
+                    "fight": 6,
+                    "defense": 7,
+                    "reflexes": 5,
+                    "weapons": [{"id": "energy_mace", "count": 2}, "at_grenade", "marine_pistol", "combat_shield"],
+                    "options": [
+                        {"replaceWeapon": {"id": "energy_mace", "count": 2}, "withWeapon": [{"id": "energy_spear", "count": 2}]},
+                        {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol"]}
+                    ],
+                    "min": 1,
+                    "max": 1
+                },
+                {
+                    "name": "Seeker",
+                    "movement": 6,
+                    "courage": 6,
+                    "shoot": 5,
+                    "fight": 6,
+                    "defense": 7,
+                    "reflexes": 5,
+                    "weapons": [{"id": "energy_mace", "count": 2}, "at_grenade", "marine_pistol", "combat_shield"],
+                    "min": 4,
+                    "max": 9
+                }
+            ]
+        },
         "dominion_sisters": {
             "name": "Dominion Sisters",
             "description": "A group of sisters with marine rifles to pack an extra punch.",
@@ -468,11 +506,11 @@
                     "fight": 6,
                     "defense": 12,
                     "reflexes": 6,
-                    "weapons": [{"id": "heavy_machinegun", "mount": ["Front"]}, "twin_heavy_flamethrower"],
+                    "weapons": [{"id": "heavy_machinegun", "mount": ["Front"]}, "twin_heavy_fusion_rifle"],
                     "options": [
                         {"addWeapon": ["twin_marine_rifle", "hunter_missiles"]},
                         {"addRule": ["spiked_ram", {"id": "dozer", "name": "Dozer Blade"}]},
-                        {"replaceWeapon": "twin_heavy_flamethrower", "withWeapon": ["twin_heavy_machinegun", "twin_heavy_fusion_rifle"]}
+                        {"replaceWeapon": "twin_heavy_fusion_rifle", "withWeapon": ["twin_heavy_machinegun", "twin_heavy_flamethrower"]}
                     ],
                     "min": 1,
                     "max": 1
@@ -498,6 +536,42 @@
                     "reflexes": 5,
                     "weapons": [{"id": "heavy_machinegun", "mount": ["Front"]}, "organ_missiles"],
                     "options": [{"addWeapon": ["twin_marine_rifle", "hunter_missiles"]}, {"addRule": ["spiked_ram", {"id": "dozer", "name": "Dozer Blade"}]}],
+                    "min": 1,
+                    "max": 1
+                }
+            ]
+        },
+        "battle_tank": {
+            "name": "Battle Tank",
+            "description": "A main line battle tank.",
+            "min": 1,
+            "max": 1,
+            "category": "heavy",
+            "keywords": ["Vehicle", "Battle Tank"],
+            "rules": ["vulnerable_side_rear", "damage_chart"],
+            "models": [
+                {
+                    "name": "Battle Tank",
+                    "courage": 6,
+                    "shoot": 6,
+                    "fight": 6,
+                    "defense": 12,
+                    "movement": 10,
+                    "reflexes": 5,
+                    "weapons": ["battle_cannon", {"id": "heavy_machinegun", "mount": ["Front"]}],
+                    "options": [
+                        {"addRule": [{"id": "dozer", "name": "Dozer Blade"}]},
+                        {"replaceWeapon": "battle_cannon", "withWeapon": ["twin_autocannon"]},
+                        {
+                            "addWeapon": [
+                                [{"id": "heavy_machinegun", "mount": ["Left", "Front"]}, {"id": "heavy_machinegun", "mount": ["Right", "Front"]}]
+                            ],
+                            "limit": 1
+                        },
+                        {"addWeapon": [{"id": "twin_marine_rifle", "count": 1}], "limit": 1},
+                        {"addWeapon": ["hunter_missiles"]}
+                    ],
+                    "rules": [{"id": "impact", "x": 6}],
                     "min": 1,
                     "max": 1
                 }
@@ -586,7 +660,7 @@
         {
             "name": "Divine Intervention",
             "phase": "activation",
-            "description": "Use when taking a skill test. You may increase or decrease the value of that test by 1.",
+            "description": "Use when taking a skill test. You may increase or decrease the result of that test by 1.",
             "flavor": "Suddenly you witness the hand of fate intervene on your behalf.",
             "cost": 1
         },
