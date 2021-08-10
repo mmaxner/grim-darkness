@@ -1799,6 +1799,30 @@
             "flavor": "These Orcs are so tough they can even pentrate some armor for extra damage.",
             "description": "Use when an _Infantry_ unit performs a Fight action. Hit rolls of 1 or 2 gain +1 AP.",
             "cost": 1
+        },
+        "divine_intervention": {
+            "subfactions": ["scavenge_focus"],
+            "name": "Divine Intervention",
+            "phase": "activation",
+            "description": "Use when taking a skill test. You may increase or decrease the value of that test by 1.",
+            "flavor": "Suddenly you witness the hand of fate intervene on your behalf.",
+            "cost": 1
+        },
+        "scavenge": {
+            "subfactions": ["scavenge_focus"],
+            "name": "Scavenge",
+            "phase": "activation",
+            "description": "Use when an _Infantry_ unit destroys a unit with a Damage Chart. That unit increases its Save by 1 for the rest of the game.",
+            "flavor": "These parts make great scavenged armor.",
+            "cost": 2
+        },
+        "hop_on": {
+            "subfactions": ["scavenge_focus"],
+            "name": "Hop On",
+            "phase": "activation",
+            "description": "Use when a _Vehicle_ unit performs a Move action within 3\" of a friendly _Infantry_ unit. Place the _Infantry_ unit within 3\" of the Vehicle's ending location.",
+            "flavor": "Hitching a ride on a vehicle is a great way to get across the battlefield.",
+            "cost": 1
         }
     },
     "buyLinks": [

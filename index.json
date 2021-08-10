@@ -264,7 +264,8 @@
                 "speed_focus": {"name": "Speed", "id": "speed_focus", "description": "An Orc Clan with a need for speed."},
                 "shooting_focus": {"name": "Shooting", "id": "shooting_focus", "description": "An Orc Clan with an addiction for shiny weapons."},
                 "stealth_focus": {"name": "Stealth", "id": "stealth_focus", "description": "An Orc Clan with a knack for stealthy operations."},
-                "toughness_focus": {"name": "Toughness", "id": "toughness_focus", "description": "An Orc Clan that can take a hit and keep on fighting."}
+                "toughness_focus": {"name": "Toughness", "id": "toughness_focus", "description": "An Orc Clan that can take a hit and keep on fighting."},
+                "scavenge_focus": {"name": "Scavenger", "id": "scavenge_focus", "description": "An Orc Clan that has a knack for scavenging and looting."}
             }
         },
         "imperial_inquisition": {
