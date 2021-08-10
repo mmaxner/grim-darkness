@@ -601,8 +601,8 @@
         "organ_missiles": {
             "name": "Organ Missiles",
             "profiles": [
-                {"name": "HE", "attacks": 3, "ap": 3, "short": 24, "medium": 48, "rules": [{"id": "blast", "x": 2}, "indirect"]},
-                {"name": "AT", "attacks": 2, "ap": 6, "short": 24, "medium": 48,  "rules": ["indirect"]}
+                {"name": "HE", "attacks": 2, "ap": 3, "short": 24, "medium": 48, "rules": ["indirect", {"id": "blast", "x": 3}]},
+                {"name": "AT", "attacks": 1, "ap": 6, "short": 18, "medium": 36,  "rules": ["indirect", {"id": "critical", "x": 1}]}
             ]
         }
     },

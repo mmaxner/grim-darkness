@@ -575,7 +575,7 @@
     },
     "weapons": {
         "mini_plasma_cannon": {"name": "Mini Plasma Cannon", "attacks": 1, "short": 12, "medium": 24, "ap": 5, "rules": ["overcharge", {"id": "blast", "x": 2}]},
-        "energy_cannon": {"name": "Energy Cannon", "attacks": 3, "short": 18, "medium": 36, "ap": 4, "rules": [{"id": "blast", "x": 2}, "indirect"]},
+        "energy_cannon": {"name": "Energy Cannon", "attacks": 3, "short": 18, "medium": 36, "ap": 4, "rules": ["indirect", {"id": "blast", "x": 2}]},
         "iron_cannon": {"name": "Iron Cannon", "attacks": 2, "short": 24, "medium": 48, "ap": 6},
         "emp_cannon": {"name": "EMP Cannon", "attacks": 2, "short": 18, "medium": 36, "ap": 4, "rules": ["emp"]},
         "disruption_missiles": {"name": "Disruption Missiles", "attacks": 1, "short": 18, "medium": 36, "ap": 5},
