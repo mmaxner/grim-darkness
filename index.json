@@ -713,7 +713,7 @@
         "razor_talons": {"name": "Razor Talons", "attacks": 1, "short": "Melee", "ap": 1},
         "light_razor_talons": {"name": "Light Razor Talons", "attacks": 1, "short": "Melee"},
         "combat_shield": {"name": "Combat Shield", "attacks": 0, "short": "Melee", "rules": ["shielding"]},
-        "titan_shield": {"name": "Combat Shield", "attacks": 0, "short": "Melee", "rules": ["titan_shield"]}
+        "titan_shield": {"name": "Titan Shield", "attacks": 0, "short": "Melee", "rules": ["titan_shield"]}
     },
     "rules": {
         "smoke": {
