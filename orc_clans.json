@@ -423,8 +423,8 @@
                     "weapons": ["heavy_pistol", {"id": "heavy_ccw", "count": 2}, "frags"],
                     "options": [
                         {"replaceModel": ["storm_boss"], "modelLimit": 1},
-                        {"replaceWeapon": "heavy_pistol", "withWeapon": ["carbine"]},
-                        {"replaceWeapon": "heavy_pistol", "withWeapon": ["flamethrower", "plasma_rifle", "shred_rifle", "rocket_launcher", "heavy_machinegun"], "limit": 1}
+                        {"replaceWeapon": ["heavy_pistol", {"id": "heavy_ccw", "count": 1}], "withWeapon": ["carbine"]},
+                        {"replaceWeapon": ["heavy_pistol", {"id": "heavy_ccw", "count": 1}], "withWeapon": ["flamethrower", "plasma_rifle", "shred_rifle", "rocket_launcher", "heavy_machinegun"], "limit": 1}
                     ],
                     "min": 5,
                     "max": 30
@@ -451,8 +451,8 @@
                     "weapons": ["heavy_pistol", {"id": "heavy_ccw", "count": 2}, "frags"],
                     "options": [
                         {"replaceModel": ["commando_boss"], "modelLimit": 1},
-                        {"replaceWeapon": "heavy_pistol", "withWeapon": ["carbine", "shotgun"]},
-                        {"replaceWeapon": "heavy_pistol", "withWeapon": ["flamethrower", "plasma_rifle", "shred_rifle", "rocket_launcher", "heavy_machinegun"], "limit": 1}
+                        {"replaceWeapon": ["heavy_pistol", {"id": "heavy_ccw", "count": 1}], "withWeapon": ["carbine", "combat_shotgun"]},
+                        {"replaceWeapon": ["heavy_pistol", {"id": "heavy_ccw", "count": 1}], "withWeapon": ["flamethrower", "plasma_rifle", "shred_rifle", "rocket_launcher", "heavy_machinegun"], "limit": 1}
                     ],
                     "min": 5,
                     "max": 15
@@ -619,7 +619,7 @@
                     "movement": 8,
                     "weapons": ["heavy_pistol", "frags", {"id": "heavy_ccw", "count": 3}],
                     "options": [
-                        {"replaceWeapon": "heavy_pistol", "withWeapon": ["carbine", "twin_carbine", "combi_heavy_flamer", "combi_rocket_launcher"]},
+                        {"replaceWeapon": ["heavy_pistol", {"id": "heavy_ccw", "count": 1}], "withWeapon": ["carbine", "twin_carbine", "combi_heavy_flamer", "combi_rocket_launcher"]},
                         {"replaceWeapon": {"id": "heavy_ccw", "count": 3}, "withWeapon": [{"id": "ultra_axe", "count": 3}, {"id": "ultra_saw", "count": 3}, {"id": "ultra_claw", "count": 3}]}
                     ],
                     "min": 0,
@@ -1449,7 +1449,7 @@
             "rules": [],
             "weapons": ["heavy_pistol", "frags", {"id": "heavy_ccw", "count": 3}],
             "options": [
-                {"replaceWeapon": "heavy_pistol", "withWeapon": ["shotgun", "carbine", "twin_carbine", "combi_heavy_flamer", "combi_rocket_launcher"]},
+                {"replaceWeapon": ["heavy_pistol", {"id": "heavy_ccw", "count": 1}], "withWeapon": ["combat_shotgun", "carbine", "twin_carbine", "combi_heavy_flamer", "combi_rocket_launcher"]},
                 {"replaceWeapon": {"id": "heavy_ccw", "count": 3}, "withWeapon": [{"id": "ultra_axe", "count": 3}, {"id": "ultra_saw", "count": 3}, {"id": "ultra_claw", "count": 3}]},
                 {"addRule": "cyborg_body"}
             ],
@@ -1467,7 +1467,7 @@
             "rules": [],
             "weapons": ["heavy_pistol", "frags", {"id": "heavy_ccw", "count": 3}],
             "options": [
-                {"replaceWeapon": "heavy_pistol", "withWeapon": ["carbine", "twin_carbine", "combi_heavy_flamer", "combi_rocket_launcher"]},
+                {"replaceWeapon": ["heavy_pistol", {"id": "heavy_ccw", "count": 1}], "withWeapon": ["carbine", "twin_carbine", "combi_heavy_flamer", "combi_rocket_launcher"]},
                 {"replaceWeapon": {"id": "heavy_ccw", "count": 3}, "withWeapon": [{"id": "ultra_axe", "count": 3}, {"id": "ultra_saw", "count": 3}, {"id": "ultra_claw", "count": 3}]},
                 {"addRule": "cyborg_body"}
             ],
