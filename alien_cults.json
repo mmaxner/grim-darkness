@@ -232,7 +232,7 @@
                     "shoot": 5,
                     "fight": 5,
                     "defense": 5,
-                    "reflexes": 5,
+                    "reflexes": 4,
                     "movement": 6,
                     "weapons": ["defense_rifle", "blasting_charges", "ccw"],
                     "options": [
@@ -249,7 +249,7 @@
                     "shoot": 5,
                     "fight": 5,
                     "defense": 5,
-                    "reflexes": 5,
+                    "reflexes": 4,
                     "movement": 6,
                     "weapons": ["defense_rifle", "blasting_charges", "ccw"],
                     "options": [
