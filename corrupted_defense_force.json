@@ -672,7 +672,7 @@
         "super_heavy_battle_tank": {
             "name": "Corrupted Super Heavy Battle Tank",
             "description": "A titanic battle tank with a variety of weapon options.",
-            "rules": ["vulnerable_rear", "damage_chart", {"id": "heavy_impact", "x": 6}],
+            "rules": ["vulnerable_rear", "damage_chart", {"id": "heavy_impact", "x": 6}, "titanic"],
             "category": "super_heavy",
             "keywords": ["Vehicle", "Battle Tank"],
             "min": 1,
