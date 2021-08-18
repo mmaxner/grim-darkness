@@ -363,8 +363,7 @@
             "category": "specialist",
             "rules": ["ambush"],
             "keywords": ["Infantry"],
-            "models": [{"name": "Hunter", "courage": 6, "movement": 5, "shoot": 6, "fight": 6, "defense": 8, "reflexes": 6, "weapons": ["gauss_sniper"], "min": 5, "max": 10}],
-            "options": [{"addRule": {"id": "ambush", "name": "Dimenional Interception"}, "modelLimit": "all"}]
+            "models": [{"name": "Hunter", "courage": 6, "movement": 5, "shoot": 6, "fight": 6, "defense": 8, "reflexes": 6, "weapons": ["gauss_sniper"], "min": 5, "max": 10}]
         },
         "gyro_bikes": {
             "name": "Gyro-Bikes",
