@@ -1748,6 +1748,30 @@
             "flavor": "Countless battles have worn down the Siege Marines into cold-hearted killers without mercy or compassion.",
             "description": "Use this strategy when one of your _Infantry_ units Shoots or Fights. It gains +1 Strength, +1 Accuracy and +1 Save for that attack.",
             "cost": 2
+        },
+        "raze": {
+            "name": "Raze",
+            "subfactions": ["destruction_focus"],
+            "phase": "activation",
+            "flavor": "Burn the enemy to the ground.",
+            "description": "Use this strategy when one of your _Infantry_ units Shoots. Successful hit rolls of 1 or 2 gain +1 AP.",
+            "cost": 1
+        },
+        "ferocity": {
+            "subfactions": ["destruction_focus"],
+            "name": "Ferocity",
+            "phase": "activation",
+            "description": "Use this strategy when an _Infantry_ unit charges. All models in that unit may make one additional attack.",
+            "flavor": "Sometimes with disregard for their own life, these marines will stop at nothing to defeat their enemies.",
+            "cost": 1
+        },
+        "bravery": {
+            "subfactions": ["destruction_focus"],
+            "name": "Bravery",
+            "phase": "activation",
+            "description": "Use when a unit takes a Courage test. That unit gets +1 Courage.",
+            "flavor": "These soldiers are particularly enduring and will not surrender.",
+            "cost": 1
         }
     },
     "powers": {
