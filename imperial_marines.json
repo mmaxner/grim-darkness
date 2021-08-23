@@ -88,7 +88,7 @@
                         },
                         {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "gravity_pistol"]},
                         {"addRule": ["jetpack_character", "destroyer_armor"], "limit": 1},
-                        {"addWeapon": ["combat_shield"]}
+                        {"addWeapon": ["shield"]}
                     ],
                     "min": 1,
                     "max": 1
@@ -127,7 +127,7 @@
                         },
                         {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "gravity_pistol"]},
                         {"addRule": ["jetpack_character", "destroyer_armor"], "limit": 1},
-                        {"addWeapon": ["combat_shield"]}
+                        {"addWeapon": ["shield"]}
                     ],
                     "min": 1,
                     "max": 1
@@ -170,7 +170,7 @@
                         },
                         {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "gravity_pistol"]},
                         {"addRule": ["jetpack_character", "destroyer_armor"], "limit": 1},
-                        {"addWeapon": ["combat_shield"]}
+                        {"addWeapon": ["shield"]}
                     ],
                     "min": 1,
                     "max": 1
@@ -204,7 +204,7 @@
                             "replaceWeapon": {"id": "prime_chainsword", "count": 5},
                             "withWeapon": [{"id": "prime_energy_sword", "count": 5}, {"id": "energy_fist", "count": 5}, {"id": "energy_hammer", "count": 5}]
                         },
-                        {"addWeapon": ["combat_shield"]}
+                        {"addWeapon": ["shield"]}
                     ],
                     "min": 1,
                     "max": 1
@@ -327,7 +327,7 @@
                             "replaceWeapon": {"id": "prime_chainsword", "count": 3},
                             "withWeapon": [{"id": "prime_energy_sword", "count": 3}, {"id": "energy_fist", "count": 3}, {"id": "energy_hammer", "count": 3}]
                         },
-                        {"addWeapon": ["combat_shield"]}
+                        {"addWeapon": ["shield"]}
                     ],
                     "min": 1,
                     "max": 1
@@ -954,7 +954,7 @@
             "keywords": ["Infantry"],
             "subfactions": ["wolf_marines"],
             "options": [
-                {"replaceWeapon": {"id": "energy_claws", "count": 3}, "withWeapon": [[{"id": "energy_hammer", "count": 2}, "combat_shield"], {"id": "energy_greataxe", "count": 2}]},
+                {"replaceWeapon": {"id": "energy_claws", "count": 3}, "withWeapon": [[{"id": "energy_hammer", "count": 2}, "shield"], {"id": "energy_greataxe", "count": 2}]},
                 {"addWeapon": "wolf_grenade_launcher"}
             ],
             "models": [
@@ -1070,7 +1070,7 @@
                     "defense": 8,
                     "movement": 6,
                     "reflexes": 6,
-                    "weapons": [{"id": "prime_energy_sword", "count": 3}, "combat_shield", "prime_pistol", "at_grenade"],
+                    "weapons": [{"id": "prime_energy_sword", "count": 3}, "shield", "prime_pistol", "at_grenade"],
                     "min": 1,
                     "max": 1
                 },
@@ -1547,7 +1547,7 @@
                         {"id": "energy_claws", "count": 4}
                     ]
                 },
-                {"addWeapon": "combat_shield"}
+                {"addWeapon": "shield"}
             ],
             "models": [
                 {
@@ -1595,7 +1595,7 @@
                     "weapons": ["twin_marine_rifle", {"id": "energy_sword", "count": 2}],
                     "options": [
                         {"replaceWeapon": {"id": "energy_sword", "count": 2}, "withWeapon": [{"id": "energy_fist", "count": 2}, {"id": "energy_hammer", "count": 2}, {"id": "energy_claws", "count": 2}]},
-                        {"replaceWeapon": ["twin_marine_rifle"], "withWeapon": [{"id": "energy_sword", "count": 2}, {"id": "energy_claws", "count": 2}, "combat_shield"]}
+                        {"replaceWeapon": ["twin_marine_rifle"], "withWeapon": [{"id": "energy_sword", "count": 2}, {"id": "energy_claws", "count": 2}, "shield"]}
                     ],
                     "min": 5,
                     "max": 10
@@ -2776,7 +2776,7 @@
                     "fight": 6,
                     "defense": 8,
                     "reflexes": 6,
-                    "weapons": ["marine_rifle", "combat_shield", "heavy_ccw", "at_grenade"],
+                    "weapons": ["marine_rifle", "shield", "heavy_ccw", "at_grenade"],
                     "options": [
                         {"replaceWeapon": ["marine_rifle"], "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "twin_marine_rifle"]},
                         {"replaceWeapon": {"id": "chainsword", "count": 2}, "withWeapon": [{"id": "energy_sword", "count": 2}, {"id": "energy_fist", "count": 2}, {"id": "energy_hammer", "count": 2}]},

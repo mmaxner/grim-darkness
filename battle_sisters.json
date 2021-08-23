@@ -226,7 +226,7 @@
                     "fight": 6,
                     "defense": 7,
                     "reflexes": 5,
-                    "weapons": [{"id": "energy_mace", "count": 2}, "at_grenade", "marine_pistol", "combat_shield"],
+                    "weapons": [{"id": "energy_mace", "count": 2}, "at_grenade", "marine_pistol", "shield"],
                     "options": [
                         {"replaceWeapon": {"id": "energy_mace", "count": 2}, "withWeapon": [{"id": "energy_spear", "count": 2}]},
                         {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol"]}
@@ -242,7 +242,7 @@
                     "fight": 6,
                     "defense": 7,
                     "reflexes": 5,
-                    "weapons": [{"id": "energy_mace", "count": 2}, "at_grenade", "marine_pistol", "combat_shield"],
+                    "weapons": [{"id": "energy_mace", "count": 2}, "at_grenade", "marine_pistol", "shield"],
                     "min": 4,
                     "max": 9
                 }
