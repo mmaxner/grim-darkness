@@ -899,7 +899,6 @@
         "weapon_racks": {"name": "Weapon Racks", "description": "Models shooting while embarked in this transport may re-roll failed Accuracy tests of 9+.", "points": 10},
         "trophy_racks": {"name": "Trophy Racks", "description": "Enemy units within 6\" of this model suffer -1 Courage.", "points": 5},
         "reinforced_ram": {"name": "Reinforced Ram", "hidden": true, "description_short": "Impact(+3)", "description": "This model gains Impact(+3).", "points": 6},
-        "dodge": {"name": "Dodge", "description": "This model gets Save(+2) while in Melee.", "points": 2},
         "combat_drugs": {
             "name": "Combat Drugs",
             "description": "At the beginning of the game, choose one of the following bonuses for the unit to receive until the end of the game: \n * +1 Strength \n * +1\" Movement \n * +1 Courage \n * +1 Save",
