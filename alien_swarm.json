@@ -471,6 +471,44 @@
                     "max": 3
                 }
             ]
+        },
+        "gargantuan_creature": {
+            "name": "Gargantuan Monstrosity",
+            "description": "An alien monster the size of a city-block",
+            "category": "super_heavy",
+            "rules": ["damage_chart", "titanic", "walker", {"id": "transport", "x": "20"}],
+            "models": [
+                {
+                    "name": "Gargantuan Monstrosity",
+                    "courage": 6,
+                    "reflexes": 6,
+                    "fight": 6,
+                    "shoot": 6,
+                    "defense": 14,
+                    "movement": 10,
+                    "weapons": [{"id": "gargantuan_talons", "count": 6}, {"id": "lashing_whips", "count": 10}, "acidic_torrent", "bio_cannon"],
+                    "min": 1,
+                    "max": 1
+                }
+            ]
+        },
+        "gargantuan_flying_creature": {
+            "name": "Flying Gargantuan Monstrosity",
+            "description": "A giant alien monster that descends from the skies",
+            "category": "super_heavy",
+            "rules": ["damage_chart", "titanic", "aircraft", "hover", {"id": "transport", "x": "20"}],
+            "models": [
+                {
+                    "name": "Flying Gargantuan Monstrosity",
+                    "courage": 6,
+                    "reflexes": 6,
+                    "fight": 6,
+                    "shoot": 6,
+                    "defense": 13,
+                    "movement": 12,
+                    "weapons": [{"id": "gargantuan_talons", "count": 5}, "bio_cannon"]
+                }
+            ]
         }
     },
     "weapons": {
@@ -510,7 +548,11 @@
         "chokethorn_cannon": {"name": "Chokethorn Cannon", "attacks": 1, "short": 18, "medium": 36, "ap": 4, "rules": [{"id": "blast", "x": 4}]},
         "spinethrowers": {"name": "Spinethrowers", "attacks": 3, "short": 6, "rules": ["assault", "pistol"]},
         "spine_banks": {"name": "Spine Banks", "attacks": 3, "short": 6, "ap": 2, "rules": ["assault", "pistol"]},
-        "thrashing_scythe": {"name": "Thrashing Scythe", "attacks": 2, "short": "Melee", "ap": 1}
+        "thrashing_scythe": {"name": "Thrashing Scythe", "attacks": 2, "short": "Melee", "ap": 1},
+        "gargantuan_talons": {"name": "Gargantuan Talons", "attacks": 1, "short": "Melee", "ap": 8, "rules": [{"id": "reach", "x": 2}]},
+        "lashing_whips": {"name": "Lashing Whips", "attacks": 1, "short": "Melee", "ap": 3},
+        "acidic_torrent": {"name": "Acidic Torrent", "attacks": 7, "short": 6, "medium": 12, "ap": 5, "rules": ["flame"]},
+        "bio_cannon": {"name": "Bio Cannon", "attacks": 6, "short": 24, "medium": 48, "ap": 8}
     },
     "rules": {
         "tusks": {"name": "Tusks", "hidden": true, "description_short": "Impact +3", "description": "This model gains +3 impact.", "points": 6},

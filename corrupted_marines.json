@@ -1534,6 +1534,51 @@
                     "max": 9
                 }
             ]
+        },
+        "titanic_destruction_engine": {
+            "name": "Titanic Destruction Engine",
+            "description": "A giant, treaded robot designed only to kill.",
+            "rules": ["vulnerable_rear", "damage_chart", "titanic"],
+            "subfactions": ["rage_focus", "none"],
+            "category": "super_heavy",
+            "min": 1,
+            "max": 1,
+            "models": [
+                {
+                    "name": "Titanic Destruction Engine",
+                    "movement": 10,
+                    "courage": 6,
+                    "shoot": 6,
+                    "fight": 6,
+                    "defense": 13,
+                    "reflexes": 6,
+                    "weapons": [{"id": "greatest_cleaver", "count": 1}, "giant_gatling", "train_mounted_blastgun"],
+                    "options": [{"replaceWeapon": ["train_mounted_blastgun"], "withWeapon": ["flaming_bloodsoaker"]}, {"replaceWeapon": ["giant_gatling"], "withWeapon": ["hatespewer"]}]
+                }
+            ]
+        },
+        "giant_metal_scorpion": {
+            "name": "Giant Metal Scorpion",
+            "description": "A giant metal scorpion.  It hates you.  It hates everything.",
+            "rules": ["vulnerable_rear", "damage_chart", "titanic", {"id": "ward", "x": 2}],
+            "subfactions": ["rage_focus", "none"],
+            "category": "super_heavy",
+            "min": 1,
+            "max": 1,
+            "models": [
+                {
+                    "name": "Giant Metal Scorpion",
+                    "movement": 12,
+                    "courage": 6,
+                    "shoot": 6,
+                    "fight": 7,
+                    "defense": 13,
+                    "reflexes": 6,
+                    "weapons": [{"id": "scorpion_cannon", "count": 2}, "flaming_bloodsoaker", "demolition_cannon", "hellcrusher_claws"],
+                    "min": 1,
+                    "max": 1
+                }
+            ]
         }
     },
     "weapons": {
@@ -1583,7 +1628,17 @@
         "archtraitor_sword": {"name": "Sword of the Arch-Corrupted", "attacks": 1, "short": "Melee", "ap": 5},
         "archtraitor_claw": {"name": "Claw of the Arch-Corrupted", "attacks": 1, "short": "Melee", "ap": 8},
         "archtraitor_ranged": {"name": "Dark Gods' Blessed Rifle", "attacks": 2, "short": 12, "medium": 24, "ap": 2, "rules": ["rapid_fire"]},
-        "pestilence_great_flail": {"name": "Pestilence Great-flail", "attacks": 1, "ap": 4, "short": "Melee", "rules": ["pestilence"]}
+        "pestilence_great_flail": {"name": "Pestilence Great-flail", "attacks": 1, "ap": 4, "short": "Melee", "rules": ["pestilence"]},
+        "greatest_cleaver": {
+            "name": "Greatest Cleaver of Hatred",
+            "profiles": [{"name": "Strike", "attacks": 4, "short": "Melee", "ap": 10}, {"name": "Sweep", "attacks": 8, "short": "Melee", "ap": 5}]
+        },
+        "giant_gatling": {"name": "Giant Gatling Gun", "attacks": 10, "short": 24, "medium": 48, "ap": 4},
+        "train_mounted_blastgun": {"name": "Mounted Blastgun", "attacks": 3, "short": 24, "medium": 48, "ap": 6, "rules": [{"id": "blast", "x": 2}]},
+        "flaming_bloodsoaker": {"name": "Flaming Bloodsoaker", "attacks": 3, "short": 9, "medium": 18, "ap": 5, "rules": [{"id": "blast", "x": 2}, "flame"]},
+        "hatespewer": {"name": "Hatespewer", "attacks": 3, "short": 30, "medium": 60, "ap": 5, "rules": [{"id": "blast", "x": 2}]},
+        "hellcrusher_claws": {"name": "Hellcrusher Claws", "profiles": [{"name": "Crush", "attacks": 6, "short": "Melee", "ap": 10}, {"name": "Sweep", "attacks": 12, "short": "Melee", "ap": 5}]},
+        "scorpion_cannon": {"name": "Scorpion Cannon", "attacks": 8, "short": 18, "medium": 36, "ap": 3}
     },
     "rules": {
         "warmaster_tactics": {
