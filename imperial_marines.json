@@ -637,6 +637,7 @@
         },
         "scout_marines": {
             "name": "Scout Marines",
+            "subfactions": ["none", "assault_focus", "wolf_marines"],
             "description": "Elite trained marines sworn to protect the Empire.",
             "category": "specialist",
             "options": [
@@ -1530,6 +1531,7 @@
         },
         "veteran_assault_squad": {
             "name": "Veteran Assault Squad",
+            "subfactions": ["none", "assault_focus", "wolf_marines"],
             "description": "A squad of veteran marines trained to fight in close combat.",
             "category": "specialist",
             "options": [
