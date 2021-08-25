@@ -438,9 +438,7 @@
                     "reflexes": 5,
                     "movement": 8,
                     "weapons": ["defense_rifle", "blasting_charges", {"id": "ccw"}],
-                    "options": [
-                        {"replaceModel": "quad_biker", "modelLimit": "1/3"}
-                    ],
+                    "options": [{"replaceModel": "quad_biker", "modelLimit": "1/3"}],
                     "min": 3,
                     "max": 11
                 }
@@ -483,7 +481,10 @@
                     "reflexes": 4,
                     "movement": 6,
                     "weapons": ["defense_rifle", "frags", "ccw"],
-                    "options": [{"replaceWeapon": "defense_rifle", "withWeapon": ["flamethrower", "grenade_launcher", "fusion_rifle", "plasma_rifle", "sniper_rifle"], "modelLimit": 1}, {"replaceModel": "weapon_team", "modelLimit": 1}],
+                    "options": [
+                        {"replaceWeapon": "defense_rifle", "withWeapon": ["flamethrower", "grenade_launcher", "fusion_rifle", "plasma_rifle", "sniper_rifle"], "modelLimit": 1},
+                        {"replaceModel": "weapon_team", "modelLimit": 1}
+                    ],
                     "rules": [],
                     "min": 9,
                     "max": 9
@@ -807,10 +808,7 @@
                     "defense": 11,
                     "reflexes": 5,
                     "weapons": ["heavy_mining_laser", "light_machinegun"],
-                    "options": [
-                        {"replaceWeapon": "heavy_mining_laser", "withWeapon": ["heavy_seismic_cannon", "incinerator"]},
-                        {"addRule": [{"id": "dozer", "name": "Dozer Blade"}]}
-                    ],
+                    "options": [{"replaceWeapon": "heavy_mining_laser", "withWeapon": ["heavy_seismic_cannon", "incinerator"]}, {"addRule": [{"id": "dozer", "name": "Dozer Blade"}]}],
                     "min": 1,
                     "max": 1
                 }
@@ -958,7 +956,11 @@
         "legend_stealth_master": {"name": "Master Infiltrator", "description": "Enemy units suffer -1 Accuracy and -1 Strength when attacking this unit.", "points": 10},
         "legend_mind_link": {"name": "Mind Link", "description": "Increase the range of all abilities which target friendly units by 6\".", "points": 10},
         "legend_supernatural_speed": {"name": "Supernatural Speed", "description": "Increase this model's Movement by 2\".", "points": 10},
-        "sacrifice": {"name": "Sacrifice", "description": "When this model activates, you may choose to remove a model from a friendly unit within 3\". If you do, restore one Wound(x) to this model.", "points": 10}
+        "sacrifice": {
+            "name": "Sacrifice",
+            "description": "When this model activates, you may choose to remove a model from a friendly unit within 3\". If you do, restore one Wound(x) to this model.",
+            "points": 10
+        }
     },
     "relics": {
         "sacrificial_dagger": {
@@ -1112,10 +1114,5 @@
         "blast": {"name": "Blast", "description": "Target enemy unit within 12\" take 5 hits with AP 1.", "charge": 6},
         "bolt": {"name": "Bolt", "description": "Target enemy unit within 18\" takes 2 hits with AP 5.", "charge": 6}
     },
-    "buyLinks": [
-        {
-            "name": "Games Workshop",
-            "link": "https://www.games-workshop.com/en-US/Warhammer-40-000?N=2562756967+4251244224"
-        }
-    ]
+    "buyLinks": [{"name": "Games Workshop", "link": "https://www.games-workshop.com/en-US/Warhammer-40-000?N=2562756967+4251244224"}]
 }
