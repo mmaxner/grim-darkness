@@ -403,7 +403,6 @@
             "description": "Fast, agile motorbike fighters.",
             "category": "strike",
             "keywords": ["Biker"],
-            "rules": ["stealth"],
             "options": [
                 {"replaceWeapon": "defense_rifle", "withWeapon": ["grenade_launcher"], "modelLimit": "1/3"},
                 {"replaceWeapon": ["defense_rifle", {"id": "ccw", "count": 1}], "withWeapon": [[{"id": "pistol"}, {"id": "ccw", "count": 2}]]},
