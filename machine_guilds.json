@@ -84,7 +84,7 @@
                     "fight": 6,
                     "defense": 9,
                     "reflexes": 6,
-                    "weapons": ["energy_staff"],
+                    "weapons": [{"id": "energy_staff", "count": 2}],
                     "options": [{"addWeapon": ["magnetic_lancer", "sonic_cannon"], "limit": 1}],
                     "min": 1,
                     "max": 1
