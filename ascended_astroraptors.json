@@ -393,9 +393,7 @@
             "name": "Feral Raptors",
             "description": "A loosely organized group of unarmed and unarmored raptors hopped up on a cocktail of stimulents who charge into their foes with biting maws and slashing claws.",
             "category": "core",
-            "options": [
-                {"addRule": [{"id": "agile"}], "modelLimit": "all"}
-                ],
+            "options": [{"addRule": [{"id": "agile"}], "modelLimit": "all"}],
             "min": 5,
             "max": 10,
             "models": [
