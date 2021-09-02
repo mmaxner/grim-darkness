@@ -315,8 +315,8 @@
             "category": "specialist",
             "rules": [],
             "keywords": ["Infantry"],
-            "options": [{"replaceWeapon": [{"id": "war_scythe", "count": 3}], "withWeapon": [[{"id": "phase_sword", "count": 3}, "shield"]], "modelLimit": "all"}],
-            "models": [{"name": "Guardian", "courage": 6, "movement": 5, "shoot": 6, "fight": 6, "defense": 9, "reflexes": 5, "weapons": [{"id": "war_scythe", "count": 3}], "min": 5, "max": 10}]
+            "options": [{"replaceWeapon": [{"id": "phase_sword", "count": 3}, "shield"], "withWeapon": [{"id": "war_scythe", "count": 3}], "modelLimit": "all"}],
+            "models": [{"name": "Guardian", "courage": 6, "movement": 5, "shoot": 6, "fight": 6, "defense": 9, "reflexes": 5, "weapons": [{"id": "phase_sword", "count": 3}, "shield"], "min": 5, "max": 10}]
         },
         "praetorians": {
             "name": "Praetorians",
@@ -815,7 +815,6 @@
         "heavy_doom_ray": {"name": "Heavy Doom Ray", "attacks": 1, "short": 18, "medium": 36, "ap": 7, "rules": [{"id": "blast", "x": 3}]},
         "doom_ray": {"name": "Doom Ray", "attacks": 1, "short": 18, "medium": 36, "ap": 7},
         "plasma_spike": {"name": "Plasma Spike", "attacks": 1, "short": "Melee", "ap": 1},
-        "shield": {"name": "Void Shield", "attacks": 0, "short": "Melee", "rules": ["shield"]},
         "metal_fangs": {"name": "Metal Fangs", "attacks": 1, "short": "Melee", "ap": 4},
         "warden_blade": {"name": "Warden Blade", "attacks": 1, "short": "Melee", "ap": 2},
         "phase_sword": {"name": "Phase Sword", "attacks": 1, "short": "Melee", "ap": 3},
