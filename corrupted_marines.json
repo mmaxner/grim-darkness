@@ -1812,14 +1812,6 @@
             "description": "Use this strategy when one of your _Infantry_ units Shoots. Successful hit rolls of 1 or 2 gain +1 AP.",
             "cost": 1
         },
-        "ferocity": {
-            "subfactions": ["destruction_focus"],
-            "name": "Ferocity",
-            "phase": "activation",
-            "description": "Use this strategy when an _Infantry_ unit charges. All models in that unit may make one additional attack.",
-            "flavor": "Sometimes with disregard for their own life, these marines will stop at nothing to defeat their enemies.",
-            "cost": 1
-        },
         "bravery": {
             "subfactions": ["destruction_focus"],
             "name": "Bravery",
@@ -1827,45 +1819,59 @@
             "description": "Use when a unit takes a Courage test. That unit gets +1 Courage.",
             "flavor": "These soldiers are particularly enduring and will not surrender.",
             "cost": 1
+        },
+        "outrun": {
+            "subfactions": ["destruction_focus"],
+            "name": "Outrun",
+            "phase": "activation",
+            "description": "Use this strategy when an _Infantry_ unit charges. That unit gains +3\" of Movement for that action.",
+            "flavor": "These marines will let no enemy escape.",
+            "cost": 1
+        },
+        "ferocity": {
+            "subfactions": ["rage_focus"],
+            "name": "Ferocity",
+            "phase": "activation",
+            "description": "Use this strategy when an _Infantry_ unit charges. All models in that unit may make one additional attack.",
+            "flavor": "Sometimes with disregard for their own life, these marines will stop at nothing to defeat their enemies.",
+            "cost": 1
+        },
+        "nullify": {
+            "subfactions": ["rage_focus"],
+            "phase": "activation",
+            "name": "Nullify",
+            "description": "Use when a Power(x) test is taken within 24\" of any Infantry unit. Roll a D10. If the value is less than or equal to the test to cast the power, it is prevented.",
+            "flavor": "Sometimes those that are favored by the dark gods can be protected from enemy powers.",
+            "cost": 1
+        },
+        "counter_attack": {
+            "subfactions": ["rage_focus"],
+            "name": "Counter Attack",
+            "phase": "activation",
+            "flavor": "These marines do not let their enemy strike first.",
+            "description": "Use when an _Infantry_ unit is targeted by a Fight action. If that unit has not yet activated, it may perform a Counter Attack reaction without testing Initiative.",
+            "cost": 1
         }
     },
+    "powerCategories": {
+        "psychic": {"name": "Psychic"}
+    },
     "powers": {
-        "beam": {
-            "subfactions": ["none", "change_traitors", "pestilence_focus"],
-            "name": "Invigorating Beam",
-            "description": "Target friendly unit within 12\"may immediately make a free move action.",
-            "charge": 7
-        },
-        "magic_shield": {
-            "subfactions": ["none", "change_traitors", "pestilence_focus"],
+        "shield": {
+            "subfactions": ["none", "change_corrupteds", "pestilence_focus"],
             "name": "Shield",
             "description": "Target friendly unit within 12\". Until the end of the round, roll a D10 each time that unit is hit. On a 2 or less, that hit is ignored.",
             "charge": 7
         },
         "weakness": {
-            "subfactions": ["none", "change_traitors", "pestilence_focus"],
+            "subfactions": ["none", "change_corrupteds", "pestilence_focus"],
             "name": "Weakness",
             "description": "Target enemy unit within 18\" must re-roll one die of your choice on its next Save test.",
             "charge": 6
         },
-        "illusion": {
-            "subfactions": ["none", "change_traitors", "pestilence_focus"],
-            "name": "Encroaching Mutations",
-            "description": "Target enemy unit within 18\" gets -1 to hit the next time it shoots or fights.",
-            "charge": 6
-        },
-        "strike": {"subfactions": ["none", "change_traitors", "pestilence_focus"], "name": "Strike", "description": "Target enemy unit within 18\" takes 2 hits with AP 5.", "charge": 6},
-        "terror": {"subfactions": ["none", "change_traitors", "pestilence_focus"], "name": "Terror", "description": "Target enemy unit within 12\" immediately takes 3 Shock.", "charge": 7},
-        "death": {"name": "Bolt", "subfactions": ["change_traitors"], "description": "Target enemy unit within 18\" takes 1 hit with AP 7.", "charge": 6},
-        "storm": {"subfactions": ["change_traitors"], "name": "Storm", "description": "Target enemy unit within 18\" take 5 hits with AP 1.", "charge": 6},
-        "inferno": {"subfactions": ["change_traitors"], "name": "Inferno", "description": "Target enemy unit within 12\" takes 3 hits with AP 3.", "charge": 6},
-        "rust": {
-            "subfactions": ["siege_focus"],
-            "name": "Curse of Rust",
-            "description": "Target enemy unit within 12\" has -1 Save until the end of the turn. If the unit is a _Vehicle_ it has -3 Save instead.",
-            "charge": 5
-        },
-        "iron_skin": {"subfactions": ["siege_focus"], "name": "Iron Skin", "description": "Target friendly unit within 12\" has +1 Save until the end of the turn.", "charge": 6},
-        "barrage": {"subfactions": ["siege_focus"], "name": "Psychic Barrage", "description": "Target enemy unit within 18\" take 5 hits with AP 1.", "charge": 6}
+        "strike": {"subfactions": ["none", "change_corrupteds", "pestilence_focus"], "name": "Strike", "description": "Target enemy unit within 18\" takes 2 hits with AP 5.", "charge": 5},
+        "bolt": {"name": "Bolt", "subfactions": ["change_corrupteds"], "category": "psychic", "description": "Target enemy unit within 18\" takes 1 hit with AP 7.", "charge": 5},
+        "storm": {"subfactions": ["change_corrupteds"], "name": "Storm", "category": "psychic",  "description": "Target enemy unit within 18\" take 5 hits with AP 1.", "charge": 6},
+        "inferno": {"subfactions": ["change_corrupteds"], "name": "Inferno", "category": "psychic",  "description": "Target enemy unit within 12\" takes 3 hits with AP 3.", "charge": 6}
     }
 }
