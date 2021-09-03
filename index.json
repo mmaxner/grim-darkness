@@ -278,7 +278,15 @@
             "secondary_color": "#010203",
             "alliance": "imperial_alliance",
             "description": "The Imperial Inquisition is the order dedicated to hunting dangerous demons and other Psychic entities which cannot be trusted in the Human Empire. Their tactics rely on using skilled demon hunting individuals along with advanced assassins to hunt and destroy those who most dangerous."
-        }
+        },
+        "mutant_tribes": {
+            "version": "0.1",
+            "name": "Mutant Tribes",
+            "id": "mutant_tribes",
+            "url": "mutant_tribes.json",
+            "color": "#deb887",
+            "alliance": "federation",
+            "description": "A strange alien race that joined the Federation to test their self-modifying biotech"
     },
     "alliances": {
         "alien_swarm": {"name": "Alien Swarm"},
@@ -913,4 +921,5 @@
             ]
         }
     }
+}
 }
