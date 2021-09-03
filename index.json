@@ -129,7 +129,20 @@
             "id": "tao_federation",
             "url": "tao_federation.json",
             "color": "#008080",
-            "description": "The Tao Federation is an alliance of several alien species to band together in the name of survival and prosperity. The Tao rely on a mix of advanced battle warsuits and deadly pulse weaponry to defeat their enemies."
+            "description": "The Tao Federation is an alliance of several alien species to band together in the name of survival and prosperity. The Tao rely on a mix of advanced battle warsuits and deadly pulse weaponry to defeat their enemies.",
+            "subfactions": {
+                "vigilance_focus": {"name": "Vigilance", "id": "vigilance_focus", "description": "Tao Federation troops focused on readyness and vigiliant tactics."},
+                "mobility_focus": {"name": "Mobility", "id": "mobility_focus", "description": "Tao Federation troops focused on mobile firing tactics."}
+            }
+        },
+        "mutant_tribes": {
+            "version": "0.1",
+            "name": "Mutant Tribes",
+            "id": "mutant_tribes",
+            "url": "mutant_tribes.json",
+            "color": "#7d6c57",
+            "alliance": "federation",
+            "description": "A strange alien race that joined the Federation to test their self-modifying biotech"
         },
         "ascended_astroraptors": {
             "version": "1.0",
@@ -224,12 +237,22 @@
             "subfactions": {
                 "combined_arms_focus": {"name": "Combined Arms", "id": "combined_arms_focus", "color": "#ffffff", "description": "Imperial Marines who specialize in combined arms tactics."},
                 "zeal_focus": {"name": "Zeal", "id": "zeal_focus", "color": "#ffffff", "description": "Imperial Marines with a righteous zeal."},
-                "mobility_masters": {"name": "Mobility", "id": "mobility_masters", "color": "#ffffff", "description": "Imperial Marines focused on using mobility and speed to outflank their enemies."},
+                "mobility_masters": {
+                    "name": "Mobility",
+                    "id": "mobility_masters",
+                    "color": "#ffffff",
+                    "description": "Imperial Marines focused on using mobility and speed to outflank their enemies."
+                },
                 "siege_masters": {"name": "Siege", "id": "siege_masters", "color": "#f0c251", "description": "Imperial Marines focused on sieges and defeating entrenched enemies."},
                 "toughness_focus": {"name": "Toughness", "id": "toughness_focus", "color": "#f0c251", "description": "Imperial Marines that are tougher than the rest."},
                 "forge_focus": {"name": "Craftsmen", "id": "forge_focus", "color": "#f0c251", "description": "Imperial Marines that are expert craftsmen and tough in battle."},
                 "stealth_focus": {"name": "Stealth", "id": "stealth_focus", "description": "Imperial Marines focused on stealth and ambush tactics."},
-                "tactical_masters": {"name": "Tactical", "id": "tactical_masters", "color": "#4272b8", "description": "Imperial Marines focused on using tactics and cunning to outsmart their enemies."},
+                "tactical_masters": {
+                    "name": "Tactical",
+                    "id": "tactical_masters",
+                    "color": "#4272b8",
+                    "description": "Imperial Marines focused on using tactics and cunning to outsmart their enemies."
+                },
                 "wolf_marines": {
                     "name": "Counter Attack",
                     "id": "wolf_marines",
@@ -238,7 +261,13 @@
                     "restricted": true
                 },
                 "assault_focus": {"name": "Assault", "id": "assault_focus", "color": "#4272b8", "description": "Imperial Marines focused on all-out assaults and aggression.", "restricted": true},
-                "psychic_marines": {"name": "Psychic", "id": "psychic_marines", "color": "#C0C0C0", "description": "Imperial Marines focused on psychic tactics and hunting demons.", "restricted": true},
+                "psychic_marines": {
+                    "name": "Psychic",
+                    "id": "psychic_marines",
+                    "color": "#C0C0C0",
+                    "description": "Imperial Marines focused on psychic tactics and hunting demons.",
+                    "restricted": true
+                },
                 "alien_hunters": {"name": "Alien Hunters", "id": "alien_hunters", "color": "#231f20", "description": "Imperial Marines focused on hunting aliens.", "restricted": true}
             }
         },
@@ -278,15 +307,7 @@
             "secondary_color": "#010203",
             "alliance": "imperial_alliance",
             "description": "The Imperial Inquisition is the order dedicated to hunting dangerous demons and other Psychic entities which cannot be trusted in the Human Empire. Their tactics rely on using skilled demon hunting individuals along with advanced assassins to hunt and destroy those who most dangerous."
-        },
-        "mutant_tribes": {
-            "version": "0.1",
-            "name": "Mutant Tribes",
-            "id": "mutant_tribes",
-            "url": "mutant_tribes.json",
-            "color": "#deb887",
-            "alliance": "federation",
-            "description": "A strange alien race that joined the Federation to test their self-modifying biotech"
+        }
     },
     "alliances": {
         "alien_swarm": {"name": "Alien Swarm"},
@@ -394,7 +415,95 @@
             "points": 5
         }
     },
-    "powers": {"shock_wave": {"name": "Shock Wave", "flavor": "The target is hit by a single blast of power", "description": "Target enemy unit within 12\" takes 3 hits with AP 1. This power may be cast unlimited times.", "charge": 8}},
+    "powerCategories": {
+        "fire": {"name": "Fire"},
+        "water": {"name": "Water"},
+        "earth": {"name": "Earth"},
+        "air": {"name": "Air"},
+        "ice": {"name": "Ice"},
+        "nature": {"name": "Nature"},
+        "metal": {"name": "Metal"},
+        "light": {"name": "Light"},
+        "shadow": {"name": "Shadow"},
+        "death": {"name": "Death"}
+    },
+    "powers": {
+        "searing_bolt": {"name": "Searing Bolt", "description": "Target enemy unit within 12\" takes 1 hits with AP(4).", "charge": 6, "category": "fire"},
+        "fireball": {"name": "Fireball", "description": "Target enemy unit within 12\" takes 3 hit with AP(1). This power may be cast unlimited times per turn.", "charge": 7, "category": "fire"},
+        "flaming_sword": {
+            "name": "Flaming Sword",
+            "description": "This unit gains +1 Strength and may make one additional attack with any Melee weapon until the end of the turn.",
+            "charge": 5,
+            "category": "fire"
+        },
+        "crushing_waves": {"name": "Crushing Waves", "description": "Target enemy unit within 12\" takes 4 hits with AP(4).", "charge": 5, "category": "water"},
+        "aqueous_form": {
+            "name": "Aqueous Form",
+            "description": "Target friendly unit within 12\" gets +2\" Movement and may trat Difficult Ground as normal terrain until the end of the turn.",
+            "charge": 6,
+            "category": "water"
+        },
+        "whirlpool": {"name": "Whirlpool", "description": "Target enemy unit within 24\" takes 3 hit with AP(0).", "charge": 7, "category": "water"},
+        "lightning_bolt": {"name": "Lightning Bolt", "description": "Target enemy unit within 18\" takes 1 hit with AP(7).", "charge": 5, "category": "air"},
+        "violent_gale": {"name": "Violent Gale", "description": "Target enemy unit within 18\" take 3 hits with AP(0) and is pushed 3\" away from this model.", "charge": 7, "category": "air"},
+        "haste": {"name": "Haste", "description": "Target friendly unit within 12\" may immediately make a free move action.", "charge": 6, "category": "air"},
+        "crystal_volley": {"name": "Crystal Volley", "description": "Target enemy unit within 12\" takes 5 hits each with AP(1).", "charge": 7, "category": "earth"},
+        "earthen_armor": {"name": "Earthen Armor", "description": "Target friendly unit within 12\" gains +1 Save until the end of the turn.", "charge": 6, "category": "earth"},
+        "earthquake": {
+            "name": "Earthquake",
+            "description": "Target enemy unit within 12\" takes 3 hits with AP(1). Roll a d10 for all units within 3\" of it. On a 5 or less that unit is hit as well",
+            "charge": 5,
+            "category": "earth"
+        },
+        "wild_frenzy": {"name": "Wild Frenzy", "description": "Target friendly unit within 12\" may immediately make a free charge action.", "charge": 5, "category": "nature"},
+        "entangling_roots": {
+            "name": "Entangling Roots",
+            "description": "Target enemy unit within 12\" takes 3 hit with AP(0) and has -2\" Movement until the end of the turn.",
+            "charge": 6,
+            "category": "nature"
+        },
+        "poison_spores": {"name": "Poison Spores", "description": "Target enemy unit within 12\" takes 3 hits with AP(2).", "charge": 7, "category": "nature"},
+        "molten_iron": {"name": "Rust", "description": "Target enemy unit within 12\" has -1 Save until end of turn.", "charge": 5, "category": "metal"},
+        "silver_bolt": {
+            "name": "Silver Bolt",
+            "description": "Target enemy unit within 12\" takes 1 hit with AP(3). This power may be cast unlimited times per turn.",
+            "charge": 7,
+            "category": "metal"
+        },
+        "magic_shield": {
+            "name": "Magic Shield",
+            "description": "Target friendly unit within 12\". Until the end of the round, roll a D10 each time that unit is hit. On a 3 or less, that hit is ignored. This power may be cast unlimited times.",
+            "charge": 6,
+            "category": "metal"
+        },
+        "cloak_of_shadows": {
+            "name": "Cloak of Shadows",
+            "description": "Target a friendly unit within 12\". Until the end of the turn models suffer -1 Accuracy when shooting at this unit.",
+            "charge": 6,
+            "category": "shadow"
+        },
+        "soul_dagger": {"name": "Soul Dagger", "description": "Target enemy model within 12\" takes 1 hit with AP(3).", "charge": 7, "category": "shadow"},
+        "fright": {"name": "Fright", "description": "Target enemy unit within 12\" gains 2 Shock.", "charge": 5, "category": "shadow"},
+        "inspiration": {"name": "Inspiration", "description": "Target friendly unit within 12\" removes 2 Shock.", "charge": 5, "category": "light"},
+        "blinding_shield": {
+            "name": "Blinding Shield",
+            "description": "Target a friendly unit within 12\". Until the end of the turn models suffer -1 Strength when targeting this unit with a melee attack.",
+            "charge": 6,
+            "category": "light"
+        },
+        "smite": {"name": "Smite", "description": "Target enemy unit within 18\" takes 3 hits with AP(0). This power may be cast unlimited times per turn.", "charge": 7, "category": "light"},
+        "drain_life": {
+            "name": "Drain Life",
+            "description": "Target enemy model within 12\" takes 1 hit with AP(3). If the model is slain restore 1 wound to this model.",
+            "charge": 5,
+            "category": "death"
+        },
+        "doom": {"name": "Doom", "description": "Target enemy unit within 12\" -1 Courage until the end of the turn.", "charge": 6, "category": "death"},
+        "spectral_grasp": {"name": "Spectral Grasp", "description": "Target enemy unit within 18\" take 3 hits with AP(0) and is pulled 3\" towards this model.", "charge": 7, "category": "death"},
+        "frost_lance": {"name": "Frost Lance", "description": "Target enemy unit within 24\" takes 1 hit with AP(3).", "charge": 7, "category": "ice"},
+        "hailstorm": {"name": "Hailstorm", "description": "Target enemy unit within 18\" takes 3 hits with AP(1) and has -1 Accuracy until the end of the turn.", "charge": 6, "category": "ice"},
+        "avalanche": {"name": "Avalanche", "description": "Roll a d10 for each enemy units with 9\". On a roll of 5 or lower the unit hit takes 3 hits with AP(3).", "charge": 5, "category": "ice"}
+    },
     "weapons": {
         "power_blast": {"name": "Shock Wave", "medium": 24, "attacks": 3, "ap": 3},
         "plasma_grenade": {
@@ -581,7 +690,7 @@
         "forge_flamethrower": {"name": "Forge Flamethrower", "attacks": 3, "short": 9, "medium": 18, "ap": 4, "rules": ["flame"]},
         "gravity_pistol": {"name": "Gravity Pistol", "attacks": 1, "short": 6, "ap": 3, "rules": ["gravity"]},
         "gravity_rifle": {"name": "Gravity Rifle", "attacks": 1, "short": 9, "medium": 18, "ap": 3, "rules": ["gravity"]},
-        "gravity_cannon": {"name": "Gravity Cannon", "attacks": 1, "short": 18, "medium": 36, "ap": 3, "rules": [{"id": "blast", "x": 2}, "gravity"]},
+        "gravity_cannon": {"name": "Gravity Cannon", "attacks": 2, "short": 18, "medium": 36, "ap": 3, "rules": ["gravity"]},
         "heavy_gravity_cannon": {"name": "Heavy Gravity Cannon", "attacks": 3, "short": 24, "medium": 48, "ap": 3, "rules": ["gravity"]},
         "psychic_grenade": {
             "name": "Psychic Grenades",
@@ -697,7 +806,6 @@
         "siege_cannon": {"name": "Siege Cannon", "attacks": 1, "short": 12, "medium": 24, "ap": 8, "rules": [{"id": "blast", "x": 3}]},
         "tank_hunter_cannon": {"name": "Tank Hunter Cannon", "attacks": 2, "short": 36, "medium": 72, "ap": 7, "rules": [{"id": "critical", "x": 1}]},
         "gatling_cannon": {"name": "Gatling Cannon", "attacks": 8, "short": 12, "medium": 24, "ap": 2},
-        "staff": {"name": "Staff", "attacks": 2, "ap": 5, "short": "Melee"},
         "walker_chainsaw": {"name": "Walker Chainsaw", "attacks": 2, "ap": 2, "short": "Melee"},
         "rider_lance": {"name": "Rider Lance", "attacks": 1, "ap": 3, "short": "Melee", "rules": [{"id": "impact", "x": 1}]},
         "heavy_shotgun": {"name": "Heavy Shotgun", "attacks": 2, "short": 6, "medium": 12, "ap": 2},
@@ -787,7 +895,6 @@
             "description": "Whenever this model, or a friendly _Infantry_ model within 6\" is killed or loses a Wound(x), roll a D10. On a 3 or less, that loss is prevented.",
             "points": 15
         },
-        "gravity": {"name": "Gravity", "description": "This weapon gets +2 AP against targets with Save 10 or higher.", "points": ["weapon.attacks", {"multiply": 1}]},
         "homing": {"name": "Homing", "description": "This weapon hits at Accuracy +1.", "points": ["weapon.attacks"]},
         "spiked_ram": {"name": "Spiked Ram", "hidden": true, "description": "This model gains Impact(+3).", "description_short": "Impact +3", "points": 6},
         "heavy_impact": {
@@ -860,7 +967,8 @@
         "marking_flares": {"name": "Marking Flares", "description": "Once per round, a friendly _Biker_ unit may gain +4\" of Movement.", "points": 5},
         "surveying_device": {"name": "Surveying Device", "description": "Once per round, a friendly _Infantry_ unit within 12\" may ignore the benefit of cover while shooting.", "points": 10},
         "spotting_device": {"name": "Spotting Device", "description": "Increase the short and long range of all ranged weapons equipped by this unit by 6\".", "points": 5},
-        "titan_shield": {"name": "Combat Shield", "description": "This unit subtracts 1 from all Damage Chart rolls.", "points": 10}
+        "titan_shield": {"name": "Combat Shield", "description": "This unit subtracts 1 from all Damage Chart rolls.", "points": 10},
+        "no_retreat": {"name": "No Retreat", "description": "Once per round, a friendly _Infantry_ unit within 3\" may automatically pass a Break test.", "points": 2}
     },
     "units": {
         "defense_line": {
@@ -921,5 +1029,4 @@
             ]
         }
     }
-}
 }
