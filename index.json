@@ -135,6 +135,15 @@
                 "mobility_focus": {"name": "Mobility", "id": "mobility_focus", "description": "Tao Federation troops focused on mobile firing tactics."}
             }
         },
+        "mutant_tribes": {
+            "version": "0.1",
+            "name": "Mutant Tribes",
+            "id": "mutant_tribes",
+            "url": "mutant_tribes.json",
+            "color": "#7d6c57",
+            "alliance": "federation",
+            "description": "A strange alien race that joined the Federation to test their self-modifying biotech"
+        },
         "ascended_astroraptors": {
             "version": "1.0",
             "alliance": "federation",
@@ -959,11 +968,7 @@
         "surveying_device": {"name": "Surveying Device", "description": "Once per round, a friendly _Infantry_ unit within 12\" may ignore the benefit of cover while shooting.", "points": 10},
         "spotting_device": {"name": "Spotting Device", "description": "Increase the short and long range of all ranged weapons equipped by this unit by 6\".", "points": 5},
         "titan_shield": {"name": "Combat Shield", "description": "This unit subtracts 1 from all Damage Chart rolls.", "points": 10},
-        "no_retreat": {
-            "name": "No Retreat",
-            "description": "Once per round, a friendly _Infantry_ unit within 3\" may automatically pass a Break test.",
-            "points": 2
-        }
+        "no_retreat": {"name": "No Retreat", "description": "Once per round, a friendly _Infantry_ unit within 3\" may automatically pass a Break test.", "points": 2}
     },
     "units": {
         "defense_line": {
