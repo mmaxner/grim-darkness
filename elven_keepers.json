@@ -7,8 +7,6 @@
         "troupe_master": {
             "name": "Troupe Master",
             "description": "A master of the Elven Keepers. Highly swift and deadly on foot.",
-            "min": 1,
-            "max": 1,
             "category": "command",
             "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "keeper_tactics", "x": 1}, {"id": "wounds", "x": 3}],
             "keywords": ["Infantry"],
@@ -39,8 +37,6 @@
         "solitaire": {
             "name": "Solitaire",
             "description": "A solo wandering player who has perfected the dance of war and occasionally joins the main troupe to deadly effect.",
-            "min": 1,
-            "max": 1,
             "category": "specialist",
             "rules": [{"id": "support_x", "x": "Infantry"}, {"id": "wounds", "x": 3}],
             "keywords": ["Infantry"],
@@ -64,8 +60,6 @@
         "elven_seer": {
             "name": "Elven Seer",
             "description": "An elven keeper gifted with the power of minor foresight and energy manipulation.",
-            "min": 1,
-            "max": 1,
             "category": "command",
             "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
             "keywords": ["Infantry"],
@@ -115,8 +109,6 @@
         "troupe": {
             "name": "Troupe",
             "description": "A group of elven jesters on foot.",
-            "min": 1,
-            "max": 1,
             "category": "core",
             "rules": [],
             "keywords": ["Infantry"],
@@ -152,8 +144,6 @@
         "mimes": {
             "name": "Mimes",
             "description": "A group of newly indicted troupe mebers doing their best to prove themselves on and off of the battlefield.",
-            "min": 1,
-            "max": 1,
             "category": "core",
             "rules": [],
             "keywords": ["Infantry"],
@@ -188,8 +178,6 @@
         "jetbikes": {
             "name": "Jetbikes",
             "description": "Fast-moving hover bikes outfitted with deadly weapons to choreograph the dance of war.",
-            "min": 1,
-            "max": 1,
             "category": "strike",
             "rules": ["hover", {"id": "wounds", "x": 2}],
             "keywords": ["Biker"],
@@ -212,8 +200,6 @@
         "hover_transport": {
             "name": "Hover Transport",
             "description": "A light transport outfitted to carry troupes.",
-            "min": 1,
-            "max": 1,
             "category": "transport",
             "rules": ["hover", {"id": "impact", "x": 3}, {"id": "transport", "x": 6}, {"id": "open_topped", "x": 6}, "damage_chart", "vulnerable_side_rear"],
             "keywords": ["Vehicle"],
@@ -222,8 +208,6 @@
         "hover_tank": {
             "name": "Hover Tank",
             "description": "A light hover tank that can be outfitted to carry troupes or with heavier weaponry to eliminate threats.",
-            "min": 1,
-            "max": 1,
             "category": "heavy",
             "rules": ["hover", {"id": "impact", "x": 3}, "damage_chart", "vulnerable_side_rear"],
             "keywords": ["Vehicle"],

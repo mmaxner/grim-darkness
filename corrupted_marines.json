@@ -223,8 +223,6 @@
         "dark_psychic_on_bike": {
             "name": "Dark Psychic on Bike",
             "description": "A powerful human whose mental powers have been twisted by the dark side on a combat bike.",
-            "min": 1,
-            "max": 1,
             "category": "command",
             "keywords": ["Biker"],
             "subfactions": ["none"],
@@ -1853,9 +1851,7 @@
             "cost": 1
         }
     },
-    "powerCategories": {
-        "psychic": {"name": "Psychic"}
-    },
+    "powerCategories": {"psychic": {"name": "Psychic"}},
     "powers": {
         "shield": {
             "subfactions": ["none", "change_corrupteds", "pestilence_focus"],
@@ -1871,7 +1867,7 @@
         },
         "strike": {"subfactions": ["none", "change_corrupteds", "pestilence_focus"], "name": "Strike", "description": "Target enemy unit within 18\" takes 2 hits with AP 5.", "charge": 5},
         "bolt": {"name": "Bolt", "subfactions": ["change_corrupteds"], "category": "psychic", "description": "Target enemy unit within 18\" takes 1 hit with AP 7.", "charge": 5},
-        "storm": {"subfactions": ["change_corrupteds"], "name": "Storm", "category": "psychic",  "description": "Target enemy unit within 18\" take 5 hits with AP 1.", "charge": 6},
-        "inferno": {"subfactions": ["change_corrupteds"], "name": "Inferno", "category": "psychic",  "description": "Target enemy unit within 12\" takes 3 hits with AP 3.", "charge": 6}
+        "storm": {"subfactions": ["change_corrupteds"], "name": "Storm", "category": "psychic", "description": "Target enemy unit within 18\" take 5 hits with AP 1.", "charge": 6},
+        "inferno": {"subfactions": ["change_corrupteds"], "name": "Inferno", "category": "psychic", "description": "Target enemy unit within 12\" takes 3 hits with AP 3.", "charge": 6}
     }
 }

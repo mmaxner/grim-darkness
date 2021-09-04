@@ -11,7 +11,7 @@
             "min": 5,
             "max": 10,
             "category": "command",
-            "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "ward", "x": 1},  {"id": "wounds", "x": 3}],
+            "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "ward", "x": 1}, {"id": "wounds", "x": 3}],
             "models": [
                 {
                     "name": "Inquisitor",
@@ -23,7 +23,11 @@
                     "movement": 6,
                     "weapons": ["marine_rifle", "at_grenade", {"id": "heavy_ccw", "count": 3}],
                     "options": [
-                        {"replaceWeapon": ["marine_rifle"], "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "twin_marine_rifle", "heavy_defense_rifle", "storm_rifle", "plasma_rifle", "fusion_rifle", "flamethrower"], "limit": 1},
+                        {
+                            "replaceWeapon": ["marine_rifle"],
+                            "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "twin_marine_rifle", "heavy_defense_rifle", "storm_rifle", "plasma_rifle", "fusion_rifle", "flamethrower"],
+                            "limit": 1
+                        },
                         {"replaceWeapon": ["marine_rifle", {"id": "heavy_ccw", "count": 3}], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 4}]]},
                         {
                             "replaceWeapon": {"id": "chainsword", "count": 4},
@@ -51,7 +55,7 @@
             "max": 10,
             "category": "command",
             "keywords": ["Storm Trooper", "Infantry"],
-            "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "stormtrooper_tactics", "x": 1},  {"id": "wounds", "x": 2}],
+            "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "stormtrooper_tactics", "x": 1}, {"id": "wounds", "x": 2}],
             "models": [
                 {
                     "name": "Stormtrooper Commander",
@@ -111,9 +115,7 @@
                     "reflexes": 6,
                     "movement": 6,
                     "weapons": ["heavy_defense_rifle", "frags", "ccw"],
-                    "options": [
-                        {"addRule": {"id": "field_radio"}, "modelLimit": 1}
-                    ],
+                    "options": [{"addRule": {"id": "field_radio"}, "modelLimit": 1}],
                     "min": 4,
                     "max": 9
                 }
@@ -126,16 +128,16 @@
             "category": "specialist",
             "models": [
                 {
-                "name": "Psychic-Hunter Assassin",
-                "movement": 7,
-                "shoot": 7,
-                "fight": 7,
-                "defense": 6,
-                "reflexes": 7,
-                "courage": 7,
-                "min": 1,
-                "max": 1,
-                "weapons": [{"id": "spectral_eye", "count": 1}, {"id": "assassin_unarmed", "count": 4}]
+                    "name": "Psychic-Hunter Assassin",
+                    "movement": 7,
+                    "shoot": 7,
+                    "fight": 7,
+                    "defense": 6,
+                    "reflexes": 7,
+                    "courage": 7,
+                    "min": 1,
+                    "max": 1,
+                    "weapons": [{"id": "spectral_eye", "count": 1}, {"id": "assassin_unarmed", "count": 4}]
                 }
             ]
         },
@@ -165,19 +167,8 @@
             "rules": [{"id": "wounds", "x": 3}, "assassin", "berzerk_overload"],
             "category": "specialist",
             "models": [
-                  {
-                      "name": "Berzerker Assassin",
-                      "movement": 7,
-                      "shoot": 7,
-                      "fight": 7,
-                      "defense": 6,
-                      "reflexes": 7,
-                      "courage": 7,
-                      "min": 1,
-                      "max": 1,
-                      "weapons": [{"id": "energy_sword", "count": 8}]
-                    }
-                ]
+                {"name": "Berzerker Assassin", "movement": 7, "shoot": 7, "fight": 7, "defense": 6, "reflexes": 7, "courage": 7, "min": 1, "max": 1, "weapons": [{"id": "energy_sword", "count": 8}]}
+            ]
         },
         "stealth_assassin": {
             "name": "Stealth Assassin",
@@ -185,21 +176,21 @@
             "rules": [{"id": "wounds", "x": 3}, "assassin", "stealth", "ambush"],
             "category": "specialist",
             "models": [
-                    {
-                        "name": "Stealth Assassin",
-                        "movement": 7,
-                        "shoot": 7,
-                        "fight": 7,
-                        "defense": 6,
-                        "reflexes": 7,
-                        "courage": 7,
-                        "min": 1,
-                        "max": 1,
-                        "weapons": [{"id": "mind_shredder", "count": 1}, {"id": "phase_sword", "count": 4}]
-                    }
-                ]
+                {
+                    "name": "Stealth Assassin",
+                    "movement": 7,
+                    "shoot": 7,
+                    "fight": 7,
+                    "defense": 6,
+                    "reflexes": 7,
+                    "courage": 7,
+                    "min": 1,
+                    "max": 1,
+                    "weapons": [{"id": "mind_shredder", "count": 1}, {"id": "phase_sword", "count": 4}]
+                }
+            ]
         },
-            "inquisition_light_gunship": {
+        "inquisition_light_gunship": {
             "name": "Inquisition Light Gunship",
             "description": "A light gunship with sliding doors for troop transport.",
             "rules": [{"id": "transport", "x": 11}, "aircraft", "hover_mode", "damage_chart"],
@@ -323,12 +314,13 @@
             ]
         }
     },
-    "weapons": {"guardian_eagle": {"name": "Guardian Eagle", "attacks": 3, "ap": 1, "short": 12, "medium": 24},
-    "spectral_eye": {"name": "Spectral Eye", "attacks": 2, "ap": 4, "short": 9, "medium": 18},
-    "assassin_unarmed": {"name": "Assassin Martial Arts", "attacks": 1, "ap": 4, "short": "Melee", "rules": ["rending"]},
-    "mind_shredder": {"name": "Mind Shredder", "attacks": 1, "ap": 4, "short": 6, "medium": 12, "rules": [{"id": "shocking", "x": 3}]},
-    "phase_sword": {"name": "Phase Sword", "attacks": 1, "ap": 5, "short": "Melee", "rules": ["rending", "phase"]}
-},
+    "weapons": {
+        "guardian_eagle": {"name": "Guardian Eagle", "attacks": 3, "ap": 1, "short": 12, "medium": 24},
+        "spectral_eye": {"name": "Spectral Eye", "attacks": 2, "ap": 4, "short": 9, "medium": 18},
+        "assassin_unarmed": {"name": "Assassin Martial Arts", "attacks": 1, "ap": 4, "short": "Melee", "rules": ["rending"]},
+        "mind_shredder": {"name": "Mind Shredder", "attacks": 1, "ap": 4, "short": 6, "medium": 12, "rules": [{"id": "shocking", "x": 3}]},
+        "phase_sword": {"name": "Phase Sword", "attacks": 1, "ap": 5, "short": "Melee", "rules": ["rending", "phase"]}
+    },
     "powers": {
         "fortify": {"name": "Fortify", "description": "Target friendly unit within 12\" gets +1 Courage until the end of the round.", "charge": 8},
         "terror": {"name": "Terror", "description": "Target enemy model within 12\" gets -1 Courage until the end of the round.", "charge": 8},
@@ -339,7 +331,7 @@
     },
     "rules": {
         "berzerk_overload": {"name": "Berzerk Overload", "description": "When this unit is destroyed, all units within 6\" gain 2 shock", "points": 15},
-        "phase": {"name": "Phase", "description": "Units with the Resilient and Tough rules cannot use them for saves against this weapon's attacks", "points":10}
+        "phase": {"name": "Phase", "description": "Units with the Resilient and Tough rules cannot use them for saves against this weapon's attacks", "points": 10}
     },
     "strategies": [
         {

@@ -94,8 +94,6 @@
         "celestial": {
             "name": "Celestial",
             "description": "A high ranking Federation member.",
-            "min": 1,
-            "max": 1,
             "category": "command",
             "models": [
                 {
@@ -117,8 +115,6 @@
         "warrior_commander": {
             "name": "Warrior Commander",
             "description": "A commander who is in charge of warrior teams.",
-            "min": 1,
-            "max": 1,
             "category": "command",
             "options": [{"addModel": ["spotter_drone", "gunner_drone", "shield_drone"], "modelLimit": 2}],
             "models": [
@@ -140,8 +136,6 @@
         "fire_team": {
             "name": "Fire Team",
             "description": "A squad of infantry who excell at ranged shooting.",
-            "min": 1,
-            "max": 1,
             "category": "core",
             "options": [
                 {"replaceWeapon": "pulse_carbine", "withWeapon": ["pulse_rifle"]},
@@ -168,8 +162,6 @@
         "fire_team_veteran": {
             "name": "Veteran Fire Team",
             "description": "A squad of infantry who excell at ranged shooting.",
-            "min": 1,
-            "max": 1,
             "category": "core",
             "options": [
                 {"replaceWeapon": "pulse_carbine", "withWeapon": ["pulse_rifle"]},
@@ -196,8 +188,6 @@
         "assault_team": {
             "name": "Assault Team",
             "description": "A squad of infantry who excell at close range assaults.",
-            "min": 1,
-            "max": 1,
             "category": "core",
             "options": [{"addModel": "support_turret"}, {"addModel": ["spotter_drone", "gunner_drone", "shield_drone"], "modelLimit": 2}, {"addModel": "guardian_drone"}],
             "models": [
@@ -219,8 +209,6 @@
         "veteran_assault_team": {
             "name": "Veteran Assault Team",
             "description": "A squad of infantry who excell at close range assaults.",
-            "min": 1,
-            "max": 1,
             "category": "core",
             "options": [{"addModel": "support_turret"}, {"addModel": ["spotter_drone", "gunner_drone", "shield_drone"], "modelLimit": 2}, {"addModel": "guardian_drone"}],
             "models": [
@@ -242,8 +230,6 @@
         "pathfinder_squad": {
             "name": "Pathfinder Team",
             "description": "A squad of infantry who excell at forward scouting and spotting.",
-            "min": 1,
-            "max": 1,
             "category": "specialist",
             "options": [
                 {"replaceWeapon": "pulse_carbine", "withWeapon": ["ion_rifle", "rail_rifle"], "modelLimit": 3},
@@ -307,8 +293,6 @@
         "avian_hounds": {
             "name": "Avian Hounds",
             "description": "A squad of angry hounds trained by avian mercenaries.",
-            "min": 1,
-            "max": 1,
             "category": "strike",
             "keywords": ["Infantry", "Avian Mercenaries"],
             "models": [{"name": "Avian Hound", "movement": 8, "courage": 4, "shoot": 4, "fight": 6, "defense": 4, "reflexes": 5, "weapons": ["hound_fangs"], "min": 4, "max": 12}]
@@ -316,8 +300,6 @@
         "avian_beast_riders": {
             "name": "Avian Beast Riders",
             "description": "A squad of avian mercenaries riding on beasts.",
-            "min": 1,
-            "max": 1,
             "category": "strike",
             "keywords": ["Heavy Infantry", "Avian Mercenaries"],
             "rules": [{"id": "wounds", "x": 2}],
@@ -326,8 +308,6 @@
         "insect_warriors": {
             "name": "Insect Warriors",
             "description": "A squad of flying insect creatures with rifles.",
-            "min": 1,
-            "max": 1,
             "category": "strike",
             "models": [
                 {
@@ -349,8 +329,6 @@
         "stealth_suits": {
             "name": "Stealth Suits",
             "description": "A squad of light battlesuits with camo cloaking technology.",
-            "min": 1,
-            "max": 1,
             "category": "specialist",
             "rules": ["stealth", "fly"],
             "options": [{"addRule": ["homing_beacon"], "modelLimit": 1}, {"addModel": ["spotter_drone", "gunner_drone", "shield_drone"], "modelLimit": 2}],

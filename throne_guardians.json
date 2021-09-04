@@ -69,7 +69,7 @@
             "min": 5,
             "max": 10,
             "category": "command",
-            "rules": [{"id": "wounds", "x": 3},  {"id": "battle_tactics", "x": 1}, {"id": "leader_x", "x": "Infantry"}],
+            "rules": [{"id": "wounds", "x": 3}, {"id": "battle_tactics", "x": 1}, {"id": "leader_x", "x": "Infantry"}],
             "models": [
                 {
                     "name": "Guardian Captain",
@@ -213,12 +213,7 @@
                     "reflexes": 7,
                     "weapons": [{"id": "guardian_spear_blade", "count": 3}, "guardian_spear_rifle", "guardian_grenade_launcher"],
                     "options": [
-                        {
-                            "replaceWeapon": [{"id": "guardian_spear_blade", "count": 3}, "guardian_spear_rifle"],
-                            "withWeapon": [
-                                [{"id": "guardian_axe_blade", "count": 3}, "guardian_axe_rifle"]
-                            ]
-                        },
+                        {"replaceWeapon": [{"id": "guardian_spear_blade", "count": 3}, "guardian_spear_rifle"], "withWeapon": [[{"id": "guardian_axe_blade", "count": 3}, "guardian_axe_rifle"]]},
                         {"addWeapon": "guardian_dagger"},
                         {"replaceRule": "banner_of_blindness", "withRule": ["banner_of_justice", "banner_of_focus", "banner_of_wrath"]}
                     ],
@@ -237,7 +232,12 @@
             "options": [
                 {
                     "replaceWeapon": [{"id": "guardian_sword_blade", "count": 2}, "guardian_sword_pistol"],
-                    "withWeapon": [[{"id": "guardian_spear_blade", "count": 2}, "guardian_spear_rifle"], [{"id": "guardian_spear_blade", "count": 2}, "guardian_spear_fusion"], [{"id": "guardian_spear_blade", "count": 2}, "guardian_spear_carbine"], ["guardian_rifle", {"id": "heavy_ccw", "count": 1}]]
+                    "withWeapon": [
+                        [{"id": "guardian_spear_blade", "count": 2}, "guardian_spear_rifle"],
+                        [{"id": "guardian_spear_blade", "count": 2}, "guardian_spear_fusion"],
+                        [{"id": "guardian_spear_blade", "count": 2}, "guardian_spear_carbine"],
+                        ["guardian_rifle", {"id": "heavy_ccw", "count": 1}]
+                    ]
                 },
                 {"addWeapon": "guardian_dagger"},
                 {"addWeapon": "shield"}
@@ -291,10 +291,7 @@
             "options": [
                 {
                     "replaceWeapon": [{"id": "guardian_spear_blade", "count": 3}, "guardian_spear_rifle"],
-                    "withWeapon": [
-                        [{"id": "guardian_axe_blade", "count": 3}, "guardian_axe_rifle"],
-                        ["guardian_rifle", {"id": "heavy_ccw", "count": 2}]
-                    ]
+                    "withWeapon": [[{"id": "guardian_axe_blade", "count": 3}, "guardian_axe_rifle"], ["guardian_rifle", {"id": "heavy_ccw", "count": 2}]]
                 },
                 {"addWeapon": "guardian_dagger"}
             ],
@@ -374,12 +371,7 @@
                     "reflexes": 7,
                     "weapons": [{"id": "guardian_spear_blade", "count": 3}, "guardian_spear_rifle", "guardian_grenade_launcher"],
                     "options": [
-                        {
-                            "replaceWeapon": [{"id": "guardian_spear_blade", "count": 3}, "guardian_spear_rifle"],
-                            "withWeapon": [
-                                [{"id": "guardian_axe_blade", "count": 3}, "guardian_axe_rifle"]
-                            ]
-                        },
+                        {"replaceWeapon": [{"id": "guardian_spear_blade", "count": 3}, "guardian_spear_rifle"], "withWeapon": [[{"id": "guardian_axe_blade", "count": 3}, "guardian_axe_rifle"]]},
                         {"addWeapon": "guardian_dagger"}
                     ],
                     "min": 3,
@@ -515,9 +507,10 @@
                     "reflexes": 7,
                     "weapons": ["walker_sword_shoot", {"id": "walker_sword_blade", "count": 5}, {"id": "titan_shield"}],
                     "options": [
-                        {"replaceWeapon": ["walker_sword_shoot", {"id": "walker_sword_blade", "count": 5}, {"id": "titan_shield"}], "withWeapon": [
-                            [{"id": "walker_spear_blade", "count": 5}, "walker_spear_rifle", {"id": "twin_guardian_rifle", "count": 2}]
-                        ]},
+                        {
+                            "replaceWeapon": ["walker_sword_shoot", {"id": "walker_sword_blade", "count": 5}, {"id": "titan_shield"}],
+                            "withWeapon": [[{"id": "walker_spear_blade", "count": 5}, "walker_spear_rifle", {"id": "twin_guardian_rifle", "count": 2}]]
+                        },
                         {"replaceWeapon": {"id": "twin_guardian_rifle", "count": 2}, "withWeapon": [{"id": "twin_guardian_destructor", "count": 2}, {"id": "guardian_flamethrower", "count": 2}]}
                     ],
                     "min": 1,
@@ -543,9 +536,7 @@
                     "defense": 12,
                     "reflexes": 7,
                     "weapons": ["heavy_gatling_gun", {"id": "walker_fist", "count": 4}, {"id": "twin_marine_rifle"}],
-                    "options": [
-                        {"replaceWeapon": "heavy_gatling_gun", "withWeapon": ["heavy_fusion_rifle"]}
-                    ],
+                    "options": [{"replaceWeapon": "heavy_gatling_gun", "withWeapon": ["heavy_fusion_rifle"]}],
                     "min": 1,
                     "max": 1
                 }
@@ -608,16 +599,13 @@
         "guardian_spear_fusion": {"name": "Guardian Spear (Fusion)", "attacks": 1, "short": 6, "medium": 12, "ap": 6, "rules": [{"id": "critical", "x": 1}]},
         "guardian_rifle": {
             "name": "Guardian Rifle",
-            "profiles": [{"name": "HE", "attacks": 1, "short": 18, "medium": 36, "ap": 2, "rules": ["rapid_fire"]}, {"name": "AP", "attacks": 1, "short": 12, "medium": 24, "ap": 5, "rules": ["rapid_fire"]}]
+            "profiles": [
+                {"name": "HE", "attacks": 1, "short": 18, "medium": 36, "ap": 2, "rules": ["rapid_fire"]},
+                {"name": "AP", "attacks": 1, "short": 12, "medium": 24, "ap": 5, "rules": ["rapid_fire"]}
+            ]
         },
-        "twin_guardian_rifle": {
-            "name": "Twin Guardian Rifle",
-            "attacks": 2, "short": 12, "medium": 24, "ap": 2, "rules": ["rapid_fire"]
-        },
-        "twin_guardian_destructor": {
-            "name": "Twin Guardian Destructor",
-            "attacks": 2, "short": 9, "medium": 18, "ap": 4, "rules": ["assault"]
-        },
+        "twin_guardian_rifle": {"name": "Twin Guardian Rifle", "attacks": 2, "short": 12, "medium": 24, "ap": 2, "rules": ["rapid_fire"]},
+        "twin_guardian_destructor": {"name": "Twin Guardian Destructor", "attacks": 2, "short": 9, "medium": 18, "ap": 4, "rules": ["assault"]},
         "guardian_flamethrower": {"name": "Guardian Flamethrower", "attacks": 3, "short": 6, "medium": 12, "ap": 3, "rules": ["flame"]},
         "guardian_pistol": {"name": "Guardian Pistol", "attacks": 1, "short": 9, "ap": 4, "rules": ["pistol"]},
         "guardian_sword_pistol": {"name": "Guardian Sword (Pistol)", "attacks": 1, "short": 6, "medium": 12, "ap": 1, "rules": ["pistol"]},

@@ -296,9 +296,7 @@
             "min": 3,
             "max": 9,
             "rules": ["fly"],
-            "models": [
-                {"name": "Manta Demon", "movement": 8, "courage": 5, "shoot": 4, "fight": 5, "defense": 7, "reflexes": 5, "weapons": [{"id": "parasitic_bite", "count": 3}], "min": 3, "max": 9}
-            ]
+            "models": [{"name": "Manta Demon", "movement": 8, "courage": 5, "shoot": 4, "fight": 5, "defense": 7, "reflexes": 5, "weapons": [{"id": "parasitic_bite", "count": 3}], "min": 3, "max": 9}]
         },
         "flame_chariot": {
             "name": "Flame Chariot",

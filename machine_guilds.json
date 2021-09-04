@@ -7,8 +7,6 @@
         "machine_grand_master": {
             "name": "Machine Grand Master",
             "description": "The smartest and most intelligent machine guild leader.",
-            "min": 1,
-            "max": 1,
             "category": "command",
             "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "repair", "x": 3}],
             "keywords": ["Infantry"],
@@ -37,8 +35,6 @@
         "machine_master": {
             "name": "Machine Master",
             "description": "A master craftsman and leader of the machine guild.",
-            "min": 1,
-            "max": 1,
             "category": "command",
             "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "wounds", "x": 3}, {"id": "canticles", "x": 2}],
             "models": [
@@ -71,8 +67,6 @@
         "machine_manipulator": {
             "name": "Machine Manipulator",
             "description": "A machine tinkerer of the guild.",
-            "min": 1,
-            "max": 1,
             "category": "command",
             "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "wounds", "x": 2}, "manipulator"],
             "models": [
@@ -94,8 +88,6 @@
         "machine_apprentice": {
             "name": "Machine Apprentice",
             "description": "A master craftsman and leader of the machine guild.",
-            "min": 1,
-            "max": 1,
             "category": "command",
             "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "wounds", "x": 2}, {"id": "canticles", "x": 1}],
             "models": [
@@ -121,8 +113,6 @@
         "data_specialist": {
             "name": "Data Specialist",
             "description": "An expert in manipulating machine data.",
-            "min": 1,
-            "max": 1,
             "category": "specialist",
             "rules": [{"id": "leader_x", "x": "Infantry"}],
             "models": [
@@ -144,8 +134,6 @@
         "vanguard_commander": {
             "name": "Vanguard Commander",
             "description": "Commander of the foot-mobile machine guild protection forces.",
-            "min": 1,
-            "max": 1,
             "category": "command",
             "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "wounds", "x": 2}, {"id": "vanguard_tactics", "x": 1}],
             "models": [
@@ -172,8 +160,6 @@
         "vanguards": {
             "name": "Vanguards",
             "description": "Foot-mobile machine guild protection forces.",
-            "min": 1,
-            "max": 1,
             "category": "core",
             "options": [{"replaceWeapon": "radiation_carbine", "withWeapon": ["flamethrower", "emp_rifle", "plasma_burst_carbine", "uranium_rifle"], "modelLimit": "1/5"}],
             "models": [
@@ -201,8 +187,6 @@
         "rangers": {
             "name": "Rangers",
             "description": "Foot-mobile machine guild long range recon and marksmen forces.",
-            "min": 1,
-            "max": 1,
             "category": "core",
             "rules": ["scout"],
             "options": [{"replaceWeapon": "ranger_rifle", "withWeapon": ["flamethrower", "emp_rifle", "plasma_burst_carbine", "uranium_rifle"], "modelLimit": "1/5"}],
@@ -231,8 +215,6 @@
         "shock_priests": {
             "name": "Shock Priests",
             "description": "Crazed fighters coursing with electric energy.",
-            "min": 1,
-            "max": 1,
             "category": "core",
             "rules": [{"id": "resilient", "x": 3}],
             "models": [
@@ -254,56 +236,40 @@
         "stalkers": {
             "name": "Stalkers",
             "description": "Metallic stalking cyborgs for hunting and killing targets.",
-            "min": 1,
-            "max": 1,
             "category": "specialist",
             "rules": ["agile"],
             "options": [{"replaceWeapon": [{"id": "sonic_razor", "count": 3}], "withWeapon": {"id": "sonic_blade", "count": 2}}],
             "models": [
-                {
-                    "name": "Stalker Leader",
-                    "courage": 5,
-                    "movement": 6,
-                    "shoot": 5,
-                    "fight": 6,
-                    "defense": 7,
-                    "reflexes": 6,
-                    "weapons": [{"id": "sonic_razor", "count": 3}],
-                    "min": 1,
-                    "max": 1
-                },
+                {"name": "Stalker Leader", "courage": 5, "movement": 6, "shoot": 5, "fight": 6, "defense": 7, "reflexes": 6, "weapons": [{"id": "sonic_razor", "count": 3}], "min": 1, "max": 1},
                 {"name": "Stalker", "courage": 5, "movement": 6, "shoot": 5, "fight": 6, "defense": 7, "reflexes": 6, "weapons": [{"id": "sonic_razor", "count": 3}], "min": 4, "max": 9}
             ]
         },
         "sky_stalkers": {
             "name": "Sky Stalkers",
             "description": "Metallic stalking cyborgs for hunting and killing targets.",
-            "min": 1,
-            "max": 1,
             "category": "strike",
             "rules": ["fly"],
-            "options": [{"replaceWeapon": "phosphor_pistol", "withWeapon": {"id": "blaster_smg"}}, {"addRule": {"id": "impact", "x": 1, "name": "Cluster Grenades"}, "modelLimit": "all"}],
+            "options": [{"replaceWeapon": "phosphor_carbine", "withWeapon": {"id": "flamethrower"}}, {"addRule": {"id": "impact", "x": 1, "name": "Cluster Grenades"}, "modelLimit": "all"}],
             "models": [
-                {"name": "Sky Stalker Leader", "courage": 5, "movement": 8, "shoot": 6, "fight": 6, "defense": 7, "reflexes": 6, "weapons": ["taser_sword", "phosphor_pistol"], "min": 1, "max": 1},
                 {
-                    "name": "Sky Stalker",
+                    "name": "Sky Stalker Leader",
                     "courage": 5,
                     "movement": 8,
                     "shoot": 6,
                     "fight": 6,
                     "defense": 7,
                     "reflexes": 6,
-                    "weapons": ["phosphor_carbine", {"id": "ccw", "count": 2}],
-                    "min": 4,
-                    "max": 9
-                }
+                    "weapons": ["taser_sword", "phosphor_carbine"],
+                    "options": [{"replaceWeapon": "phosphor_carbine", "withWeapon": [[{"id": "phosphor_pistol"}, {"id": "taser_sword", "count": 2}]]}],
+                    "min": 1,
+                    "max": 1
+                },
+                {"name": "Sky Stalker", "courage": 5, "movement": 8, "shoot": 6, "fight": 6, "defense": 7, "reflexes": 6, "weapons": ["phosphor_carbine", "taser_sword"], "min": 4, "max": 9}
             ]
         },
         "infiltrators": {
             "name": "Infiltrators",
             "description": "Metal infiltration cyborgs for covert operations.",
-            "min": 1,
-            "max": 1,
             "category": "specialist",
             "rules": ["scout", "stealth"],
             "options": [{"replaceWeapon": ["blaster_smg", "taser_sword"], "withWeapon": [["burst_carbine", {"id": "energy_sword"}]]}],
@@ -315,11 +281,13 @@
         "raiders": {
             "name": "Raiders",
             "description": "Cyborgs mounted on fast-moving robotic dog machines.",
-            "min": 1,
-            "max": 1,
             "category": "strike",
             "rules": ["scout", "agile", {"id": "wounds", "x": 2}],
-            "options": [{"addWeapon": ["phosphor_breath"], "modelLimit": "all"}, {"replaceWeapon": {"id": "phosphor_pistol", "count": 2}, "withWeapon": "phosphor_carbine", "limit": "all"}],
+            "options": [
+                {"addWeapon": ["phosphor_breath"], "modelLimit": "all"},
+                {"replaceWeapon": [{"id": "ccw", "count": 1}, {"id": "phosphor_pistol", "count": 2}], "withWeapon": [["raider_carbine", {"id": "raider_sabre", "count": 2}]]},
+                {"replaceWeapon": {"id": "phosphor_pistol", "count": 2}, "withWeapon": "phosphor_carbine", "modelLimit": "1/3"}
+            ],
             "models": [
                 {
                     "name": "Raider Leader",
@@ -327,13 +295,10 @@
                     "movement": 8,
                     "shoot": 6,
                     "fight": 5,
-                    "defense": 6,
+                    "defense": 7,
                     "reflexes": 6,
                     "weapons": [{"id": "phosphor_pistol", "count": 2}, {"id": "ccw", "count": 1}],
-                    "options": [
-                        {"replaceWeapon": {"id": "ccw", "count": 1}, "withWeapon": ["raider_sabre", "energy_sword"]},
-                        {"replaceWeapon": {"id": "phosphor_pistol", "count": 2}, "withWeapon": ["revolver_pistol"]}
-                    ],
+                    "options": [{"addRule": [{"id": "data_link"}]}, {"replaceWeapon": {"id": "ccw", "count": 1}, "withWeapon": ["energy_sword", "taser_maul"]}, {"addWeapon": {"id": "revolver_pistol"}}],
                     "min": 1,
                     "max": 1
                 },
@@ -343,7 +308,7 @@
                     "movement": 8,
                     "shoot": 6,
                     "fight": 5,
-                    "defense": 6,
+                    "defense": 7,
                     "reflexes": 6,
                     "weapons": [{"id": "phosphor_pistol", "count": 2}, {"id": "ccw", "count": 1}],
                     "min": 2,
@@ -354,8 +319,6 @@
         "breachers": {
             "name": "Breachers",
             "description": "Metallic cyborgs with tracks specialized in breaching defenses and fighting armored targets.",
-            "min": 1,
-            "max": 1,
             "category": "specialist",
             "rules": [{"id": "wounds", "x": 2}],
             "options": [{"replaceWeapon": "emp_cannon", "withWeapon": ["contortion_cannon"]}, {"replaceWeapon": {"id": "claws", "count": 3}, "withWeapon": {"id": "iron_claws", "count": 3}}],
@@ -366,8 +329,6 @@
         "destroyers": {
             "name": "Destroyers",
             "description": "Metallic cyborgs with tracks specialized in fighting armored targets at long range.",
-            "min": 1,
-            "max": 1,
             "category": "specialist",
             "rules": [{"id": "wounds", "x": 2}],
             "options": [
@@ -582,9 +543,9 @@
         "disruption_missiles": {"name": "Disruption Missiles", "attacks": 1, "short": 18, "medium": 36, "ap": 5},
         "contortion_cannon": {"name": "Contortion Cannon", "attacks": 1, "short": 12, "medium": 24, "ap": 6},
         "revolver_pistol": {"name": "Revolver Pistol", "attacks": 1, "ap": 3, "short": 6, "medium": 12},
-        "raider_sabre": {"name": "Raider Sabre", "attacks": 2, "ap": 1, "short": "Melee"},
+        "raider_sabre": {"name": "Raider Sabre", "attacks": 1, "ap": 1, "short": "Melee"},
         "blaster_smg": {"name": "Blaster SMG", "attacks": 2, "short": 6, "medium": 12, "rules": ["rending"]},
-        "phosphor_breath": {"name": "Phosphor Breath", "attacks": 3, "short": 6, "ap": 1, "medium": 12, "rules": ["phosphor"]},
+        "phosphor_breath": {"name": "Phosphor Breath", "attacks": 1, "short": 6, "ap": 1, "medium": 12, "rules": ["phosphor"]},
         "blaster_carbine": {"name": "Blaster Carbine", "attacks": 1, "short": 9, "ap": 1, "medium": 18, "rules": ["assault"]},
         "energy_staff": {"name": "Machine Staff", "attacks": 3, "ap": 2, "short": "Melee"},
         "shock_staff": {"name": "Shock Staff", "attacks": 1, "ap": 3, "short": "Melee"},
@@ -602,6 +563,7 @@
         "uranium_rifle": {"name": "Uranium Rifle", "attacks": 1, "short": 24, "medium": 48, "ap": 4, "rules": ["sniper"]},
         "radiation_sniper": {"name": "Radiation Sniper", "attacks": 2, "short": 15, "medium": 30, "ap": 2, "rules": ["sniper"]},
         "radiation_carbine": {"name": "Radiation Carbine", "attacks": 2, "short": 9, "medium": 18, "rules": ["assault"]},
+        "raider_carbine": {"name": "Raider Carbine", "attacks": 1, "short": 9, "medium": 18, "ap": 1, "rules": ["assault", "rending"]},
         "ranger_rifle": {"name": "Ranger Rifle", "attacks": 1, "short": 15, "medium": 30, "ap": 1, "rules": ["rending"]},
         "emp_rifle": {"name": "EMP Rifle", "attacks": 2, "short": 12, "medium": 24, "ap": 3, "rules": ["emp"]},
         "burst_carbine": {"name": "Burst Carbine", "attacks": 1, "ap": 1, "short": 9, "medium": 18, "rules": ["rapid_fire"]},
@@ -612,11 +574,11 @@
         "neutron_laser": {"name": "Neutron Laser", "attacks": 2, "short": 36, "medium": 72, "ap": 7, "rules": [{"id": "critical", "x": 1}]},
         "eradication_ray": {"name": "Eradication Ray", "attacks": 1, "short": 9, "medium": 18, "ap": 3, "rules": [{"id": "blast", "x": 3}]},
         "combustion_blaster": {"name": "Combustion Blaster", "attacks": 3, "short": 12, "medium": 24, "ap": 3},
-        "macro_pistol": {"name": "Macro Pistol", "attacks": 3, "short": 6, "medium": 12, "ap": 1, "rules": ["pistol"]},
-        "phosphor_pistol": {"name": "Phosphor Pistol", "attacks": 1, "short": 6, "medium": 12, "ap": 1, "rules": ["pistol", "phosphor"]},
-        "radiation_pistol": {"name": "Radiation Pistol", "attacks": 1, "short": 6, "medium": 12, "rules": ["pistol"]},
-        "wave_pistol": {"name": "Wave Pistol", "attacks": 1, "short": 6, "medium": 12, "ap": 4, "rules": ["pistol"]},
-        "emp_pistol": {"name": "EMP Pistol", "attacks": 1, "short": 6, "medium": 12, "ap": 3, "rules": ["pistol", "emp"]},
+        "macro_pistol": {"name": "Macro Pistol", "attacks": 3, "short": 9, "ap": 1, "rules": ["pistol"]},
+        "phosphor_pistol": {"name": "Phosphor Pistol", "attacks": 1, "short": 6, "ap": 1, "rules": ["pistol", "phosphor"]},
+        "radiation_pistol": {"name": "Radiation Pistol", "attacks": 1, "short": 6, "rules": ["pistol"]},
+        "wave_pistol": {"name": "Wave Pistol", "attacks": 1, "short": 6, "ap": 4, "rules": ["pistol"]},
+        "emp_pistol": {"name": "EMP Pistol", "attacks": 1, "short": 6, "ap": 3, "rules": ["pistol", "emp"]},
         "phosphor_carbine": {"name": "Phosphor Carbine", "attacks": 2, "short": 9, "medium": 18, "ap": 1, "rules": ["assault", "phosphor"]},
         "phosphor_rifle": {"name": "Phosphor Rifle", "attacks": 1, "short": 12, "medium": 24, "ap": 2, "rules": ["phosphor"]},
         "phosphor_cannon": {"name": "Phosphor Cannon", "attacks": 2, "short": 18, "medium": 36, "ap": 4, "rules": ["phosphor"]},

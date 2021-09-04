@@ -422,8 +422,6 @@
         "battle_tank": {
             "name": "Corrupted Battle Tank",
             "description": "A main line battle tank.",
-            "min": 1,
-            "max": 1,
             "category": "heavy",
             "keywords": ["Vehicle", "Battle Tank"],
             "rules": ["vulnerable_side_rear", "damage_chart"],
@@ -557,8 +555,6 @@
             "description": "A lightly equipped recon walker.",
             "rules": ["vulnerable_rear", "damage_chart", "scout"],
             "keywords": ["Vehicle"],
-            "min": 1,
-            "max": 1,
             "category": "strike",
             "models": [
                 {
@@ -584,8 +580,6 @@
             "description": "An armored light combat walker.",
             "rules": ["vulnerable_rear", "damage_chart"],
             "keywords": ["Vehicle"],
-            "min": 1,
-            "max": 1,
             "category": "strike",
             "models": [
                 {

@@ -113,18 +113,7 @@
                     "min": 1,
                     "max": 1
                 },
-                {
-                    "name": "Defender",
-                    "courage": 5,
-                    "movement": 7,
-                    "shoot": 6,
-                    "fight": 5,
-                    "defense": 5,
-                    "reflexes": 6,
-                    "weapons": ["shard_carbine", "plasma_grenade", "ccw"],
-                    "min": 4,
-                    "max": 19
-                },
+                {"name": "Defender", "courage": 5, "movement": 7, "shoot": 6, "fight": 5, "defense": 5, "reflexes": 6, "weapons": ["shard_carbine", "plasma_grenade", "ccw"], "min": 4, "max": 19},
                 {
                     "name": "Weapon Platform",
                     "courage": 5,
@@ -153,8 +142,6 @@
         "avengers": {
             "name": "Avenger Squad",
             "description": "A group of elite high elf warriors.",
-            "min": 1,
-            "max": 1,
             "category": "core",
             "keywords": ["Infantry"],
             "models": [
@@ -176,31 +163,14 @@
         "rangers": {
             "name": "Ranger Squad",
             "description": "A group of high elf warriors.",
-            "min": 1,
-            "max": 1,
             "category": "core",
             "keywords": ["Infantry"],
             "rules": ["stealth", "scout"],
-            "models": [
-                {
-                    "name": "Rangers",
-                    "courage": 5,
-                    "movement": 7,
-                    "shoot": 6,
-                    "fight": 5,
-                    "defense": 5,
-                    "reflexes": 6,
-                    "weapons": ["shard_sniper", "plasma_grenade", "ccw"],
-                    "min": 5,
-                    "max": 10
-                }
-            ]
+            "models": [{"name": "Rangers", "courage": 5, "movement": 7, "shoot": 6, "fight": 5, "defense": 5, "reflexes": 6, "weapons": ["shard_sniper", "plasma_grenade", "ccw"], "min": 5, "max": 10}]
         },
         "storm_squad": {
             "name": "Storm Squad",
             "description": "A group of high elf assault troops.",
-            "min": 1,
-            "max": 1,
             "category": "core",
             "keywords": ["Infantry"],
             "models": [
@@ -226,8 +196,6 @@
         "dragon_fire": {
             "name": "Dragon Fire Squad",
             "description": "A group of highly trained soldiers weilding powerful guns designed to melt through even the thickest of armor.",
-            "min": 1,
-            "max": 1,
             "category": "specialist",
             "keywords": ["Infantry"],
             "models": [
@@ -249,8 +217,6 @@
         "wraith_squad": {
             "name": "Wraith Squad",
             "description": "A group of heavily armored constructs.",
-            "min": 1,
-            "max": 1,
             "category": "specialist",
             "keywords": ["Infantry"],
             "models": [
@@ -283,8 +249,6 @@
         "banshees": {
             "name": "Banshee Squad",
             "description": "A group of swift and brutal melee warriors.",
-            "min": 1,
-            "max": 1,
             "category": "specialist",
             "keywords": ["Infantry"],
             "models": [
@@ -306,8 +270,6 @@
         "spectres": {
             "name": "Spectre Warriors",
             "description": "A squad of ghostly warriors adept at remaining unseen until they make their attack.",
-            "min": 1,
-            "max": 1,
             "category": "specialist",
             "keywords": ["Infantry"],
             "models": [
@@ -329,8 +291,6 @@
         "scorpions": {
             "name": "Scorpion Squad",
             "description": "A squad of warriors trained to weild chainswords and pistols to a deadly result.",
-            "min": 1,
-            "max": 1,
             "category": "specialist",
             "keywords": ["Infantry"],
             "rules": ["ambush", "stealth"],
@@ -353,8 +313,6 @@
         "glittering_spears": {
             "name": "Glittering Spear Squad",
             "description": "A squad of highly trained bikers that are adept at both melee and short range combat.",
-            "min": 1,
-            "max": 1,
             "category": "strike",
             "keywords": ["Biker"],
             "rules": ["hover"],
@@ -377,8 +335,6 @@
         "wind_rifles": {
             "name": "Wind Rifle Squad",
             "description": "A squad of highly trained bikers that are adept at long range, high-speed combat.",
-            "min": 1,
-            "max": 1,
             "category": "strike",
             "keywords": ["Biker"],
             "rules": ["hover"],
@@ -401,8 +357,6 @@
         "hawks": {
             "name": "Hawk Squad",
             "description": "A group of winged warriors trained to use the element of suprise and strike from above.",
-            "min": 1,
-            "max": 1,
             "category": "strike",
             "keyowrds": ["Infantry"],
             "rules": ["ambush", "fly"],
@@ -425,8 +379,6 @@
         "spiders": {
             "name": "Spider Squad",
             "description": "A group of stealthy warriors able to harness the power of magic to transport themselves quickly across the battlefield.",
-            "min": 1,
-            "max": 1,
             "category": "strike",
             "keywords": ["Infantry"],
             "rules": ["stealth", "ambush"],
@@ -449,8 +401,6 @@
         "hover_tank": {
             "name": "Hover Tank",
             "description": "A heavy hover tank that can be outfitted with heavier weaponry to eliminate vehicle threats.",
-            "min": 1,
-            "max": 1,
             "category": "heavy",
             "rules": ["hover", {"id": "impact", "x": 6}, "damage_chart"],
             "keywords": ["Vehicle"],
@@ -476,8 +426,6 @@
         "hover_artillery_tank": {
             "name": "Hover Artillery Tank",
             "description": "A hover tank with indirect fire artillery.",
-            "min": 1,
-            "max": 1,
             "category": "heavy",
             "rules": ["hover", {"id": "impact", "x": 3}, "damage_chart"],
             "keywords": ["Vehicle"],
@@ -503,8 +451,6 @@
         "hover_apc": {
             "name": "Hover APC",
             "description": "A hover tank with indirect fire artillery.",
-            "min": 1,
-            "max": 1,
             "category": "transport",
             "rules": ["hover", {"id": "impact", "x": 3}, "damage_chart", {"id": "transport", "x": 12}],
             "keywords": ["Vehicle"],
@@ -531,8 +477,6 @@
         "wraith_titan": {
             "name": "Wraith Titan",
             "description": "A wraith lord with a variety of loadouts to punish enemies of the high elves on the bloodiest of battlefields.",
-            "min": 1,
-            "max": 1,
             "category": "super_heavy",
             "rules": ["damage_chart", "titanic"],
             "keywords": ["Vehicle"],

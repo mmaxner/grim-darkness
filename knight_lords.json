@@ -7,8 +7,6 @@
         "helverin_knight": {
             "name": "Helverin Titan",
             "description": "The smallest of titans can still make an impact on the battlefield with its guns.",
-            "min": 1,
-            "max": 1,
             "category": "super_heavy",
             "rules": ["damage_chart", "titanic"],
             "keywords": ["vehicle"],
@@ -32,8 +30,6 @@
         "warglaive_knight": {
             "name": "Warglaive Titan",
             "description": "The smallest of titans can still make an impact on the battlefield with its sword.",
-            "min": 1,
-            "max": 1,
             "category": "super_heavy",
             "rules": ["damage_chart", "titanic"],
             "keywords": ["vehicle"],
@@ -57,8 +53,6 @@
         "gallant_titan": {
             "name": "Gallant Titan",
             "description": "A knight lord fully outfitted for close combat.",
-            "min": 1,
-            "max": 1,
             "category": "super_heavy",
             "rules": ["damage_chart", "titanic"],
             "keywords": ["vehicle"],
@@ -82,8 +76,6 @@
         "warden_titan": {
             "name": "Warden Titan",
             "description": "A knight lord adept at anti-horde fighting.",
-            "min": 1,
-            "max": 1,
             "category": "super_heavy",
             "rules": ["damage_chart", "titanic"],
             "keywords": ["vehicle"],
@@ -111,8 +103,6 @@
         "preceptor_titan": {
             "name": "Preceptor Titan",
             "description": "A knight lord outfitted for decimating enemy tanks.",
-            "min": 1,
-            "max": 1,
             "category": "super_heavy",
             "rules": ["damage_chart", "titanic"],
             "keywords": ["vehicle"],
@@ -140,8 +130,6 @@
         "errant_titan": {
             "name": "Errant Titan",
             "description": "A knight lord armed with a powerful thermal cannon for eliminating vehicles at close range.",
-            "min": 1,
-            "max": 1,
             "category": "super_heavy",
             "rules": ["damage_chart", "titanic"],
             "keywords": ["vehicle"],
@@ -165,8 +153,6 @@
         "castellan_titan": {
             "name": "Castellan Titan",
             "description": " A massive knight lord made to dominate the battlefeild with its powerful guns.",
-            "min": 1,
-            "max": 1,
             "category": "super_heavy",
             "rules": ["damage_chart", "titanic"],
             "keywords": ["vehicle"],
@@ -198,8 +184,6 @@
         "paladin_titan": {
             "name": "Paladin Titan",
             "description": "A knight lord outfited with a rapid fire cannon to mow down enemies.",
-            "min": 1,
-            "max": 1,
             "category": "super_heavy",
             "rules": ["damage_chart", "titanic"],
             "keywords": ["vehicle"],
@@ -223,8 +207,6 @@
         "valiant_titan": {
             "name": "Valiant Titan",
             "description": "A massive knight lord outfitted for devestating short-range combat.",
-            "min": 1,
-            "max": 1,
             "category": "super_heavy",
             "rules": ["damage_chart", "titanic"],
             "keywords": ["vehicle"],
@@ -254,8 +236,6 @@
         "crusader_titan": {
             "name": "Crusader Titan",
             "description": "A knight lord outfitted with 2 powerful guns.",
-            "min": 1,
-            "max": 1,
             "category": "super_heavy",
             "rules": ["damage_chart", "titanic"],
             "keywords": ["vehicle"],

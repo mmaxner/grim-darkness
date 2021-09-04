@@ -22,7 +22,7 @@
                     "weapons": ["barb_pistol", "plasma_grenade", {"id": "barb_blade", "count": 5}],
                     "min": 1,
                     "max": 1,
-                    "rules": [{"id": "wounds", "x": 3},  {"id": "lord_tactics", "x": 1}, {"id": "tough", "x": 1}],
+                    "rules": [{"id": "wounds", "x": 3}, {"id": "lord_tactics", "x": 1}, {"id": "tough", "x": 1}],
                     "options": [
                         {"replaceRule": {"id": "lord_tactics", "x": 1}, "withRule": {"id": "lord_tactics", "x": 2}},
                         {"replaceWeapon": "barb_pistol", "withWeapon": ["blast_pistol"]},
@@ -82,9 +82,7 @@
                     "min": 1,
                     "max": 1,
                     "rules": [{"id": "wounds", "x": 3}, {"id": "mercenary_tactics", "x": 1}],
-                    "options": [
-                        {"replaceRule": {"id": "mercenary_tactics", "x": 1}, "withRule": {"id": "mercenary_tactics", "x": 2}}
-                    ]
+                    "options": [{"replaceRule": {"id": "mercenary_tactics", "x": 1}, "withRule": {"id": "mercenary_tactics", "x": 2}}]
                 }
             ]
         },
@@ -107,7 +105,7 @@
                     "weapons": ["barb_pistol", "plasma_grenade", {"id": "energy_glaive", "count": 3}],
                     "min": 1,
                     "max": 1,
-                    "rules": [{"id": "wounds", "x": 3},  "dodge", {"id": "succubus_tactics", "x": 1}],
+                    "rules": [{"id": "wounds", "x": 3}, "dodge", {"id": "succubus_tactics", "x": 1}],
                     "options": [
                         {"replaceRule": {"id": "succubus_tactics", "x": 1}, "withRule": {"id": "succubus_tactics", "x": 2}},
                         {"replaceWeapon": "barb_pistol", "withWeapon": ["blast_pistol"]},
@@ -171,9 +169,7 @@
             "min": 1,
             "max": 1,
             "keywords": ["Infantry"],
-            "options": [
-                {"addWeapon": ["poison_sprayer", "poison_dart_rifle"], "modelLimit": "1/5"}
-            ],
+            "options": [{"addWeapon": ["poison_sprayer", "poison_dart_rifle"], "modelLimit": "1/5"}],
             "models": [
                 {
                     "name": "Abomination Warrior Leader",
@@ -187,18 +183,7 @@
                     "min": 1,
                     "max": 1
                 },
-                {
-                    "name": "Abomination Warrior",
-                    "courage": 5,
-                    "movement": 6,
-                    "shoot": 5,
-                    "fight": 6,
-                    "defense": 7,
-                    "reflexes": 5,
-                    "weapons": [{"id": "barb_blade", "count": 2}],
-                    "min": 4,
-                    "max": 9
-                }
+                {"name": "Abomination Warrior", "courage": 5, "movement": 6, "shoot": 5, "fight": 6, "defense": 7, "reflexes": 5, "weapons": [{"id": "barb_blade", "count": 2}], "min": 4, "max": 9}
             ]
         },
         "veteran_warriors": {
@@ -254,30 +239,8 @@
             "keywords": ["Infantry"],
             "rules": ["fear"],
             "models": [
-                {
-                    "name": "Dark Mercenary Leader",
-                    "courage": 6,
-                    "movement": 7,
-                    "shoot": 6,
-                    "fight": 6,
-                    "defense": 7,
-                    "reflexes": 6,
-                    "weapons": [{"id": "dark_blade", "count": 2}],
-                    "min": 1,
-                    "max": 1
-                },
-                {
-                    "name": "Dark Mercenary",
-                    "courage": 6,
-                    "movement": 7,
-                    "shoot": 6,
-                    "fight": 6,
-                    "defense": 7,
-                    "reflexes": 6,
-                    "weapons": [{"id": "dark_blade", "count": 2}],
-                    "min": 4,
-                    "max": 9
-                }
+                {"name": "Dark Mercenary Leader", "courage": 6, "movement": 7, "shoot": 6, "fight": 6, "defense": 7, "reflexes": 6, "weapons": [{"id": "dark_blade", "count": 2}], "min": 1, "max": 1},
+                {"name": "Dark Mercenary", "courage": 6, "movement": 7, "shoot": 6, "fight": 6, "defense": 7, "reflexes": 6, "weapons": [{"id": "dark_blade", "count": 2}], "min": 4, "max": 9}
             ]
         },
         "harpies": {
@@ -287,9 +250,7 @@
             "min": 1,
             "max": 1,
             "keywords": ["Infantry"],
-            "options": [
-                {"replaceWeapon": "barb_rifle", "withWeapon": ["barb_cannon", "fusion_cannon", "blast_rifle", "shred_rifle", "heat_cannon", "emp_rifle"], "modelLimit": 4}
-            ],
+            "options": [{"replaceWeapon": "barb_rifle", "withWeapon": ["barb_cannon", "fusion_cannon", "blast_rifle", "shred_rifle", "heat_cannon", "emp_rifle"], "modelLimit": 4}],
             "rules": ["fly", "ambush"],
             "models": [
                 {
@@ -447,9 +408,7 @@
                     "reflexes": 6,
                     "weapons": [{"id": "toxic_blade", "count": 2}],
                     "rules": [{"id": "wounds", "x": 2}],
-                    "options": [
-                        {"replaceModel": ["psychic_being", "serpent", "ghoul"]}
-                    ],
+                    "options": [{"replaceModel": ["psychic_being", "serpent", "ghoul"]}],
                     "min": 4,
                     "max": 16
                 }
@@ -508,9 +467,7 @@
             "max": 1,
             "keywords": ["Biker"],
             "rules": ["hover"],
-            "options": [
-                {"addRule": ["combat_drugs"], "modelLimit": "all", "limit": 1}
-            ],
+            "options": [{"addRule": ["combat_drugs"], "modelLimit": "all", "limit": 1}],
             "models": [
                 {
                     "name": "Hoverboard Leader",
@@ -524,11 +481,10 @@
                     "min": 1,
                     "max": 1,
                     "options": [
-                        {"replaceWeapon": [{"id": "glaive", "count": 2}], "withWeapon": [
-                            ["barb_pistol", {"id": "barb_blade", "count": 3}],
-                            ["barb_pistol", {"id": "energy_sword", "count": 3}],
-                            ["barb_pistol", {"id": "barb_whip", "count": 3}]
-                        ]},
+                        {
+                            "replaceWeapon": [{"id": "glaive", "count": 2}],
+                            "withWeapon": [["barb_pistol", {"id": "barb_blade", "count": 3}], ["barb_pistol", {"id": "energy_sword", "count": 3}], ["barb_pistol", {"id": "barb_whip", "count": 3}]]
+                        },
                         {"addWeapon": "grenade_launcher_backpack"}
                     ]
                 },
@@ -564,10 +520,7 @@
                     "reflexes": 5,
                     "rules": ["damage_chart", "hover"],
                     "weapons": [{"id": "leeching_tentacles", "count": 3}],
-                    "options": [
-                        {"addWeapon": "soul_vortex"},
-                        {"addRule": "leech_tactics"}
-                    ],
+                    "options": [{"addWeapon": "soul_vortex"}, {"addRule": "leech_tactics"}],
                     "min": 1,
                     "max": 3
                 }
@@ -604,8 +557,6 @@
         "light_hover_transport": {
             "name": "Light Hover Transport",
             "description": "A light hovering transport outfitted to carry infantry.",
-            "min": 1,
-            "max": 1,
             "category": "transport",
             "rules": ["hover", {"id": "transport", "x": 6}, {"id": "open_topped", "x": 6}, "damage_chart", "vulnerable_side_rear"],
             "keywords": ["Vehicle"],
@@ -621,18 +572,13 @@
                     "weapons": [{"id": "barb_cannon", "mount": ["Front"]}, {"id": "twin_barb_rifle", "mount": ["Front"]}, {"id": "cutting_blade", "count": 2}],
                     "min": 1,
                     "max": 1,
-                    "options": [
-                        {"addRule": ["trophy_racks"]},
-                        {"replaceWeapon": {"id": "twin_barb_rifle", "mount": ["Front"]}, "withWeapon": {"id": "barb_cannon", "mount": ["Front"]}}
-                    ]
+                    "options": [{"addRule": ["trophy_racks"]}, {"replaceWeapon": {"id": "twin_barb_rifle", "mount": ["Front"]}, "withWeapon": {"id": "barb_cannon", "mount": ["Front"]}}]
                 }
             ]
         },
         "hover_transport": {
             "name": "Hover Transport",
             "description": "A light hovering transport outfitted to carry infantry.",
-            "min": 1,
-            "max": 1,
             "category": "transport",
             "rules": ["hover", {"id": "impact", "x": 3}, {"id": "transport", "x": 12}, {"id": "open_topped", "x": 12}, "damage_chart", "vulnerable_side_rear"],
             "keywords": ["Vehicle"],
@@ -659,8 +605,6 @@
         "hover_tank": {
             "name": "Hover Tank",
             "description": "A hovering light tank outfitted to fight other vehicles or infantry.",
-            "min": 1,
-            "max": 1,
             "category": "heavy",
             "rules": ["hover", {"id": "impact", "x": 3}, "damage_chart", "vulnerable_side_rear"],
             "keywords": ["Vehicle"],
@@ -694,8 +638,6 @@
         "heavy_hover_tank": {
             "name": "Hover Artillery Tank",
             "description": "A hovering artillery tank outfitted to fight other vehicles or infantry.",
-            "min": 1,
-            "max": 1,
             "category": "heavy",
             "rules": ["hover", {"id": "impact", "x": 3}, "damage_chart", "vulnerable_side_rear"],
             "keywords": ["Vehicle"],
@@ -708,15 +650,10 @@
                     "fight": 5,
                     "defense": 11,
                     "reflexes": 6,
-                    "weapons": [
-                        {"id": "heavy_wave_cannon", "mount": ["Front"]},
-                        {"id": "cutting_blade", "count": 2}
-                    ],
+                    "weapons": [{"id": "heavy_wave_cannon", "mount": ["Front"]}, {"id": "cutting_blade", "count": 2}],
                     "min": 1,
                     "max": 1,
-                    "options": [
-                        {"addRule": ["reinforced_ram", "trophy_racks"]}
-                    ]
+                    "options": [{"addRule": ["reinforced_ram", "trophy_racks"]}]
                 }
             ]
         },
@@ -766,7 +703,7 @@
                     "rules": ["aircraft", "damage_chart"],
                     "weapons": [{"id": "fusion_cannon", "count": 2, "mount": ["Front"]}, "void_bombs"],
                     "options": [
-                        {"replaceWeapon": {"id": "fusion_cannon", "count": 2, "mount": ["Front"]}, "withWeapon": {"id": "fusion_burst_cannon", "count": 2, "mount": ["Front"]} },
+                        {"replaceWeapon": {"id": "fusion_cannon", "count": 2, "mount": ["Front"]}, "withWeapon": {"id": "fusion_burst_cannon", "count": 2, "mount": ["Front"]}},
                         {"addWeapon": ["void_missiles"]}
                     ],
                     "min": 1,
@@ -833,10 +770,7 @@
         "leeching_tentacles": {"name": "Leeching Tentacles", "attacks": 1, "short": "Melee", "ap": 2, "rules": ["rending"]},
         "serpent_blade": {"name": "Serpent Blade", "attacks": 1, "short": "Melee", "ap": 3},
         "dark_blade": {"name": "Dark Blade", "attacks": 1, "short": "Melee", "ap": 3},
-        "dual_dark_blades": {"name": "Dual Dark Blades", "profiles": [
-            {"name": "Whirl", "attacks": 6, "ap": 2, "short": "Melee"},
-            {"name": "Strike", "attacks": 4, "ap": 3, "short": "Melee"}
-        ]},
+        "dual_dark_blades": {"name": "Dual Dark Blades", "profiles": [{"name": "Whirl", "attacks": 6, "ap": 2, "short": "Melee"}, {"name": "Strike", "attacks": 4, "ap": 3, "short": "Melee"}]},
         "sharp_claws": {"name": "Sharp Claws", "attacks": 1, "short": "Melee"},
         "melting_blade": {"name": "Melting Blade", "attacks": 1, "short": "Melee", "ap": 1},
         "cutting_blade": {"name": "Cutting Blade", "attacks": 1, "short": "Melee", "ap": 1},
@@ -853,17 +787,20 @@
         "barb_blade": {"name": "Poison Blade", "attacks": 1, "short": "Melee", "rules": ["poison"]},
         "toxic_blade": {"name": "Toxic Blade", "attacks": 1, "short": "Melee", "rules": ["deadly_poison"]},
         "fusion_burst_cannon": {"name": "Fusion Burst Cannon", "ap": 7, "attacks": 2, "short": 12, "medium": 24, "rules": [{"id": "critical", "x": 1}]},
-        "heavy_wave_cannon": {"name": "Heavy Wave Cannon", "profiles": [
-            {"name": "Beam", "ap": 7, "attacks": 1, "short": 18, "medium": 36, "rules": [{"id": "critical", "x": 1}, {"id": "blast", "x": 3}]},
-            {"name": "Blast", "ap": 3, "attacks": 2, "short": 12, "medium": 24, "rules": [{"id": "blast", "x": 3}]}
-        ]},
+        "heavy_wave_cannon": {
+            "name": "Heavy Wave Cannon",
+            "profiles": [
+                {"name": "Beam", "ap": 7, "attacks": 1, "short": 18, "medium": 36, "rules": [{"id": "critical", "x": 1}, {"id": "blast", "x": 3}]},
+                {"name": "Blast", "ap": 3, "attacks": 2, "short": 12, "medium": 24, "rules": [{"id": "blast", "x": 3}]}
+            ]
+        },
         "heat_cannon": {"name": "Heat Cannon", "ap": 5, "attacks": 1, "short": 9, "medium": 18, "rules": ["assault", {"id": "critical", "x": 1}]},
         "destroyer_cannon": {"name": "Destroyer Cannon", "ap": 3, "attacks": 3, "short": 18, "medium": 36},
         "blast_rifle": {"name": "Blast Rifle", "ap": 6, "attacks": 1, "short": 9, "medium": 18, "rules": ["assault"]},
         "blast_pistol": {"name": "Blast Pistol", "ap": 6, "attacks": 1, "short": 6, "medium": 12, "rules": ["pistol"]},
         "shred_rifle": {"name": "Shred Rifle", "ap": 3, "attacks": 1, "short": 6, "medium": 12, "rules": ["assault", {"id": "blast", "x": 3}]},
-        "void_missiles": {"name": "Void Missiles", "attacks": 1, "short": 24, "medium": 48, "ap": 4,  "rules": [{"id": "blast", "x": 3}]},
-        "void_bombs": {"name": "Void Bombs", "attacks": 2, "short": 3, "ap": 4,  "rules": ["bomb", {"id": "blast", "x": 3}]}
+        "void_missiles": {"name": "Void Missiles", "attacks": 1, "short": 24, "medium": 48, "ap": 4, "rules": [{"id": "blast", "x": 3}]},
+        "void_bombs": {"name": "Void Bombs", "attacks": 2, "short": 3, "ap": 4, "rules": ["bomb", {"id": "blast", "x": 3}]}
     },
     "rules": {
         "mercenary_tactics": {
