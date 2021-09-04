@@ -1083,7 +1083,7 @@
                     "defense": 8,
                     "movement": 6,
                     "reflexes": 6,
-                    "weapons": [{"id": "prime_energy_sword", "count": 3}, "prime_pistol", "at_grenade"],
+                    "weapons": [{"id": "prime_energy_sword", "count": 3}, "shield", "prime_pistol", "at_grenade"],
                     "min": 2,
                     "max": 2
                 }
