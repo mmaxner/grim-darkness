@@ -136,7 +136,7 @@
             }
         },
         "mutant_tribes": {
-            "version": "1.0",
+            "version": "0.1",
             "name": "Mutant Tribes",
             "id": "mutant_tribes",
             "url": "mutant_tribes.json",
