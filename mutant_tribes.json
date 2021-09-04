@@ -9,7 +9,7 @@
             "description": "A skilled biomancer that guides the Tribe's mutations",
             "category": "command",
             "keywords": ["Infantry"],
-            "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "wounds", "x": 2}, {"id": "guided_mutation", "x": 1}],
+            "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "wounds", "x": 2}, {"id": "tribal_tactics", "x": 1}, "guided_mutation"],
             "models": [
                 {
                     "name": "Shaper",
@@ -22,7 +22,7 @@
                     "weapons": ["tribal_rifle", {"id": "tribal_rifle_melee", "count": 3}],
                     "options": [
                         {"replaceWeapon": ["tribal_rifle", {"id": "tribal_rifle_melee", "count": 3}], "withWeapon": [["tribal_carbine", {"id": "tribal_carbine_melee", "count": 3}]]},
-                        {"replaceRule": {"id": "guided_mutation", "x": 1}, "withRule": {"id": "guided_mutation", "x": 2}}
+                        {"replaceRule": {"id": "tribal_tactics", "x": 1}, "withRule": {"id": "tribal_tactics", "x": 2}}
                     ],
                     "min": 1,
                     "max": 1
@@ -109,20 +109,7 @@
             "category": "strike",
             "keywords": ["Beasts"],
             "rules": ["agile"],
-            "models": [
-                {
-                    "name": "Wild Dogs",
-                    "movement": 14,
-                    "shoot": 4,
-                    "fight": 6,
-                    "reflexes": 7,
-                    "courage": 5,
-                    "defense": 5,
-                    "weapons": [{"id": "heavy_ccw", "count": 2}],
-                    "min": 4,
-                    "max": 12
-                }
-            ]
+            "models": [{"name": "Wild Dogs", "movement": 14, "shoot": 4, "fight": 6, "reflexes": 7, "courage": 5, "defense": 5, "weapons": [{"id": "heavy_ccw", "count": 2}], "min": 4, "max": 12}]
         },
         "mantaurs": {
             "name": "Quad-Warriors",
@@ -143,10 +130,11 @@
                     "min": 3,
                     "max": 9,
                     "options": [
-                        {"replaceWeapon": ["tribal_rifle", {"id": "tribal_rifle_melee", "count": 2}],
-                        "withWeapon": [["tribal_flamethrower", {"id": "tribal_specialist_melee", "count": 2}], 
-                        ["tribal_tankbuster", {"id": "tribal_specialist_melee", "count": 2}]], 
-                        "modelLimit": "1/3"}
+                        {
+                            "replaceWeapon": ["tribal_rifle", {"id": "tribal_rifle_melee", "count": 2}],
+                            "withWeapon": [["tribal_flamethrower", {"id": "tribal_specialist_melee", "count": 2}], ["tribal_tankbuster", {"id": "tribal_specialist_melee", "count": 2}]],
+                            "modelLimit": "1/3"
+                        }
                     ]
                 }
             ]
@@ -157,20 +145,7 @@
             "category": "specialist",
             "keywords": ["Infantry"],
             "rules": [{"id": "wounds", "x": 2}],
-            "models": [
-                {
-                    "name": "Tribal Ogres",
-                    "movement": 7,
-                    "shoot": 4,
-                    "fight": 6,
-                    "reflexes": 6,
-                    "courage": 5,
-                    "defense": 7,
-                    "weapons": [{"id": "ogre_fists", "count": 2}],
-                    "min": 1,
-                    "max": 3
-                }
-            ]
+            "models": [{"name": "Tribal Ogres", "movement": 7, "shoot": 4, "fight": 6, "reflexes": 6, "courage": 5, "defense": 7, "weapons": [{"id": "ogre_fists", "count": 2}], "min": 1, "max": 3}]
         },
         "special_weapons_squad": {
             "name": "Tribal Specialists",
@@ -187,13 +162,12 @@
                     "reflexes": 7,
                     "courage": 5,
                     "defense": 5,
-                    "weapons": ["tribal_flamethrower", {"id": "tribal_specialist_melee", "count":3}],
+                    "weapons": ["tribal_flamethrower", {"id": "tribal_specialist_melee", "count": 3}],
                     "min": 3,
                     "max": 9,
                     "options": [
-                    {"replaceweapon": ["tribal_flamethrower", {"id": "tribal_specialist_melee", "count": 3}],
-                    "withWeapon": ["tribal_tankbuster", {"id": "tribal_specialist_melee", "count": 2}]}
-                ]
+                        {"replaceweapon": ["tribal_flamethrower", {"id": "tribal_specialist_melee", "count": 3}], "withWeapon": ["tribal_tankbuster", {"id": "tribal_specialist_melee", "count": 2}]}
+                    ]
                 }
             ]
         },
@@ -213,8 +187,8 @@
                     "courage": 5,
                     "defense": 7,
                     "weapons": [{"id": "ogre_fists", "count": 2}, "laser_cannon"],
-                        "min": 1,
-                        "max": 3
+                    "min": 1,
+                    "max": 3
                 }
             ]
         },
@@ -250,12 +224,7 @@
         "dinosaur_claws": {"name": "Dinosaur Claws and Teeth", "attacks": 1, "short": "Melee", "ap": 5, "rules": [{"id": "reach", "x": 1}]}
     },
     "rules": {
-        "guided_mutation": {
-            "name": "Guided Mutation",
-            "inputs": ["x"],
-            "description": "When this unit is activated, choose up to X friendly _Infantry_ units within 6\".  Those units may be affected by the _Adaptive Biophysiology_ strategy without killing an enemy unit, though if they do, the effect lasts until end of turn.",
-            "points": ["rule.x", {"multiply": 10}]
-        },
+        "guided_mutation": {"name": "Guided Mutation", "description": "When this unit is activated, you may change the active effect for Adaptive Biophysiology to another effect.", "points": [5]},
         "tribal_tactics": {
             "name": "Tribal Tactics",
             "inputs": ["x"],
@@ -264,18 +233,18 @@
         }
     },
     "strategies": {
-        "natural_camo":{
-        "name": "Natural Camouflage",
-        "phase": "activation",
-        "flavor": "The Mutant Tribes are adept in matching whatever environment they fight in.",
-        "description": "Use this stratagem when this unit is chosen as the target of an attack and would gain the benefit of cover against that attack.  Subtract 1 from hit rolls for that attack.",
-        "cost": 1
+        "natural_camo": {
+            "name": "Natural Camouflage",
+            "phase": "activation",
+            "flavor": "The Mutant Tribes are adept in matching whatever environment they fight in.",
+            "description": "Use this stratagem when this unit is chosen as the target of an attack and would gain the benefit of cover against that attack.  Subtract 1 from hit rolls for that attack.",
+            "cost": 1
         },
         "adaptive_biophysiology": {
             "name": "Adaptive Biophysiology",
             "phase": "activation",
             "flavor": "With every enemy defeated, the Mutant Tribes learn how to achieve perfection.",
-            "description": "At the beginning of the game, choose one of the following effects: \n * +1 Strength \n +1 Accuracy \n +1 Save \n When an _Infantry_ unit kills an enemy unit, you may use this strategy to give that unit the chosen effect for the rest of the battle.",
+            "description": "At the beginning of the game, choose one of the following effects: \n * +1 Strength \n +1 Accuracy \n +1 Save \n\n Use before an _Infantry_ unit is attacked, or performs an attack. The unit gets the chosen effect.",
             "cost": 2
         }
     },
