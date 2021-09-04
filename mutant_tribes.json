@@ -9,7 +9,7 @@
             "description": "A skilled biomancer that guides the Tribe's mutations",
             "category": "command",
             "keywords": ["Infantry"],
-            "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "wounds", "x": 2}, {"id": "guided_mutation", "x": 1}, "mutations"],
+            "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "wounds", "x": 2}, {"id": "guided_mutation", "x": 1}],
             "models": [
                 {
                     "name": "Shaper",
@@ -34,7 +34,7 @@
             "description": "The war-leader of a Tribe that guides them in battle",
             "category": "command",
             "keywords": ["Infantry"],
-            "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "wounds", "x": 2}, {"id": "tribal_tactics", "x": 1}, "mutations"],
+            "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "wounds", "x": 2}, {"id": "tribal_tactics", "x": 1}],
             "models": [
                 {
                     "name": "Commander",
@@ -66,7 +66,7 @@
             "description": "The basic biosoldiers of the mutated tribes",
             "category": "core",
             "keywords": ["Infantry"],
-            "rules": ["mutations"],
+            "rules": [],
             "models": [
                 {
                     "name": "Tribal Warrior",
@@ -87,7 +87,7 @@
             "description": "Advanced scouting parties used by the mutated tribes to find their prey",
             "category": "core",
             "keywords": ["Infantry"],
-            "rules": ["mutations", "scout"],
+            "rules": ["scout"],
             "models": [
                 {
                     "name": "Tribal Scout",
@@ -177,7 +177,7 @@
             "description": "A specialized hunting-squad dedicated to taking down a specific prey",
             "category": "specialist",
             "keywords": ["Infantry"],
-            "rules": ["mutations"],
+            "rules": [],
             "models": [
                 {
                     "name": "Tribal Specialist",
@@ -253,8 +253,8 @@
         "guided_mutation": {
             "name": "Guided Mutation",
             "inputs": ["x"],
-            "description": "When this unit is activated, choose up to X friendly units within 6\".  Those units may choose a second effect from Mutations to be affected by until the end of the round.",
-            "points": ["rule.x", {"multiply": 5}]
+            "description": "When this unit is activated, choose up to X friendly _Infantry_ units within 6\".  Those units may be affected by the _Adaptive Biophysiology_ strategy without killing an enemy unit, though if they do, the effect lasts until end of turn.",
+            "points": ["rule.x", {"multiply": 10}]
         },
         "tribal_tactics": {
             "name": "Tribal Tactics",
@@ -263,6 +263,21 @@
             "points": ["rule.x", {"multiply": 10}]
         }
     },
-    "strategies": {},
+    "strategies": {
+        "natural_camo":{
+        "name": "Natural Camouflage",
+        "phase": "activation",
+        "flavor": "The Mutant Tribes are adept in matching whatever environment they fight in.",
+        "description": "Use this stratagem when this unit is chosen as the target of an attack and would gain the benefit of cover against that attack.  Subtract 1 from hit rolls for that attack.",
+        "cost": 1
+        },
+        "adaptive_biophysiology": {
+            "name": "Adaptive Biophysiology",
+            "phase": "activation",
+            "flavor": "With every enemy defeated, the Mutant Tribes learn how to achieve perfection.",
+            "description": "At the beginning of the game, choose one of the following effects: \n * +1 Strength \n +1 Accuracy \n +1 Save \n When an _Infantry_ unit kills an enemy unit, you may use this strategy to give that unit the chosen effect for the rest of the battle.",
+            "cost": 2
+        }
+    },
     "powers": {}
 }
