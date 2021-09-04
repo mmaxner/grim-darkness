@@ -142,7 +142,7 @@
             "url": "mutant_tribes.json",
             "color": "#7d6c57",
             "alliance": "federation",
-            "description": "A strange alien race that joined the Federation to test their self-modifying biotech"
+            "description": "A strange alien race that joined the Federation to test their self-modifying biotech.  These lightly-armoured warriors attack with a variety of strange beasts and adaptations that can change from turn to turn."
         },
         "ascended_astroraptors": {
             "version": "1.0",
