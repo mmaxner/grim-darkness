@@ -138,7 +138,7 @@
                     "fight": 6,
                     "reflexes": 7,
                     "courage": 5,
-                    "defense": 6,
+                    "defense": 7,
                     "weapons": ["tribal_rifle", {"id": "tribal_rifle_melee", "count": 2}],
                     "min": 3,
                     "max": 9,
@@ -150,6 +150,92 @@
                     ]
                 }
             ]
+        },
+        "tribal_ogres": {
+            "name": "Tribal Ogres",
+            "description": "Giant apelike creatures who smash and bash",
+            "category": "specialist",
+            "keywords": ["Infantry"],
+            "rules": [{"id": "wounds", "x": 2}],
+            "models": [
+                {
+                    "name": "Tribal Ogres",
+                    "movement": 7,
+                    "shoot": 4,
+                    "fight": 6,
+                    "reflexes": 6,
+                    "courage": 5,
+                    "defense": 7,
+                    "weapons": [{"id": "ogre_fists", "count": 2}],
+                    "min": 1,
+                    "max": 3
+                }
+            ]
+        },
+        "special_weapons_squad": {
+            "name": "Tribal Specialists",
+            "description": "A specialized hunting-squad dedicated to taking down a specific prey",
+            "category": "specialist",
+            "keywords": ["Infantry"],
+            "rules": ["mutations"],
+            "models": [
+                {
+                    "name": "Tribal Specialist",
+                    "movement": 7,
+                    "shoot": 5,
+                    "fight": 5,
+                    "reflexes": 7,
+                    "courage": 5,
+                    "defense": 5,
+                    "weapons": ["tribal_flamethrower", {"id": "tribal_specialist_melee", "count":3}],
+                    "min": 3,
+                    "max": 9,
+                    "options": [
+                    {"replaceweapon": ["tribal_flamethrower", {"id": "tribal_specialist_melee", "count": 3}],
+                    "withWeapon": ["tribal_tankbuster", {"id": "tribal_specialist_melee", "count": 2}]}
+                ]
+                }
+            ]
+        },
+        "ogre_riders": {
+            "name": "Ogre Riders",
+            "description": "Warriors with powerful guns mounted on the back of Ogres",
+            "category": "heavy",
+            "keywords": ["Infantry"],
+            "rules": [{"id": "wounds", "x": 2}],
+            "models": [
+                {
+                    "name": "Ogre Riders",
+                    "movement": 7,
+                    "shoot": 5,
+                    "fight": 6,
+                    "reflexes": 7,
+                    "courage": 5,
+                    "defense": 7,
+                    "weapons": [{"id": "ogre_fists", "count": 2}, "laser_cannon"],
+                        "min": 1,
+                        "max": 3
+                }
+            ]
+        },
+        "dinosaurus": {
+            "name": "Dinosaur",
+            "description": "Shapers sometimes become more worried about if they can than if they should",
+            "category": "super_heavy",
+            "keywords": ["Monster"],
+            "rules": ["damage_chart", "titanic", "walker", {"id": "impact", "x": 3}],
+            "models": [
+                {
+                    "name": "Dinosaur",
+                    "movement": 7,
+                    "shoot": 5,
+                    "fight": 6,
+                    "reflexes": 7,
+                    "courage": 6,
+                    "weapons": [{"id": "dinosaur_claws", "count": 5}, {"id": "laser_cannon", "count": 2}],
+                    "defense": 11
+                }
+            ]
         }
     },
     "weapons": {
@@ -159,7 +245,9 @@
         "tribal_flamethrower": {"name": "Tribal Flamethrower", "attacks": 3, "short": 6, "medium": 12, "ap": 1, "rules": ["flame"]},
         "tribal_rifle_melee": {"name": "Tribal Rifle Blade", "attacks": 1, "short": "Melee", "ap": 0, "rules": ["rending"]},
         "tribal_carbine_melee": {"name": "Tribal Carbine Blade", "attacks": 1, "short": "Melee", "ap": 1, "rules": ["rending"]},
-        "tribal_specialist_melee": {"name": "Specialist Weapon's Blade", "attacks": 1, "short": "Melee", "ap": 1, "rules": ["rending"]}
+        "tribal_specialist_melee": {"name": "Specialist Weapon's Blade", "attacks": 1, "short": "Melee", "ap": 1, "rules": ["rending"]},
+        "ogre_fists": {"name": "Ogre Fists", "attacks": 1, "short": "Melee", "ap": 3, "rules": []},
+        "dinosaur_claws": {"name": "Dinosaur Claws and Teeth", "attacks": 1, "short": "Melee", "ap": 5, "rules": [{"id": "reach", "x": 1}]}
     },
     "rules": {
         "guided_mutation": {
