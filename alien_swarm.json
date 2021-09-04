@@ -362,9 +362,16 @@
             "name": "Mind Beast",
             "description": "",
             "category": "specialist",
-            "rules": ["damage_chart"],
+            "rules": ["damage_chart", {"id": "power", "x": "1"}],
             "models": [
-                {"name": "Mind Beast", "courage": 7, "reflexes": 6, "fight": 6, "shoot": 5, "defense": 11, "movement": 7, "weapons": [{"id": "large_razor_talons", "count": 3}], "min": 1, "max": 1}
+                {"name": "Mind Beast", 
+                    "courage": 7, 
+                    "reflexes": 6, 
+                    "fight": 6, 
+                    "shoot": 5, 
+                    "defense": 11, 
+                    "movement": 7, 
+                    "weapons": [{"id": "large_razor_talons", "count": 3}], "min": 1, "max": 1}
             ]
         },
         "flame_beasts": {

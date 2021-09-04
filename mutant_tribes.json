@@ -21,7 +21,7 @@
                     "courage": 5,
                     "weapons": ["tribal_rifle", {"id": "tribal_rifle_melee", "count": 3}],
                     "options": [
-                        {"replaceWeapon": ["tribal_rifle", {"id": "tribal_rifle_melee", "count": 3}], "withWeapon": ["tribal_carbine", {"id": "tribal_carbine_melee", "count": 3}]},
+                        {"replaceWeapon": ["tribal_rifle", {"id": "tribal_rifle_melee", "count": 3}], "withWeapon": [["tribal_carbine", {"id": "tribal_carbine_melee", "count": 3}]]},
                         {"replaceRule": {"id": "guided_mutation", "x": 1}, "withRule": {"id": "guided_mutation", "x": 2}}
                     ],
                     "min": 1,
@@ -96,9 +96,58 @@
                     "fight": 6,
                     "reflexes": 7,
                     "courage": 5,
+                    "defense": 5,
                     "weapons": ["tribal_carbine", {"id": "tribal_carbine_melee", "count": 1}],
                     "min": 5,
                     "max": 20
+                }
+            ]
+        },
+        "wild_dogs": {
+            "name": "Wild Dogs",
+            "description": "Tribe members whose mutations failed, these once-proud warriors are now nothing but wild beasts",
+            "category": "strike",
+            "keywords": ["Beasts"],
+            "rules": ["agile"],
+            "models": [
+                {
+                    "name": "Wild Dogs",
+                    "movement": 14,
+                    "shoot": 4,
+                    "fight": 6,
+                    "reflexes": 7,
+                    "courage": 5,
+                    "defense": 5,
+                    "weapons": [{"id": "heavy_ccw", "count": 2}],
+                    "min": 4,
+                    "max": 12
+                }
+            ]
+        },
+        "mantaurs": {
+            "name": "Quad-Warriors",
+            "description": "Incredibly successful experiments, these quadrapedial warriors cover ground quickly",
+            "category": "strike",
+            "keywords": ["Infantry", "Beasts"],
+            "rules": ["strider"],
+            "models": [
+                {
+                    "name": "Quad-Warriors",
+                    "movement": 12,
+                    "shoot": 5,
+                    "fight": 6,
+                    "reflexes": 7,
+                    "courage": 5,
+                    "defense": 6,
+                    "weapons": ["tribal_rifle", {"id": "tribal_rifle_melee", "count": 2}],
+                    "min": 3,
+                    "max": 9,
+                    "options": [
+                        {"replaceWeapon": ["tribal_rifle", {"id": "tribal_rifle_melee", "count": 2}],
+                        "withWeapon": [["tribal_flamethrower", {"id": "tribal_specialist_melee", "count": 2}], 
+                        ["tribal_tankbuster", {"id": "tribal_specialist_melee", "count": 2}]], 
+                        "modelLimit": "1/3"}
+                    ]
                 }
             ]
         }
