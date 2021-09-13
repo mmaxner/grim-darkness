@@ -613,6 +613,10 @@
             "name": "Spore Cyst",
             "description": "Once per round, models suffer -1 Accuracy when shooting at this model's unit. This may be used one additional time per round for each model in the unit with this rule.",
             "points": 10
+        },
+        "legend_born_survivor": {
+            "name": "Born Survivor",
+            "description": "After taking saves for this unit, roll a d10 for each model or Wound(x) lost.  On a 3 or less, that model or Wound(x) is restored."
         }
     },
     "powers": {
@@ -654,6 +658,21 @@
             "description": "Use when activating an _Infantry_ or _Monster_ unit. Choose another friendly _Infantry_ or _Monster_ unit within 6\" and use its Courage and Initative values for this activation.",
             "flavor": "The hive mind controls those who may be unwilling in order to maintain battle order.",
             "cost": 1
+        }
+    },
+    "relics": {
+        "born_survivor": {
+        "name": "Born Survivor",
+        "rule": "legend_born_survivor",
+        "description": "Upgrade one _Leader_ or _Monster_ model with Born Survivor",
+        "flavor": "This bio-form was designed to survive blows that would destroy even its fellows.",
+        "points": 15
+        },
+        "psychic-eater": {
+            "name": "Psychic Eater",
+            "rule": {"id": "ward", "x": 1},
+            "description": "Upgrade one _Leader_ or _Support_ model with Ward(1)",
+            "flavor": "This leader has gotten a taste for psychic minds, and has learned how to get close enough to get them."
         }
     },
     "buyLinks": [

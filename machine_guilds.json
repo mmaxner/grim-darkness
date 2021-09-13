@@ -651,7 +651,9 @@
         "data_link": {"name": "Data-Link", "hidden": true, "description": "This model gains +1 Courage.", "description_short": "+1 Courage", "points": 5},
         "heat_scanner": {"name": "Heat Scanner", "description": "This model and its unit gain +6\" max range when shooting.", "points": 5},
         "phosphor": {"name": "Phosphor", "description": "This weapon ignores cover at Short range.", "points": ["weapon.attacks"]},
-        "taser": {"name": "Taser", "description": "Each successful unmodified hit roll of 1 or 2 with this weapon causes 2 hits.", "points": ["weapon.attacks"]}
+        "taser": {"name": "Taser", "description": "Each successful unmodified hit roll of 1 or 2 with this weapon causes 2 hits.", "points": ["weapon.attacks"]},
+        "legend_machine_whisperer": {"name": "Machine Whisperer", "description": "This model may reroll failed _Repair_ rolls", "points": 5},
+        "legend_masterwork_mechanisms": {"name": "Masterwork Mechanisms", "description": "This model has +1 save", "points": 5}
     },
     "strategies": [
         {
@@ -676,5 +678,21 @@
             "cost": 1
         }
     ],
-    "powers": {}
+    "powers": {},
+    "relics": {
+        "machine_whisperer": {
+            "name": "Machine Whisperer",
+            "rule": "legend_machine_whisperer",
+            "description": "Choose one _Leader_ or _Support_ model to be upgraded with Machine Whisperer",
+            "flavor": "Some machine masters understand machines better than others.",
+            "cost": 5
+        },
+        "masterwork_mechanisms": {
+            "name": "Masterwork Mechanisms",
+            "rule": "legend_masterwork_mechanisms",
+            "description": "Choose one _Leader_ or _Support_ model to have Masterwork Mechanisms",
+            "flavor": "A particularly lucky guild-leader may find themselves with a superior chassis to his kin",
+            "cost": 5
+        }
+    }
 }

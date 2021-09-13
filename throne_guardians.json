@@ -658,6 +658,24 @@
             "inputs": ["x"],
             "description": "When this unit is activated, choose up to X friendly _Witch Hunters Infantry_ units within 6\" to receive one of the following bonuses until the end of the round: \n * Re-roll failed Accuracy tests of 9+ \n * Re-roll failed Strength tests of 9+",
             "points": ["rule.x", {"multiply": 10}]
+        },
+        "legend_ever_vigilant": {"name": "Ever-Vigilant", "description": "If this unit did not take a Move or Charge action in its previous activation, it gains +2 to its Save", "points": 5},
+        "legend_peerless_warrior": {"name": "Peerless Warrior", "description": "Once per turn, this unit may take the Counter-Attack reaction without losing the ability to activate later in the turn.", "points": 15}
+    },
+    "relics": {
+        "ever_vigilant": {
+        "name": "Ever-Vigilant",
+        "rule": "legend_ever_vigilant",
+        "description": "Choose a unit consisting of a single model.  It gains the Ever Vigilant rule.",
+        "flavor": "As a guardian of the Emperor's Throne, the Guardians are patient - and watchful.",
+        "cost": 5
+        },
+        "peerless_warrior": {
+            "name": "Peerless Warrior",
+            "rule": "legend_peerless_warrior",
+            "description": "Choose a unit consisting of a single model.  It gains the Peerless Warrior rule.",
+            "flavor": "The Throne Guardians are the strongest of mankind's warriors, and through augmentation can move faster than sight",
+            "cost": 15
         }
     },
     "strategies": [
