@@ -9,7 +9,7 @@
             "description": "The smallest of titans can still make an impact on the battlefield with its guns.",
             "category": "super_heavy",
             "rules": ["damage_chart", "titanic"],
-            "keywords": ["vehicle"],
+            "keywords": ["vehicle", "armiger"],
             "models": [
                 {
                     "name": "Helverin Titan",
@@ -32,7 +32,7 @@
             "description": "The smallest of titans can still make an impact on the battlefield with its sword.",
             "category": "super_heavy",
             "rules": ["damage_chart", "titanic"],
-            "keywords": ["vehicle"],
+            "keywords": ["vehicle", "armiger"],
             "models": [
                 {
                     "name": "Mini Knight",
@@ -296,7 +296,18 @@
             "ap": 10
         }
     },
-    "rules": {},
+    "rules": {
+        "legend_lotl": {
+            "name": "Leader of the Lesser",
+            "description": "When this unit is activated, choose up to 2 _Armiger_ units within 6\".  They may reroll skill checks of 9+ when making Fight or Shoot actions",
+            "points": 10
+        },
+        "legend_enhanced_servos": {
+            "name": "Enhanced Servos",
+            "description": "This model gains +2 to its Movement",
+            "points": 10
+        }
+    },
     "strategies": {
         "ion_shields": {
             "phase": "activation",
@@ -319,5 +330,20 @@
             "flavor": "A Knight Lord fights to the last breath.",
             "cost": 1
         }
+    },
+    "relics": {
+        "leader_of_the_lesser": {
+            "name": "Leader of the Lesser",
+            "rule": "legend_lotl",
+            "description": "Upgrade one non-_Armiger_ unit with Leader of the Lesser",
+            "flavor": "The Knight in charge of this war-machine is adept in giving orders to their squires",
+            "points": 10
+        },
+        "enhanced_servos": {
+            "name": "Enhanced Servos",
+            "rule": "legend_enhanced_servos",
+            "description": "Choose one model to be upgraded with Enhanced Servos",
+            "points": 10
     }
+}
 }

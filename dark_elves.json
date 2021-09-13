@@ -840,7 +840,9 @@
             "name": "Combat Drugs",
             "description": "At the beginning of the game, choose one of the following bonuses for the unit to receive until the end of the game: \n * +1 Strength \n * +1\" Movement \n * +1 Courage \n * +1 Save",
             "points": 2
-        }
+        },
+        "legend_scion_of_the_sky": {"name": "Scion of the Sky", "description": "Models with _Fly_ that start their activation within 6\" of this model gain +2\" to their movement", "points": 10},
+        "legend_pop": {"name": "Purveyor of Poison", "description": "Weapons with the _Poison_ rule that fire while their wielder is within 6\" of this model may reduce enemies' save to a minimum of 4, rather than 5."}
     },
     "strategies": {
         "pain_embrace": {
@@ -863,6 +865,22 @@
             "description": "Use before activating a unit. That unit may immediately remove up to 2 Shock.",
             "flavor": "Defiant in the face of death, Dark Elves fight on.",
             "cost": 1
+        }
+    },
+    "relics": {
+        "scion_of_the_sky": {
+            "name": "Scion of the Sky",
+            "rule": "legend_scion_of_the_sky",
+            "description": "One _Leader_ model gains Scion of the Sky",
+            "flavor": "This leader is adept at guiding the ships of their raids.",
+            "points": 10
+        },
+        "purveyor_of_poison": {
+            "name": "Purveyor of Poison",
+            "rule": "legend_pop",
+            "description": "One _Leader_ model gains Purveyor of Poison",
+            "flavor": "With access to strange sources, this leader's poisons are more potent than most.",
+            "points": 10
         }
     }
 }
