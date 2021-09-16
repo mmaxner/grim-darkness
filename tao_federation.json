@@ -26,7 +26,17 @@
                     "weapons": [{"id": "suit_fists", "count": 4}],
                     "options": [
                         {"limit": 3, "addWeapon": ["flak_launcher", "ion_gatling", "flamethrower", "pulse_gatling", "plasma_rifle", "fusion_blaster", "missile_pod"]},
-                        {"addRule": [{"id": "ambush", "name": "Sky Strike"}, {"id": "resilient", "x": 3, "name": "Shield Generator"}, "threat_detector_suit"]}
+                        {"addRule": 
+                            [
+                             {"id": "ambush", "name": "Sky Strike"},
+                             {"id": "resilient", "x": 3, "name": "Shield Generator"},
+                              "threat_detector_suit",
+                              "target_lock",
+                              "lookout_system",
+                              "drone_controller"
+                              ]},
+                        {"replaceWeapon": {"id": "suit_fists", "count": 2}, "withWeapon": [{"id": "suit_sword", "count": 2}, {"id": "suit_powerfist", "count": 2}]
+                        }
                     ],
                     "min": 1,
                     "max": 1
@@ -55,7 +65,11 @@
                     "weapons": [{"id": "suit_fists", "count": 4}],
                     "options": [
                         {"limit": 3, "addWeapon": ["flak_launcher", "ion_gatling", "flamethrower", "pulse_gatling", "plasma_rifle", "fusion_blaster", "missile_pod"]},
-                        {"addRule": [{"id": "ambush", "name": "Sky Strike"}, {"id": "resilient", "x": 3, "name": "Shield Generator"}, "threat_detector_suit"]}
+                        {"addRule": [{"id": "ambush", "name": "Sky Strike"}, {"id": "resilient", "x": 3, "name": "Shield Generator"}, "threat_detector_suit",
+                            "target_lock",
+                            "lookout_system",
+                            "drone_controller"]},
+                        {"replaceWeapon": {"id": "suit_fists", "count": 2}, "withWeapon": [{"id": "suit_sword", "count": 2}, {"id": "suit_powerfist", "count": 2}]}
                     ],
                     "min": 1,
                     "max": 1
@@ -84,7 +98,11 @@
                     "weapons": [{"id": "suit_fists", "count": 4}],
                     "options": [
                         {"limit": 3, "addWeapon": ["flak_launcher", "ion_gatling", "flamethrower", "pulse_gatling", "plasma_rifle", "fusion_blaster", "missile_pod"]},
-                        {"addRule": [{"id": "ambush", "name": "Sky Strike"}, {"id": "resilient", "x": 3, "name": "Shield Generator"}, "threat_detector_suit"]}
+                        {"addRule": [{"id": "ambush", "name": "Sky Strike"}, {"id": "resilient", "x": 3, "name": "Shield Generator"}, "threat_detector_suit",
+                            "target_lock",
+                            "lookout_system",
+                            "drone_controller"]},
+                        {"replaceWeapon": {"id": "suit_fists", "count": 2}, "withWeapon": [{"id": "suit_sword", "count": 2}, {"id": "suit_powerfist", "count": 2}]}
                     ],
                     "min": 1,
                     "max": 1
@@ -106,7 +124,8 @@
                     "reflexes": 5,
                     "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "wounds", "x": 2}, {"id": "power", "x": 1}],
                     "weapons": [{"id": "energy_sword", "count": 3}],
-                    "options": [{"addRule": "hover_drone"}, {"addModel": ["spotter_drone", "gunner_drone", "shield_drone"], "modelLimit": 2}],
+                    "options": [{"addRule": "hover_drone"}, {"addModel": ["spotter_drone", "gunner_drone", "shield_drone"], "modelLimit": 2}, 
+                        {"addrRule": "drone_controller"}],
                     "min": 1,
                     "max": 1
                 }
@@ -128,6 +147,7 @@
                     "reflexes": 6,
                     "weapons": ["pulse_rifle", {"id": "ccw", "count": 3}, "stun_grenades"],
                     "rules": [{"id": "warrior_tactics", "x": 2}, {"id": "wounds", "x": 3}],
+                    "options": [{"addRule": "drone_controller"}],
                     "min": 1,
                     "max": 1
                 }
@@ -141,7 +161,8 @@
                 {"replaceWeapon": "pulse_carbine", "withWeapon": ["pulse_rifle"]},
                 {"addModel": "support_turret"},
                 {"addModel": ["spotter_drone", "gunner_drone", "shield_drone"], "modelLimit": 2},
-                {"addModel": "guardian_drone"}
+                {"addModel": "guardian_drone"},
+                {"addRule": "drone_controller"}
             ],
             "models": [
                 {
@@ -167,7 +188,8 @@
                 {"replaceWeapon": "pulse_carbine", "withWeapon": ["pulse_rifle"]},
                 {"addModel": "support_turret"},
                 {"addModel": ["spotter_drone", "gunner_drone", "shield_drone"], "modelLimit": 2},
-                {"addModel": "guardian_drone"}
+                {"addModel": "guardian_drone"},
+                {"addRule": "drone_controller"}
             ],
             "models": [
                 {
@@ -189,7 +211,8 @@
             "name": "Assault Team",
             "description": "A squad of infantry who excell at close range assaults.",
             "category": "core",
-            "options": [{"addModel": "support_turret"}, {"addModel": ["spotter_drone", "gunner_drone", "shield_drone"], "modelLimit": 2}, {"addModel": "guardian_drone"}],
+            "options": [{"addModel": "support_turret"}, {"addModel": ["spotter_drone", "gunner_drone", "shield_drone"], "modelLimit": 2}, {"addModel": "guardian_drone"},
+                {"addRule": "drone_controller"}],
             "models": [
                 {
                     "name": "Assaulter",
@@ -210,7 +233,8 @@
             "name": "Veteran Assault Team",
             "description": "A squad of infantry who excell at close range assaults.",
             "category": "core",
-            "options": [{"addModel": "support_turret"}, {"addModel": ["spotter_drone", "gunner_drone", "shield_drone"], "modelLimit": 2}, {"addModel": "guardian_drone"}],
+            "options": [{"addModel": "support_turret"}, {"addModel": ["spotter_drone", "gunner_drone", "shield_drone"], "modelLimit": 2}, {"addModel": "guardian_drone"},
+                {"addRule": "drone_controller"}],
             "models": [
                 {
                     "name": "Veteran Assaulter",
@@ -236,7 +260,8 @@
                 {"addRule": "spotting_laser"},
                 {"addModel": "recon_drone"},
                 {"addModel": ["spotter_drone", "gunner_drone", "shield_drone"], "modelLimit": 2},
-                {"addModel": ["inhibitor_drone", "accelerator_drone"], "modelLimit": 2}
+                {"addModel": ["inhibitor_drone", "accelerator_drone"], "modelLimit": 2},
+                    {"addRule": "drone_controller"}
             ],
             "rules": ["scout"],
             "models": [
@@ -331,7 +356,8 @@
             "description": "A squad of light battlesuits with camo cloaking technology.",
             "category": "specialist",
             "rules": ["stealth", "fly"],
-            "options": [{"addRule": ["homing_beacon"], "modelLimit": 1}, {"addModel": ["spotter_drone", "gunner_drone", "shield_drone"], "modelLimit": 2}],
+            "options": [{"addRule": ["homing_beacon"], "modelLimit": 1}, {"addModel": ["spotter_drone", "gunner_drone", "shield_drone"], "modelLimit": 2},
+                {"addRule": "drone_controller"}],
             "models": [
                 {
                     "name": "Stealth Suit",
@@ -355,7 +381,8 @@
             "max": 1,
             "keywords": ["Heavy Infantry"],
             "category": "specialist",
-            "options": [{"addModel": ["spotter_drone", "gunner_drone", "shield_drone"], "modelLimit": 2}],
+            "options": [{"addModel": ["spotter_drone", "gunner_drone", "shield_drone"], "modelLimit": 2},
+                {"addRule": "drone_controller"}],
             "rules": ["fly"],
             "models": [
                 {
@@ -370,7 +397,11 @@
                     "weapons": [{"id": "suit_fists", "count": 2}],
                     "options": [
                         {"limit": 3, "addWeapon": ["flak_launcher", "ion_gatling", "flamethrower", "pulse_gatling", "plasma_rifle", "fusion_blaster", "missile_pod"]},
-                        {"addRule": [{"id": "ambush", "name": "Sky Strike", "modelLimit": "all"}, {"id": "resilient", "x": 3, "name": "Shield Generator"}, "threat_detector_suit"]}
+                        {"addRule": [{"id": "ambush", "name": "Sky Strike", "modelLimit": "all"}, {"id": "resilient", "x": 3, "name": "Shield Generator"}, "threat_detector_suit",
+                            "target_lock",
+                            "lookout_system",
+                            "drone_controller"]},
+                        {"replaceWeapon": {"id": "suit_fists", "count": 1}, "withWeapon": [{"id": "suit_sword", "count": 1}, {"id": "suit_powerfist", "count": 1}]}
                     ],
                     "min": 3,
                     "max": 9
@@ -535,7 +566,8 @@
             "max": 1,
             "keywords": ["Battlesuits"],
             "category": "heavy",
-            "options": [{"addModel": ["missile_drone", "spotter_drone", "gunner_drone", "shield_drone"], "modelLimit": 2}],
+            "options": [{"addModel": ["missile_drone", "spotter_drone", "gunner_drone", "shield_drone"], "modelLimit": 2},
+                {"addRule": "drone_controller"}],
             "models": [
                 {
                     "name": "Support Battlesuit",
@@ -580,7 +612,11 @@
                     "options": [
                         {"replaceWeapon": "ion_cannon", "withWeapon": "heavy_pulse_gatling"},
                         {"replaceWeapon": {"id": "plasma_rifle", "count": 2}, "withWeapon": [{"id": "fusion_blaster", "count": 2}, {"id": "smart_missiles", "count": 2}]},
-                        {"addRule": ["threat_detector_suit"]}
+                        {"addRule": ["threat_detector_suit",
+                            "target_lock",
+                            "lookout_system",
+                            "drone_controller"]},
+                        {"replaceWeapon": {"id": "suit_fists", "count": 2}, "withWeapon": [{"id": "suit_sword", "count": 2}, {"id": "suit_powerfist", "count": 2}]}
                     ],
                     "min": 1,
                     "max": 1
@@ -784,6 +820,7 @@
             "reflexes": "-",
             "rules": ["attached"],
             "weapons": [{"id": "ion_rifle", "count": 2}],
+            "keywords": ["drone"],
             "min": 1,
             "max": 1
         },
@@ -797,6 +834,7 @@
             "reflexes": "-",
             "rules": ["attached"],
             "weapons": [{"id": "pulse_carbine", "count": 2}],
+            "keywords": ["drone"],
             "min": 0,
             "max": 1
         },
@@ -810,6 +848,7 @@
             "reflexes": "-",
             "weapons": ["pulse_gatling"],
             "rules": ["recon_drone"],
+            "keywords": ["drone"],
             "min": 1,
             "max": 1
         },
@@ -823,17 +862,18 @@
             "reflexes": "-",
             "rules": [{"id": "resilient", "x": 3}],
             "weapons": ["missile_pod"],
+            "keywords": ["drone"],
             "min": 1,
             "max": 1
         },
-        "inhibitor_drone": {"name": "Inhibitor Drone", "movement": 8, "courage": "-", "shoot": 5, "fight": 4, "defense": "-", "reflexes": "-", "rules": ["inhibitor"], "min": 0, "max": 1},
-        "spotter_drone": {"name": "Spotter Drone", "movement": 8, "courage": "-", "shoot": 5, "fight": 4, "defense": "-", "reflexes": "-", "rules": ["spotting_laser"], "min": 1, "max": 1},
-        "missile_drone": {"name": "Missile Drone", "movement": 8, "courage": "-", "shoot": 5, "fight": 4, "defense": "-", "reflexes": "-", "weapons": ["missile_pod"], "min": 1, "max": 1},
-        "stealth_drone": {"name": "Stealth Drone", "movement": 8, "courage": "-", "shoot": 5, "fight": 4, "defense": "-", "reflexes": "-", "rules": ["stealth_field"], "min": 1, "max": 1},
-        "gunner_drone": {"name": "Gunner Drone", "movement": 8, "courage": "-", "shoot": 5, "fight": 4, "defense": "-", "reflexes": "-", "weapons": ["pulse_carbine"], "min": 1, "max": 1},
-        "shield_drone": {"name": "Shield Drone", "movement": 8, "courage": "-", "shoot": 5, "fight": 4, "defense": "-", "reflexes": "-", "rules": ["pulse_shield"], "min": 1, "max": 1},
-        "guardian_drone": {"name": "Guardian Drone", "movement": 8, "courage": "-", "shoot": 5, "fight": 4, "defense": "-", "reflexes": "-", "rules": ["protection"], "min": 1, "max": 1},
-        "accelerator_drone": {"name": "Accelerator Drone", "movement": 8, "courage": "-", "shoot": 5, "fight": 4, "defense": "-", "reflexes": "-", "rules": ["accelerator"], "min": 1, "max": 1}
+        "inhibitor_drone": {"name": "Inhibitor Drone", "movement": 8, "courage": "-", "shoot": 5, "fight": 4, "defense": "-", "reflexes": "-", "rules": ["inhibitor"], "keywords": ["drone"], "min": 0, "max": 1},
+        "spotter_drone": {"name": "Spotter Drone", "movement": 8, "courage": "-", "shoot": 5, "fight": 4, "defense": "-", "reflexes": "-", "rules": ["spotting_laser"], "keywords": ["drone"], "min": 1, "max": 1},
+        "missile_drone": {"name": "Missile Drone", "movement": 8, "courage": "-", "shoot": 5, "fight": 4, "defense": "-", "reflexes": "-", "weapons": ["missile_pod"], "keywords": ["drone"], "min": 1, "max": 1},
+        "stealth_drone": {"name": "Stealth Drone", "movement": 8, "courage": "-", "shoot": 5, "fight": 4, "defense": "-", "reflexes": "-", "rules": ["stealth_field"], "keywords": ["drone"], "min": 1, "max": 1},
+        "gunner_drone": {"name": "Gunner Drone", "movement": 8, "courage": "-", "shoot": 5, "fight": 4, "defense": "-", "reflexes": "-", "weapons": ["pulse_carbine"], "keywords": ["drone"], "min": 1, "max": 1},
+        "shield_drone": {"name": "Shield Drone", "movement": 8, "courage": "-", "shoot": 5, "fight": 4, "defense": "-", "reflexes": "-", "rules": ["pulse_shield"], "keywords": ["drone"], "min": 1, "max": 1},
+        "guardian_drone": {"name": "Guardian Drone", "movement": 8, "courage": "-", "shoot": 5, "fight": 4, "defense": "-", "reflexes": "-", "rules": ["protection"], "min": 1, "keywords": ["drone"], "max": 1},
+        "accelerator_drone": {"name": "Accelerator Drone", "movement": 8, "courage": "-", "shoot": 5, "fight": 4, "defense": "-", "reflexes": "-", "rules": ["accelerator"], "keywords": ["drone"], "min": 1, "max": 1}
     },
     "weapons": {
         "ion_bombs": {"name": "Ion Bombs", "attacks": 2, "short": 3, "ap": 4, "rules": ["bomb", "scatter", {"id": "blast", "x": 3}]},
@@ -879,7 +919,9 @@
         "beast_fists": {"name": "Beasts Fists", "attacks": 2, "short": "Melee", "ap": 3},
         "avian_rifle": {"name": "Avian Rifle", "attacks": 1, "short": 12, "medium": 24, "ap": 1},
         "avian_cannon": {"name": "Avian Cannon", "attacks": 2, "short": 24, "medium": 48, "ap": 4},
-        "neutron_carbine": {"name": "Neutron Carbine", "attacks": 1, "short": 9, "medium": 18, "ap": 3}
+        "neutron_carbine": {"name": "Neutron Carbine", "attacks": 1, "short": 9, "medium": 18, "ap": 3},
+        "suit_sword": {"name": "Plasma Sword", "attacks": 1, "short": "Melee", "ap": 3},
+        "suit_powerfist": {"name": "Plasma Gauntlets", "attacks": 1, "short": "Melee", "ap": 5, "rules": ["cumbersome"]}
     },
     "rules": {
         "stealth_field": {
@@ -934,7 +976,10 @@
         "accelerator": {"name": "Accelerator", "description": "This model and models in its unit add +6\" maximum Range to all weapons.", "points": 5},
         "threat_detector_suit": {"name": "Threat Detector", "description_short": "+1 Initiative", "description": "This model gets +1 Initiative.", "points": 5},
         "hover_drone": {"name": "Hover Drone", "hidden": "true", "description": "This model gets +2\" Move and Fly.", "description_short": "+4\" Move, Fly", "points": 5},
-        "protection": {"name": "Protection", "description": "Models in this unit get +1 Save.", "points": 20}
+        "protection": {"name": "Protection", "description": "Models in this unit get +1 Save.", "points": 20},
+        "target_lock": {"name": "Target Lock", "description": "Models in this unit get +1 Accuracy", "points": 10},
+        "lookout_system": {"name": "Lookout System", "description": "Models in this unit may reroll Initiative checks when attempting the Counter-Attack reaction", "points": 5},
+        "drone_controller": {"name": "Drone Controller", "description": "_Drone_ models in this unit gain +1 Accuracy", "points": 5}
     },
     "strategies": {
         "covering_fire": {
