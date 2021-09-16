@@ -2267,7 +2267,7 @@
                     "options": [
                         {
                             "replaceWeapon": {"id": "twin_laser_cannon", "mount": ["Front"]},
-                            "withWeapon": [{"id": "skybreaker_missiles", "mount": ["Front"]}, {"id": "twin_heavy_machinegun", "mount": ["Front"]}, {"id": "twin_missile_launcher", "mount": "Front"}]
+                            "withWeapon": [{"id": "skybreaker_missiles", "mount": ["Front"]}, {"id": "twin_heavy_machinegun", "mount": ["Front"]}, {"id": "twin_missile_launcher", "mount": ["Front"]}]
                         }
                     ],
                     "min": 1,
@@ -2908,7 +2908,7 @@
         "power_storm": {"medium": 9, "ap": 1, "attacks": 8},
         "power_purge": {"medium": 9, "ap": 1, "attacks": 10},
         "judge_blade": {"name": "Judge Blade", "attacks": 1, "short": "Melee", "ap": 5},
-        "skybreaker_missiles": {"name": "Skybreaker Missiles", "attacks": 2, "short": 24, "medium": 48, "ap": 4, "rules": ["anti-air"]}
+        "skybreaker_missiles": {"name": "Skybreaker Missiles", "attacks": 3, "short": 24, "medium": 48, "ap": 6, "rules": ["anti_air"]}
     },
     "rules": {
         "multi_scanner": {
