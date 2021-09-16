@@ -5,7 +5,7 @@
     "units": {
         "holy_saint": {
             "name": "Holy Saint",
-            "description": "A High sister of the Faith Wardens order.",
+            "description": "A High warden of the Faith Wardens order.",
             "min": 5,
             "max": 10,
             "category": "command",
@@ -40,7 +40,7 @@
         },
         "battle_pulpit": {
             "name": "Battle Pulpit",
-            "description": "A mighty religious symbol from whigh a High Sister leads her troops",
+            "description": "A mighty religious symbol from which a High Warden leads her troops",
             "min": 1,
             "max": 1,
             "category": "command",
@@ -58,9 +58,9 @@
                 }
             ]
         },
-        "greater_high_sister": {
+        "greater_high_warden": {
             "name": "Greater High Warden",
-            "description": "A High sister of the Faith Wardens order.",
+            "description": "A High warden of the Faith Wardens order.",
             "min": 5,
             "max": 10,
             "category": "command",
@@ -86,9 +86,9 @@
                 }
             ]
         },
-        "high_sister": {
+        "high_warden": {
             "name": "High Warden",
-            "description": "A High sister of the Faith Wardens order.",
+            "description": "A High warden of the Faith Wardens order.",
             "min": 5,
             "max": 10,
             "category": "command",
@@ -114,9 +114,9 @@
                 }
             ]
         },
-        "herald_sister": {
+        "herald_warden": {
             "name": "Herald Warden",
-            "description": "A sister herald with banner.",
+            "description": "A warden herald with banner.",
             "min": 5,
             "max": 10,
             "category": "specialist",
@@ -142,7 +142,7 @@
         },
         "warden_nurse": {
             "name": "Nurse Warden",
-            "description": "A sister herald with banner.",
+            "description": "A warden herald with banner.",
             "min": 5,
             "max": 10,
             "category": "specialist",
@@ -164,7 +164,7 @@
         },
         "warden_preacher": {
             "name": "Preacher Warden",
-            "description": "A sister preacher with a staff.",
+            "description": "A warden preacher with a staff.",
             "min": 5,
             "max": 10,
             "category": "specialist",
