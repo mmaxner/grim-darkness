@@ -712,6 +712,49 @@
                 }
             ]
         },
+        "recon_marines": {
+            "name": "Recon Marines",
+            "description": "A lightly armed and armoured squad sent to scout and sow dissent",
+            "subfactions": ["none", "stealth_focus"],
+            "category": "specialist",
+            "options": [
+                {"replaceWeapon": "marine_rifle", "withWeapon": ["marine_shotgun", "sniper_rifle"]},
+                {"addRule": {"id": "stealth", "name": "Camouflage Cloak"}, "modelLimit": "all"},
+            ],
+            "rules": ["scout"],
+            "models": [
+                {
+                    "name": "Recon Marine Leader",
+                    "movement": 6,
+                    "courage": 6,
+                    "shoot": 6,
+                    "fight": 6,
+                    "defense": 7,
+                    "reflexes": 7,
+                    "weapons": ["marine_rifle", "heavy_ccw", "at_grenade"],
+                    "options": [
+                            {"replaceWeapon": ["marine_rifle"], "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "twin_marine_rifle"], "limit": 1},
+                            {"replaceWeapon": ["marine_rifle", "heavy_ccw"], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 2}]]},
+                            {"replaceWeapon": {"id": "chainsword", "count": 2}, "withWeapon": [{"id": "energy_sword", "count": 2}, {"id": "energy_fist", "count": 2}]},
+                            {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol"]}
+                    ],
+                    "min": 1,
+                    "max": 1
+                },
+                {
+                    "name": "Recon Marine",
+                    "movement": 6,
+                    "courage": 6,
+                    "shoot": 6,
+                    "fight": 6,
+                    "defense": 7,
+                    "weapons": ["marine_rifle", "heavy_ccw", "at_grenade"],
+                    "options": [],
+                    "min": 4,
+                    "max": 19
+                }
+            ]
+        },
         "traitor_devastators": {
             "name": "Corrupted Devastators",
             "description": "A squad of highly trained corrupted marines armed to the teeth with advanced weaponry.",
