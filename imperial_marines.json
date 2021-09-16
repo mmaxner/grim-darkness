@@ -1433,12 +1433,13 @@
                     "movement": 10,
                     "courage": 6,
                     "fight": 6,
+                    "shoot": 6,
                     "defense": 10,
                     "reflexes": 6,
                     "weapons": ["heavy_fusion_rifle"],
                     "options": [
                         [{"replaceWeapon": ["heavy_fusion_rifle"], "withWeapon": "heavy_machinegun"}],
-                        [{"addWeapon": ["heavy_flamethrower", "minigun"], "limit": 1}],
+                        {"addWeapon": ["heavy_flamethrower", "minigun"], "limit": 1},
                         {"addWeapon": "twin_missile_launcher"}
                     ],
                     "min": 1,
