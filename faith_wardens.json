@@ -38,6 +38,26 @@
                 }
             ]
         },
+        "battle_pulpit": {
+            "name": "Battle Pulpit",
+            "description": "A mighty religious symbol from whigh a High Sister leads her troops",
+            "min": 1,
+            "max": 1,
+            "category": "command",
+            "models": [
+                {
+                    "name": "Battle Pulpit",
+                    "movement": 8,
+                    "courage": 7,
+                    "shoot": 7,
+                    "fight": 7,
+                    "defense": 9,
+                    "reflexes": 6,
+                    "rules": ["hover", {"id": "leader_x", "x": "Infantry"}, {"id": "wounds", "x": 3}, {"id": "saint_tactics", "x": 1}],
+                    "weapons": [{"id": "heavy_flamethrower", "count": 2}, {"id": "energy_hammer", "count": 4}]
+                }
+            ]
+        },
         "greater_high_sister": {
             "name": "Greater High Warden",
             "description": "A High sister of the Faith Wardens order.",
@@ -504,6 +524,31 @@
                         {"addWeapon": ["twin_marine_rifle", "hunter_missiles"]},
                         {"addRule": ["spiked_ram", {"id": "dozer", "name": "Dozer Blade"}]},
                         {"replaceWeapon": "twin_heavy_fusion_rifle", "withWeapon": ["twin_heavy_machinegun", "twin_heavy_flamethrower"]}
+                    ],
+                    "min": 1,
+                    "max": 1
+                }
+            ]
+        },
+        "repression_apc": {
+            "name": "Repression APC",
+            "description": "A heavy transport with firing slits",
+            "rules": [{"id": "impact", "x": 3}, {"id": "transport", "x": 12}, "vulnerable_side_rear", "damage_chart", {"id": "open_topped", "x": 6}],
+            "category": "transport",
+            "keywords": ["Vehicle"],
+            "models": [
+                {
+                    "name": "Repression APC",
+                    "movement": 10,
+                    "courage": 6,
+                    "shoot": 6,
+                    "fight": 5,
+                    "defense": 12,
+                    "reflexes": 6,
+                    "weapons": [{"id": "heavy_flamethrower", "count": 1}, {"id": "twin_marine_rifle", "count": 1}],
+                    "options": [
+                        {"addRule": ["spiked_ram", {"id": "dozer", "name": "Dozer Blade"}]},
+                        {"addWeapon": "heavy_flamethrower"}
                     ],
                     "min": 1,
                     "max": 1
