@@ -516,8 +516,6 @@
         "prime_surgeon": {
             "name": "Prime Surgeon",
             "description": "A fearless next-generation surgeon trained in saving lives.",
-            "min": 5,
-            "max": 10,
             "category": "specialist",
             "keywords": ["Infantry"],
             "rules": [{"id": "leader_x", "x": "Infantry"}, "medic", {"id": "wounds", "x": 3}],
@@ -532,6 +530,28 @@
                     "movement": 6,
                     "reflexes": 6,
                     "weapons": [{"id": "prime_pistol"}, "at_grenade", {"id": "heavy_ccw", "count": 3}],
+                    "min": 1,
+                    "max": 1
+                }
+            ]
+        },
+        "imperial_swordmaster": {
+            "name": "Imperial Swordmaster",
+            "description": "A fearless swordsman trained in hunting enemy leaders",
+            "category": "specialist",
+            "keywords": ["Infantry"],
+            "rules": ["support", {"id": "wounds", "x": 2}, "duelist"],
+            "subfactions": ["none"],
+            "models": [
+                {
+                    "name": "Imperial Swordmaster",
+                    "courage": 6,
+                    "shoot": 6,
+                    "fight": 6,
+                    "defense": 8,
+                    "movement": 6,
+                    "reflexes": 6,
+                    "weapons": ["marine_pistol", "shield", {"id": "prime_energy_sword", "count": 4}],
                     "min": 1,
                     "max": 1
                 }
@@ -1400,6 +1420,33 @@
             ],
             "keywords": ["Biker"]
         },
+        "land_speeders": {
+            "name": "Land Speeders",
+            "description": "Fast-flying support speeders",
+            "rules": ["fly", "damage_chart"],
+            "subfactions": ["none"],
+            "category": "strike",
+            "keywords": ["Vehicle"],
+            "models": [
+                {
+                    "name": "Land Speeder",
+                    "movement": 10,
+                    "courage": 6,
+                    "fight": 6,
+                    "shoot": 6,
+                    "defense": 10,
+                    "reflexes": 6,
+                    "weapons": ["heavy_fusion_rifle"],
+                    "options": [
+                        [{"replaceWeapon": ["heavy_fusion_rifle"], "withWeapon": "heavy_machinegun"}],
+                        {"addWeapon": ["heavy_flamethrower", "minigun"], "limit": 1},
+                        {"addWeapon": "twin_missile_launcher"}
+                    ],
+                    "min": 1,
+                    "max": 3
+                }
+            ]
+        },
         "scout_bikers": {
             "name": "Scout Bikers",
             "description": "Scout marines on combat bikes.",
@@ -1990,7 +2037,7 @@
         "prime_light_walker": {
             "name": "Prime Light Walker",
             "description": "A lightly equipped prime recon walker.",
-            "rules": ["vulnerable_rear", "scout", "damage_table"],
+            "rules": ["vulnerable_rear", "scout", "damage_chart"],
             "subfactions": ["none", "wolf_marines", "assault_focus", "alien_hunters"],
             "keywords": ["Vehicle"],
             "category": "strike",
@@ -2955,7 +3002,8 @@
         "ancient_armor": {"name": "Ancient Armor", "description": "This model may re-roll 1 failed Save roll.", "points": ["model.defense"]},
         "legend_remembrance": {"name": "Armor of Remembrance", "description": "When this model is hit by an attack, roll a D10. On a 3 or less, that attack is prevented.", "points": 1},
         "legend_shard": {"name": "Demonic Shard", "description": "This model increases all power charge values by 1.", "points": 1},
-        "warding_staff": {"name": "Warding", "description": "Enemy units suffer -1 to all Power(x) test while within 12\" of this model.", "points": 1}
+        "warding_staff": {"name": "Warding", "description": "Enemy units suffer -1 to all Power(x) test while within 12\" of this model.", "points": 1},
+        "duelist": {"name": "Duelist", "description": "This model gains +1 strength when targeting enemy Leader models", "points": 3}
     },
     "hidden_relics": [
         {"subfactions": ["none", "wolf_marines"], "rule": "ancient_armor", "flavor": "Ancient armour said to protect the wearer from significant harm."},
