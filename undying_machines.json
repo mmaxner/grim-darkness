@@ -853,7 +853,7 @@
         },
         "control_orb": {
             "name": "Control Orb",
-            "description": "When this unit activates, choose one friendly _Vehicle_ unit to immediately activate. That unit gets +1 Accuracy and Strength.",
+            "description": "When this unit activates, choose one friendly _Vehicle_ unit within 6\" to immediately activate. That unit gets +1 Accuracy and Strength.",
             "points": 10
         },
         "time_orb": {
