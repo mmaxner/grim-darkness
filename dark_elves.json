@@ -7,6 +7,7 @@
             "category": "command",
             "name": "Lord",
             "description": "A Dark Elf Lord good at supporting troops and fighting.",
+            "subfactions": ["none", "cabal"],
             "min": 1,
             "max": 1,
             "keywords": ["Infantry"],
@@ -39,6 +40,7 @@
             "min": 1,
             "max": 1,
             "keywords": ["Infantry"],
+            "subfactions": ["none", "coven"],
             "models": [
                 {
                     "name": "Abomination Master",
@@ -66,6 +68,7 @@
             "category": "command",
             "name": "Dark Mercenary Master",
             "description": "A Dark Elf mercenary blade master.",
+            "subfactions": ["none", "coven", "cabal", "cult"],
             "min": 1,
             "max": 1,
             "keywords": ["Infantry"],
@@ -94,6 +97,7 @@
             "description": "A Dark Elf succubus adept at fighting in Melee.",
             "min": 1,
             "max": 1,
+            "subfactions": ["none", "cult"],
             "keywords": ["Infantry"],
             "models": [
                 {
@@ -126,6 +130,7 @@
             "description": "A group of Dark Elven warriors with poisonous weaponry.",
             "min": 1,
             "max": 1,
+            "subfactions": ["none", "cabal"],
             "keywords": ["Infantry"],
             "options": [
                 {"replaceWeapon": "barb_rifle", "withWeapon": ["barb_cannon", "fusion_cannon"], "modelLimit": "1/10"},
@@ -171,6 +176,7 @@
             "min": 1,
             "max": 1,
             "keywords": ["Infantry"],
+            "subfactions": ["none", "coven"],
             "options": [
                 {"addWeapon": ["poison_sprayer", "poison_dart_rifle"], "modelLimit": "1/5"}
             ],
@@ -201,10 +207,36 @@
                 }
             ]
         },
+        "mutated_abominations": {
+            "name": "Mutated Abominations",
+            "category": "specialist",
+            "description": "A group of Dark Elven warriors whose experiments went wrong.",
+            "keywords": ["Infantry"],
+            "subfactions": ["none", "coven"],
+            "options": [
+                {"replaceWeapon": [{"id": "poison_sprayer", "count": 1}, {"id": "heavy_stomp", "count": 4}], "withWeapon": [{"id": "energy_axe", "count": 5}]}
+            ],
+            "rules": [{"id": "wounds", "x": 2}],
+            "models": [
+                {
+                    "name": "Mutated Abominations",
+                    "courage": 6,
+                    "movement": 6,
+                    "shoot": 4,
+                    "fight": 6,
+                    "defense": 8,
+                    "reflexes": 5,
+                    "weapons": [{"id": "poison_sprayer", "count": 1}, {"id": "heavy_stomp", "count": 4}],
+                    "min": 3,
+                    "max": 6
+                }
+            ]
+        },
         "veteran_warriors": {
             "category": "core",
             "name": "Veteran Warriors",
             "description": "A group of Dark Elven warriors with poisonous weaponry.",
+            "subfactions": ["none", "cabal"],
             "min": 1,
             "max": 1,
             "keywords": ["Infantry"],
@@ -249,6 +281,7 @@
             "category": "specialist",
             "name": "Dark Mercenaries",
             "description": "A group of Dark Elven warriors with poisonous weaponry.",
+            "subfactions": ["none", "cabal", "coven", "cult"],
             "min": 1,
             "max": 1,
             "keywords": ["Infantry"],
@@ -284,6 +317,7 @@
             "category": "strike",
             "name": "Harpies",
             "description": "A group of Dark Elven warriors with poisonous weaponry.",
+            "subfactions": ["none", "cult", "cabal", "coven"],
             "min": 1,
             "max": 1,
             "keywords": ["Infantry"],
@@ -326,6 +360,7 @@
         "bird_swarm": {
             "name": "Bird Swarm",
             "description": "A swarm of small birds with sharp claws.",
+            "subfactions": ["none", "cult"],
             "min": 3,
             "max": 6,
             "category": "strike",
@@ -341,6 +376,7 @@
             "max": 1,
             "keywords": ["Infantry"],
             "rules": ["dodge"],
+            "subfactions": ["none", "cult"],
             "options": [
                 {"addRule": ["combat_drugs"], "modelLimit": "all", "limit": 1},
                 {
@@ -388,6 +424,7 @@
             "min": 1,
             "max": 1,
             "keywords": ["Infantry"],
+            "subfactions": ["none", "cult"],
             "rules": ["dodge"],
             "options": [
                 {"addRule": ["combat_drugs"], "modelLimit": "all", "limit": 1},
@@ -435,6 +472,7 @@
             "description": "A group of the lord's advisors and mercenaries.",
             "min": 1,
             "max": 1,
+            "subfactions": ["none", "cabal"],
             "keywords": ["Infantry"],
             "models": [
                 {
@@ -463,6 +501,7 @@
             "max": 1,
             "keywords": ["Infantry"],
             "rules": ["hover"],
+            "subfactions": ["none", "cult"],
             "options": [
                 {"addRule": ["combat_drugs"], "modelLimit": "all", "limit": 1},
                 {"replaceWeapon": ["barb_rifle", "ccw"], "withWeapon": [["barb_pistol", {"id": "barb_blade", "count": 2}]]},
@@ -504,6 +543,7 @@
             "category": "strike",
             "name": "Hoverboard Riders",
             "description": "A group of Dark Elven warriors mounted on fast hover boards.",
+            "subfactions": ["none", "cult"],
             "min": 1,
             "max": 1,
             "keywords": ["Biker"],
@@ -550,6 +590,7 @@
             "category": "specialist",
             "name": "Leeching Beast",
             "description": "A group of Dark Elven witches with poisonous melee weaponry.",
+            "subfactions": ["none", "coven"],
             "min": 1,
             "max": 1,
             "keywords": ["Monster"],
@@ -580,6 +621,7 @@
             "min": 1,
             "max": 1,
             "keywords": ["Monster"],
+            "subfactions": ["none", "coven"],
             "models": [
                 {
                     "name": "Pain Beast",
@@ -609,6 +651,7 @@
             "category": "transport",
             "rules": ["hover", {"id": "transport", "x": 6}, {"id": "open_topped", "x": 6}, "damage_chart", "vulnerable_side_rear"],
             "keywords": ["Vehicle"],
+            "subfactions": ["none", "coven", "cult", "cabal"],
             "models": [
                 {
                     "name": "Light Hover Transport",
@@ -631,6 +674,7 @@
         "hover_transport": {
             "name": "Hover Transport",
             "description": "A light hovering transport outfitted to carry infantry.",
+            "subfactions": ["none", "coven", "cult", "cabal"],
             "min": 1,
             "max": 1,
             "category": "transport",
@@ -661,6 +705,7 @@
             "description": "A hovering light tank outfitted to fight other vehicles or infantry.",
             "min": 1,
             "max": 1,
+            "subfactions": ["none", "cabal"],
             "category": "heavy",
             "rules": ["hover", {"id": "impact", "x": 3}, "damage_chart", "vulnerable_side_rear"],
             "keywords": ["Vehicle"],
@@ -696,6 +741,7 @@
             "description": "A hovering artillery tank outfitted to fight other vehicles or infantry.",
             "min": 1,
             "max": 1,
+            "subfactions": ["none", "cabal"],
             "category": "heavy",
             "rules": ["hover", {"id": "impact", "x": 3}, "damage_chart", "vulnerable_side_rear"],
             "keywords": ["Vehicle"],
@@ -726,6 +772,7 @@
             "rules": ["aircraft", "damage_chart"],
             "category": "strike",
             "keywords": ["Vehicle", "Aircraft"],
+            "subfactions": ["none", "cabal", "coven", "cult"],
             "min": 1,
             "max": 1,
             "models": [
@@ -752,6 +799,7 @@
             "description": "A light bomber aircraft.",
             "category": "strike",
             "keywords": ["Vehicle", "Aircraft"],
+            "subfactions": ["none", "cabal", "coven", "cult"],
             "min": 1,
             "max": 1,
             "models": [

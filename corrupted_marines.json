@@ -721,7 +721,7 @@
             "category": "specialist",
             "options": [
                 {"replaceWeapon": "marine_rifle", "withWeapon": ["marine_shotgun", "sniper_rifle"]},
-                {"addRule": {"id": "stealth", "name": "Camouflage Cloak"}, "modelLimit": "all"},
+                {"addRule": {"id": "stealth", "name": "Camouflage Cloak"}, "modelLimit": "all"}
             ],
             "rules": ["scout"],
             "models": [
