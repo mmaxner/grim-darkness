@@ -1223,12 +1223,12 @@
         "power_bolt": {"medium": 18, "attacks": 1, "ap": 7},
         "power_storm": {"medium": 9, "ap": 1, "attacks": 8},
         "stun_grenades": {"name": "Stun Grenades", "attacks": 1, "short": 6, "rules": ["grenade", "stun"]},
-        "giant_plasma_cannon": {"name": "Giant Plasma Cannon", "attacks": 7, "ap": 6, "short": 36, "medium": 72, "rules": [{"id": "blast", "x": 3}, "overcharge"]},
-        "godslayer_cannon": {"name": "Godslayer Cannon", "attacks": 5, "ap": 10, "short": 60, "medium": 120, "rules": [{"id": "critical", "x": 2}]},
-        "tremor_cannon": {"name": "Earthbreaker Cannon", "attacks": 10, "ap": 6, "short": 30, "medium": 60, "rules": [{"id": "shocking", "x": 2}]},
-        "doom_cannon": {"name": "Doom Cannon", "attacks": 7, "ap": 8, "short": 30, "medium": 60, "rules": [{"id": "blast", "x": 2}]},
+        "giant_plasma_cannon": {"name": "Giant Plasma Cannon", "attacks": 2, "ap": 6, "short": 36, "medium": 72, "rules": [{"id": "blast", "x": 3}, "overcharge"]},
+        "godslayer_cannon": {"name": "Godslayer Cannon", "attacks": 3, "ap": 10, "short": 60, "medium": 120, "rules": [{"id": "critical", "x": 2}, {"id": "blast", "x": 3}]},
+        "tremor_cannon": {"name": "Earthbreaker Cannon", "attacks": 3, "ap": 6, "short": 30, "medium": 60, "rules": [{"id": "shocking", "x": 2}, {"id": "blast", "x": 3}]},
+        "doom_cannon": {"name": "Doom Cannon", "attacks": 2, "ap": 8, "short": 30, "medium": 60, "rules": [{"id": "blast", "x": 5}]},
         "vulcan_machine_gun": {"name": "Vulcan Machine Gun", "attacks": 20, "ap": 4, "short": 30, "medium": 60},
-        "earthbreaker_cannon": {"name": "Earthbreaker Cannon", "attacks": 7, "ap": 10, "short": 70, "medium": 140}
+        "earthbreaker_cannon": {"name": "Earthbreaker Cannon", "attacks": 2, "ap": 10, "short": 70, "medium": 140, "rules": [{"id": "blast", "x": 3}]}
     },
     "rules": {
         "high_command": {"name": "High Command", "description": "This model may use Defense Force Tactics one additional time.", "points": 2},
