@@ -7,8 +7,6 @@
             "category": "command",
             "name": "Lord",
             "description": "A Dark Elf Lord good at supporting troops and fighting.",
-            "min": 1,
-            "max": 1,
             "keywords": ["Infantry"],
             "models": [
                 {
@@ -36,8 +34,6 @@
             "category": "command",
             "name": "Abomination Master",
             "description": "A Dark Elf Lord who experiments on Dark Elves to create abominations.",
-            "min": 1,
-            "max": 1,
             "keywords": ["Infantry"],
             "models": [
                 {
@@ -66,8 +62,6 @@
             "category": "command",
             "name": "Dark Mercenary Master",
             "description": "A Dark Elf mercenary blade master.",
-            "min": 1,
-            "max": 1,
             "keywords": ["Infantry"],
             "models": [
                 {
@@ -90,8 +84,6 @@
             "category": "command",
             "name": "Succubus",
             "description": "A Dark Elf succubus adept at fighting in Melee.",
-            "min": 1,
-            "max": 1,
             "keywords": ["Infantry"],
             "models": [
                 {
@@ -122,8 +114,6 @@
             "category": "core",
             "name": "Warriors",
             "description": "A group of Dark Elven warriors with poisonous weaponry.",
-            "min": 1,
-            "max": 1,
             "keywords": ["Infantry"],
             "options": [
                 {"replaceWeapon": "barb_rifle", "withWeapon": ["barb_cannon", "fusion_cannon"], "modelLimit": "1/10"},
@@ -166,8 +156,6 @@
             "category": "core",
             "name": "Abomination Warriors",
             "description": "A group of Dark Elven warriors subject to experiments.",
-            "min": 1,
-            "max": 1,
             "keywords": ["Infantry"],
             "options": [{"addWeapon": ["poison_sprayer", "poison_dart_rifle"], "modelLimit": "1/5"}],
             "models": [
@@ -186,12 +174,34 @@
                 {"name": "Abomination Warrior", "courage": 5, "movement": 6, "shoot": 5, "fight": 6, "defense": 7, "reflexes": 5, "weapons": [{"id": "barb_blade", "count": 2}], "min": 4, "max": 9}
             ]
         },
+        "mutated_abominations": {
+            "name": "Mutated Abominations",
+            "category": "specialist",
+            "description": "A group of Dark Elven warriors whose experiments went wrong.",
+            "keywords": ["Infantry"],
+            "options": [
+                {"replaceWeapon": [{"id": "poison_sprayer", "count": 1}, {"id": "heavy_stomp", "count": 4}], "withWeapon": [{"id": "energy_axe", "count": 5}]}
+            ],
+            "rules": [{"id": "wounds", "x": 2}],
+            "models": [
+                {
+                    "name": "Mutated Abominations",
+                    "courage": 6,
+                    "movement": 6,
+                    "shoot": 4,
+                    "fight": 6,
+                    "defense": 8,
+                    "reflexes": 5,
+                    "weapons": [{"id": "poison_sprayer", "count": 1}, {"id": "heavy_stomp", "count": 4}],
+                    "min": 3,
+                    "max": 6
+                }
+            ]
+        },
         "veteran_warriors": {
             "category": "core",
             "name": "Veteran Warriors",
             "description": "A group of Dark Elven warriors with poisonous weaponry.",
-            "min": 1,
-            "max": 1,
             "keywords": ["Infantry"],
             "options": [
                 {"replaceWeapon": "barb_rifle", "withWeapon": ["barb_cannon", "fusion_cannon"], "modelLimit": "1/10"},
@@ -234,8 +244,6 @@
             "category": "specialist",
             "name": "Dark Mercenaries",
             "description": "A group of Dark Elven warriors with poisonous weaponry.",
-            "min": 1,
-            "max": 1,
             "keywords": ["Infantry"],
             "rules": ["fear"],
             "models": [
@@ -246,9 +254,7 @@
         "harpies": {
             "category": "strike",
             "name": "Harpies",
-            "description": "A group of Dark Elven warriors with poisonous weaponry.",
-            "min": 1,
-            "max": 1,
+            "description": "A group of winged Dark Elven mercenaries with a variety of forms of weaponry.",
             "keywords": ["Infantry"],
             "options": [{"replaceWeapon": "barb_rifle", "withWeapon": ["barb_cannon", "fusion_cannon", "blast_rifle", "shred_rifle", "heat_cannon", "emp_rifle"], "modelLimit": 4}],
             "rules": ["fly", "ambush"],
@@ -298,8 +304,6 @@
             "category": "core",
             "name": "Witches",
             "description": "A group of Dark Elven witches with poisonous melee weaponry.",
-            "min": 1,
-            "max": 1,
             "keywords": ["Infantry"],
             "rules": ["dodge"],
             "options": [
@@ -346,8 +350,6 @@
             "category": "core",
             "name": "Veteran Witches",
             "description": "A group of Dark Elven witches with poisonous melee weaponry.",
-            "min": 1,
-            "max": 1,
             "keywords": ["Infantry"],
             "rules": ["dodge"],
             "options": [
@@ -394,8 +396,6 @@
             "category": "specialist",
             "name": "Royal Court",
             "description": "A group of the lord's advisors and mercenaries.",
-            "min": 1,
-            "max": 1,
             "keywords": ["Infantry"],
             "models": [
                 {
@@ -417,10 +417,8 @@
         "jetbike_witches": {
             "category": "strike",
             "name": "Jetbike Witches",
-            "description": "A group of Dark Elven witches with poisonous melee weaponry.",
-            "min": 1,
-            "max": 1,
-            "keywords": ["Infantry"],
+            "description": "A group of mounted Dark Elven witches with poisonous weaponry.",
+            "keywords": ["Biker"],
             "rules": ["hover"],
             "options": [
                 {"addRule": ["combat_drugs"], "modelLimit": "all", "limit": 1},
@@ -463,8 +461,6 @@
             "category": "strike",
             "name": "Hoverboard Riders",
             "description": "A group of Dark Elven warriors mounted on fast hover boards.",
-            "min": 1,
-            "max": 1,
             "keywords": ["Biker"],
             "rules": ["hover"],
             "options": [{"addRule": ["combat_drugs"], "modelLimit": "all", "limit": 1}],
@@ -505,9 +501,7 @@
         "leeching_beast": {
             "category": "specialist",
             "name": "Leeching Beast",
-            "description": "A group of Dark Elven witches with poisonous melee weaponry.",
-            "min": 1,
-            "max": 1,
+            "description": "A giant twisted abomination used to leech life force from enemies.",
             "keywords": ["Monster"],
             "models": [
                 {
@@ -529,9 +523,7 @@
         "pain_beast": {
             "category": "specialist",
             "name": "Pain Beast",
-            "description": "A group of Dark Elven witches with poisonous melee weaponry.",
-            "min": 1,
-            "max": 1,
+            "description": "A giant twisted abomination used as a blunt tool against enemies.",
             "keywords": ["Monster"],
             "models": [
                 {
@@ -663,8 +655,6 @@
             "rules": ["aircraft", "damage_chart"],
             "category": "strike",
             "keywords": ["Vehicle", "Aircraft"],
-            "min": 1,
-            "max": 1,
             "models": [
                 {
                     "name": "Strike Fighter",
@@ -689,8 +679,6 @@
             "description": "A light bomber aircraft.",
             "category": "strike",
             "keywords": ["Vehicle", "Aircraft"],
-            "min": 1,
-            "max": 1,
             "models": [
                 {
                     "name": "Void Bomber",
