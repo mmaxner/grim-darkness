@@ -1089,19 +1089,54 @@
                     "weapons": [{"id": "siege_cannon", "mount": ["Front"]}, "titan_hell_cannon", "autocannon", {"id": "twin_heavy_machinegun", "mount": ["Front"]}],
                     "options": [
                         {"addRule": [{"id": "dozer", "name": "Dozer Blade"}, "field_radio_battle_tank"]},
-                        {"replaceWeapon": "titan_hell_cannon", "withWeapon": ["titan_battle_cannon"]},
+                        {"replaceWeapon": ["titan_hell_cannon"], "withWeapon": ["titan_battle_cannon", "earthbreaker_cannon", "godslayer_cannon", "giant_plasma_cannon"]},
                         {"addWeapon": [{"id": "light_machinegun", "count": 1}, {"id": "twin_marine_rifle", "count": 1}], "limit": 1},
-                        {"addWeapon": ["hunter_missiles"]},
-                        {
+                            {"addWeapon": ["hunter_missiles"]},
+                            {
                             "addWeapon": [
-                                [{"id": "twin_heavy_machinegun", "mount": ["Left", "Front"]}, {"id": "heavy_machinegun", "mount": ["Right", "Front"]}],
-                                [{"id": "twin_heavy_flamethrower", "mount": ["Left", "Front"]}, {"id": "heavy_flamethrower", "mount": ["Right", "Front"]}]
+                                [{"id": ["twin_heavy_machinegun"], "mount": ["Left", "Front"]}, {"id": ["heavy_machinegun"], "mount": ["Right", "Front"]}],
+                                [{"id": ["twin_heavy_flamethrower"], "mount": ["Left", "Front"]}, {"id": ["heavy_flamethrower"], "mount": ["Right", "Front"]}]
                             ],
                             "limit": 2
                         }
                     ],
                     "min": 1,
                     "max": 1
+                }
+            ]
+        },
+        "super_heavy_battle_transport": {
+            "name": "Super Heavy Transport Tank",
+            "description": "A titanic battle tank with an extended deck to transport troops",
+            "rules": ["vulnerable_rear", "damage_chart", "titanic", {"id": "heavy_impact", "x": 6}, {"id": "transport", "x": 25}, {"id": "open_topped", "x": 10}],
+            "category": "super_heavy",
+            "keywords": ["Vehicle", "Battle Tank"],
+            "models": [
+                {
+                    "name": "Super Heavy Transport Tank",
+                    "movement": 10,
+                    "courage": 5,
+                    "shoot": 5,
+                    "fight": 5,
+                    "defense": 13,
+                    "reflexes": 5,
+                    "weapons": ["tremor_cannon", {"id": "twin_heavy_machinegun", "mount": ["Front"]}],
+                    "options": [
+                       {"addRule": [{"id": "dozer", "name": "Dozer Blade"}, "field_radio_battle_tank"]},
+                       {"addWeapon": [{"id": "light_machinegun", "count": 1}, {"id": "twin_marine_rifle", "count": 1}], "limit": 1},
+                       {"addWeapon": ["hunter_missiles"]},
+                       {"replaceRule": {"id": "transport", "x": 25}, "withRule": {"id": "transport", "x": 40}},
+                       {"replaceRule": {"id": "open_topped", "x": 10}, "withRule": {"id": "open_topped", "x": 20}},
+                       {"replaceWeapon": "tremor_cannon", "withWeapon": ["vulcan_machine_gun", "doom_cannon"]},
+                       {"addWeapon": [
+                        [{"id": "twin_heavy_machinegun", "mount": ["Left", "Front"]}, {"id": "heavy_machinegun", "mount": ["Right", "Front"]}],
+                        [{"id": "twin_heavy_flamethrower", "mount": ["Left", "Front"]}, {"id": "heavy_flamethrower", "mount": ["Right", "Front"]}]
+                    ],
+                    "limit": 2
+                }
+            ],
+            "min": 1,
+            "max": 1
                 }
             ]
         }
@@ -1187,7 +1222,13 @@
         "fusion_cannon": {"name": "Fusion Cannon", "attacks": 2, "short": 12, "medium": 24, "ap": 6, "rules": [{"id": "critical", "x": 1}]},
         "power_bolt": {"medium": 18, "attacks": 1, "ap": 7},
         "power_storm": {"medium": 9, "ap": 1, "attacks": 8},
-        "stun_grenades": {"name": "Stun Grenades", "attacks": 1, "short": 6, "rules": ["grenade", "stun"]}
+        "stun_grenades": {"name": "Stun Grenades", "attacks": 1, "short": 6, "rules": ["grenade", "stun"]},
+        "giant_plasma_cannon": {"name": "Giant Plasma Cannon", "attacks": 7, "ap": 6, "short": 36, "medium": 72, "rules": [{"id": "blast", "x": 3}, "overcharge"]},
+        "godslayer_cannon": {"name": "Godslayer Cannon", "attacks": 5, "ap": 10, "short": 60, "medium": 120, "rules": [{"id": "critical", "x": 2}]},
+        "tremor_cannon": {"name": "Earthbreaker Cannon", "attacks": 10, "ap": 6, "short": 30, "medium": 60, "rules": [{"id": "shocking", "x": 2}]},
+        "doom_cannon": {"name": "Doom Cannon", "attacks": 7, "ap": 8, "short": 30, "medium": 60, "rules": [{"id": "blast", "x": 2}]},
+        "vulcan_machine_gun": {"name": "Vulcan Machine Gun", "attacks": 20, "ap": 4, "short": 30, "medium": 60},
+        "earthbreaker_cannon": {"name": "Earthbreaker Cannon", "attacks": 7, "ap": 10, "short": 70, "medium": 140}
     },
     "rules": {
         "high_command": {"name": "High Command", "description": "This model may use Defense Force Tactics one additional time.", "points": 2},
