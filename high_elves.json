@@ -265,7 +265,16 @@
                     "min": 1,
                     "max": 1
                 },
-                {"name": "Defender", "courage": 5, "movement": 7, "shoot": 6, "fight": 5, "defense": 5, "reflexes": 6, "weapons": ["shard_carbine", "plasma_grenade", "ccw"], "min": 4, "max": 19},
+                {"name": "Defender", 
+                    "courage": 5,
+                    "movement": 7,
+                    "shoot": 6,
+                    "fight": 5,
+                    "defense": 5,
+                    "reflexes": 6,
+                    "weapons": ["shard_carbine", "plasma_grenade", "ccw"],
+                    "min": 4,
+                    "max": 19},
                 {
                     "name": "Weapon Platform",
                     "courage": 5,
@@ -318,7 +327,16 @@
             "category": "core",
             "keywords": ["Infantry"],
             "rules": ["stealth", "scout"],
-            "models": [{"name": "Rangers", "courage": 5, "movement": 7, "shoot": 6, "fight": 5, "defense": 5, "reflexes": 6, "weapons": ["shard_sniper", "plasma_grenade", "ccw"], "min": 5, "max": 10}]
+            "models": [{"name": "Rangers",
+                "courage": 5,
+                "movement": 7,
+                "shoot": 6,
+                "fight": 5,
+                "defense": 5,
+                "reflexes": 6,
+                "weapons": ["shard_sniper", "plasma_grenade", "ccw"],
+                "min": 5,
+                "max": 10}]
         },
         "storm_squad": {
             "name": "Storm Squad",
@@ -462,6 +480,28 @@
                 }
             ]
         },
+        "reaper_masks": {
+            "name": "Reaper Mask Squad",
+            "description": "A squad of warriors trained in the art of long-ranged warfare",
+            "category": "specialist",
+            "keywords": ["Infantry"],
+            "rules": [],
+            "models": [
+                {
+                    "name": "Masked Reaper",
+                    "courage": 6,
+                    "shoot": 6,
+                    "fight": 6,
+                    "defense": 7,
+                    "reflexes": 6,
+                    "movement": 7,
+                    "weapons": ["missile_launcher", "ccw", "frags"],
+                    "options": [{"replaceModel": "reaper_leader", "modelLimit": 1}],
+                    "min": 3,
+                    "max": 10
+                }
+            ]
+        },
         "glittering_spears": {
             "name": "Glittering Spear Squad",
             "description": "A squad of highly trained bikers that are adept at both melee and short range combat.",
@@ -550,6 +590,30 @@
                 }
             ]
         },
+        "scout_walker": {
+            "name": "War Walker",
+            "description": "Thanks to the skill of their operators, these walkers move as fast as any elf.",
+            "rules": ["vulnerable_rear", "damage_chart", "scout"],
+            "keywords": ["Vehicle"],
+            "category": "strike",
+            "models": [
+                {
+                    "name": "War Walker",
+                    "movement": 8,
+                    "courage": 6,
+                    "shoot": 6,
+                    "fight": 6,
+                    "defense": 8,
+                    "reflexes": 6,
+                    "weapons": [{"id": "sky_cannon", "count": 2}, {"id": "stomp", "count": 2}],
+                    "options": [
+                        {"replaceWeapon": {"id": "sky_cannon", "x": 1}, "withWeapon": ["missile_launcher", "shard_cannon", "shining_cannon"]}
+                    ],
+                    "min": 1,
+                    "max": 3
+                }
+            ]
+        },
         "hover_tank": {
             "name": "Hover Tank",
             "description": "A heavy hover tank that can be outfitted with heavier weaponry to eliminate vehicle threats.",
@@ -597,6 +661,30 @@
                     ],
                     "min": 1,
                     "max": 1
+                }
+            ]
+        },
+        "great_wraith": {
+            "name": "Great Wraith",
+            "description": "A powerful wraith-walker who seeks vengeance for its own death",
+            "category": "heavy",
+            "rules": ["walker", "damage_chart"],
+            "keywords": ["Vehicle"],
+            "models": [
+                {
+                    "name": "Great Wraith",
+                    "courage": 6,
+                    "movement": 8,
+                    "shoot": 6,
+                    "fight": 6,
+                    "defense": 12,
+                    "reflexes": 6,
+                    "weapons": [{"id": "greatwraith_fists", "count": 4}, {"id": "shard_rifle", "count": 2}],
+                    "options": [
+                        {"replaceWeapon": {"id": "greatwraith_fists", "count": 4}, "withWeapon": {"id": "greatwraith_sword", "count": 5}},
+                        {"addRule": {"id": "power", "x": 1}},
+                        {"addWeapon": ["missile_launcher", "shard_cannon", "shining_cannon"], "limit": 2}
+                    ]
                 }
             ]
         },
@@ -776,9 +864,27 @@
             "reflexes": 6,
             "rules": ["champion"],
             "weapons": ["spinnerette_rifle"],
-            "options": [{"replaceWeapon": "spinnerette_rifle", "withWeapon": ["web_rifle", {"id": "spinnerette_rifle", "count": 2}]}, {"addWeapon": [{"id": "energy_sword", "count": 3}], "limit": 1}],
+            "options": [
+                {"replaceWeapon": "spinnerette_rifle", 
+                "withWeapon": ["web_rifle", {"id": "spinnerette_rifle", "count": 2}]}, 
+                {"addWeapon": [{"id": "energy_sword", "count": 3}], "limit": 1}],
             "min": 1,
             "max": 1
+        },
+        "reaper_leader": {
+            "name": "Reaper Leader",
+            "courage": 6,
+            "movement": 7,
+            "shoot": 6,
+            "fight": 6,
+            "defense": 7,
+            "reflexes": 6,
+            "rules": ["champion"],
+            "weapons": ["missile_launcher"],
+            "options": [
+                {"replaceWeapon": "missile_launcher",
+                "withWeapon": ["shard_cannon", "shattersky_launcher"]}
+            ]
         }
     },
     "rules": {
@@ -863,7 +969,10 @@
         "sunlight_rifle": {"name": "Sunlight Rifle", "attacks": 4, "short": 12, "medium": 24, "ap": 1, "rules": ["assault"]},
         "spinnerette_rifle": {"name": "Spinnerette Rifle", "attacks": 2, "short": 6, "medium": 12, "ap": 3, "rules": ["assault", "rending"]},
         "web_rifle": {"name": "Web Rifle", "attacks": 1, "short": 9, "medium": 18, "ap": 4, "rules": [{"id": "slowing", "x": 2}, "rapid_fire"]},
-        "hexblade": {"name": "Hexblade", "attacks": 1, "short": "Melee", "ap": 0, "rules": [{"id":"rending"}]}
+        "hexblade": {"name": "Hexblade", "attacks": 1, "short": "Melee", "ap": 0, "rules": [{"id":"rending"}]},
+        "shattersky_launcher": {"name": "Skyshatter Launcher", "attacks": 2, "short": 18, "medium": 36, "ap": 2, "rules": [{"id": "blast", "x": 3}, "indirect"]},
+        "greatwraith_fists": {"name": "Great-Wraith Fists", "attacks": 1, "short": "melee", "ap": 4},
+        "greatwraith_sword": {"name": "Great-Wraith Sword", "attacks": 1, "short": "melee", "ap": 5}
     },
     "relics": {
         "master_of_war": {
