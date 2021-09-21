@@ -80,8 +80,6 @@
         "soul_snatchers": {
             "name": "Soul Stealers",
             "description": "Barely recognizable mutants of other species",
-            "min": 1,
-            "max": 1,
             "category": "core",
             "rules": ["agile"],
             "models": [
@@ -103,8 +101,6 @@
         "hive_warrior_prime": {
             "name": "Hive Warrior Prime",
             "description": "",
-            "min": 1,
-            "max": 1,
             "category": "command",
             "keywords": ["Heavy Infantry"],
             "rules": [{"id": "leader_x", "x": "Infantry, Heavy Infantry"}, {"id": "wounds", "x": 3}, {"id": "swarm_melee_tactics", "x": 1}],
@@ -214,8 +210,6 @@
         "assault_grunts": {
             "name": "Assault Grunts",
             "description": "Fast bugs which attack in swarms",
-            "min": 1,
-            "max": 1,
             "category": "core",
             "rules": ["agile"],
             "models": [
@@ -534,13 +528,7 @@
                     "min": 1,
                     "max": 1,
                     "weapons": [{"id": "large_razor_talons", "count": "6"}, {"id": "toxin_spike"}, "bio_pulse"],
-                    "options": [
-                        {
-                            "replaceWeapon": {"id": "toxin_spike"},
-                            "withWeapon": [{"id": "grabbing_tail"}, {"id": "bio_rattle"}]
-                        },
-                        {"addRule": ["adrenaline_glands_large", "toxic_sacks_large"]}
-                    ]
+                    "options": [{"replaceWeapon": {"id": "toxin_spike"}, "withWeapon": [{"id": "grabbing_tail"}, {"id": "bio_rattle"}]}, {"addRule": ["adrenaline_glands_large", "toxic_sacks_large"]}]
                 }
             ]
         }

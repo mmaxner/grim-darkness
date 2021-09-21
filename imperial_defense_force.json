@@ -224,7 +224,7 @@
             "max": 10,
             "category": "command",
             "keywords": ["Infantry"],
-            "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "defense_force_tactics", "x": 2},  {"id": "wounds", "x": 2}],
+            "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "defense_force_tactics", "x": 2}, {"id": "wounds", "x": 2}],
             "models": [
                 {
                     "name": "Company Commander",
@@ -253,7 +253,7 @@
             "max": 10,
             "category": "command",
             "keywords": ["Storm Trooper", "Infantry"],
-            "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "stormtrooper_tactics", "x": 1},  {"id": "wounds", "x": 2}],
+            "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "stormtrooper_tactics", "x": 1}, {"id": "wounds", "x": 2}],
             "models": [
                 {
                     "name": "Stormtrooper Commander",
@@ -389,10 +389,7 @@
                     "movement": 6,
                     "reflexes": 5,
                     "weapons": ["defense_rifle", "frags", "ccw"],
-                    "options": [
-                        {"addRule": "field_radio", "modelLimit": 1},
-                        {"replaceModel": "conscript_weapon_team", "modelLimit": 1}
-                    ],
+                    "options": [{"addRule": "field_radio", "modelLimit": 1}, {"replaceModel": "conscript_weapon_team", "modelLimit": 1}],
                     "min": 9,
                     "max": 29
                 }
@@ -628,9 +625,7 @@
                     "reflexes": 6,
                     "movement": 6,
                     "weapons": ["heavy_defense_rifle", "frags", "ccw"],
-                    "options": [
-                        {"addRule": {"id": "field_radio"}, "modelLimit": 1}
-                    ],
+                    "options": [{"addRule": {"id": "field_radio"}, "modelLimit": 1}],
                     "min": 4,
                     "max": 9
                 }
@@ -721,8 +716,6 @@
         "command_battle_tank": {
             "name": "Battle Tank Commander",
             "description": "A main line battle tank commander.",
-            "min": 1,
-            "max": 1,
             "category": "command",
             "keywords": ["Vehicle", "Battle Tank"],
             "rules": ["vulnerable_side_rear", {"id": "battle_tank_tactics", "x": 1}, "damage_chart"],
@@ -737,10 +730,7 @@
                     "reflexes": 6,
                     "weapons": ["nova_cannon", {"id": "heavy_flamethrower", "mount": ["Front"]}],
                     "options": [
-                        {
-                            "replaceRule": {"id": "battle_tank_tactics", "x": 1},
-                            "withRule": {"id": "battle_tank_tactics", "x": 2}
-                        },
+                        {"replaceRule": {"id": "battle_tank_tactics", "x": 1}, "withRule": {"id": "battle_tank_tactics", "x": 2}},
                         {"addRule": [{"id": "dozer", "name": "Dozer Blade"}, "field_radio_battle_tank", "extra_armor"]},
                         {"replaceWeapon": "nova_cannon", "withWeapon": ["battle_cannon", "siege_cannon", "twin_autocannon", "tank_hunter_cannon", "heavy_plasma_cannon", "gatling_cannon"]},
                         {"replaceWeapon": {"id": "heavy_flamethrower", "mount": ["Front"]}, "withWeapon": [{"id": "heavy_machinegun", "mount": ["Front"]}, {"id": "laser_cannon", "mount": ["Front"]}]},
@@ -765,8 +755,6 @@
         "battle_tank": {
             "name": "Battle Tank",
             "description": "A main line battle tank.",
-            "min": 1,
-            "max": 1,
             "category": "heavy",
             "keywords": ["Vehicle", "Battle Tank"],
             "rules": ["vulnerable_side_rear", "damage_chart"],
@@ -957,8 +945,6 @@
             "description": "A lightly equipped recon walker.",
             "rules": ["vulnerable_rear", "damage_chart", "scout"],
             "keywords": ["Vehicle"],
-            "min": 1,
-            "max": 1,
             "category": "strike",
             "models": [
                 {
@@ -984,8 +970,6 @@
             "description": "An armored light combat walker.",
             "rules": ["vulnerable_rear", "damage_chart"],
             "keywords": ["Vehicle"],
-            "min": 1,
-            "max": 1,
             "category": "strike",
             "models": [
                 {
@@ -1360,6 +1344,30 @@
             "flavor": "Not afraid of a fight, these soldiers will Counter Attack upon their enemies.",
             "description": "Use when an _Infantry_ unit is targeted by a Fight action. If that unit has not yet activated, it may perform a Counter Attack reaction without testing Initiative.",
             "cost": 1
+        },
+        "last_stand": {
+            "subfactions": ["survival_focus"],
+            "name": "Last Stand",
+            "phase": "activation",
+            "flavor": "It takes incredible courage to fight to the last man.",
+            "description": "Use when an _Infantry_ unit is defeated. If it has not yet activated, it may make a free Shoot or Fight action before being removed as a casualty.",
+            "cost": 1
+        },
+        "hit_and_run": {
+            "subfactions": ["survival_focus"],
+            "name": "Hit and Run",
+            "phase": "activation",
+            "description": "Use after one of your _Infantry_ or _Biker_ units performs a Shoot or Fight action. You may immediately take a free move action.",
+            "flavor": "Hit and run tactics can sometimes be key to survival.",
+            "cost": 1
+        },
+        "at_all_costs": {
+            "subfactions": ["survival_focus"],
+            "name": "At All Costs",
+            "phase": "activation",
+            "description": "Use when an _Infantry_ unit takes a Break test. That test is automatically passed.",
+            "flavor": "These troopers are prepared to hold at all costs.",
+            "cost": 1
         }
     },
     "relics": {
@@ -1386,17 +1394,9 @@
         }
     },
     "buyLinks": [
-        {
-            "name": "Games Workshop",
-            "link": "https://www.games-workshop.com/en-US/Warhammer-40-000?N=2562756967+1138996955"
-        },
-        {
-            "name": "Victoria Miniatures",
-            "link": "https://victoriaminiatures.com/"
-        },
-        {
-            "name": "The Makers Cult",
-            "link": "https://www.cgtrader.com/3d-print-models/guard?author=themakerscult"
-        }
+        {"name": "DavikDesigns", "link": "https://davikdesigns.gumroad.com/l/wAKtHk"},
+        {"name": "Games Workshop", "link": "https://www.games-workshop.com/en-US/Warhammer-40-000?N=2562756967+1138996955"},
+        {"name": "Victoria Miniatures", "link": "https://victoriaminiatures.com/"},
+        {"name": "The Makers Cult", "link": "https://www.cgtrader.com/3d-print-models/guard?author=themakerscult"}
     ]
 }

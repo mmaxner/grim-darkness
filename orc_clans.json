@@ -29,8 +29,6 @@
         "warlord": {
             "name": "Warlord",
             "description": "The clan leader and toughest orc boss.",
-            "min": 1,
-            "max": 1,
             "category": "command",
             "options": [{"addModel": "attack_beast"}],
             "models": [
@@ -58,8 +56,6 @@
         "shaman": {
             "name": "Shaman",
             "description": "A strange orc with psychic powers.",
-            "min": 1,
-            "max": 1,
             "category": "command",
             "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "wounds", "x": 2}],
             "models": [
@@ -121,8 +117,6 @@
         "warbanner_boss": {
             "name": "Warbanner Boss",
             "description": "An orc carrying a war banner to inspire the orcs.",
-            "min": 1,
-            "max": 1,
             "category": "specialist",
             "rules": [{"id": "support_x", "x": "Infantry"}, "war_banner", {"id": "wounds", "x": 2}],
             "models": [
@@ -174,8 +168,6 @@
             "name": "Goblin Leader",
             "subfactions": ["goblin_army"],
             "description": "A cunning goblin with a motivating presence.",
-            "min": 1,
-            "max": 1,
             "category": "command",
             "keywords": ["Goblin", "Infantry"],
             "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "wounds", "x": 3}, {"id": "goblin_tactics", "x": 1}],
@@ -287,8 +279,6 @@
             "name": "Goblins",
             "description": "A group of independent goblins.",
             "subfactions": ["goblin_army"],
-            "min": 1,
-            "max": 1,
             "category": "core",
             "keywords": ["Goblin", "Infantry"],
             "models": [{"name": "Goblin", "courage": 4, "shoot": 5, "fight": 5, "defense": 4, "reflexes": 5, "movement": 6, "weapons": ["carbine", "ccw"], "min": 10, "max": 20}]
@@ -298,8 +288,6 @@
             "subfactions": ["goblin_army"],
             "keywords": ["Goblin", "Infantry"],
             "description": "A herd of veteran goblin fighters.",
-            "min": 1,
-            "max": 1,
             "category": "core",
             "models": [
                 {
@@ -322,8 +310,6 @@
             "keywords": ["Goblin", "Infantry"],
             "description": "A herd of lowly goblins.",
             "subfactions": ["none"],
-            "min": 1,
-            "max": 1,
             "category": "core",
             "models": [
                 {
@@ -344,8 +330,6 @@
         "orc_mob": {
             "name": "Orc Mob",
             "description": "A group of angry orcs.",
-            "min": 1,
-            "max": 1,
             "category": "core",
             "options": [
                 {"addRule": [{"id": "heavy_armor"}], "modelLimit": "all"},
@@ -371,8 +355,6 @@
         "attack_beast_herd": {
             "name": "Attack Beast Herd",
             "description": "A ravening horde of bouncing beasts with gnashing teeth.",
-            "min": 1,
-            "max": 1,
             "category": "strike",
             "subfactions": ["none", "goblin_army"],
             "models": [
@@ -406,8 +388,6 @@
         "storm_orcs": {
             "name": "Storm Orcs",
             "description": "A group of angry orcs equipped with jetpacks.",
-            "min": 1,
-            "max": 1,
             "category": "specialist",
             "rules": ["fly"],
             "options": [{"addWeapon": "fusion_bomb", "modelLimit": 3}],
@@ -424,7 +404,11 @@
                     "options": [
                         {"replaceModel": ["storm_boss"], "modelLimit": 1},
                         {"replaceWeapon": ["heavy_pistol", {"id": "heavy_ccw", "count": 1}], "withWeapon": ["carbine"]},
-                        {"replaceWeapon": ["heavy_pistol", {"id": "heavy_ccw", "count": 1}], "withWeapon": ["flamethrower", "plasma_rifle", "shred_rifle", "rocket_launcher", "heavy_machinegun"], "limit": 1}
+                        {
+                            "replaceWeapon": ["heavy_pistol", {"id": "heavy_ccw", "count": 1}],
+                            "withWeapon": ["flamethrower", "plasma_rifle", "shred_rifle", "rocket_launcher", "heavy_machinegun"],
+                            "limit": 1
+                        }
                     ],
                     "min": 5,
                     "max": 30
@@ -434,8 +418,6 @@
         "commando_orcs": {
             "name": "Commando Orcs",
             "description": "A group of sneaky orcs.",
-            "min": 1,
-            "max": 1,
             "category": "specialist",
             "rules": ["stealth", "scout"],
             "options": [{"addWeapon": "fusion_bomb", "modelLimit": 3}],
@@ -452,7 +434,11 @@
                     "options": [
                         {"replaceModel": ["commando_boss"], "modelLimit": 1},
                         {"replaceWeapon": ["heavy_pistol", {"id": "heavy_ccw", "count": 1}], "withWeapon": ["carbine", "combat_shotgun"]},
-                        {"replaceWeapon": ["heavy_pistol", {"id": "heavy_ccw", "count": 1}], "withWeapon": ["flamethrower", "plasma_rifle", "shred_rifle", "rocket_launcher", "heavy_machinegun"], "limit": 1}
+                        {
+                            "replaceWeapon": ["heavy_pistol", {"id": "heavy_ccw", "count": 1}],
+                            "withWeapon": ["flamethrower", "plasma_rifle", "shred_rifle", "rocket_launcher", "heavy_machinegun"],
+                            "limit": 1
+                        }
                     ],
                     "min": 5,
                     "max": 15
@@ -462,8 +448,6 @@
         "specialist_mob": {
             "name": "Looter Mob",
             "description": "A group of Orcs obsessed with looting and upgrading weapons. Can be equipped for various specialist roles.",
-            "min": 1,
-            "max": 1,
             "category": "specialist",
             "options": [{"replaceWeapon": "rocket_launcher", "withWeapon": ["bomb_hammer", "rocket_pistol"], "modelLimit": 2}, {"addWeapon": "fusion_bomb", "modelLimit": 3}],
             "models": [
@@ -488,8 +472,6 @@
         "pirate_orcs": {
             "name": "Orc Pirates",
             "description": "A group of orcs ready to pillage and blunder.",
-            "min": 1,
-            "max": 1,
             "category": "specialist",
             "rules": ["relentless"],
             "models": [
@@ -564,8 +546,6 @@
         "ultra_bosses": {
             "name": "Ultra Nobles",
             "description": "A group of orcs bosses that are heavily armored and dangerous.",
-            "min": 1,
-            "max": 1,
             "category": "specialist",
             "rules": [{"id": "wounds", "x": 2}],
             "options": [
@@ -602,8 +582,6 @@
         "biker_mob": {
             "name": "Biker Mob",
             "description": "A group of angry orcs on bikes.",
-            "min": 1,
-            "max": 1,
             "category": "strike",
             "keywords": ["Biker"],
             "rules": [{"id": "impact", "x": 1}],
@@ -642,8 +620,6 @@
         "boss_bikers": {
             "name": "Noble Bikers",
             "description": "A group of orcs bosses mounted on bikes.",
-            "min": 1,
-            "max": 1,
             "category": "strike",
             "keywords": ["Biker"],
             "options": [
@@ -732,8 +708,6 @@
         "truck": {
             "name": "Truck",
             "description": "A ramshackled truck held together only by sheer will.",
-            "min": 1,
-            "max": 1,
             "category": "transport",
             "keywords": ["Vehicle"],
             "rules": [{"id": "impact", "x": 3}, {"id": "transport", "x": 12}, {"id": "open_topped", "x": 12}, "vulnerable_side_rear", "damage_chart"],
@@ -981,10 +955,11 @@
                     "reflexes": 5,
                     "movement": 6,
                     "weapons": [{"id": "heavy_cannon", "count": 2}],
-                    "options": [{"replaceWeapon": {"id": "heavy_cannon", "count": 1}, "withWeapon": [{"id": "walker_claw", "count": 4}, {"id": "walker_saw", "count": 4}]},
-                    {"replaceWeapon": {"id": "heavy_cannon", "count": 1}, "withWeapon": [{"id": "walker_claw", "count": 4}, {"id": "walker_saw", "count": 4} ]},
-                    {"addRule": ["force_field"]}
-                ],
+                    "options": [
+                        {"replaceWeapon": {"id": "heavy_cannon", "count": 1}, "withWeapon": [{"id": "walker_claw", "count": 4}, {"id": "walker_saw", "count": 4}]},
+                        {"replaceWeapon": {"id": "heavy_cannon", "count": 1}, "withWeapon": [{"id": "walker_claw", "count": 4}, {"id": "walker_saw", "count": 4}]},
+                        {"addRule": ["force_field"]}
+                    ],
                     "min": 1,
                     "max": 1
                 }
@@ -1005,11 +980,11 @@
                     "defense": 12,
                     "reflexes": 5,
                     "movement": 6,
-                    "weapons": [{"id": "heavy_cannon", "count": 2},  {"id": "heavy_flamethrower", "count": 2}],
-                    "options": [{"replaceWeapon": {"id": "heavy_cannon", "count": 1}, "withWeapon": [{"id": "walker_claw", "count": 4}, {"id": "walker_saw", "count": 4}]},
-                    {"replaceWeapon": {"id": "heavy_cannon", "count": 1}, "withWeapon": [{"id": "walker_claw", "count": 4}, {"id": "walker_saw", "count": 4} ]}
-                ],
-                    
+                    "weapons": [{"id": "heavy_cannon", "count": 2}, {"id": "heavy_flamethrower", "count": 2}],
+                    "options": [
+                        {"replaceWeapon": {"id": "heavy_cannon", "count": 1}, "withWeapon": [{"id": "walker_claw", "count": 4}, {"id": "walker_saw", "count": 4}]},
+                        {"replaceWeapon": {"id": "heavy_cannon", "count": 1}, "withWeapon": [{"id": "walker_claw", "count": 4}, {"id": "walker_saw", "count": 4}]}
+                    ],
                     "min": 1,
                     "max": 1
                 }
@@ -1380,8 +1355,6 @@
         "colossal_attack_beast": {
             "name": "Colossal Attack Beast",
             "description": "An enormous four legged beast of war.",
-            "min": 1,
-            "max": 1,
             "category": "super_heavy",
             "keywords": ["Super Heavy Vehicle"],
             "rules": [{"id": "transport", "x": 20}, {"id": "open_topped", "x": 20}, "damage_chart", "titanic", "vulnerable_rear", "walker", {"id": "impact", "x": 6}],
@@ -1489,7 +1462,7 @@
         }
     },
     "weapons": {
-        "goblin_rifle": {"name": "Goblin Gun", "attacks": 1, "short": 9, "medium": 18, "ap": 1},
+        "goblin_rifle": {"name": "Goblin Blaster", "attacks": 1, "short": 9, "medium": 18, "ap": 1, "rules": ["assault"]},
         "smasher_cannon": {"name": "Smasher Cannon", "attacks": 1, "short": 24, "medium": 48, "ap": 7},
         "tractor_beam": {"name": "Tractor Beam", "attacks": 1, "short": 18, "medium": 36, "ap": 6, "rules": ["anti_air"]},
         "heavy_tractor_cannon": {"name": "Heavy Tractor Cannon", "attacks": 3, "short": 18, "medium": 36, "ap": 6, "rules": ["anti_air"]},
@@ -1635,7 +1608,11 @@
         "roar": {"name": "Roar", "description": "Target enemy unit within 12\" gets -1 Courage until the end of the round.", "charge": 8},
         "crunch": {"name": "Crunch", "description": "Target enemy unit within 12\" takes 5 hits with AP 1.", "charge": 8},
         "warpath": {"name": "Warpath", "description": "The next time target friendly unit fights, hit rolls of 1 or 2 generate an additional attack.", "charge": 7},
-        "teleport": {"name": "Jump Teleport", "description": "Target friendly unit within 12\" may move up to 12\" ignoring all models and terrain. This must end outside of 12\" of any enemy units.", "charge": 7},
+        "teleport": {
+            "name": "Jump Teleport",
+            "description": "Target friendly unit within 12\" may move up to 12\" ignoring all models and terrain. This must end outside of 12\" of any enemy units.",
+            "charge": 7
+        },
         "strength": {"name": "Mighty Strength", "description": "Target friendly unit within 12\" gets +1 Strength until the end of the round.", "charge": 6},
         "headbang": {"name": "Headbang", "description": "Target enemy unit within 6\" takes 3 hits with AP 5.", "charge": 5}
     },

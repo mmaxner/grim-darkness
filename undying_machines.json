@@ -7,8 +7,6 @@
         "command_barge": {
             "name": "Command Barge",
             "description": "A floating command vehicle.",
-            "min": 1,
-            "max": 1,
             "category": "command",
             "rules": ["hover", {"id": "leader_x", "x": "Infantry"}, "flare_shielding", "damage_chart", {"id": "impact", "x": 3}, {"id": "machine_tactics", "x": 1}],
             "keywords": ["Vehicle"],
@@ -44,8 +42,6 @@
         "tri_scorpion_lord": {
             "name": "Tri-Scorpion Lord",
             "description": "A lord of the undying machines equipped with high tech tri-legs and a tough carapace.",
-            "min": 1,
-            "max": 1,
             "category": "command",
             "rules": [{"id": "leader_x", "x": "Infantry"}, "walker", {"id": "wounds", "x": 3}, {"id": "machine_tactics", "x": 1}],
             "keywords": ["Heavy Infantry"],
@@ -67,8 +63,6 @@
         "annihilator_overlord": {
             "name": "Annihilator Overlord",
             "description": "A high lord with an Annihilator body.",
-            "min": 1,
-            "max": 1,
             "category": "command",
             "rules": [{"id": "leader_x", "x": "Infantry"}, "hover", {"id": "wounds", "x": 3}, {"id": "machine_tactics", "x": 1}],
             "keywords": ["Heavy Infantry"],
@@ -102,8 +96,6 @@
         "overlord": {
             "name": "Overlord",
             "description": "A high lord of the undying machines.",
-            "min": 1,
-            "max": 1,
             "category": "command",
             "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "wounds", "x": 3}, {"id": "machine_tactics", "x": 2}],
             "keywords": ["Infantry"],
@@ -138,8 +130,6 @@
         "lord": {
             "name": "Lord",
             "description": "A lord of the undying machines.",
-            "min": 1,
-            "max": 1,
             "category": "command",
             "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "wounds", "x": 2}, {"id": "machine_tactics", "x": 1}],
             "keywords": ["Infantry"],
@@ -174,8 +164,6 @@
         "technomancer": {
             "name": "Technomancer",
             "description": "A techno-wizard of the undying machines.",
-            "min": 1,
-            "max": 1,
             "category": "command",
             "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "wounds", "x": 2}],
             "keywords": ["Infantry"],
@@ -213,8 +201,6 @@
         "warden": {
             "name": "Warden",
             "description": "A sworn guardian of the lords and one of the more elite machines.",
-            "min": 1,
-            "max": 1,
             "category": "specialist",
             "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "wounds", "x": 2}, "warden_tactics"],
             "keywords": ["Infantry"],
@@ -236,8 +222,6 @@
         "dimensional_shard": {
             "name": "Dimensional Shard",
             "description": "A dimensional being that can take many forms, often regarded as a god of the sky.",
-            "min": 1,
-            "max": 1,
             "category": "specialist",
             "rules": [{"id": "leader_x", "x": "Infantry"}, "fly", {"id": "power", "x": 1}, "damage_chart"],
             "keywords": ["Infantry"],
@@ -261,8 +245,6 @@
         "warriors": {
             "name": "Warriors",
             "description": "A group of machines, bent on reclaiming their land.",
-            "min": 1,
-            "max": 1,
             "category": "core",
             "rules": [],
             "keywords": ["Infantry"],
@@ -286,8 +268,6 @@
         "eternals": {
             "name": "Eternals",
             "description": "A group of veteran machines.",
-            "min": 1,
-            "max": 1,
             "category": "core",
             "rules": [],
             "keywords": ["Infantry"],
@@ -310,19 +290,17 @@
         "guardians": {
             "name": "Guardians",
             "description": "A group of machine guardians bound to defend their home.",
-            "min": 1,
-            "max": 1,
             "category": "specialist",
             "rules": [],
             "keywords": ["Infantry"],
             "options": [{"replaceWeapon": [{"id": "phase_sword", "count": 3}, "shield"], "withWeapon": [{"id": "war_scythe", "count": 3}], "modelLimit": "all"}],
-            "models": [{"name": "Guardian", "courage": 6, "movement": 5, "shoot": 6, "fight": 6, "defense": 9, "reflexes": 5, "weapons": [{"id": "phase_sword", "count": 3}, "shield"], "min": 5, "max": 10}]
+            "models": [
+                {"name": "Guardian", "courage": 6, "movement": 5, "shoot": 6, "fight": 6, "defense": 9, "reflexes": 5, "weapons": [{"id": "phase_sword", "count": 3}, "shield"], "min": 5, "max": 10}
+            ]
         },
         "praetorians": {
             "name": "Praetorians",
             "description": "A group of machine guardians with special anti-gravity generators.",
-            "min": 1,
-            "max": 1,
             "category": "strike",
             "rules": ["fly"],
             "keywords": ["Infantry"],
@@ -347,8 +325,6 @@
         "flayers": {
             "name": "Flayers",
             "description": "A group of machines obsessed with the flayed flesh of their enemies.",
-            "min": 1,
-            "max": 1,
             "category": "core",
             "rules": ["fear"],
             "keywords": ["Infantry"],
@@ -358,8 +334,6 @@
         "hunters": {
             "name": "Hunters",
             "description": "A group of veteran machines adept at hunting and killing valuable targets.",
-            "min": 1,
-            "max": 1,
             "category": "specialist",
             "rules": ["ambush"],
             "keywords": ["Infantry"],
@@ -368,8 +342,6 @@
         "gyro_bikes": {
             "name": "Gyro-Bikes",
             "description": "A group of machines mounted on gyroscopic anti-gravity bikes.",
-            "min": 1,
-            "max": 1,
             "category": "strike",
             "rules": ["hover"],
             "keywords": ["Biker"],
@@ -384,8 +356,6 @@
         "shifters": {
             "name": "Shifters",
             "description": "A group of snake-like robots that shift between dimensions.",
-            "min": 1,
-            "max": 1,
             "category": "specialist",
             "rules": ["teleport", {"id": "wounds", "x": 2}],
             "keywords": ["Heavy Infantry"],
@@ -395,8 +365,6 @@
         "tri_scorpion_annihilators": {
             "name": "Tri-Scorpion Annihilators",
             "description": "A melee-focused annihilator equipped with high tech tri-legs and a tough carapace.",
-            "min": 1,
-            "max": 1,
             "category": "specialist",
             "keywords": ["Heavy Infantry"],
             "models": [
@@ -444,8 +412,6 @@
         "tunneling_annihilators": {
             "name": "Tunneling Annihilators",
             "description": "A melee-focused annihilator which tunnels under the ground.",
-            "min": 1,
-            "max": 1,
             "category": "specialist",
             "keywords": ["Heavy Infantry"],
             "rules": ["ambush", "coil_body"],
@@ -494,8 +460,6 @@
         "annihilators": {
             "name": "Annihilators",
             "description": "A ranged-focused annihilator which hovers across all terrain.",
-            "min": 1,
-            "max": 1,
             "category": "heavy",
             "rules": ["hover", {"id": "wounds", "x": 2}],
             "keywords": ["Heavy Infantry"],
@@ -505,8 +469,6 @@
         "heavy_annihilators": {
             "name": "Heavy Annihilators",
             "description": "A ranged-focused heavy annihilator which hovers across all terrain.",
-            "min": 1,
-            "max": 1,
             "category": "heavy",
             "rules": ["hover", {"id": "wounds", "x": 2}],
             "keywords": ["Heavy Infantry"],
@@ -516,8 +478,6 @@
         "transport_arc": {
             "name": "Transport Arc",
             "description": "A hovering transport craft with optional built-in repair-machines.",
-            "min": 1,
-            "max": 1,
             "category": "transport",
             "rules": ["hover", "flare_shielding", "vulnerable_side_rear", {"id": "impact", "x": 6}, {"id": "transport", "x": 11}, "damage_chart"],
             "keywords": ["Vehicle"],
@@ -540,8 +500,6 @@
         "doom_barge": {
             "name": "Doom Barge",
             "description": "A floating vehicle with large tesla cannons.",
-            "min": 1,
-            "max": 1,
             "category": "heavy",
             "rules": ["hover", "flare_shielding", "damage_chart", {"id": "impact", "x": 3}],
             "keywords": ["Vehicle"],
@@ -564,8 +522,6 @@
         "doom_walker": {
             "name": "Doom Walker",
             "description": "A tall walking machine tasked with a large cannon.",
-            "min": 1,
-            "max": 1,
             "category": "heavy",
             "rules": ["walker", "flare_shielding", "damage_chart", {"id": "impact", "x": 3}],
             "keywords": ["Vehicle"],
@@ -587,8 +543,6 @@
         "doom_arc": {
             "name": "Doom Arc",
             "description": "A hovering deadly weapon carrier.",
-            "min": 1,
-            "max": 1,
             "category": "heavy",
             "rules": ["hover", "flare_shielding", "vulnerable_side_rear", {"id": "impact", "x": 6}, "damage_chart"],
             "keywords": ["Vehicle"],
@@ -610,8 +564,6 @@
         "transport_scythe": {
             "name": "Scythe Transport",
             "description": "A flying transport craft.",
-            "min": 1,
-            "max": 1,
             "category": "transport",
             "rules": ["aircraft", {"id": "transport", "x": 11}, "damage_chart"],
             "keywords": ["Vehicle", "Aircraft"],
@@ -634,8 +586,6 @@
         "fighter_scythe": {
             "name": "Scythe Fighter",
             "description": "A flying fighter craft.",
-            "min": 1,
-            "max": 1,
             "category": "strike",
             "rules": ["aircraft", "damage_chart"],
             "keywords": ["Vehicle", "Aircraft"],
@@ -658,8 +608,6 @@
         "stalker_tank": {
             "name": "Machine Stalker",
             "description": "A large walking vehicle with underslung mounted weapon and massive crushing legs.",
-            "min": 1,
-            "max": 1,
             "category": "heavy",
             "rules": ["walker", "flare_shielding", "vulnerable_side_rear", "damage_chart", "targeting_relay"],
             "keywords": ["Vehicle"],
@@ -687,8 +635,6 @@
         "spider_worker": {
             "name": "Spider Worker",
             "description": "A spider-like automation tasked with maintaing other machines.",
-            "min": 1,
-            "max": 1,
             "category": "specialist",
             "rules": ["hover", {"id": "wounds", "x": 3}],
             "keywords": ["Vehicle"],
@@ -711,8 +657,6 @@
         "reanimator": {
             "name": "Reanimator",
             "description": "A tall walking machine tasked with reanimating fallen units.",
-            "min": 1,
-            "max": 1,
             "category": "specialist",
             "rules": ["walker", "reanimation_beam", "damage_chart"],
             "keywords": ["Vehicle"],
@@ -734,8 +678,6 @@
         "invasion_arc": {
             "name": "Heavy Invasion Arc",
             "description": "A large hovering fortress with optional portal.",
-            "min": 1,
-            "max": 1,
             "category": "super_heavy",
             "rules": ["hover", "flare_shielding", "vulnerable_rear", "damage_chart"],
             "keywords": ["Vehicle"],
@@ -911,7 +853,7 @@
         },
         "control_orb": {
             "name": "Control Orb",
-            "description": "When this unit activates, choose one friendly _Vehicle_ unit to immediately activate. That unit gets +1 Accuracy and Strength.",
+            "description": "When this unit activates, choose one friendly _Vehicle_ unit within 6\" to immediately activate. That unit gets +1 Accuracy and Strength.",
             "points": 10
         },
         "time_orb": {

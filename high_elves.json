@@ -95,6 +95,158 @@
                 }
             ]
         },
+        "psychic":{
+            "name": "Psychic",
+            "description": "A gifted high elf psychic.",
+            "category": "command",
+            "keywords": ["Infantry"],
+            "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "rifle_tactics", "x": 2}, {"id": "power", "x": 2}, {"id": "wounds", "x": 3}],
+            "models": [
+                {
+                    "name": "Psychic",
+                    "courage": 7,
+                    "movement": 7,
+                    "shoot": 7,
+                    "fight": 7,
+                    "defense": 6,
+                    "reflexes": 6,
+                    "weapons": ["shard_pistol", {"id":"hexblade", "count":2}],
+                    "options": [{"replaceWeapon": {"id":"hexblade", "count":2}, "withWeapon": [["laser_lance_shoot", {"id": "laser_lance_melee", "count": 2}]]}],
+                    "min": 1,
+                    "max": 1
+                }
+            ]
+        },
+        "psychic_on_bike":{
+            "name": "Psychic on Bike",
+            "description": "A gifted high elf psychic riding a sleek motorbike.",
+            "category": "command",
+            "keywords": ["Biker"],
+            "rules": [{"id": "leader_x", "x": "Biker"}, {"id": "rifle_tactics", "x": 2}, {"id": "power", "x": 2}, {"id": "wounds", "x": 3}, "hover"],
+            "models": [
+                {
+                    "name": "Psychic",
+                    "courage": 7,
+                    "movement": 8,
+                    "shoot": 7,
+                    "fight": 7,
+                    "defense": 6,
+                    "reflexes": 6,
+                    "weapons": ["shard_pistol", {"id":"hexblade", "count":2}, "twin_shard_rifle"],
+                    "options": [{"replaceWeapon": {"id":"hexblade", "count":2}, "withWeapon": [["laser_lance_shoot", {"id": "laser_lance_melee", "count": 2}]]}],
+                    "min": 1,
+                    "max": 1
+                }
+            ]
+        },
+        "spirit_psychic": {
+            "name": "Spirit Psychic",
+            "description": "A high elf psychic focused on enhancing the mechanical aspects of the army.",
+            "category": "command",
+            "keywords": ["Infantry"],
+            "rules": [{"id": "rifle_tactics", "x": 2}, {"id": "repair", "x": 1}, {"id": "ward", "x":1}, {"id": "wounds", "x": 2}],
+            "models":[
+                {
+                    "name": "Spirit Psychic",
+                    "courage": 6,
+                    "movement": 7,
+                    "shoot": 7,
+                    "fight": 7,
+                    "defense": 6,
+                    "reflexes": 6,
+                    "weapons": ["shard_pistol", {"id": "hexblade", "count": 2}],
+                    "min": 1,
+                    "max": 1
+                }
+            ]
+        },
+        "war_psychic": {
+            "name": "War Psychic",
+            "description": "A high elf psychic trained in the arts of war.",
+            "category": "command",
+            "keywords": ["Infantry"],
+            "rules": [{"id": "leader_x", "x": "Infantry"},  {"id": "power", "x": 1}],
+            "models": [
+                {
+                    "name": "War Psychic",
+                    "courage": 6,
+                    "movement": 7,
+                    "shoot": 6,
+                    "fight": 6,
+                    "defense": 6,
+                    "reflexes": 6,
+                    "weapons": ["shard_pistol", {"id":"hexblade", "count":2}],
+                    "options": [{"replaceWeapon": {"id":"hexblade", "count":2}, "withWeapon": [["laser_lance_shoot", {"id": "laser_lance_melee", "count": 2}]]}],
+                    "min": 1,
+                    "max": 1
+                }
+            ]
+        },
+        "war_psychic_on_bike":{
+            "name": "War Psychic on Bike",
+            "description": "A high elf psychic practiced in the arts of war riding a sleek motorbike.",
+            "category": "command",
+            "keywords": ["Biker"],
+            "rules": [{"id": "leader_x", "x": "Biker"}, {"id": "power", "x": 1}, "hover"],
+            "models": [
+                {
+                    "name": "War Psychic on Bike",
+                    "courage": 6,
+                    "movement": 8,
+                    "shoot": 6,
+                    "fight": 6,
+                    "defense": 6,
+                    "reflexes": 6,
+                    "weapons": ["shard_pistol", {"id":"hexblade", "count":2}, "twin_shard_rifle"],
+                    "options": [{"replaceWeapon": {"id":"hexblade", "count":2}, "withWeapon": [["laser_lance_shoot", {"id": "laser_lance_melee", "count": 2}]]}],
+                    "min": 1,
+                    "max": 1
+                }
+            ]
+        },
+        "war_psychic_conclave":{
+            "name": "War Psychic Conclave",
+            "description": "A group of trained psychics using their combined powers to wreak havok on the battlefield.",
+            "category": "command",
+            "keywords": ["Infantry"],
+            "rules": [{"id": "leader_x", "x": "Infantry"}, "conclave"],
+            "models":[
+                {"name": "War Psychic",
+                    "courage": 6,
+                    "movement": 7,
+                    "shoot": 6,
+                    "fight": 6,
+                    "defense": 6,
+                    "reflexes": 6,
+                    "weapons": ["shard_pistol", {"id":"hexblade", "count":2}],
+                    "options": [{"replaceWeapon": {"id":"hexblade", "count":2}, "withWeapon": [["laser_lance_shoot", {"id": "laser_lance_melee", "count": 2}]]}],
+                    "min": 1,
+                    "max": 10
+                }
+            ]
+        },
+        "war_psychic_conclave_on_bikes":{
+            "name": "War Psychic Conclave on Bikes",
+            "description": "A conclave of trained psychics equipped with sleek motorbikes for enhanced mobility.",
+            "category": "command",
+            "keywords": ["Biker"],
+            "rules": [{"id": "leader_x", "x": "Biker"}, "conclave", "hover"],
+            "models": [
+                {
+                    "name": "War Psychic on Bike",
+                    "courage": 6,
+                    "movement": 8,
+                    "shoot": 6,
+                    "fight": 6,
+                    "defense": 6,
+                    "reflexes": 6,
+                    "weapons": ["shard_pistol", {"id":"hexblade", "count":2}, "twin_shard_rifle"],
+                    "options": [{"replaceWeapon": {"id":"hexblade", "count":2}, "withWeapon": [["laser_lance_shoot", {"id": "laser_lance_melee", "count": 2}]]}],
+                    "min": 1,
+                    "max": 10
+                }
+            ]
+        },
         "defenders": {
             "name": "Defender Squad",
             "description": "A group of high elf warriors.",
@@ -113,18 +265,7 @@
                     "min": 1,
                     "max": 1
                 },
-                {
-                    "name": "Defender",
-                    "courage": 5,
-                    "movement": 7,
-                    "shoot": 6,
-                    "fight": 5,
-                    "defense": 5,
-                    "reflexes": 6,
-                    "weapons": ["shard_carbine", "plasma_grenade", "ccw"],
-                    "min": 4,
-                    "max": 19
-                },
+                {"name": "Defender", "courage": 5, "movement": 7, "shoot": 6, "fight": 5, "defense": 5, "reflexes": 6, "weapons": ["shard_carbine", "plasma_grenade", "ccw"], "min": 4, "max": 19},
                 {
                     "name": "Weapon Platform",
                     "courage": 5,
@@ -153,8 +294,6 @@
         "avengers": {
             "name": "Avenger Squad",
             "description": "A group of elite high elf warriors.",
-            "min": 1,
-            "max": 1,
             "category": "core",
             "keywords": ["Infantry"],
             "models": [
@@ -176,31 +315,14 @@
         "rangers": {
             "name": "Ranger Squad",
             "description": "A group of high elf warriors.",
-            "min": 1,
-            "max": 1,
             "category": "core",
             "keywords": ["Infantry"],
             "rules": ["stealth", "scout"],
-            "models": [
-                {
-                    "name": "Rangers",
-                    "courage": 5,
-                    "movement": 7,
-                    "shoot": 6,
-                    "fight": 5,
-                    "defense": 5,
-                    "reflexes": 6,
-                    "weapons": ["shard_sniper", "plasma_grenade", "ccw"],
-                    "min": 5,
-                    "max": 10
-                }
-            ]
+            "models": [{"name": "Rangers", "courage": 5, "movement": 7, "shoot": 6, "fight": 5, "defense": 5, "reflexes": 6, "weapons": ["shard_sniper", "plasma_grenade", "ccw"], "min": 5, "max": 10}]
         },
         "storm_squad": {
             "name": "Storm Squad",
             "description": "A group of high elf assault troops.",
-            "min": 1,
-            "max": 1,
             "category": "core",
             "keywords": ["Infantry"],
             "models": [
@@ -226,8 +348,6 @@
         "dragon_fire": {
             "name": "Dragon Fire Squad",
             "description": "A group of highly trained soldiers weilding powerful guns designed to melt through even the thickest of armor.",
-            "min": 1,
-            "max": 1,
             "category": "specialist",
             "keywords": ["Infantry"],
             "models": [
@@ -249,8 +369,6 @@
         "wraith_squad": {
             "name": "Wraith Squad",
             "description": "A group of heavily armored constructs.",
-            "min": 1,
-            "max": 1,
             "category": "specialist",
             "keywords": ["Infantry"],
             "models": [
@@ -283,8 +401,6 @@
         "banshees": {
             "name": "Banshee Squad",
             "description": "A group of swift and brutal melee warriors.",
-            "min": 1,
-            "max": 1,
             "category": "specialist",
             "keywords": ["Infantry"],
             "models": [
@@ -306,8 +422,6 @@
         "spectres": {
             "name": "Spectre Warriors",
             "description": "A squad of ghostly warriors adept at remaining unseen until they make their attack.",
-            "min": 1,
-            "max": 1,
             "category": "specialist",
             "keywords": ["Infantry"],
             "models": [
@@ -329,8 +443,6 @@
         "scorpions": {
             "name": "Scorpion Squad",
             "description": "A squad of warriors trained to weild chainswords and pistols to a deadly result.",
-            "min": 1,
-            "max": 1,
             "category": "specialist",
             "keywords": ["Infantry"],
             "rules": ["ambush", "stealth"],
@@ -353,8 +465,6 @@
         "glittering_spears": {
             "name": "Glittering Spear Squad",
             "description": "A squad of highly trained bikers that are adept at both melee and short range combat.",
-            "min": 1,
-            "max": 1,
             "category": "strike",
             "keywords": ["Biker"],
             "rules": ["hover"],
@@ -377,8 +487,6 @@
         "wind_rifles": {
             "name": "Wind Rifle Squad",
             "description": "A squad of highly trained bikers that are adept at long range, high-speed combat.",
-            "min": 1,
-            "max": 1,
             "category": "strike",
             "keywords": ["Biker"],
             "rules": ["hover"],
@@ -401,8 +509,6 @@
         "hawks": {
             "name": "Hawk Squad",
             "description": "A group of winged warriors trained to use the element of suprise and strike from above.",
-            "min": 1,
-            "max": 1,
             "category": "strike",
             "keyowrds": ["Infantry"],
             "rules": ["ambush", "fly"],
@@ -425,8 +531,6 @@
         "spiders": {
             "name": "Spider Squad",
             "description": "A group of stealthy warriors able to harness the power of magic to transport themselves quickly across the battlefield.",
-            "min": 1,
-            "max": 1,
             "category": "strike",
             "keywords": ["Infantry"],
             "rules": ["stealth", "ambush"],
@@ -449,8 +553,6 @@
         "hover_tank": {
             "name": "Hover Tank",
             "description": "A heavy hover tank that can be outfitted with heavier weaponry to eliminate vehicle threats.",
-            "min": 1,
-            "max": 1,
             "category": "heavy",
             "rules": ["hover", {"id": "impact", "x": 6}, "damage_chart"],
             "keywords": ["Vehicle"],
@@ -476,8 +578,6 @@
         "hover_artillery_tank": {
             "name": "Hover Artillery Tank",
             "description": "A hover tank with indirect fire artillery.",
-            "min": 1,
-            "max": 1,
             "category": "heavy",
             "rules": ["hover", {"id": "impact", "x": 3}, "damage_chart"],
             "keywords": ["Vehicle"],
@@ -503,8 +603,6 @@
         "hover_apc": {
             "name": "Hover APC",
             "description": "A hover tank with indirect fire artillery.",
-            "min": 1,
-            "max": 1,
             "category": "transport",
             "rules": ["hover", {"id": "impact", "x": 3}, "damage_chart", {"id": "transport", "x": 12}],
             "keywords": ["Vehicle"],
@@ -531,8 +629,6 @@
         "wraith_titan": {
             "name": "Wraith Titan",
             "description": "A wraith lord with a variety of loadouts to punish enemies of the high elves on the bloodiest of battlefields.",
-            "min": 1,
-            "max": 1,
             "category": "super_heavy",
             "rules": ["damage_chart", "titanic"],
             "keywords": ["Vehicle"],
@@ -766,7 +862,8 @@
         "hawk_talon": {"name": "Hawk Talon", "attacks": 4, "short": 12, "medium": 24, "ap": 2, "rules": ["assault"]},
         "sunlight_rifle": {"name": "Sunlight Rifle", "attacks": 4, "short": 12, "medium": 24, "ap": 1, "rules": ["assault"]},
         "spinnerette_rifle": {"name": "Spinnerette Rifle", "attacks": 2, "short": 6, "medium": 12, "ap": 3, "rules": ["assault", "rending"]},
-        "web_rifle": {"name": "Web Rifle", "attacks": 1, "short": 9, "medium": 18, "ap": 4, "rules": [{"id": "slowing", "x": 2}, "rapid_fire"]}
+        "web_rifle": {"name": "Web Rifle", "attacks": 1, "short": 9, "medium": 18, "ap": 4, "rules": [{"id": "slowing", "x": 2}, "rapid_fire"]},
+        "hexblade": {"name": "Hexblade", "attacks": 1, "short": "Melee", "ap": 0, "rules": [{"id":"rending"}]}
     },
     "relics": {
         "master_of_war": {
