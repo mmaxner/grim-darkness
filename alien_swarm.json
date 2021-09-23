@@ -80,7 +80,7 @@
 							"addRule": ["adrenaline_glands_large","toxic_sacks_large",{"id": "transport", "x": 11}]
 						},
 						{
-							"replaceRule": {"id": "swarm_melee_tactics", "x": 1}, "withRule": {"id": "swarm_melee_tactics", "x": 2}
+							"replaceRule": {"id": "swarm_gun_tactics", "x": 1}, "withRule": {"id": "swarm_gun_tactics", "x": 2}
 						}
 					],
 					"min": 1,
