@@ -167,6 +167,7 @@
             "name": "Hive Warriors",
             "description": "Large bugs which can extend the hive mind",
             "category": "core",
+			"keywords": ["Heavy Infantry"],
             "rules": [{"id": "wounds", "x": 2}],
             "options": [
                 {"replaceWeapon": "consumer", "withWeapon": [{"id": "razor_talons", "count": 2}, "spikefists", "acid_spitter", {"id": "piercing_claws", "count": 2}, {"id": "boneswords", "count": 2}]},
@@ -205,6 +206,7 @@
             "name": "Hive Burrowers",
             "description": "Large bugs which burrow underground to surprise their targets.",
             "category": "strike",
+			"keywords": ["Heavy Infantry"],
             "rules": [{"id": "wounds", "x": 2}, "ambush"],
             "models": [
                 {
@@ -330,6 +332,7 @@
             "name": "Consumption Beast",
             "description": "A monster with huge tentacled jaws meant to rapidly consume biomass",
             "category": "specialist",
+			"keywords": ["Monster"],
             "rules": ["damage_chart"],
             "models": [
                 {
@@ -350,6 +353,7 @@
             "name": "Hive Guard",
             "description": "Armed with homing cannons, these guard the flanks of the hive's attacks",
             "category": "specialist",
+			"keywords": ["Heavy Infantry"],
             "rules": [{"id": "wounds", "x": 2}],
             "models": [
                 {
@@ -371,6 +375,7 @@
             "name": "Lurker",
             "description": "Working alone, Lurkers hide in the shadows waiting for the moment to strike",
             "category": "specialist",
+			"keywords": ["Heavy Infantry"],
             "rules": [{"id": "wounds", "x": 2}, "stealth", "ambush"],
             "models": [
                 {
@@ -391,6 +396,7 @@
             "name": "Mind Beast",
             "description": "A huge beast capable of bending reality with its mind and claws",
             "category": "specialist",
+			"keywords": ["Monster"],
             "rules": ["damage_chart", {"id": "power", "x": "1"}],
             "models": [
                 {"name": "Mind Beast", 
@@ -407,6 +413,7 @@
             "name": "Flame Beasts",
             "description": "A big beast able to produce a flammable acid from its maw",
             "category": "specialist",
+			"keywords": ["Heavy Infantry"],
             "rules": [{"id": "wounds", "x": 2}],
             "models": [
                 {
@@ -427,6 +434,7 @@
             "name": "Mortar Beasts",
             "description": "A big beast with an organic projectile weapon integrated into its body",
             "category": "specialist",
+			"keywords": ["Heavy Infantry"],
             "rules": [
                 {
                     "id": "wounds",
@@ -454,6 +462,7 @@
             "name": "Hive Lord Guard",
             "description": "The heavily armored guardians of a Hive Lord",
             "category": "specialist",
+			"keywords": ["Heavy Infantry"],
             "rules": [{"id": "wounds", "x": 2}],
             "models": [
                 {
@@ -475,6 +484,7 @@
             "name": "Venom Beasts",
             "description": "Horrid bugs hiding dangerous tentacles behind a blinding smog of spores",
             "category": "specialist",
+			"keywords": ["Heavy Infantry"],
             "rules": [{"id": "wounds", "x": 2}],
             "options": [{"addRule": "spore_cloud"}],
             "models": [{"name": "Venom Beast", "courage": 4, "reflexes": 5, "fight": 5, "shoot": 5, "defense": 6, "movement": 5, "weapons": [{"id": "venom_lashes", "count": 2}], "min": 3, "max": 6}]
@@ -483,7 +493,7 @@
             "name": "Psychic Beasts",
             "description": "Fragile bugs capable of bending reality with their powerful minds",
             "category": "specialist",
-            "keywords": ["Monster"],
+			"keywords": ["Heavy Infantry"],
             "rules": [{"id": "wounds", "x": 2}],
             "models": [
                 {
@@ -506,6 +516,7 @@
             "name": "Carnivorous Beast",
             "description": "A huge alien beast with heavy scaled armor.",
             "category": "heavy",
+			"keywords": ["Monster"],
             "rules": ["damage_chart", {"id": "impact", "x": 3}],
             "models": [
                 {
@@ -539,6 +550,7 @@
             "name": "Cannon Beast",
             "description": "A huge alien beast with an organic cannon",
             "category": "heavy",
+			"keywords": ["Monster"],
             "rules": [
                 "damage_chart"
             ],
@@ -568,6 +580,7 @@
             "name": "Gunnery Beast",
             "description": "A huge alien beast holding a massive, organic gun in its powerful claws",
             "category": "heavy",
+			"keywords": ["Monster"],
             "rules": [
                 "damage_chart"
             ],
@@ -650,6 +663,7 @@
             "name": "Massive Burrower",
             "description": "A subterranean monstrosity waiting to attack",
             "category": "heavy",
+			"keywords": ["Monster"],
             "rules": ["damage_chart", "ambush", {"id": "transport", "x": "20"}],
             "models": [
                 {
