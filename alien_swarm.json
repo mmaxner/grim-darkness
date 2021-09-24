@@ -53,12 +53,12 @@
                 }
             ]
         },
-		{
+		"Hive Queen": {
 			"name": "Hive Queen",
 			"description": "A mobile factory of a beast that birthes swarms of aliens",
 			"category": "command",
 			"keywords": ["Monster"],
-			"rules": [{"id": "leader_x","x": "infantry"},"damage_chart","birthing_pods",{"id": "swarm_gun_tactics", "x": 1}],
+			"rules": ["damage_chart","birthing_pods",{"id": "swarm_gun_tactics", "x": 1}],
 			"models": [
 				{
 					"name": "Hive Queen",
