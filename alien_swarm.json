@@ -53,7 +53,7 @@
                 }
             ]
         },
-		"Hive Queen": {
+		"hive_queen": {
 			"name": "Hive Queen",
 			"description": "A mobile factory of a beast that birthes swarms of aliens",
 			"category": "command",
