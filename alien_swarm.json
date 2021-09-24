@@ -53,6 +53,41 @@
                 }
             ]
         },
+		"hive_queen": {
+			"name": "Hive Queen",
+			"description": "A mobile factory of a beast that birthes swarms of aliens",
+			"category": "command",
+			"keywords": ["Monster"],
+			"rules": ["damage_chart","birthing_pods",{"id": "swarm_gun_tactics", "x": 1}],
+			"models": [
+				{
+					"name": "Hive Queen",
+					"courage": 7,
+					"reflexes": 6,
+					"shoot": 5,
+					"fight": 5,
+					"defense": 12,
+					"movement": 8,
+					"rules": [{"id": "power","x": 1}],
+					"weapons": [{"id": "large_razor_talons","count": 3},"spine_salvo"],
+					"options": [
+						{
+							"replaceWeapon": {"id": "large_razor_talons","count": 3},
+							"withWeapon": [{"id": "crushing_claws","count": 3}],
+							"limit": 1
+						},
+						{
+							"addRule": ["adrenaline_glands_large","toxic_sacks_large",{"id": "transport", "x": 11}]
+						},
+						{
+							"replaceRule": {"id": "swarm_gun_tactics", "x": 1}, "withRule": {"id": "swarm_gun_tactics", "x": 2}
+						}
+					],
+					"min": 1,
+					"max": 1
+				}
+			]
+		},
         "snatcher_lord": {
             "name": "Soul Stealer Lord",
             "description": "A massive mutant with psychic powers",
@@ -570,6 +605,7 @@
         "chokethorn_cannon": {"name": "Chokethorn Cannon", "attacks": 1, "short": 18, "medium": 36, "ap": 4, "rules": [{"id": "blast", "x": 4}]},
         "spinethrowers": {"name": "Spinethrowers", "attacks": 3, "short": 6, "rules": ["assault", "pistol"]},
         "spine_banks": {"name": "Spine Banks", "attacks": 3, "short": 6, "ap": 2, "rules": ["assault", "pistol"]},
+		"spine_salvo": {"name": "Spine Salvo", "attacks": 4, "medium": 24, "short": 12, "ap": 2, "rules": ["assault"]},
         "thrashing_scythe": {"name": "Thrashing Scythe", "attacks": 2, "short": "Melee", "ap": 1},
         "gargantuan_talons": {"name": "Gargantuan Talons", "attacks": 1, "short": "Melee", "ap": 8, "rules": [{"id": "reach", "x": 2}]},
         "lashing_whips": {"name": "Lashing Whips", "attacks": 1, "short": "Melee", "ap": 3},
@@ -592,6 +628,19 @@
             "description": "When this unit is activated, choose up to X friendly _Infantry_ units within 6\". Those units may re-roll failed Strength tests of 9+ until the end of the round.",
             "points": ["rule.x", {"multiply": 10}]
         },
+		"swarm_gun_tactics": {
+		  "name": "Swarm Gun Tactics",
+		  "inputs": [
+			"x"
+		  ],
+		  "description": "When this unit is activated, choose up to X friendly _Infantry_ units within 6\". Those units may re-roll failed Accuracy tests of 9+ until the end of the round.",
+		  "points": [
+			"rule.x",
+			{
+			  "multiply": 10
+			}
+		  ]
+		},
         "spore_cloud": {
             "name": "Spore Cloud",
             "description": "Once per round, models suffer -1 Accuracy when shooting at a friendly unit within 6\" of this model. This may be used one additional time per round for each model with this rule.",
@@ -605,6 +654,11 @@
         "legend_born_survivor": {
             "name": "Born Survivor",
             "description": "After taking saves for this unit, roll a d10 for each model or Wound(x) lost.  On a 3 or less, that model or Wound(x) is restored."
+        },
+		"birthing_pods": {
+            "name": "Birthing Pods",
+            "description": "Once per round after taking Saves for an _Infantry_ unit. Roll a D10 for each model or Wound(x) lost. On a 3 or less, that model or Wound(x) is restored. Models must be restored to full Wounds(x) before restoring a new model.",
+            "points": 15
         }
     },
     "powers": {
