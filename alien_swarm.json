@@ -135,7 +135,7 @@
         },
         "hive_warrior_prime": {
             "name": "Hive Warrior Prime",
-            "description": "",
+            "description": "A leader amongst the elite alien warriors",
             "category": "command",
             "keywords": ["Heavy Infantry"],
             "rules": [{"id": "leader_x", "x": "Infantry, Heavy Infantry"}, {"id": "wounds", "x": 3}, {"id": "swarm_melee_tactics", "x": 1}],
@@ -389,7 +389,7 @@
         },
         "mind_beast": {
             "name": "Mind Beast",
-            "description": "",
+            "description": "A huge beast capable of bending reality with its mind and claws",
             "category": "specialist",
             "rules": ["damage_chart", {"id": "power", "x": "1"}],
             "models": [
@@ -405,7 +405,7 @@
         },
         "flame_beasts": {
             "name": "Flame Beasts",
-            "description": "",
+            "description": "A big beast able to produce a flammable acid from its maw",
             "category": "specialist",
             "rules": [{"id": "wounds", "x": 2}],
             "models": [
@@ -473,7 +473,7 @@
         },
         "venom_beasts": {
             "name": "Venom Beasts",
-            "description": "",
+            "description": "Horrid bugs hiding dangerous tentacles behind a blinding smog of spores",
             "category": "specialist",
             "rules": [{"id": "wounds", "x": 2}],
             "options": [{"addRule": "spore_cloud"}],
@@ -481,7 +481,7 @@
         },
         "psychic_beasts": {
             "name": "Psychic Beasts",
-            "description": "",
+            "description": "Fragile bugs capable of bending reality with their powerful minds",
             "category": "specialist",
             "keywords": ["Monster"],
             "rules": [{"id": "wounds", "x": 2}],
@@ -566,7 +566,7 @@
         },
 		"gunnery_beast": {
             "name": "Gunnery Beast",
-            "description": "A huge alien beast holding massive, organic guns in its powerful claws",
+            "description": "A huge alien beast holding a massive, organic gun in its powerful claws",
             "category": "heavy",
             "rules": [
                 "damage_chart"
@@ -717,7 +717,7 @@
 		"bio_plasma_cannon": {"name": "Bio-Plasma Cannon","attacks": 6,"short": 18,"medium": 36,"ap": 5,"rules": []},
 		"acid_jet": {"name": "Acid Jet", "attacks": 6, "short": 9,"medium": 18,"ap": 1,"rules": []},
 		"meat_borer_cluster": {"name": "Meat Borer Cluster","attacks": 20,"short": 9,"medium": 18,"ap": 2,"rules": []},
-        "bio_eruptor": {"name": "Bio-Eruptor","attacks": 3,"short": 24,"medium": 48,"ap": 8,"rules": []},
+        "bio_eruptor": {"name": "Bio-Eruptor","attacks": 3,"short": 24,"medium": 48,"ap": 8,"rules": [{"id":"critical", "x":1}]},
 		"spore_shot": {"name": "Spore Shot","attacks": 1,"short": 24,"medium": 48,"ap": 7,"rules": ["lethal"]}
     },
     "rules": {
