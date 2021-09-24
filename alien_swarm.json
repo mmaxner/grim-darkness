@@ -508,6 +508,35 @@
                 }
             ]
         },
+		"cannon_beast": {
+            "name": "Cannon Beast",
+            "description": "A huge alien beast with an organic cannon",
+            "category": "heavy",
+            "rules": [
+                "damage_chart"
+            ],
+            "models": [
+                {
+                    "name": "Carnivorous Beast",
+                    "courage": 4,
+                    "reflexes": 4,
+                    "fight": 5,
+                    "shoot": 6,
+                    "defense": 12,
+                    "movement": 6,
+                    "weapons": [
+                        "bio_plasma_cannon",
+                        {
+                            "id": "ccw",
+                            "count": 3
+                        }
+                    ],
+                    "options": [],
+                    "min": 1,
+                    "max": 1
+                }
+            ]
+        },
         "gargantuan_creature": {
             "name": "Gargantuan Monstrosity",
             "description": "An alien monster the size of a city-block",
@@ -613,7 +642,8 @@
         "bio_cannon": {"name": "Bio Cannon", "attacks": 6, "short": 24, "medium": 48, "ap": 8},
         "toxin_spike": {"name": "Toxin Spike", "attacks": 1, "short": "Melee", "ap": 1, "rules": ["poison"]},
         "bio_rattle": {"name": "Bio-Electric Rattle", "attacks": 1, "short": "Melee", "ap": 1, "rules": [{"id": "shocking", "x": 1}]},
-        "bio_pulse": {"name": "Bio-Electric Pulse", "attacks": 6, "short": 6, "long": 12, "ap": 2}
+        "bio_pulse": {"name": "Bio-Electric Pulse", "attacks": 6, "short": 6, "long": 12, "ap": 2},
+		"bio_plasma_cannon": {"name": "Bio-Plasma Cannon","attacks": 6,"short": 18,"medium": 36,"ap": 5,"rules": []}
     },
     "rules": {
         "tusks": {"name": "Tusks", "hidden": true, "description_short": "Impact +3", "description": "This model gains +3 impact.", "points": 6},
