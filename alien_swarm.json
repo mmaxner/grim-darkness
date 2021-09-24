@@ -423,6 +423,33 @@
                 }
             ]
         },
+		"mortar_beasts": {
+            "name": "Mortar Beasts",
+            "description": "A big beast with an organic projectile weapon integrated into its body",
+            "category": "specialist",
+            "rules": [
+                {
+                    "id": "wounds",
+                    "x": 2
+                }
+            ],
+            "models": [
+                {
+                    "name": "Mortar Beast",
+                    "courage": 4,
+                    "reflexes": 5,
+                    "fight": 5,
+                    "shoot": 7,
+                    "defense": 7,
+                    "movement": 5,
+                    "weapons": [
+                        "spore_shot"
+                    ],
+                    "min": 1,
+                    "max": 3
+                }
+            ]
+        },
         "hive_lord_guard": {
             "name": "Hive Lord Guard",
             "description": "The heavily armored guardians of a Hive Lord",
@@ -537,6 +564,50 @@
                 }
             ]
         },
+		"gunnery_beast": {
+            "name": "Gunnery Beast",
+            "description": "A huge alien beast holding massive, organic guns in its powerful claws",
+            "category": "heavy",
+            "rules": [
+                "damage_chart"
+            ],
+            "models": [
+                {
+                    "name": "Gunnery Beast",
+                    "courage": 5,
+                    "reflexes": 5,
+                    "fight": 5,
+                    "shoot": 5,
+                    "defense": 12,
+                    "movement": 6,
+                    "weapons": [
+                        {
+                            "id": "ccw",
+                            "count": 4
+                        },
+                        "spine_salvo",
+                        "acid_jet"
+                    ],
+                    "options": [
+                        {
+                            "replaceWeapon": "acid_jet",
+                            "withWeapon": [
+                                "meat_borer_cluster",
+                                "bio_eruptor"
+                            ]
+                        },
+                        {
+                            "addRule": [
+                                "adrenaline_glands_large",
+                                "toxic_sacks_large"
+                            ]
+                        }
+                    ],
+                    "min": 1,
+                    "max": 1
+                }
+            ]
+        },
         "gargantuan_creature": {
             "name": "Gargantuan Monstrosity",
             "description": "An alien monster the size of a city-block",
@@ -643,7 +714,11 @@
         "toxin_spike": {"name": "Toxin Spike", "attacks": 1, "short": "Melee", "ap": 1, "rules": ["poison"]},
         "bio_rattle": {"name": "Bio-Electric Rattle", "attacks": 1, "short": "Melee", "ap": 1, "rules": [{"id": "shocking", "x": 1}]},
         "bio_pulse": {"name": "Bio-Electric Pulse", "attacks": 6, "short": 6, "long": 12, "ap": 2},
-		"bio_plasma_cannon": {"name": "Bio-Plasma Cannon","attacks": 6,"short": 18,"medium": 36,"ap": 5,"rules": []}
+		"bio_plasma_cannon": {"name": "Bio-Plasma Cannon","attacks": 6,"short": 18,"medium": 36,"ap": 5,"rules": []},
+		"acid_jet": {"name": "Acid Jet", "attacks": 6, "short": 9,"medium": 18,"ap": 1,"rules": []},
+		"meat_borer_cluster": {"name": "Meat Borer Cluster","attacks": 20,"short": 9,"medium": 18,"ap": 2,"rules": []},
+        "bio_eruptor": {"name": "Bio-Eruptor","attacks": 3,"short": 24,"medium": 48,"ap": 8,"rules": []},
+		"spore_shot": {"name": "Spore Shot","attacks": 1,"short": 24,"medium": 48,"ap": 7,"rules": ["lethal"]}
     },
     "rules": {
         "tusks": {"name": "Tusks", "hidden": true, "description_short": "Impact +3", "description": "This model gains +3 impact.", "points": 6},
