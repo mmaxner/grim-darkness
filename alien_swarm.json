@@ -135,7 +135,7 @@
         },
         "hive_warrior_prime": {
             "name": "Hive Warrior Prime",
-            "description": "",
+            "description": "A leader amongst the elite alien warriors",
             "category": "command",
             "keywords": ["Heavy Infantry"],
             "rules": [{"id": "leader_x", "x": "Infantry, Heavy Infantry"}, {"id": "wounds", "x": 3}, {"id": "swarm_melee_tactics", "x": 1}],
@@ -167,6 +167,7 @@
             "name": "Hive Warriors",
             "description": "Large bugs which can extend the hive mind",
             "category": "core",
+			"keywords": ["Heavy Infantry"],
             "rules": [{"id": "wounds", "x": 2}],
             "options": [
                 {"replaceWeapon": "consumer", "withWeapon": [{"id": "razor_talons", "count": 2}, "spikefists", "acid_spitter", {"id": "piercing_claws", "count": 2}, {"id": "boneswords", "count": 2}]},
@@ -205,6 +206,7 @@
             "name": "Hive Burrowers",
             "description": "Large bugs which burrow underground to surprise their targets.",
             "category": "strike",
+			"keywords": ["Heavy Infantry"],
             "rules": [{"id": "wounds", "x": 2}, "ambush"],
             "models": [
                 {
@@ -330,6 +332,7 @@
             "name": "Consumption Beast",
             "description": "A monster with huge tentacled jaws meant to rapidly consume biomass",
             "category": "specialist",
+			"keywords": ["Monster"],
             "rules": ["damage_chart"],
             "models": [
                 {
@@ -350,6 +353,7 @@
             "name": "Hive Guard",
             "description": "Armed with homing cannons, these guard the flanks of the hive's attacks",
             "category": "specialist",
+			"keywords": ["Heavy Infantry"],
             "rules": [{"id": "wounds", "x": 2}],
             "models": [
                 {
@@ -371,6 +375,7 @@
             "name": "Lurker",
             "description": "Working alone, Lurkers hide in the shadows waiting for the moment to strike",
             "category": "specialist",
+			"keywords": ["Heavy Infantry"],
             "rules": [{"id": "wounds", "x": 2}, "stealth", "ambush"],
             "models": [
                 {
@@ -389,8 +394,9 @@
         },
         "mind_beast": {
             "name": "Mind Beast",
-            "description": "",
+            "description": "A huge beast capable of bending reality with its mind and claws",
             "category": "specialist",
+			"keywords": ["Monster"],
             "rules": ["damage_chart", {"id": "power", "x": "1"}],
             "models": [
                 {"name": "Mind Beast", 
@@ -405,8 +411,9 @@
         },
         "flame_beasts": {
             "name": "Flame Beasts",
-            "description": "",
+            "description": "A big beast able to produce a flammable acid from its maw",
             "category": "specialist",
+			"keywords": ["Heavy Infantry"],
             "rules": [{"id": "wounds", "x": 2}],
             "models": [
                 {
@@ -423,10 +430,39 @@
                 }
             ]
         },
+		"mortar_beasts": {
+            "name": "Mortar Beasts",
+            "description": "A big beast with an organic projectile weapon integrated into its body",
+            "category": "specialist",
+			"keywords": ["Heavy Infantry"],
+            "rules": [
+                {
+                    "id": "wounds",
+                    "x": 2
+                }
+            ],
+            "models": [
+                {
+                    "name": "Mortar Beast",
+                    "courage": 4,
+                    "reflexes": 5,
+                    "fight": 5,
+                    "shoot": 7,
+                    "defense": 7,
+                    "movement": 5,
+                    "weapons": [
+                        "spore_shot"
+                    ],
+                    "min": 1,
+                    "max": 3
+                }
+            ]
+        },
         "hive_lord_guard": {
             "name": "Hive Lord Guard",
             "description": "The heavily armored guardians of a Hive Lord",
             "category": "specialist",
+			"keywords": ["Heavy Infantry"],
             "rules": [{"id": "wounds", "x": 2}],
             "models": [
                 {
@@ -446,17 +482,18 @@
         },
         "venom_beasts": {
             "name": "Venom Beasts",
-            "description": "",
+            "description": "Horrid bugs hiding dangerous tentacles behind a blinding smog of spores",
             "category": "specialist",
+			"keywords": ["Heavy Infantry"],
             "rules": [{"id": "wounds", "x": 2}],
             "options": [{"addRule": "spore_cloud"}],
             "models": [{"name": "Venom Beast", "courage": 4, "reflexes": 5, "fight": 5, "shoot": 5, "defense": 6, "movement": 5, "weapons": [{"id": "venom_lashes", "count": 2}], "min": 3, "max": 6}]
         },
         "psychic_beasts": {
             "name": "Psychic Beasts",
-            "description": "",
+            "description": "Fragile bugs capable of bending reality with their powerful minds",
             "category": "specialist",
-            "keywords": ["Monster"],
+			"keywords": ["Heavy Infantry"],
             "rules": [{"id": "wounds", "x": 2}],
             "models": [
                 {
@@ -479,6 +516,7 @@
             "name": "Carnivorous Beast",
             "description": "A huge alien beast with heavy scaled armor.",
             "category": "heavy",
+			"keywords": ["Monster"],
             "rules": ["damage_chart", {"id": "impact", "x": 3}],
             "models": [
                 {
@@ -505,6 +543,81 @@
                     ],
                     "min": 1,
                     "max": 3
+                }
+            ]
+        },
+		"cannon_beast": {
+            "name": "Cannon Beast",
+            "description": "A huge alien beast with an organic cannon",
+            "category": "heavy",
+			"keywords": ["Monster"],
+            "rules": [
+                "damage_chart"
+            ],
+            "models": [
+                {
+                    "name": "Cannon Beast",
+                    "courage": 4,
+                    "reflexes": 4,
+                    "fight": 5,
+                    "shoot": 6,
+                    "defense": 12,
+                    "movement": 6,
+                    "weapons": [
+                        "bio_plasma_cannon",
+                        {
+                            "id": "ccw",
+                            "count": 3
+                        }
+                    ],
+                    "options": [],
+                    "min": 1,
+                    "max": 1
+                }
+            ]
+        },
+		"gunnery_beast": {
+            "name": "Gunnery Beast",
+            "description": "A huge alien beast holding a massive, organic gun in its powerful claws",
+            "category": "heavy",
+			"keywords": ["Monster"],
+            "rules": [
+                "damage_chart"
+            ],
+            "models": [
+                {
+                    "name": "Gunnery Beast",
+                    "courage": 5,
+                    "reflexes": 5,
+                    "fight": 5,
+                    "shoot": 5,
+                    "defense": 12,
+                    "movement": 6,
+                    "weapons": [
+                        {
+                            "id": "ccw",
+                            "count": 4
+                        },
+                        "spine_salvo",
+                        "acid_jet"
+                    ],
+                    "options": [
+                        {
+                            "replaceWeapon": "acid_jet",
+                            "withWeapon": [
+                                "meat_borer_cluster",
+                                "bio_eruptor"
+                            ]
+                        },
+                        {
+                            "addRule": [
+                                "adrenaline_glands_large",
+                                "toxic_sacks_large"
+                            ]
+                        }
+                    ],
+                    "min": 1,
+                    "max": 1
                 }
             ]
         },
@@ -550,6 +663,7 @@
             "name": "Massive Burrower",
             "description": "A subterranean monstrosity waiting to attack",
             "category": "heavy",
+			"keywords": ["Monster"],
             "rules": ["damage_chart", "ambush", {"id": "transport", "x": "20"}],
             "models": [
                 {
@@ -613,7 +727,12 @@
         "bio_cannon": {"name": "Bio Cannon", "attacks": 6, "short": 24, "medium": 48, "ap": 8},
         "toxin_spike": {"name": "Toxin Spike", "attacks": 1, "short": "Melee", "ap": 1, "rules": ["poison"]},
         "bio_rattle": {"name": "Bio-Electric Rattle", "attacks": 1, "short": "Melee", "ap": 1, "rules": [{"id": "shocking", "x": 1}]},
-        "bio_pulse": {"name": "Bio-Electric Pulse", "attacks": 6, "short": 6, "long": 12, "ap": 2}
+        "bio_pulse": {"name": "Bio-Electric Pulse", "attacks": 6, "short": 6, "long": 12, "ap": 2},
+		"bio_plasma_cannon": {"name": "Bio-Plasma Cannon","attacks": 2,"short": 18,"medium": 36,"ap": 5,"rules": [{"id":"blast", "x":3}]},
+		"acid_jet": {"name": "Acid Jet", "attacks": 6, "short": 9,"medium": 18,"ap": 1,"rules": []},
+		"meat_borer_cluster": {"name": "Meat Borer Cluster","attacks": 20,"short": 9,"medium": 18,"ap": 2,"rules": []},
+        "bio_eruptor": {"name": "Bio-Eruptor","attacks": 3,"short": 24,"medium": 48,"ap": 8,"rules": [{"id":"critical", "x":1}]},
+		"spore_shot": {"name": "Spore Shot","attacks": 1,"short": 24,"medium": 48,"ap": 7,"rules": ["lethal", "scatter", "indirect"]}
     },
     "rules": {
         "tusks": {"name": "Tusks", "hidden": true, "description_short": "Impact +3", "description": "This model gains +3 impact.", "points": 6},
