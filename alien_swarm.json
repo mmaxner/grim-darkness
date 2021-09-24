@@ -556,7 +556,7 @@
             ],
             "models": [
                 {
-                    "name": "Carnivorous Beast",
+                    "name": "Cannon Beast",
                     "courage": 4,
                     "reflexes": 4,
                     "fight": 5,
