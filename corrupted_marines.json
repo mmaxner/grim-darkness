@@ -1864,7 +1864,7 @@
             "cost": 1
         }
     },
-    "powerCategories": {"psychic": {"name": "Psychic"}, "corruption": {"name": "Corruption"}},
+    "powerCategories": {"psychic": {"name": "Psychic"}},
     "powers": {
         "arcane_bolt": {
             "subfactions": ["psychic_focus"],
@@ -1891,22 +1891,19 @@
             "subfactions": ["none", "rage_focus", "stealth_focus", "pestilence_focus", "psychic_focus", "siege_focus", "destruction_focus"],
             "name": "Balefire",
             "description": "Target enemy unit within 24\" take 3 hits with AP(1).",
-            "charge": 7,
-            "category": "corruption"
+            "charge": 7
         },
         "hex": {
             "subfactions": ["none", "rage_focus", "stealth_focus", "pestilence_focus", "psychic_focus", "siege_focus", "destruction_focus"],
             "name": "Hex",
             "description": "Target enemy unit within 12\" must re-roll one die of your choice on its next Save test.",
-            "charge": 5,
-            "category": "corruption"
+            "charge": 5
         },
         "sap_strength": {
             "subfactions": ["none", "rage_focus", "stealth_focus", "pestilence_focus", "psychic_focus", "siege_focus", "destruction_focus"],
             "name": "Sap Strength",
             "description": "Target enemy unit within 18\" takes 3 hits with AP(1) and has -1 Strength until the end of the turn.",
-            "charge": 6,
-            "category": "corruption"
+            "charge": 6
         }
     }
 }

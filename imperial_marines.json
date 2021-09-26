@@ -3342,7 +3342,14 @@
             "category": "psychic"
         },
         "banishment": {"subfactions": ["psychic_focus"], "name": "Banishment", "description": "Target enemy model within 12\" takes 1 automatic hit with AP(7).", "charge": 5, "category": "psychic"},
-        "purge": {"subfactions": ["psychic_focus"], "name": "Purge", "description": "Target enemy unit within 12\" take 8 automatic hits with AP 0.", "charge": 6, "category": "psychic"}
+        "purge": {"subfactions": ["psychic_focus"], "name": "Purge", "description": "Target enemy unit within 12\" take 8 automatic hits with AP 0.", "charge": 6, "category": "psychic"},
+        "empower": {"name": "Empower", "description": "Target friendly unit within 12“ gains +1 Strength and +1 Accuracy until the end of the turn. ", "charge": 5},
+        "snare": {"name": "Snare", "description": "Target enemy unit within 18\" has -2\" Movement until the end of the turn.", "charge": 7},
+        "barrier": {
+            "name": "Barrier",
+            "description": "Target friendly unit within 24“. Until the end of the round, roll a D10 each time that unit is hit. On a 2 or less, that hit is ignored.",
+            "charge": 6
+        }
     },
     "powerCategories": {"psychic": {"name": "Psychic"}}
 }
