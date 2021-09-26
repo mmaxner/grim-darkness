@@ -396,7 +396,7 @@
             "category": "command",
             "keywords": ["Infantry"],
             "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "wounds", "x": 3}, {"id": "repair", "x": 5}],
-            "subfactions": ["none", "wolf_marines", "assault_focus", "alien_hunters", "psychic_marines"],
+            "subfactions": ["none", "wolf_marines", "assault_focus", "alien_hunters", "psychic_focus"],
             "models": [
                 {
                     "name": "Engineer",
@@ -1708,7 +1708,7 @@
             "name": "APC",
             "description": "A durable transport built by the imperial marines.",
             "rules": [{"id": "impact", "x": 3}, {"id": "transport", "x": 11}, "vulnerable_side_rear", "damage_chart"],
-            "subfactions": ["none", "wolf_marines", "assault_focus", "alien_hunters", "psychic_marines"],
+            "subfactions": ["none", "wolf_marines", "assault_focus", "alien_hunters", "psychic_focus"],
             "category": "transport",
             "keywords": ["Vehicle"],
             "min": 1,
@@ -1734,7 +1734,7 @@
             "name": "Drop Pod",
             "description": "A durable transport built by the imperial marines.",
             "rules": [{"id": "transport", "x": 12}, "damage_chart", "ambush"],
-            "subfactions": ["none", "wolf_marines", "assault_focus", "alien_hunters", "psychic_marines"],
+            "subfactions": ["none", "wolf_marines", "assault_focus", "alien_hunters", "psychic_focus"],
             "category": "transport",
             "keywords": ["Vehicle"],
             "min": 1,
@@ -1760,7 +1760,7 @@
             "name": "Assault APC",
             "description": "A durable transport built by the imperial marines with upgraded weaponry.",
             "rules": [{"id": "impact", "x": 3}, {"id": "transport", "x": 6}, "vulnerable_side_rear", "damage_chart"],
-            "subfactions": ["none", "wolf_marines", "assault_focus", "alien_hunters", "psychic_marines"],
+            "subfactions": ["none", "wolf_marines", "assault_focus", "alien_hunters", "psychic_focus"],
             "category": "transport",
             "keywords": ["Vehicle"],
             "min": 1,
@@ -1790,7 +1790,7 @@
             "name": "Artillery Vehicle",
             "description": "An armored artillery vehicle helmed by imperial marines.",
             "rules": [{"id": "impact", "x": 3}, "vulnerable_side_rear", "damage_chart"],
-            "subfactions": ["none", "wolf_marines", "assault_focus", "alien_hunters", "psychic_marines"],
+            "subfactions": ["none", "wolf_marines", "assault_focus", "alien_hunters", "psychic_focus"],
             "keywords": ["Vehicle"],
             "category": "heavy",
             "models": [
@@ -1813,7 +1813,7 @@
             "name": "Battle Tank",
             "description": "An armored tank helmed by imperial marines.",
             "rules": [{"id": "impact", "x": 6}, "vulnerable_side_rear", "damage_chart"],
-            "subfactions": ["none", "wolf_marines", "assault_focus", "alien_hunters", "psychic_marines"],
+            "subfactions": ["none", "wolf_marines", "assault_focus", "alien_hunters", "psychic_focus"],
             "keywords": ["Vehicle"],
             "min": 1,
             "category": "heavy",
@@ -1849,7 +1849,7 @@
             "name": "Heavy Assault APC",
             "description": "A heavily armored transport sporting an arsenal of weapons built by the imperial marines.",
             "rules": [{"id": "impact", "x": 6}, {"id": "transport", "x": 11}, "vulnerable_rear", "damage_chart", "assault_ramp"],
-            "subfactions": ["none", "wolf_marines", "assault_focus", "alien_hunters", "psychic_marines"],
+            "subfactions": ["none", "wolf_marines", "assault_focus", "alien_hunters", "psychic_focus"],
             "keywords": ["Vehicle"],
             "min": 1,
             "category": "heavy",
@@ -2166,7 +2166,7 @@
             "description": "An elite and heavily armed combat walker.",
             "rules": ["vulnerable_rear", "damage_chart"],
             "category": "heavy",
-            "subfactions": ["none", "wolf_marines", "assault_focus", "alien_hunters", "psychic_marines"],
+            "subfactions": ["none", "wolf_marines", "assault_focus", "alien_hunters", "psychic_focus"],
             "keywords": ["Vehicle"],
             "min": 1,
             "max": 1,
@@ -2197,7 +2197,7 @@
             "description": "A heavily armed combat walker with psychic powers.",
             "rules": ["vulnerable_rear", "damage_chart"],
             "category": "heavy",
-            "subfactions": ["psychic_marines"],
+            "subfactions": ["psychic_focus"],
             "keywords": ["Vehicle"],
             "min": 1,
             "max": 1,
@@ -2256,7 +2256,7 @@
             "rules": ["aircraft", "damage_chart", "hover_mode", {"id": "transport", "x": 12}, {"id": "walker_transport", "x": 1}],
             "category": "strike",
             "keywords": ["Vehicle", "Aircraft"],
-            "subfactions": ["none", "psychic_marines", "wolf_marines", "assault_focus", "alien_hunters"],
+            "subfactions": ["none", "psychic_focus", "wolf_marines", "assault_focus", "alien_hunters"],
             "min": 1,
             "max": 1,
             "models": [
@@ -2291,7 +2291,7 @@
             "rules": ["aircraft", "damage_chart", "hover_mode"],
             "category": "strike",
             "keywords": ["Vehicle", "Aircraft"],
-            "subfactions": ["none", "psychic_marines", "wolf_marines", "assault_focus", "alien_hunters"],
+            "subfactions": ["none", "psychic_focus", "wolf_marines", "assault_focus", "alien_hunters"],
             "min": 1,
             "max": 1,
             "models": [
@@ -2320,7 +2320,7 @@
             "description": "A Master of psychic powers and martial combat.",
             "category": "command",
             "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "ward", "x": 1}, {"id": "wounds", "x": 3}, {"id": "melee_tactics", "x": 2}],
-            "subfactions": ["psychic_marines"],
+            "subfactions": ["psychic_focus"],
             "models": [
                 {
                     "name": "Psychic Grand Master",
@@ -2355,7 +2355,7 @@
             "description": "A Psychic marine leader.",
             "category": "command",
             "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "ward", "x": 1}, {"id": "wounds", "x": 3}, {"id": "melee_tactics", "x": 1}],
-            "subfactions": ["psychic_marines"],
+            "subfactions": ["psychic_focus"],
             "models": [
                 {
                     "name": "Psychic Brother",
@@ -2388,12 +2388,10 @@
         "psychic_ancient": {
             "name": "Psychic Ancient",
             "description": "A psychic marine carrying a sacred banner.",
-            "min": 5,
-            "max": 10,
             "category": "specialist",
             "keywords": ["Infantry"],
             "rules": ["support", {"id": "wounds", "x": 3}, {"id": "ward", "x": 1}],
-            "subfactions": ["psychic_marines"],
+            "subfactions": ["psychic_focus"],
             "models": [
                 {
                     "name": "Psychic Ancient",
@@ -2431,7 +2429,7 @@
             "category": "specialist",
             "keywords": ["Infantry"],
             "rules": ["support", {"id": "wounds", "x": 3}, {"id": "ward", "x": 1}, "ambush"],
-            "subfactions": ["psychic_marines"],
+            "subfactions": ["psychic_focus"],
             "models": [
                 {
                     "name": "Psychic Destroyer Ancient",
@@ -2467,7 +2465,7 @@
             "min": 5,
             "max": 10,
             "category": "core",
-            "subfactions": ["psychic_marines"],
+            "subfactions": ["psychic_focus"],
             "options": [
                 {
                     "replaceWeapon": {"id": "psychic_sword", "count": 2},
@@ -2522,7 +2520,7 @@
             "min": 5,
             "max": 10,
             "category": "specialist",
-            "subfactions": ["psychic_marines"],
+            "subfactions": ["psychic_focus"],
             "options": [
                 {
                     "replaceWeapon": {"id": "psychic_sword", "count": 2},
@@ -2573,7 +2571,7 @@
             "min": 5,
             "max": 10,
             "category": "specialist",
-            "subfactions": ["psychic_marines"],
+            "subfactions": ["psychic_focus"],
             "options": [
                 {
                     "replaceWeapon": ["storm_rifle", {"id": "psychic_sword", "count": 2}],
@@ -2618,7 +2616,7 @@
             "min": 5,
             "max": 10,
             "category": "strike",
-            "subfactions": ["psychic_marines"],
+            "subfactions": ["psychic_focus"],
             "options": [
                 {
                     "replaceWeapon": {"id": "psychic_sword", "count": 2},
@@ -2674,7 +2672,7 @@
             "min": 5,
             "max": 10,
             "category": "core",
-            "subfactions": ["psychic_marines"],
+            "subfactions": ["psychic_focus"],
             "rules": ["ambush"],
             "options": [
                 {
@@ -2722,7 +2720,7 @@
             "name": "Psychic Paladins",
             "description": "Marines in heavy armor trained to hunt demons and adept in psychic powers.",
             "category": "specialist",
-            "subfactions": ["psychic_marines"],
+            "subfactions": ["psychic_focus"],
             "options": [
                 {
                     "replaceWeapon": {"id": "psychic_sword", "count": 3},
@@ -2771,7 +2769,7 @@
             "description": "A large psychic walker with heavy weapons and extreme combat prowess.",
             "rules": ["vulnerable_rear", {"id": "ward", "x": 1}, "damage_chart", {"id": "dread_walker_tactics", "x": 1}],
             "category": "command",
-            "subfactions": ["psychic_marines"],
+            "subfactions": ["psychic_focus"],
             "keywords": ["Vehicle"],
             "min": 1,
             "max": 1,
@@ -2801,7 +2799,7 @@
             "description": "A large psychic walker with heavy weapons and extreme combat prowess.",
             "rules": ["vulnerable_rear", {"id": "ward", "x": 1}, "damage_chart"],
             "category": "heavy",
-            "subfactions": ["psychic_marines"],
+            "subfactions": ["psychic_focus"],
             "keywords": ["Vehicle"],
             "min": 1,
             "max": 1,
@@ -3008,9 +3006,9 @@
     "hidden_relics": [
         {"subfactions": ["none", "wolf_marines"], "rule": "ancient_armor", "flavor": "Ancient armour said to protect the wearer from significant harm."},
         {"subfactions": ["none", "wolf_marines"], "weapon": "ancient_chainsword", "flavor": "A chainsword crafted to destroy even the toughest enemy infantry."},
-        {"subfactions": ["none", "wolf_marines", "assault_focus", "psychic_marines"], "rule": "expert_marksman", "flavor": "A trained marksman can have a very deadly effect."},
-        {"subfactions": ["none", "wolf_marines", "assault_focus", "psychic_marines"], "rule": "mobility_training", "flavor": "A well-trained tactician in mobility warfare."},
-        {"subfactions": ["psychic_marines"], "rule": "combat_master", "flavor": "A trained fighter can dispatch even the toughest foes in deadly combat."}
+        {"subfactions": ["none", "wolf_marines", "assault_focus", "psychic_focus"], "rule": "expert_marksman", "flavor": "A trained marksman can have a very deadly effect."},
+        {"subfactions": ["none", "wolf_marines", "assault_focus", "psychic_focus"], "rule": "mobility_training", "flavor": "A well-trained tactician in mobility warfare."},
+        {"subfactions": ["psychic_focus"], "rule": "combat_master", "flavor": "A trained fighter can dispatch even the toughest foes in deadly combat."}
     ],
     "relics": {
         "legend_gravity_field": {
@@ -3021,7 +3019,7 @@
             "points": 10
         },
         "legend_remembrance": {
-            "subfactions": ["psychic_marines"],
+            "subfactions": ["psychic_focus"],
             "name": "Armor of Remembrance",
             "rule": "legend_remembrance",
             "description": "Upgrade one model with Armor of Remembrance.",
@@ -3029,7 +3027,7 @@
             "points": 10
         },
         "legend_shard": {
-            "subfactions": ["psychic_marines"],
+            "subfactions": ["psychic_focus"],
             "name": "Demonic Shard",
             "rule": "legend_shard",
             "description": "Upgrade one model with Demonic Shard.",
@@ -3037,7 +3035,7 @@
             "points": 5
         },
         "legend_staff": {
-            "subfactions": ["psychic_marines"],
+            "subfactions": ["psychic_focus"],
             "name": "The Warding Staff",
             "weapon": "legend_staff",
             "description": "Replace one Leader model's Psychic Staff with The Warding Staff.",
@@ -3045,7 +3043,7 @@
             "points": 5
         },
         "legend_righteousness": {
-            "subfactions": ["psychic_marines"],
+            "subfactions": ["psychic_focus"],
             "name": "Righteousness",
             "rule": "legend_hammer",
             "description": "Upgrade one Leader model with Righteousness.",
@@ -3053,7 +3051,7 @@
             "points": 5
         },
         "legend_charge": {
-            "subfactions": ["psychic_marines"],
+            "subfactions": ["psychic_focus"],
             "name": "Charge Leader",
             "rule": "legend_charge",
             "description": "Upgrade one Leader model with Charge Leader.",
@@ -3061,7 +3059,7 @@
             "points": 5
         },
         "the_black_blade": {
-            "subfactions": ["psychic_marines"],
+            "subfactions": ["psychic_focus"],
             "name": "The Black Blade",
             "weapon": "the_black_blade",
             "description": "Replace one Leader model's Psychic Sword with The Black Blade.",
@@ -3071,7 +3069,7 @@
     },
     "strategies": [
         {
-            "subfactions": ["none", "wolf_marines", "assault_focus", "alien_hunters", "psychic_marines"],
+            "subfactions": ["none", "wolf_marines", "assault_focus", "alien_hunters", "psychic_focus"],
             "name": "Vigilance",
             "phase": "activation",
             "description": "Use when taking an Initiative test for a reaction. That unit is treated as having +2 Initiative for that test.",
@@ -3079,7 +3077,7 @@
             "cost": 1
         },
         {
-            "subfactions": ["none", "wolf_marines", "assault_focus", "alien_hunters", "psychic_marines"],
+            "subfactions": ["none", "wolf_marines", "assault_focus", "alien_hunters", "psychic_focus"],
             "name": "Genetically Engineered",
             "phase": "activation",
             "description": "Use before taking Save rolls for an _Infantry_ or _Biker_ unit. It gets +1 Save.",
@@ -3087,7 +3085,7 @@
             "cost": 2
         },
         {
-            "subfactions": ["none", "wolf_marines", "assault_focus", "alien_hunters", "psychic_marines"],
+            "subfactions": ["none", "wolf_marines", "assault_focus", "alien_hunters", "psychic_focus"],
             "name": "Fearless",
             "phase": "activation",
             "description": "Use before activating a unit. That unit may immediately remove up to 2 Shock.",
@@ -3191,7 +3189,7 @@
             "cost": 1
         },
         {
-            "subfactions": ["psychic_marines"],
+            "subfactions": ["psychic_focus"],
             "name": "Psychic Aim",
             "phase": "activation",
             "description": "Use when shooting with an _Infantry_ unit. That unit may target enemies it cannot see.",
@@ -3199,7 +3197,7 @@
             "cost": 1
         },
         {
-            "subfactions": ["psychic_marines"],
+            "subfactions": ["psychic_focus"],
             "name": "Psychic Channeling",
             "phase": "activation",
             "flavor": "With focus and energy, even the most difficult psychic powers can be manifested.",
@@ -3207,7 +3205,7 @@
             "cost": 1
         },
         {
-            "subfactions": ["psychic_marines"],
+            "subfactions": ["psychic_focus"],
             "name": "Teleporter",
             "phase": "pre_game",
             "description": "Up to half of any force's units, one point for each may be placed in _Ambush Reserves_ instead of deployed on the field.",
@@ -3336,24 +3334,22 @@
         }
     ],
     "powers": {
-        "fortify": {"name": "Courage", "description": "Target friendly unit within 12\" gets +1 Courage until the of the round.", "charge": 8},
-        "magic_shield": {
-            "name": "Shield",
-            "description": "Target friendly unit within 12\". Until the end of the round, roll a D10 each time that unit is hit. On a 2 or less, that hit is ignored.",
-            "charge": 7
-        },
-        "clouded": {"name": "Clouded", "description": "Target enemy unit within 18\" gets -1 Accuracy until the end of the round.", "charge": 6},
-        "pacify": {"name": "Pacify", "description": "Target enemy unit within 18\" suffers -1 Strength with its next attack.", "charge": 6},
-        "storm": {"name": "Storm", "description": "Target enemy unit within 12\" take 5 hits with AP 1.", "charge": 6},
-        "bolt": {"name": "Bolt", "description": "Target enemy unit within 18\" takes 2 hits with AP 5.", "charge": 6},
-        "snare": {"subfactions": ["alien_hunters"], "name": "Snare", "description": "Target enemy unit within 18\" gets -2\" of Movement until the end of the round.", "charge": 7},
-        "warp": {
-            "subfactions": ["psychic_marines"],
-            "name": "Warp",
+        "blink": {
+            "subfactions": ["psychic_focus"],
+            "name": "Blink",
             "description": "Target friendly unit within 12\" may move up to 12\" ignoring all models and terrain. This must end outside of 12\" of any enemy units.",
-            "charge": 7
+            "charge": 7,
+            "category": "psychic"
         },
-        "doom": {"subfactions": ["psychic_marines"], "name": "Doom", "description": "Target enemy model within 12\" takes 1 automatic hit with AP(7).", "charge": 6},
-        "purge": {"subfactions": ["psychic_marines"], "name": "Purge", "description": "Target enemy unit within 12\" take 8 automatic hits with AP 0.", "charge": 6}
-    }
+        "banishment": {"subfactions": ["psychic_focus"], "name": "Banishment", "description": "Target enemy model within 12\" takes 1 automatic hit with AP(7).", "charge": 5, "category": "psychic"},
+        "purge": {"subfactions": ["psychic_focus"], "name": "Purge", "description": "Target enemy unit within 12\" take 8 automatic hits with AP 0.", "charge": 6, "category": "psychic"},
+        "empower": {"name": "Empower", "description": "Target friendly unit within 12“ gains +1 Strength and +1 Accuracy until the end of the turn. ", "charge": 5},
+        "snare": {"name": "Snare", "description": "Target enemy unit within 18\" has -2\" Movement until the end of the turn.", "charge": 7},
+        "barrier": {
+            "name": "Barrier",
+            "description": "Target friendly unit within 24“. Until the end of the round, roll a D10 each time that unit is hit. On a 2 or less, that hit is ignored.",
+            "charge": 6
+        }
+    },
+    "powerCategories": {"psychic": {"name": "Psychic"}}
 }
