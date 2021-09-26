@@ -4,7 +4,6 @@
     "author": "Caliallie#6369",
     "hidden_subfactions": {
         "assault_focus": {"name": "Assault", "id": "assault_focus", "color": "#18abcc"},
-        "siege_focus": {"name": "Siege", "id": "siege_focus", "color": "#18abcc"},
         "mobility_focus": {"name": "Mobility", "id": "mobility_focus", "color": "#18abcc"},
         "terror_focus": {"name": "Terror", "id": "terror_focus", "color": "#18abcc"},
         "morale_focus": {"name": "Morale", "id": "morale_focus", "color": "#18abcc"}
@@ -306,7 +305,7 @@
                     "defense": 8,
                     "reflexes": 6,
                     "weapons": ["marine_pistol", {"id": "holy_mace", "count": 3}, "at_grenade"],
-                    "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "wounds", "x": 2}, "dark_prayer"],
+                    "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "wounds", "x": 2}, "battle_prayer"],
                     "min": 1,
                     "max": 1
                 }
@@ -717,10 +716,7 @@
             "description": "A lightly armed and armoured squad sent to scout and sow dissent",
             "subfactions": ["none", "stealth_focus"],
             "category": "specialist",
-            "options": [
-                {"replaceWeapon": "marine_rifle", "withWeapon": ["marine_shotgun", "sniper_rifle"]},
-                {"addRule": {"id": "stealth", "name": "Camouflage Cloak"}, "modelLimit": "all"}
-            ],
+            "options": [{"replaceWeapon": "marine_rifle", "withWeapon": ["marine_shotgun", "sniper_rifle"]}, {"addRule": {"id": "stealth", "name": "Camouflage Cloak"}, "modelLimit": "all"}],
             "rules": ["scout"],
             "models": [
                 {
@@ -733,26 +729,15 @@
                     "reflexes": 7,
                     "weapons": ["marine_rifle", "heavy_ccw", "at_grenade"],
                     "options": [
-                            {"replaceWeapon": ["marine_rifle"], "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "twin_marine_rifle"], "limit": 1},
-                            {"replaceWeapon": ["marine_rifle", "heavy_ccw"], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 2}]]},
-                            {"replaceWeapon": {"id": "chainsword", "count": 2}, "withWeapon": [{"id": "energy_sword", "count": 2}, {"id": "energy_fist", "count": 2}]},
-                            {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol"]}
+                        {"replaceWeapon": ["marine_rifle"], "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "twin_marine_rifle"], "limit": 1},
+                        {"replaceWeapon": ["marine_rifle", "heavy_ccw"], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 2}]]},
+                        {"replaceWeapon": {"id": "chainsword", "count": 2}, "withWeapon": [{"id": "energy_sword", "count": 2}, {"id": "energy_fist", "count": 2}]},
+                        {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol"]}
                     ],
                     "min": 1,
                     "max": 1
                 },
-                {
-                    "name": "Recon Marine",
-                    "movement": 6,
-                    "courage": 6,
-                    "shoot": 6,
-                    "fight": 6,
-                    "defense": 7,
-                    "weapons": ["marine_rifle", "heavy_ccw", "at_grenade"],
-                    "options": [],
-                    "min": 4,
-                    "max": 19
-                }
+                {"name": "Recon Marine", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 7, "weapons": ["marine_rifle", "heavy_ccw", "at_grenade"], "options": [], "min": 4, "max": 19}
             ]
         },
         "traitor_devastators": {
@@ -1707,22 +1692,7 @@
             "description": "When this unit is activated, choose up to X friendly units with the Power special rule within 6\".  Those units may reroll dice rolls of 9+ while using the Power ability until the end of the round.",
             "points": 5
         },
-        "archmage": {"name": "Blessings of the Psyker God", "description": "When this unit casts the Shock Wave Power, double the number of hits it deals.", "points": 10},
-        "sniper": {"name": "Sniper", "description": "This weapon ignores cover and may choose the model that is hit."},
-        "psychic_helmet": {"name": "Psychic Helmet", "description": "The bearer gets +1 to all Psychic tests.", "effects": [{"type": "grantRule", "rule": {"id": "power", "x": 1}, "frequency": 5}]},
-        "war_chant": {
-            "name": "War Chant",
-            "description": "This model and friendly Infantry units within 3\" gain the Furious keyword.",
-            "effects": [{"type": "grantRule", "rule": "furious", "frequency": 100, "target": "friendly"}]
-        },
-        "invigorating_beam": {"effects": [{"type": "alterStat", "statName": "movement", "value": 6, "frequency": 5, "target": "friendly", "range": 12}]},
-        "encroaching_mutations": {"effects": [{"type": "alterStat", "statName": "shoot", "value": 1, "target": "enemy", "range": 24}]},
-        "inspiring_word": {"effects": [{"type": "grantRule", "rule": {"id": "resilient", "x": 3}, "target": "friendly", "range": 6}]},
-        "dark_prayer": {
-            "name": "Dark Prayers",
-            "description": "When this unit is activated, choose a Blessing for this unit or a friendly _Infantry_ unit within 6\" to receive until the end of the turn:\n* Cloak of Shadows: Roll a die when a model in this unit loses a wound. On a value of 1 or 2 that wound is not lost.\n* Eternal Hatred: When this unit fights, hit rolls of 1 or 2 generate an additional attack.\n* Omen of Doom: This unit may re-roll failed Strength tests of 9+ until the end of the round.",
-            "points": [5]
-        }
+        "archmage": {"name": "Blessings of the Psyker God", "description": "When this unit casts the Arcane Barrage Power, double the number of hits it deals.", "points": 10}
     },
     "strategies": {
         "hate": {
@@ -1894,23 +1864,49 @@
             "cost": 1
         }
     },
-    "powerCategories": {"psychic": {"name": "Psychic"}},
+    "powerCategories": {"psychic": {"name": "Psychic"}, "corruption": {"name": "Corruption"}},
     "powers": {
-        "shield": {
-            "subfactions": ["none", "change_corrupteds", "pestilence_focus"],
-            "name": "Shield",
-            "description": "Target friendly unit within 12\". Until the end of the round, roll a D10 each time that unit is hit. On a 2 or less, that hit is ignored.",
-            "charge": 7
+        "arcane_bolt": {
+            "subfactions": ["psychic_focus"],
+            "name": "Arcane Bolt",
+            "description": "Target enemy unit within 24\" takes 1 hit with AP(4). This power may be cast unlimited times per turn.",
+            "charge": 7,
+            "category": "psychic"
         },
-        "weakness": {
-            "subfactions": ["none", "change_corrupteds", "pestilence_focus"],
-            "name": "Weakness",
-            "description": "Target enemy unit within 18\" must re-roll one die of your choice on its next Save test.",
-            "charge": 6
+        "inferno": {
+            "subfactions": ["psychic_focus"],
+            "name": "Inferno",
+            "description": "Target enemy unit within 12\" take 3 hits with AP(3). This power may be cast unlimited times per turn.",
+            "charge": 5,
+            "category": "psychic"
         },
-        "strike": {"subfactions": ["none", "change_corrupteds", "pestilence_focus"], "name": "Strike", "description": "Target enemy unit within 18\" takes 2 hits with AP 5.", "charge": 5},
-        "bolt": {"name": "Bolt", "subfactions": ["change_corrupteds"], "category": "psychic", "description": "Target enemy unit within 18\" takes 1 hit with AP 7.", "charge": 5},
-        "storm": {"subfactions": ["change_corrupteds"], "name": "Storm", "category": "psychic", "description": "Target enemy unit within 18\" take 5 hits with AP 1.", "charge": 6},
-        "inferno": {"subfactions": ["change_corrupteds"], "name": "Inferno", "category": "psychic", "description": "Target enemy unit within 12\" takes 3 hits with AP 3.", "charge": 6}
+        "arcane_barrage": {
+            "subfactions": ["psychic_focus"],
+            "name": "Arcane Barrage",
+            "description": "Target enemy unit within 12\" take 5 hits with AP(1). This power may be cast unlimited times per turn.",
+            "charge": 6,
+            "category": "psychic"
+        },
+        "balefire": {
+            "subfactions": ["none", "rage_focus", "stealth_focus", "pestilence_focus", "psychic_focus", "siege_focus", "destruction_focus"],
+            "name": "Balefire",
+            "description": "Target enemy unit within 24\" take 3 hits with AP(1).",
+            "charge": 7,
+            "category": "corruption"
+        },
+        "hex": {
+            "subfactions": ["none", "rage_focus", "stealth_focus", "pestilence_focus", "psychic_focus", "siege_focus", "destruction_focus"],
+            "name": "Hex",
+            "description": "Target enemy unit within 12\" must re-roll one die of your choice on its next Save test.",
+            "charge": 5,
+            "category": "corruption"
+        },
+        "sap_strength": {
+            "subfactions": ["none", "rage_focus", "stealth_focus", "pestilence_focus", "psychic_focus", "siege_focus", "destruction_focus"],
+            "name": "Sap Strength",
+            "description": "Target enemy unit within 18\" takes 3 hits with AP(1) and has -1 Strength until the end of the turn.",
+            "charge": 6,
+            "category": "corruption"
+        }
     }
 }

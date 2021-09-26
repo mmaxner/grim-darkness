@@ -65,9 +65,9 @@
                     "restricted": true,
                     "description": "Corrupted marines focused on using disease and decay to defeat their foes."
                 },
-                "change_traitors": {
+                "psychic_focus": {
                     "name": "Psychic",
-                    "id": "change_traitors",
+                    "id": "psychic_focus",
                     "color": "#18abcc",
                     "restricted": true,
                     "description": "Corrupted marines focused on using powerful magic to defeat their foes."
@@ -197,12 +197,7 @@
             "alliance": "imperial_alliance",
             "description": "The Machine Guilds are a unique group of several different but organized planets which create and maintain all sort sof wild war machines and contraptions. The Machine Guilds rely on technological augmentation and deadly weapons to destroy their enemies.",
             "subfactions": {
-                "stealth_focus": {
-                    "name": "Stealth",
-                    "id": "stealth_focus",
-                    "color": "#231f20",
-                    "description": "A Machine Guild focused on stealth uses surprise and infiltration to defeat its foes."
-                }
+                "stealth_focus": {"name": "Stealth", "id": "stealth_focus", "color": "#231f20", "description": "A Machine Guild focused on stealth uses surprise and infiltration to defeat its foes."}
             }
         },
         "imperial_defense_force": {
@@ -262,13 +257,7 @@
                     "restricted": true
                 },
                 "assault_focus": {"name": "Assault", "id": "assault_focus", "color": "#4272b8", "description": "Imperial Marines focused on all-out assaults and aggression.", "restricted": true},
-                "psychic_marines": {
-                    "name": "Psychic",
-                    "id": "psychic_marines",
-                    "color": "#C0C0C0",
-                    "description": "Imperial Marines focused on psychic tactics and hunting demons.",
-                    "restricted": true
-                },
+                "psychic_focus": {"name": "Psychic", "id": "psychic_focus", "color": "#C0C0C0", "description": "Imperial Marines focused on psychic tactics and hunting demons.", "restricted": true},
                 "alien_hunters": {"name": "Alien Hunters", "id": "alien_hunters", "color": "#231f20", "description": "Imperial Marines focused on hunting aliens.", "restricted": true}
             }
         },
@@ -440,7 +429,7 @@
         "crushing_waves": {"name": "Crushing Waves", "description": "Target enemy unit within 12\" takes 4 hits with AP(4).", "charge": 5, "category": "water"},
         "aqueous_form": {
             "name": "Aqueous Form",
-            "description": "Target friendly unit within 12\" gets +2\" Movement and may trat Difficult Ground as normal terrain until the end of the turn.",
+            "description": "Target friendly unit within 12\" gets +2\" Movement and may treat Difficult Ground as normal terrain until the end of the turn.",
             "charge": 6,
             "category": "water"
         },
@@ -456,7 +445,12 @@
             "charge": 5,
             "category": "earth"
         },
-        "wild_frenzy": {"name": "Wild Frenzy", "description": "Target friendly unit within 12\" may immediately make a free charge action.", "charge": 5, "category": "nature"},
+        "wild_frenzy": {
+            "name": "Wild Frenzy",
+            "description": "Target friendly unit within 12\" may make one additional attack with any Melee weapon until the end of the turn.",
+            "charge": 5,
+            "category": "nature"
+        },
         "entangling_roots": {
             "name": "Entangling Roots",
             "description": "Target enemy unit within 12\" takes 3 hit with AP(0) and has -2\" Movement until the end of the turn.",
@@ -499,7 +493,7 @@
             "charge": 5,
             "category": "death"
         },
-        "doom": {"name": "Doom", "description": "Target enemy unit within 12\" -1 Courage until the end of the turn.", "charge": 6, "category": "death"},
+        "doom": {"name": "Doom", "description": "Target enemy unit within 12\" has -1 Courage until the end of the turn.", "charge": 6, "category": "death"},
         "spectral_grasp": {"name": "Spectral Grasp", "description": "Target enemy unit within 18\" take 3 hits with AP(0) and is pulled 3\" towards this model.", "charge": 7, "category": "death"},
         "frost_lance": {"name": "Frost Lance", "description": "Target enemy unit within 24\" takes 1 hit with AP(3).", "charge": 7, "category": "ice"},
         "hailstorm": {"name": "Hailstorm", "description": "Target enemy unit within 18\" takes 3 hits with AP(1) and has -1 Accuracy until the end of the turn.", "charge": 6, "category": "ice"},
@@ -824,8 +818,7 @@
         "twin_shard_mortar": {"name": "Twin Shard Mortar", "attacks": 2, "ap": 2, "short": 24, "medium": 48, "rules": ["indirect", "scatter", {"id": "blast", "x": 3}]},
         "missile_rack": {
             "name": "Missile Rack",
-            "profiles": [{"name": "Frag", "attacks": 1, "short": 24, "medium": 48, "ap": 1, "rules": [{"id": "blast", "x": 6}]}, 
-                        {"name": "AT", "attacks": 1, "short": 24, "medium": 48, "ap": 6}]
+            "profiles": [{"name": "Frag", "attacks": 1, "short": 24, "medium": 48, "ap": 1, "rules": [{"id": "blast", "x": 6}]}, {"name": "AT", "attacks": 1, "short": 24, "medium": 48, "ap": 6}]
         },
         "piercing_claws": {"name": "Piercing Claws", "attacks": 1, "short": "Melee", "ap": 1, "rules": ["rending"]},
         "smoke_grenades": {"name": "Smokes", "attacks": 1, "short": 6, "rules": ["grenade", "smoke", "indirect"]},
@@ -866,11 +859,6 @@
         "rifle": {"name": "Rifle", "attacks": 1, "short": 12, "medium": 24}
     },
     "rules": {
-        "smoke": {
-            "name": "Smoke",
-            "description": "Choose a location on the battlefield within range of this weapon and if a hit is successful, place a 3\" diameter smoke marker at the target location. If the weapon fires multiple shots and more than one lands on target, place any additional smoke markers in contact with the edge of the first hit. Smoke markers block line of sight and models inside or partially obscured by smoke markers gain the benefit of Soft Cover. At the end of the round, roll a D10 for each smoke marker. On a 5 or less the smoke marker is removed.",
-            "points": [-1]
-        },
         "legend_strategist": {"name": "Brilliant Strategist", "description": "While this model is on the table you gain 1 additional Strategy Point per round.", "points": 20},
         "legend_wounds": {"name": "Resilient", "description": "This model gains Wounds(+1).", "points": 10},
         "legend_courage": {"name": "Inspired", "description": "This model gains +1 Courage.", "points": 10},
@@ -878,24 +866,16 @@
         "legend_expert_fighter": {"name": "Expert Fighter", "description": "This model may make one additional attack with any Melee weapon.", "points": 10},
         "wings": {"name": "Wings", "description": "Increases movement by 4\". This model may ignore models and terrain when moving.", "points": 10},
         "scrambler": {"name": "Scrambler", "description": "Enemy units arriving from reserves within 18\" of this model suffer -2 Initiative on reserve tests.", "points": 5},
-        "banner": {"name": "Banner", "description": "This unit may re-roll a single failed Courage test when removing Shock.", "points": 5},
         "assault_ramp": {"name": "Assault Ramp", "description": "Units may disembark from this model even after it has taken two Move actions.", "points": 5},
-        "stun": {"name": "Stun", "description": "Instead of inflicting damage, if this weapon hits its target, that unit gets -1 Strength and -1 Accuracy for its next attack."},
         "banner_of_justice": {"name": "Banner of Justice", "description": "Enemy units within 6\" get -1 courage.", "points": 10},
         "banner_of_wrath": {"name": "Banner of Wrath", "description": "Once per round, a friendly _Infantry_ unit within 6\" may gain +1 AP on all Melee weapons.", "points": 10},
         "banner_of_focus": {"name": "Banner of Focus", "description": "Once per round, a friendly _Infantry_ unit within 6\" may gain +1 AP on all Shooting weapons.", "points": 10},
-        "lance": {"name": "Lance", "description": "This weapon gets +1 AP when used during a Charge.", "points": ["weapon.attacks", {"multiply": 1}]},
         "dozer": {"name": "Dozer", "description": "This model may cross low obstacles without penalty.", "points": 5},
         "psych_out": {"name": "Dangerous(Psychic)", "description": "This weapon has +1 AP against units with the Psychic special rule."},
         "dark_prism": {
             "name": "Dark Prism",
             "description": "Once per round, when a model with Power(x) casts a power within 24\", roll a D10. If the die roll is lower than or equal to the casting roll, the power is prevented.",
             "points": 5
-        },
-        "medical_training": {
-            "name": "Medical Training",
-            "description": "Whenever this model, or a friendly _Infantry_ model within 6\" is killed or loses a Wound(x), roll a D10. On a 3 or less, that loss is prevented.",
-            "points": 15
         },
         "homing": {"name": "Homing", "description": "This weapon hits at Accuracy +1.", "points": ["weapon.attacks"]},
         "spiked_ram": {"name": "Spiked Ram", "hidden": true, "description": "This model gains Impact(+3).", "description_short": "Impact +3", "points": 6},
@@ -955,7 +935,6 @@
             "description": "When this unit is activated, choose up to X friendly _Storm Trooper_ _Infantry_ units within 6\" to receive one of the following bonuses until the end of the round: \n * Re-roll failed Accuracy tests of 9+ \n * Re-roll failed Strength tests of 9+ \n * +3\" of Movement",
             "points": ["rule.x", {"multiply": 10}]
         },
-        "bomb": {"name": "Bomb", "description": "This weapon may be fired at any time during this unit's move."},
         "psychic_prowess": {
             "name": "Prowess",
             "inputs": ["x"],
@@ -970,7 +949,19 @@
         "surveying_device": {"name": "Surveying Device", "description": "Once per round, a friendly _Infantry_ unit within 12\" may ignore the benefit of cover while shooting.", "points": 10},
         "spotting_device": {"name": "Spotting Device", "description": "Increase the short and long range of all ranged weapons equipped by this unit by 6\".", "points": 5},
         "titan_shield": {"name": "Combat Shield", "description": "This unit subtracts 1 from all Damage Chart rolls.", "points": 10},
-        "no_retreat": {"name": "No Retreat", "description": "Once per round, a friendly _Infantry_ unit within 3\" may automatically pass a Break test.", "points": 2}
+        "no_retreat": {"name": "No Retreat", "description": "Once per round, a friendly _Infantry_ unit within 3\" may automatically pass a Break test.", "points": 2},
+        "rifle_tactics": {
+            "name": "Rifle Tactics",
+            "inputs": ["x"],
+            "description": "When this unit is activated, choose up to X friendly Infantry units within 6\". Those units may re-roll failed Accuracy tests of 9+ until the end of the round.",
+            "points": 10
+        },
+        "melee_tactics": {
+            "name": "Melee Tactics",
+            "inputs": ["x"],
+            "description": "When this unit is activated, choose up to X friendly Infantry units within 6\". Those units may re-roll failed Strength tests of 9+ until the end of the round.",
+            "points": 10
+        }
     },
     "units": {
         "defense_line": {
