@@ -971,8 +971,8 @@
         "web_rifle": {"name": "Web Rifle", "attacks": 1, "short": 9, "medium": 18, "ap": 4, "rules": [{"id": "slowing", "x": 2}, "rapid_fire"]},
         "hexblade": {"name": "Hexblade", "attacks": 1, "short": "Melee", "ap": 0, "rules": [{"id":"rending"}]},
         "shattersky_launcher": {"name": "Skyshatter Launcher", "attacks": 2, "short": 18, "medium": 36, "ap": 2, "rules": [{"id": "blast", "x": 3}, "indirect"]},
-        "greatwraith_fists": {"name": "Great-Wraith Fists", "attacks": 1, "short": "melee", "ap": 4},
-        "greatwraith_sword": {"name": "Great-Wraith Sword", "attacks": 1, "short": "melee", "ap": 5}
+        "greatwraith_fists": {"name": "Great-Wraith Fists", "attacks": 1, "short": "Melee", "ap": 4},
+        "greatwraith_sword": {"name": "Great-Wraith Sword", "attacks": 1, "short": "Melee", "ap": 5}
     },
     "relics": {
         "master_of_war": {
