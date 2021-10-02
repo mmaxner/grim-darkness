@@ -1696,8 +1696,8 @@
                     "fight": 6,
                     "defense": 8,
                     "reflexes": 6,
-                    "weapons": ["laser_cannon", "at_grenade", "heavy_ccw"],
-                    "options": [{"replaceWeapon": "laser_cannon", "withWeapon": ["heavy_machinegun", "missile_launcher", "laser_cannon", "heavy_fusion_rifle", "plasma_cannon", "gravity_cannon"]}],
+                    "weapons": ["marine_rifle", "at_grenade", "heavy_ccw"],
+                    "options": [{"replaceWeapon": "marine_rifle", "withWeapon": ["heavy_machinegun", "missile_launcher", "laser_cannon", "heavy_fusion_rifle", "plasma_cannon", "gravity_cannon"]}],
                     "rules": [],
                     "min": 4,
                     "max": 9
@@ -2108,13 +2108,13 @@
                     "fight": 6,
                     "defense": 11,
                     "reflexes": 6,
-                    "weapons": ["minigun", {"id": "walker_fist", "count": 4}, {"id": "twin_marine_rifle"}],
+                    "weapons": ["missile_launcher", "heavy_fusion_rifle"],
                     "options": [
                         {
-                            "replaceWeapon": [{"id": "walker_fist", "count": 4}, {"id": "twin_marine_rifle"}],
-                            "withWeapon": [[{"id": "walker_fist", "count": 4}, {"id": "heavy_flamethrower"}], "missile_launcher", "twin_autocannon"]
+                            "replaceWeapon": "missile_launcher",
+                            "withWeapon": [[{"id": "walker_fist", "count": 4}, {"id": "twin_marine_rifle"}], [{"id": "walker_fist", "count": 4}, {"id": "heavy_flamethrower"}], "twin_autocannon"]
                         },
-                        {"replaceWeapon": "minigun", "withWeapon": ["plasma_cannon", "twin_autocannon", "heavy_fusion_rifle", "twin_heavy_machinegun", "twin_heavy_flamethrower", "twin_laser_cannon"]}
+                        {"replaceWeapon": "heavy_fusion_rifle", "withWeapon": [[{"id": "walker_fist", "count": 4}, {"id": "twin_marine_rifle"}], [{"id": "walker_fist", "count": 4}, {"id": "heavy_flamethrower"}], "plasma_cannon", "twin_autocannon", "twin_heavy_machinegun", "twin_heavy_flamethrower", "twin_laser_cannon"]}
                     ],
                     "min": 1,
                     "max": 1
