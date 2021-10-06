@@ -993,11 +993,6 @@
         }
     },
 	"powers": {
-        "fastness": {
-            "name": "Fastness",
-            "description": "Target friendly unit within 12\" gets +2\" Movement and may treat Difficult Ground as normal terrain until the end of the turn.",
-            "charge": 6
-        },
         "luck": {
             "name": "Luck",
             "description": "Until the end of the activation phase, whenever target friendly unit within 18\" takes a hit, roll a D10. On a result of 3 or less ignore that hit.",

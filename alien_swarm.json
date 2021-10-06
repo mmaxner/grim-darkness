@@ -386,7 +386,7 @@
                     "shoot": 5,
                     "defense": 6,
                     "movement": 8,
-                    "weapons": ["meat_hooks", {"id": "grabbing_talons", "count": 4}, "piercing_claws"],
+                    "weapons": ["meat_hooks", {"id": "grabbing_talons", "count": 3}, "piercing_claws"],
                     "min": 1,
                     "max": 1
                 }
@@ -687,7 +687,7 @@
         "bio_plasma": {"name": "Bio-Plasma", "attacks": 1, "short": 6, "medium": 12, "ap": 5, "rules": ["assault", {"id": "blast", "x": 2}]},
         "venom_lashes": {"name": "Venom Lashes", "attacks": 1, "short": 6, "ap": 1, "rules": ["pistol"]},
         "flame_spit": {"name": "Flame Spit", "attacks": 1, "short": 6, "medium": 12, "ap": 2, "rules": ["flame", {"id": "blast", "x": 4}, "assault"]},
-        "grabbing_talons": {"name": "Grabbing Talons", "attacks": 1, "short": "Melee", "ap": 3},
+        "grabbing_talons": {"name": "Grabbing Talons", "attacks": 1, "short": "Melee", "ap": 3, "rules": [{"id": "slowing", "x": 2}]},
         "grabbing_tongue": {"name": "Grabbing Tongue", "attacks": 1, "short": 6, "medium": 12, "ap": 4, "rules": ["assault"]},
         "impaler_lance": {"name": "Impaler Lance", "attacks": 2, "short": 18, "medium": 36, "ap": 6, "rules": ["indirect", "flame"]},
         "shock_cannon": {"name": "Shock Cannon", "attacks": 1, "short": 12, "medium": 24, "ap": 4, "rules": [{"id": "blast", "x": 2}]},
@@ -781,11 +781,6 @@
         }
     },
     "powers": {
-        "direct_control": {
-            "name": "Direct Control",
-            "description": "Target friendly unit within 24\" may immediately activate, and use this model's Courage value until the end of the activation phase.",
-            "charge": 7
-        },
         "vitality": {
             "name": "Vitality",
             "description": "Until the end of the activation phase, whenever target friendly unit within 18\" takes a hit, roll a D10. On a result of 3 or less ignore that hit.",
