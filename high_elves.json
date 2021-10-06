@@ -684,7 +684,9 @@
                         {"replaceWeapon": {"id": "greatwraith_fists", "count": 4}, "withWeapon": {"id": "greatwraith_sword", "count": 5}},
                         {"addRule": {"id": "power", "x": 1}},
                         {"addWeapon": ["missile_launcher", "shard_cannon", "shining_cannon"], "limit": 2}
-                    ]
+                    ],
+                    "min": 1,
+                    "max": 1
                 }
             ]
         },
@@ -988,6 +990,28 @@
             "description": "One Leader or Support model with the Power rule may be upgraded with Psychic Mastery",
             "flavor": "An archmage of the psychic arts, this great psychic rivals the champions of the gods",
             "points": 10
+        }
+    },
+	"powers": {
+        "fastness": {
+            "name": "Fastness",
+            "description": "Target friendly unit within 12\" gets +2\" Movement and may treat Difficult Ground as normal terrain until the end of the turn.",
+            "charge": 6
+        },
+        "luck": {
+            "name": "Luck",
+            "description": "Until the end of the activation phase, whenever target friendly unit within 18\" takes a hit, roll a D10. On a result of 3 or less ignore that hit.",
+            "charge": 7
+        },
+        "brain_blast": {
+			"name": "Brain Blast", 
+			"description": "Target enemy model within 12\" takes 1 hit with AP(3).", 
+			"charge": 6
+		},
+        "dire_fate": {
+            "name": "Dire Fate",
+            "description": "Target enemy unit within 12\" suffers -1 Save until the end of the activation phase.",
+            "charge": 5
         }
     },
     "strategies": {
