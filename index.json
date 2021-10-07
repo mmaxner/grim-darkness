@@ -30,7 +30,27 @@
             "url": "alien_swarm.json",
             "color": "#3d3354",
             "alliance": "alien_swarm",
-            "description": "A swarm of aliens from far-away systems controlled by an ancient hive mind. They feast on other species, absorbing their biomass to turn into more of their kind. They have a combination of deadly creatures and swarms of agile aliens to defeat their foes."
+            "description": "A swarm of aliens from far-away systems controlled by an ancient hive mind. They feast on other species, absorbing their biomass to turn into more of their kind. They have a combination of deadly creatures and swarms of agile aliens to defeat their foes.",
+            "subfactions": {
+                "kaiju_focus": {
+                    "name": "Kaiju",
+                    "id": "kaiju_focus",
+                    "color": "#3d3354",
+                    "description": "An alien swarm focused on big, stompy aliens."
+                },
+                "swarm_focus": {
+                    "name": "Swarm",
+                    "id": "swarm_focus",
+                    "color": "#3d3354",
+                    "description": "An alien swarm focused on swarms of smaller alien."
+                },
+                "hunter_focus": {
+                    "name": "Hunter",
+                    "id": "hunter_focus",
+                    "color": "#3d3354",
+                    "description": "An alien cult focused on hunting down targets with stealth and mobility."
+                }
+            }
         },
         "alien_cults": {
             "version": "1.0",

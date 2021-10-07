@@ -778,7 +778,23 @@
             "name": "Birthing Pods",
             "description": "Once per round after taking Saves for an _Infantry_ unit. Roll a D10 for each model or Wound(x) lost. On a 3 or less, that model or Wound(x) is restored. Models must be restored to full Wounds(x) before restoring a new model.",
             "points": 15
-        }
+        },
+		"legend_influential_presence": {
+			"name": "Influential Presence", 
+			"description": "Increase the range of all abilities which target friendly units by 6\".", 
+			"points": 10
+		},
+		"legend_adrenaline_pheromones": {
+			"name": "Adrenaline Pheromones", 
+			"description": "Friendly _Infantry_ units within 6\" add +1\" to their Movement characteristic.", 
+			"points": 5
+		},
+		"legend_stealth_master": {
+			"name": "Master Infiltrator", 
+			"description": "Enemy units suffer -1 Accuracy and -1 Strength when attacking this unit.", 
+			"points": 10
+		}
+        
     },
     "powers": {
         "vitality": {
@@ -814,6 +830,78 @@
             "description": "Use when activating an _Infantry_ or _Monster_ unit. Choose another friendly _Infantry_ or _Monster_ unit within 6\" and use its Courage and Initative values for this activation.",
             "flavor": "The hive mind controls those who may be unwilling in order to maintain battle order.",
             "cost": 1
+        },
+        "hulking_flesh": {
+			"name": "Hulking Flesh", 
+			"phase": "activation", 
+			"description": "Use when activating a _Monster_ unit. That unit may remove one critical damage.", 
+			"flavor": "The enormous, fleshy bodies of these monsters regenerate at an incredible rate.",
+			"subfactions": ["kaiju_focus"],
+			"cost": 2
+		},
+		"monstrous_clash": {
+            "subfactions": ["kaiju_focus"],
+            "name": "Monstrous Clash",
+            "phase": "activation",
+            "flavor": "These furious beasts are always ready to swing their massive claws at the foe .",
+            "description": "Use when a _Monster_ unit is targeted by a Fight action. If that unit has not yet activated, it may perform a Counter Attack reaction without testing Initiative.",
+            "cost": 1
+        },
+		"sweeping_blows": {
+            "subfactions": ["kaiju_focus"],
+            "name": "Sweeping Blows",
+            "phase": "activation",
+            "flavor": "The enourmous swings of this beast's claws can cause damage even on misses and backswings.",
+            "description": "Use before a _Monster_ unit uses a fight action, it may re-roll all misses.",
+            "cost": 1
+        },
+		"swarming_shield": {
+			"subfactions": ["swarm_focus"],
+            "name": "Swarming Shield",
+            "phase": "activation",
+			"flavor": "The rolling wave of disposable bodies in the swarm can be directed by the hive mind to sacrifice themselves to protect more valuable aliens.",
+            "description": "Use after a _Infantry_ unit has been targeted by a Shooting attack. For this attack, you can roll a D10 each time an attack made with a ranged weapon hits that unit if there is a friendly Grunt, Assault Grunt, or Hive Swarm unit within 6\" of it. On an 8 or less a hit is transferred to that unit instead of the original target.",
+            "cost": 2
+        },
+		"clawing_mass": {
+            "subfactions": ["swarm_focus"],
+            "name": "Clawing Mass",
+            "phase": "activation",
+            "description": "Use when an _Infantry_ unit performs a Fight action. Hit rolls of 1 or 2 cause an additional hit.",
+            "flavor": "In a mass of swarming claws, more claws always find a way to enter the fray.",
+            "cost": 1
+        },
+		"hive_determination": {
+			"subfactions": ["swarm_focus"],
+            "name": "Hive Determination",
+            "phase": "activation",
+            "description": "Use before activating an _Infantry_ unit. That unit may immediately remove up to 2 Shock.",
+            "flavor": "The hive mind can focus the minds of lesser creatures to defy the horrors of combat.",
+            "cost": 1
+        },
+		"ambush": {
+			"subfactions": ["hunter_focus"],
+            "name": "Ambush",
+            "phase": "pre_game",
+            "description": "Up to half of any force's units, one point for each may be placed in _Ambush Reserves_ instead of deployed on the field.",
+            "flavor": "Alien Swarms can burrow around to lie in wait for the best moment to strike from surprise.",
+            "cost": "1/per"
+        },
+		"careful_hunters": {
+			"subfactions": ["hunter_focus"],
+            "name": "Careful Hunters",
+            "phase": "activation",
+            "description": "Use before activating a unit in _Ambush Reserves_. That unit may deploy up to 1d6\" closer to enemy units.",
+            "flavor": "Elite hunters are able to remain undetected in even close proximity to enemies.",
+            "cost": 1
+        },
+		"leaping_assault":{
+            "subfactions": ["hunter_focus"],
+            "name": "Leaping Assault",
+            "phase": "activation",
+            "flavor": "A sudden, explosive leap forward often catches even the most calculating opponent off guard.",
+            "description": "Use this strategy when an _Infantry_ unit charges. If the charging unit only makes a single move action this activation, enemy units may not react to that charge.",
+            "cost": 1
         }
     },
     "relics": {
@@ -829,7 +917,40 @@
             "rule": {"id": "ward", "x": 1},
             "description": "Upgrade one _Leader_ or _Support_ model with Ward(1)",
             "flavor": "This leader has gotten a taste for psychic minds, and has learned how to get close enough to get them."
+        },
+		"influential_presence": {
+			"subfactions": ["swarm_focus"],
+            "name": "Influential Presence",
+            "rule": "legend_influential_presence",
+            "description": "Upgrade one _Leader_ or _Support_ model with Mind Link.",
+            "flavor": "This leader can exert additional influence on the mass of lesser beings around it.",
+            "points": 10
+        },
+		"adrenaline_pheromones": {
+			"subfactions": ["swarm_focus"],
+			"name": "Adrenaline Pheromones",
+			"rule": "legend_adrenaline_pheromones",	
+			"flavor": "This model can exude pheromones that give nearby units a burst of energy.",			
+			"description": "Upgrade one _Leader_ or _Monster_ model with Adrenaline Pheromones.", 
+			"points": 5
+		},
+		"stealth_master": {
+			"subfactions": ["hunter_focus"],
+            "name": "Master Infiltrator",
+            "rule": "legend_stealth_master",
+            "description": "Upgrade one Leader or Support model with Master Infiltrator.",
+            "flavor": "This model is a master at hiding and avoiding enemy blows.",
+            "points": 10
+        },
+		"chitin_plating": {
+		"subfactions": ["kaiju_focus"],
+            "name": "Chitin Plating",
+            "rule": {"id": "tough", "x": 1},
+            "description": "Upgrade one _Monster_ model with Tough(1).",
+            "flavor": "Overlapping chitinous plates can deflect all bu the most penetrating weapons.",
+            "points": 10
         }
+		
     },
     "buyLinks": [
         {"name": "Games Workshop", "link": "https://www.games-workshop.com/en-US/Warhammer-40-000?N=2562756967+77492817"},
