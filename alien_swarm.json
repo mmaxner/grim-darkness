@@ -891,8 +891,8 @@
 			"subfactions": ["hunter_focus"],
             "name": "Careful Hunters",
             "phase": "activation",
-            "description": "Use before activating a unit in _Ambush Reserves_. That unit may deploy up to 1d6\" closer to enemy units.",
-            "flavor": "Elite hunters are able to remain undetected in even close proximity to enemies.",
+            "description": "Use before activating a unit in _Ambush Reserves_. After placing the unit on the board, you may move it up to 1d6\" in any direction.",
+            "flavor": "Elite hunters are able to tunnel accurately and remain undetected in even close proximity to enemies.",
             "cost": 1
         },
 		"leaping_assault":{
